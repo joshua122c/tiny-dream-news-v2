@@ -1,0 +1,461 @@
+{
+  "generated_at": "2026-06-19T16:30:36.401Z",
+  "mock_mode": true,
+  "prompt_payload": {
+    "task": "Generate only the high-level daily morning brief editorial fields. Do not rewrite individual cluster summaries.",
+    "date": "2026-06-19",
+    "timezone": "Asia/Hong_Kong",
+    "current_market_mood": "risk_on",
+    "current_market_mood_label_zh_hant": "風險偏好較強",
+    "current_morning_brief_zh_hant": "今日全球財經科技焦點集中在商品、地緣政治、半導體、科技公司、美股。排名較前的主題包括重點主題：商品、地緣政治｜Oil、重點主題：半導體、科技公司、美股｜Amazon、Nvidia、SpaceX、重點主題：宏觀、美股｜Federal Reserve、Inflation、重點主題：AI、科技公司｜Amazon、OpenAI、重點主題：AI、半導體｜Nvidia。市場關注來源覆蓋度、熱度分數與後續公開資訊變化，目前整體判斷為風險偏好較強。",
+    "instructions": [
+      "所有面向使用者的內容必須使用繁體中文。",
+      "英文來源內容需要翻譯並綜合為繁體中文。",
+      "簡體中文來源內容需要轉換或改寫為繁體中文。",
+      "不要輸出簡體中文。",
+      "保持中立、factual 的新聞語氣。",
+      "不要提供投資建議。",
+      "不要作價格預測。",
+      "不要加入來源資料沒有支持的事實。",
+      "只可根據提供的 cluster headline、summary、categories、heat reasons、related assets、source names 進行總結。",
+      "只輸出 valid JSON。",
+      "不要輸出 Markdown。",
+      "不要在 JSON 外加入任何說明。"
+    ],
+    "allowed_market_mood_values": [
+      "risk_on",
+      "risk_off",
+      "neutral",
+      "mixed"
+    ],
+    "output_schema": {
+      "morning_brief_zh_hant": "string, 3 to 5 concise Traditional Chinese sentences",
+      "market_mood": "risk_on | risk_off | neutral | mixed",
+      "market_mood_label_zh_hant": "string",
+      "top_five_brief_reasons": [
+        {
+          "cluster_id": "string",
+          "brief_reason_zh_hant": "string"
+        }
+      ]
+    },
+    "top_clusters": [
+      {
+        "cluster_id": "news-cluster-003",
+        "rank": 1,
+        "headline_zh_hant": "重點主題：商品、地緣政治｜Oil",
+        "heat_score": 78.85,
+        "heat_level": "high",
+        "categories": [
+          "商品",
+          "地緣政治"
+        ],
+        "related_assets": [
+          "Oil"
+        ],
+        "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 商品、地緣政治，來源包括 CNBC、MarketWatch、華爾街見聞。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+        "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+        "key_points_zh_hant": [
+          "此 mock 摘要根據 3 個來源與 2 個分類建立，用於測試資料流程。",
+          "目前 heat score 為 78.85，正式排序仍以非 AI heat scoring 結果為準。",
+          "主要熱度原因包括：同一主題被 3 個來源報導；包含高權重來源 CNBC 與 華爾街見聞。"
+        ],
+        "why_it_matters_zh_hant": "此主題值得關注，因為同一主題被 3 個來源報導，並且包含高權重來源 CNBC 與 華爾街見聞，並且涵蓋 商品、地緣政治 類別。以上為 mock 說明，正式版本會只根據來源文章生成。",
+        "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+        "heat_reasons": [
+          "同一主題被 3 個來源報導",
+          "包含高權重來源 CNBC 與 華爾街見聞",
+          "涵蓋 商品、地緣政治 類別",
+          "涉及 Iran、Middle East、oil、制裁 等重要市場關鍵詞",
+          "新聞發布時間較新",
+          "來源首頁位置較前"
+        ],
+        "source_names": [
+          "MarketWatch",
+          "CNBC",
+          "華爾街見聞"
+        ]
+      },
+      {
+        "cluster_id": "news-cluster-006",
+        "rank": 2,
+        "headline_zh_hant": "重點主題：半導體、科技公司、美股｜Amazon、Nvidia、SpaceX",
+        "heat_score": 68.4,
+        "heat_level": "medium",
+        "categories": [
+          "半導體",
+          "科技公司",
+          "美股"
+        ],
+        "related_assets": [
+          "Amazon",
+          "Nvidia",
+          "SpaceX"
+        ],
+        "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 半導體、科技公司、美股，來源包括 CNBC、Yahoo Finance。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+        "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+        "key_points_zh_hant": [
+          "此 mock 摘要根據 2 個來源與 3 個分類建立，用於測試資料流程。",
+          "目前 heat score 為 68.4，正式排序仍以非 AI heat scoring 結果為準。",
+          "主要熱度原因包括：同一主題被 2 個來源報導；包含高權重來源 CNBC 與 Yahoo Finance。"
+        ],
+        "why_it_matters_zh_hant": "此主題值得關注，因為同一主題被 2 個來源報導，並且包含高權重來源 CNBC 與 Yahoo Finance，並且涉及 半導體、美股 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+        "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+        "heat_reasons": [
+          "同一主題被 2 個來源報導",
+          "包含高權重來源 CNBC 與 Yahoo Finance",
+          "涉及 半導體、美股 等高關注主題",
+          "涉及 Amazon、Dow、Nvidia、半導體 等重要市場關鍵詞",
+          "新聞發布時間較新",
+          "來源首頁位置較前"
+        ],
+        "source_names": [
+          "Yahoo Finance",
+          "CNBC"
+        ]
+      },
+      {
+        "cluster_id": "news-cluster-044",
+        "rank": 3,
+        "headline_zh_hant": "重點主題：宏觀、美股｜Federal Reserve、Inflation",
+        "heat_score": 67.1,
+        "heat_level": "medium",
+        "categories": [
+          "宏觀",
+          "美股"
+        ],
+        "related_assets": [
+          "Federal Reserve",
+          "Inflation"
+        ],
+        "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 宏觀、美股，來源包括 CNBC、MarketWatch、Yahoo Finance。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+        "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+        "key_points_zh_hant": [
+          "此 mock 摘要根據 3 個來源與 2 個分類建立，用於測試資料流程。",
+          "目前 heat score 為 67.1，正式排序仍以非 AI heat scoring 結果為準。",
+          "主要熱度原因包括：同一主題被 3 個來源報導；包含高權重來源 CNBC 與 MarketWatch。"
+        ],
+        "why_it_matters_zh_hant": "此主題值得關注，因為同一主題被 3 個來源報導，並且包含高權重來源 CNBC 與 MarketWatch，並且涉及 宏觀、美股 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+        "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+        "heat_reasons": [
+          "同一主題被 3 個來源報導",
+          "包含高權重來源 CNBC 與 MarketWatch",
+          "涉及 宏觀、美股 等高關注主題",
+          "涉及 Fed、inflation 等重要市場關鍵詞",
+          "新聞發布時間較新",
+          "來源首頁位置較前"
+        ],
+        "source_names": [
+          "MarketWatch",
+          "CNBC",
+          "Yahoo Finance"
+        ]
+      },
+      {
+        "cluster_id": "news-cluster-027",
+        "rank": 4,
+        "headline_zh_hant": "重點主題：AI、科技公司｜Amazon、OpenAI",
+        "heat_score": 44.5,
+        "heat_level": "low",
+        "categories": [
+          "AI",
+          "科技公司"
+        ],
+        "related_assets": [
+          "Amazon",
+          "OpenAI"
+        ],
+        "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 AI、科技公司，來源包括 The Verge。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+        "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+        "key_points_zh_hant": [
+          "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+          "目前 heat score 為 44.5，正式排序仍以非 AI heat scoring 結果為準。",
+          "主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 The Verge。"
+        ],
+        "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 The Verge，並且涉及 AI 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+        "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+        "heat_reasons": [
+          "目前主要由單一來源報導",
+          "包含高權重來源 The Verge",
+          "涉及 AI 等高關注主題",
+          "涉及 Amazon、OpenAI 等重要市場關鍵詞",
+          "新聞發布時間較新",
+          "來源首頁位置較前"
+        ],
+        "source_names": [
+          "The Verge"
+        ]
+      },
+      {
+        "cluster_id": "news-cluster-014",
+        "rank": 5,
+        "headline_zh_hant": "重點主題：AI、半導體｜Nvidia",
+        "heat_score": 42.8,
+        "heat_level": "low",
+        "categories": [
+          "AI",
+          "半導體"
+        ],
+        "related_assets": [
+          "Nvidia"
+        ],
+        "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 AI、半導體，來源包括 Yahoo Finance。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+        "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+        "key_points_zh_hant": [
+          "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+          "目前 heat score 為 42.8，正式排序仍以非 AI heat scoring 結果為準。",
+          "主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 Yahoo Finance。"
+        ],
+        "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 Yahoo Finance，並且涉及 AI、半導體 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+        "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+        "heat_reasons": [
+          "目前主要由單一來源報導",
+          "包含高權重來源 Yahoo Finance",
+          "涉及 AI、半導體 等高關注主題",
+          "涉及 Nvidia、半導體 等重要市場關鍵詞",
+          "新聞發布時間較新",
+          "來源首頁位置較前"
+        ],
+        "source_names": [
+          "Yahoo Finance"
+        ]
+      },
+      {
+        "cluster_id": "news-cluster-052",
+        "rank": 6,
+        "headline_zh_hant": "重點主題：外匯、宏觀｜Interest Rates、US Dollar",
+        "heat_score": 41.75,
+        "heat_level": "low",
+        "categories": [
+          "外匯",
+          "宏觀"
+        ],
+        "related_assets": [
+          "Interest Rates",
+          "US Dollar"
+        ],
+        "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 外匯、宏觀，來源包括 華爾街見聞。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+        "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+        "key_points_zh_hant": [
+          "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+          "目前 heat score 為 41.75，正式排序仍以非 AI heat scoring 結果為準。",
+          "主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 華爾街見聞。"
+        ],
+        "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 華爾街見聞，並且涉及 宏觀 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+        "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+        "heat_reasons": [
+          "目前主要由單一來源報導",
+          "包含高權重來源 華爾街見聞",
+          "涉及 宏觀 等高關注主題",
+          "涉及 dollar、interest rates、美元、美联储 等重要市場關鍵詞",
+          "新聞發布時間較新"
+        ],
+        "source_names": [
+          "華爾街見聞"
+        ]
+      },
+      {
+        "cluster_id": "news-cluster-085",
+        "rank": 7,
+        "headline_zh_hant": "重點主題：AI、半導體、科技公司｜Amazon、Nvidia",
+        "heat_score": 40.8,
+        "heat_level": "low",
+        "categories": [
+          "AI",
+          "半導體",
+          "科技公司"
+        ],
+        "related_assets": [
+          "Amazon",
+          "Nvidia"
+        ],
+        "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 AI、半導體、科技公司，來源包括 TechCrunch。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+        "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+        "key_points_zh_hant": [
+          "此 mock 摘要根據 1 個來源與 3 個分類建立，用於測試資料流程。",
+          "目前 heat score 為 40.8，正式排序仍以非 AI heat scoring 結果為準。",
+          "主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 TechCrunch。"
+        ],
+        "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 TechCrunch，並且涉及 AI、半導體 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+        "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+        "heat_reasons": [
+          "目前主要由單一來源報導",
+          "包含高權重來源 TechCrunch",
+          "涉及 AI、半導體 等高關注主題",
+          "涉及 Amazon、Nvidia、半導體 等重要市場關鍵詞"
+        ],
+        "source_names": [
+          "TechCrunch"
+        ]
+      },
+      {
+        "cluster_id": "news-cluster-078",
+        "rank": 8,
+        "headline_zh_hant": "重點主題：AI、科技公司、美股｜Alphabet、OpenAI",
+        "heat_score": 40.6,
+        "heat_level": "low",
+        "categories": [
+          "AI",
+          "科技公司",
+          "美股"
+        ],
+        "related_assets": [
+          "Alphabet",
+          "OpenAI"
+        ],
+        "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 AI、科技公司、美股，來源包括 TechCrunch。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+        "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+        "key_points_zh_hant": [
+          "此 mock 摘要根據 1 個來源與 3 個分類建立，用於測試資料流程。",
+          "目前 heat score 為 40.6，正式排序仍以非 AI heat scoring 結果為準。",
+          "主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 TechCrunch。"
+        ],
+        "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 TechCrunch，並且涉及 AI、美股 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+        "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+        "heat_reasons": [
+          "目前主要由單一來源報導",
+          "包含高權重來源 TechCrunch",
+          "涉及 AI、美股 等高關注主題",
+          "涉及 Google、OpenAI 等重要市場關鍵詞",
+          "來源首頁位置較前"
+        ],
+        "source_names": [
+          "TechCrunch"
+        ]
+      },
+      {
+        "cluster_id": "news-cluster-037",
+        "rank": 9,
+        "headline_zh_hant": "重點主題：宏觀",
+        "heat_score": 38.75,
+        "heat_level": "low",
+        "categories": [
+          "宏觀"
+        ],
+        "related_assets": [],
+        "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 宏觀，來源包括 華爾街見聞。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+        "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+        "key_points_zh_hant": [
+          "此 mock 摘要根據 1 個來源與 1 個分類建立，用於測試資料流程。",
+          "目前 heat score 為 38.75，正式排序仍以非 AI heat scoring 結果為準。",
+          "主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 華爾街見聞。"
+        ],
+        "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 華爾街見聞，並且涉及 宏觀 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+        "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+        "heat_reasons": [
+          "目前主要由單一來源報導",
+          "包含高權重來源 華爾街見聞",
+          "涉及 宏觀 等高關注主題",
+          "涉及 美联储、通胀 等重要市場關鍵詞",
+          "新聞發布時間較新",
+          "來源首頁位置較前"
+        ],
+        "source_names": [
+          "華爾街見聞"
+        ]
+      },
+      {
+        "cluster_id": "news-cluster-042",
+        "rank": 10,
+        "headline_zh_hant": "重點主題：AI、半導體",
+        "heat_score": 38.55,
+        "heat_level": "low",
+        "categories": [
+          "AI",
+          "半導體"
+        ],
+        "related_assets": [],
+        "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 AI、半導體，來源包括 華爾街見聞。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+        "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+        "key_points_zh_hant": [
+          "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+          "目前 heat score 為 38.55，正式排序仍以非 AI heat scoring 結果為準。",
+          "主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 華爾街見聞。"
+        ],
+        "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 華爾街見聞，並且涉及 AI、半導體 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+        "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+        "heat_reasons": [
+          "目前主要由單一來源報導",
+          "包含高權重來源 華爾街見聞",
+          "涉及 AI、半導體 等高關注主題",
+          "涉及 半導體、芯片 等重要市場關鍵詞",
+          "新聞發布時間較新"
+        ],
+        "source_names": [
+          "華爾街見聞"
+        ]
+      }
+    ],
+    "top_five_cluster_ids": [
+      "news-cluster-003",
+      "news-cluster-006",
+      "news-cluster-044",
+      "news-cluster-027",
+      "news-cluster-014"
+    ]
+  },
+  "cloudflare_request_body": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cautious financial and technology morning-brief editor.\nReturn JSON only. Do not include Markdown. Do not include explanations outside JSON.\n所有面向使用者的內容必須使用繁體中文。\n英文來源內容需要翻譯並綜合為繁體中文。\n簡體中文來源內容需要轉換或改寫為繁體中文。\n不要輸出簡體中文。\n保持中立、factual 的新聞語氣。\n不要提供投資建議。\n不要作價格預測。\n不要加入來源資料沒有支持的事實。\n只可根據提供的 cluster headline、summary、categories、heat reasons、related assets、source names 進行總結。\n只輸出 valid JSON。\n不要輸出 Markdown。\n不要在 JSON 外加入任何說明。"
+      },
+      {
+        "role": "user",
+        "content": "{\n  \"task\": \"Generate only the high-level daily morning brief editorial fields. Do not rewrite individual cluster summaries.\",\n  \"date\": \"2026-06-19\",\n  \"timezone\": \"Asia/Hong_Kong\",\n  \"current_market_mood\": \"risk_on\",\n  \"current_market_mood_label_zh_hant\": \"風險偏好較強\",\n  \"current_morning_brief_zh_hant\": \"今日全球財經科技焦點集中在商品、地緣政治、半導體、科技公司、美股。排名較前的主題包括重點主題：商品、地緣政治｜Oil、重點主題：半導體、科技公司、美股｜Amazon、Nvidia、SpaceX、重點主題：宏觀、美股｜Federal Reserve、Inflation、重點主題：AI、科技公司｜Amazon、OpenAI、重點主題：AI、半導體｜Nvidia。市場關注來源覆蓋度、熱度分數與後續公開資訊變化，目前整體判斷為風險偏好較強。\",\n  \"instructions\": [\n    \"所有面向使用者的內容必須使用繁體中文。\",\n    \"英文來源內容需要翻譯並綜合為繁體中文。\",\n    \"簡體中文來源內容需要轉換或改寫為繁體中文。\",\n    \"不要輸出簡體中文。\",\n    \"保持中立、factual 的新聞語氣。\",\n    \"不要提供投資建議。\",\n    \"不要作價格預測。\",\n    \"不要加入來源資料沒有支持的事實。\",\n    \"只可根據提供的 cluster headline、summary、categories、heat reasons、related assets、source names 進行總結。\",\n    \"只輸出 valid JSON。\",\n    \"不要輸出 Markdown。\",\n    \"不要在 JSON 外加入任何說明。\"\n  ],\n  \"allowed_market_mood_values\": [\n    \"risk_on\",\n    \"risk_off\",\n    \"neutral\",\n    \"mixed\"\n  ],\n  \"output_schema\": {\n    \"morning_brief_zh_hant\": \"string, 3 to 5 concise Traditional Chinese sentences\",\n    \"market_mood\": \"risk_on | risk_off | neutral | mixed\",\n    \"market_mood_label_zh_hant\": \"string\",\n    \"top_five_brief_reasons\": [\n      {\n        \"cluster_id\": \"string\",\n        \"brief_reason_zh_hant\": \"string\"\n      }\n    ]\n  },\n  \"top_clusters\": [\n    {\n      \"cluster_id\": \"news-cluster-003\",\n      \"rank\": 1,\n      \"headline_zh_hant\": \"重點主題：商品、地緣政治｜Oil\",\n      \"heat_score\": 78.85,\n      \"heat_level\": \"high\",\n      \"categories\": [\n        \"商品\",\n        \"地緣政治\"\n      ],\n      \"related_assets\": [\n        \"Oil\"\n      ],\n      \"summary_zh_hant\": \"這是 mock 摘要，用於測試資料流程。此主題涵蓋 商品、地緣政治，來源包括 CNBC、MarketWatch、華爾街見聞。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。\",\n      \"what_happened_zh_hant\": \"這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。\",\n      \"key_points_zh_hant\": [\n        \"此 mock 摘要根據 3 個來源與 2 個分類建立，用於測試資料流程。\",\n        \"目前 heat score 為 78.85，正式排序仍以非 AI heat scoring 結果為準。\",\n        \"主要熱度原因包括：同一主題被 3 個來源報導；包含高權重來源 CNBC 與 華爾街見聞。\"\n      ],\n      \"why_it_matters_zh_hant\": \"此主題值得關注，因為同一主題被 3 個來源報導，並且包含高權重來源 CNBC 與 華爾街見聞，並且涵蓋 商品、地緣政治 類別。以上為 mock 說明，正式版本會只根據來源文章生成。\",\n      \"watch_next_zh_hant\": \"後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。\",\n      \"heat_reasons\": [\n        \"同一主題被 3 個來源報導\",\n        \"包含高權重來源 CNBC 與 華爾街見聞\",\n        \"涵蓋 商品、地緣政治 類別\",\n        \"涉及 Iran、Middle East、oil、制裁 等重要市場關鍵詞\",\n        \"新聞發布時間較新\",\n        \"來源首頁位置較前\"\n      ],\n      \"source_names\": [\n        \"MarketWatch\",\n        \"CNBC\",\n        \"華爾街見聞\"\n      ]\n    },\n    {\n      \"cluster_id\": \"news-cluster-006\",\n      \"rank\": 2,\n      \"headline_zh_hant\": \"重點主題：半導體、科技公司、美股｜Amazon、Nvidia、SpaceX\",\n      \"heat_score\": 68.4,\n      \"heat_level\": \"medium\",\n      \"categories\": [\n        \"半導體\",\n        \"科技公司\",\n        \"美股\"\n      ],\n      \"related_assets\": [\n        \"Amazon\",\n        \"Nvidia\",\n        \"SpaceX\"\n      ],\n      \"summary_zh_hant\": \"這是 mock 摘要，用於測試資料流程。此主題涵蓋 半導體、科技公司、美股，來源包括 CNBC、Yahoo Finance。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。\",\n      \"what_happened_zh_hant\": \"這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。\",\n      \"key_points_zh_hant\": [\n        \"此 mock 摘要根據 2 個來源與 3 個分類建立，用於測試資料流程。\",\n        \"目前 heat score 為 68.4，正式排序仍以非 AI heat scoring 結果為準。\",\n        \"主要熱度原因包括：同一主題被 2 個來源報導；包含高權重來源 CNBC 與 Yahoo Finance。\"\n      ],\n      \"why_it_matters_zh_hant\": \"此主題值得關注，因為同一主題被 2 個來源報導，並且包含高權重來源 CNBC 與 Yahoo Finance，並且涉及 半導體、美股 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。\",\n      \"watch_next_zh_hant\": \"後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。\",\n      \"heat_reasons\": [\n        \"同一主題被 2 個來源報導\",\n        \"包含高權重來源 CNBC 與 Yahoo Finance\",\n        \"涉及 半導體、美股 等高關注主題\",\n        \"涉及 Amazon、Dow、Nvidia、半導體 等重要市場關鍵詞\",\n        \"新聞發布時間較新\",\n        \"來源首頁位置較前\"\n      ],\n      \"source_names\": [\n        \"Yahoo Finance\",\n        \"CNBC\"\n      ]\n    },\n    {\n      \"cluster_id\": \"news-cluster-044\",\n      \"rank\": 3,\n      \"headline_zh_hant\": \"重點主題：宏觀、美股｜Federal Reserve、Inflation\",\n      \"heat_score\": 67.1,\n      \"heat_level\": \"medium\",\n      \"categories\": [\n        \"宏觀\",\n        \"美股\"\n      ],\n      \"related_assets\": [\n        \"Federal Reserve\",\n        \"Inflation\"\n      ],\n      \"summary_zh_hant\": \"這是 mock 摘要，用於測試資料流程。此主題涵蓋 宏觀、美股，來源包括 CNBC、MarketWatch、Yahoo Finance。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。\",\n      \"what_happened_zh_hant\": \"這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。\",\n      \"key_points_zh_hant\": [\n        \"此 mock 摘要根據 3 個來源與 2 個分類建立，用於測試資料流程。\",\n        \"目前 heat score 為 67.1，正式排序仍以非 AI heat scoring 結果為準。\",\n        \"主要熱度原因包括：同一主題被 3 個來源報導；包含高權重來源 CNBC 與 MarketWatch。\"\n      ],\n      \"why_it_matters_zh_hant\": \"此主題值得關注，因為同一主題被 3 個來源報導，並且包含高權重來源 CNBC 與 MarketWatch，並且涉及 宏觀、美股 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。\",\n      \"watch_next_zh_hant\": \"後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。\",\n      \"heat_reasons\": [\n        \"同一主題被 3 個來源報導\",\n        \"包含高權重來源 CNBC 與 MarketWatch\",\n        \"涉及 宏觀、美股 等高關注主題\",\n        \"涉及 Fed、inflation 等重要市場關鍵詞\",\n        \"新聞發布時間較新\",\n        \"來源首頁位置較前\"\n      ],\n      \"source_names\": [\n        \"MarketWatch\",\n        \"CNBC\",\n        \"Yahoo Finance\"\n      ]\n    },\n    {\n      \"cluster_id\": \"news-cluster-027\",\n      \"rank\": 4,\n      \"headline_zh_hant\": \"重點主題：AI、科技公司｜Amazon、OpenAI\",\n      \"heat_score\": 44.5,\n      \"heat_level\": \"low\",\n      \"categories\": [\n        \"AI\",\n        \"科技公司\"\n      ],\n      \"related_assets\": [\n        \"Amazon\",\n        \"OpenAI\"\n      ],\n      \"summary_zh_hant\": \"這是 mock 摘要，用於測試資料流程。此主題涵蓋 AI、科技公司，來源包括 The Verge。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。\",\n      \"what_happened_zh_hant\": \"這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。\",\n      \"key_points_zh_hant\": [\n        \"此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。\",\n        \"目前 heat score 為 44.5，正式排序仍以非 AI heat scoring 結果為準。\",\n        \"主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 The Verge。\"\n      ],\n      \"why_it_matters_zh_hant\": \"此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 The Verge，並且涉及 AI 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。\",\n      \"watch_next_zh_hant\": \"後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。\",\n      \"heat_reasons\": [\n        \"目前主要由單一來源報導\",\n        \"包含高權重來源 The Verge\",\n        \"涉及 AI 等高關注主題\",\n        \"涉及 Amazon、OpenAI 等重要市場關鍵詞\",\n        \"新聞發布時間較新\",\n        \"來源首頁位置較前\"\n      ],\n      \"source_names\": [\n        \"The Verge\"\n      ]\n    },\n    {\n      \"cluster_id\": \"news-cluster-014\",\n      \"rank\": 5,\n      \"headline_zh_hant\": \"重點主題：AI、半導體｜Nvidia\",\n      \"heat_score\": 42.8,\n      \"heat_level\": \"low\",\n      \"categories\": [\n        \"AI\",\n        \"半導體\"\n      ],\n      \"related_assets\": [\n        \"Nvidia\"\n      ],\n      \"summary_zh_hant\": \"這是 mock 摘要，用於測試資料流程。此主題涵蓋 AI、半導體，來源包括 Yahoo Finance。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。\",\n      \"what_happened_zh_hant\": \"這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。\",\n      \"key_points_zh_hant\": [\n        \"此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。\",\n        \"目前 heat score 為 42.8，正式排序仍以非 AI heat scoring 結果為準。\",\n        \"主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 Yahoo Finance。\"\n      ],\n      \"why_it_matters_zh_hant\": \"此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 Yahoo Finance，並且涉及 AI、半導體 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。\",\n      \"watch_next_zh_hant\": \"後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。\",\n      \"heat_reasons\": [\n        \"目前主要由單一來源報導\",\n        \"包含高權重來源 Yahoo Finance\",\n        \"涉及 AI、半導體 等高關注主題\",\n        \"涉及 Nvidia、半導體 等重要市場關鍵詞\",\n        \"新聞發布時間較新\",\n        \"來源首頁位置較前\"\n      ],\n      \"source_names\": [\n        \"Yahoo Finance\"\n      ]\n    },\n    {\n      \"cluster_id\": \"news-cluster-052\",\n      \"rank\": 6,\n      \"headline_zh_hant\": \"重點主題：外匯、宏觀｜Interest Rates、US Dollar\",\n      \"heat_score\": 41.75,\n      \"heat_level\": \"low\",\n      \"categories\": [\n        \"外匯\",\n        \"宏觀\"\n      ],\n      \"related_assets\": [\n        \"Interest Rates\",\n        \"US Dollar\"\n      ],\n      \"summary_zh_hant\": \"這是 mock 摘要，用於測試資料流程。此主題涵蓋 外匯、宏觀，來源包括 華爾街見聞。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。\",\n      \"what_happened_zh_hant\": \"這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。\",\n      \"key_points_zh_hant\": [\n        \"此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。\",\n        \"目前 heat score 為 41.75，正式排序仍以非 AI heat scoring 結果為準。\",\n        \"主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 華爾街見聞。\"\n      ],\n      \"why_it_matters_zh_hant\": \"此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 華爾街見聞，並且涉及 宏觀 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。\",\n      \"watch_next_zh_hant\": \"後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。\",\n      \"heat_reasons\": [\n        \"目前主要由單一來源報導\",\n        \"包含高權重來源 華爾街見聞\",\n        \"涉及 宏觀 等高關注主題\",\n        \"涉及 dollar、interest rates、美元、美联储 等重要市場關鍵詞\",\n        \"新聞發布時間較新\"\n      ],\n      \"source_names\": [\n        \"華爾街見聞\"\n      ]\n    },\n    {\n      \"cluster_id\": \"news-cluster-085\",\n      \"rank\": 7,\n      \"headline_zh_hant\": \"重點主題：AI、半導體、科技公司｜Amazon、Nvidia\",\n      \"heat_score\": 40.8,\n      \"heat_level\": \"low\",\n      \"categories\": [\n        \"AI\",\n        \"半導體\",\n        \"科技公司\"\n      ],\n      \"related_assets\": [\n        \"Amazon\",\n        \"Nvidia\"\n      ],\n      \"summary_zh_hant\": \"這是 mock 摘要，用於測試資料流程。此主題涵蓋 AI、半導體、科技公司，來源包括 TechCrunch。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。\",\n      \"what_happened_zh_hant\": \"這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。\",\n      \"key_points_zh_hant\": [\n        \"此 mock 摘要根據 1 個來源與 3 個分類建立，用於測試資料流程。\",\n        \"目前 heat score 為 40.8，正式排序仍以非 AI heat scoring 結果為準。\",\n        \"主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 TechCrunch。\"\n      ],\n      \"why_it_matters_zh_hant\": \"此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 TechCrunch，並且涉及 AI、半導體 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。\",\n      \"watch_next_zh_hant\": \"後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。\",\n      \"heat_reasons\": [\n        \"目前主要由單一來源報導\",\n        \"包含高權重來源 TechCrunch\",\n        \"涉及 AI、半導體 等高關注主題\",\n        \"涉及 Amazon、Nvidia、半導體 等重要市場關鍵詞\"\n      ],\n      \"source_names\": [\n        \"TechCrunch\"\n      ]\n    },\n    {\n      \"cluster_id\": \"news-cluster-078\",\n      \"rank\": 8,\n      \"headline_zh_hant\": \"重點主題：AI、科技公司、美股｜Alphabet、OpenAI\",\n      \"heat_score\": 40.6,\n      \"heat_level\": \"low\",\n      \"categories\": [\n        \"AI\",\n        \"科技公司\",\n        \"美股\"\n      ],\n      \"related_assets\": [\n        \"Alphabet\",\n        \"OpenAI\"\n      ],\n      \"summary_zh_hant\": \"這是 mock 摘要，用於測試資料流程。此主題涵蓋 AI、科技公司、美股，來源包括 TechCrunch。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。\",\n      \"what_happened_zh_hant\": \"這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。\",\n      \"key_points_zh_hant\": [\n        \"此 mock 摘要根據 1 個來源與 3 個分類建立，用於測試資料流程。\",\n        \"目前 heat score 為 40.6，正式排序仍以非 AI heat scoring 結果為準。\",\n        \"主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 TechCrunch。\"\n      ],\n      \"why_it_matters_zh_hant\": \"此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 TechCrunch，並且涉及 AI、美股 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。\",\n      \"watch_next_zh_hant\": \"後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。\",\n      \"heat_reasons\": [\n        \"目前主要由單一來源報導\",\n        \"包含高權重來源 TechCrunch\",\n        \"涉及 AI、美股 等高關注主題\",\n        \"涉及 Google、OpenAI 等重要市場關鍵詞\",\n        \"來源首頁位置較前\"\n      ],\n      \"source_names\": [\n        \"TechCrunch\"\n      ]\n    },\n    {\n      \"cluster_id\": \"news-cluster-037\",\n      \"rank\": 9,\n      \"headline_zh_hant\": \"重點主題：宏觀\",\n      \"heat_score\": 38.75,\n      \"heat_level\": \"low\",\n      \"categories\": [\n        \"宏觀\"\n      ],\n      \"related_assets\": [],\n      \"summary_zh_hant\": \"這是 mock 摘要，用於測試資料流程。此主題涵蓋 宏觀，來源包括 華爾街見聞。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。\",\n      \"what_happened_zh_hant\": \"這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。\",\n      \"key_points_zh_hant\": [\n        \"此 mock 摘要根據 1 個來源與 1 個分類建立，用於測試資料流程。\",\n        \"目前 heat score 為 38.75，正式排序仍以非 AI heat scoring 結果為準。\",\n        \"主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 華爾街見聞。\"\n      ],\n      \"why_it_matters_zh_hant\": \"此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 華爾街見聞，並且涉及 宏觀 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。\",\n      \"watch_next_zh_hant\": \"後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。\",\n      \"heat_reasons\": [\n        \"目前主要由單一來源報導\",\n        \"包含高權重來源 華爾街見聞\",\n        \"涉及 宏觀 等高關注主題\",\n        \"涉及 美联储、通胀 等重要市場關鍵詞\",\n        \"新聞發布時間較新\",\n        \"來源首頁位置較前\"\n      ],\n      \"source_names\": [\n        \"華爾街見聞\"\n      ]\n    },\n    {\n      \"cluster_id\": \"news-cluster-042\",\n      \"rank\": 10,\n      \"headline_zh_hant\": \"重點主題：AI、半導體\",\n      \"heat_score\": 38.55,\n      \"heat_level\": \"low\",\n      \"categories\": [\n        \"AI\",\n        \"半導體\"\n      ],\n      \"related_assets\": [],\n      \"summary_zh_hant\": \"這是 mock 摘要，用於測試資料流程。此主題涵蓋 AI、半導體，來源包括 華爾街見聞。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。\",\n      \"what_happened_zh_hant\": \"這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。\",\n      \"key_points_zh_hant\": [\n        \"此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。\",\n        \"目前 heat score 為 38.55，正式排序仍以非 AI heat scoring 結果為準。\",\n        \"主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 華爾街見聞。\"\n      ],\n      \"why_it_matters_zh_hant\": \"此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 華爾街見聞，並且涉及 AI、半導體 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。\",\n      \"watch_next_zh_hant\": \"後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。\",\n      \"heat_reasons\": [\n        \"目前主要由單一來源報導\",\n        \"包含高權重來源 華爾街見聞\",\n        \"涉及 AI、半導體 等高關注主題\",\n        \"涉及 半導體、芯片 等重要市場關鍵詞\",\n        \"新聞發布時間較新\"\n      ],\n      \"source_names\": [\n        \"華爾街見聞\"\n      ]\n    }\n  ],\n  \"top_five_cluster_ids\": [\n    \"news-cluster-003\",\n    \"news-cluster-006\",\n    \"news-cluster-044\",\n    \"news-cluster-027\",\n    \"news-cluster-014\"\n  ]\n}"
+      }
+    ],
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "morning_brief_zh_hant": {
+            "type": "string"
+          },
+          "market_mood": {
+            "type": "string",
+            "enum": [
+              "risk_on",
+              "risk_off",
+              "neutral",
+              "mixed"
+            ]
+          },
+          "market_mood_label_zh_hant": {
+            "type": "string"
+          },
+          "top_five_brief_reasons": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "cluster_id": {
+                  "type": "string"
+                },
+                "brief_reason_zh_hant": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "cluster_id",
+                "brief_reason_zh_hant"
+              ]
+            }
+          }
+        },
+        "required": [
+          "morning_brief_zh_hant",
+          "market_mood",
+          "market_mood_label_zh_hant",
+          "top_five_brief_reasons"
+        ]
+      }
+    },
+    "temperature": 0.2,
+    "max_tokens": 700
+  },
+  "note": "Phase 7B prompt only includes top clusters and excludes raw article bodies, full source links, and all lower-ranked clusters."
+}

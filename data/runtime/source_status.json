@@ -1,0 +1,47 @@
+{
+  "fetched_at": "2026-06-19T16:30:27.679Z",
+  "sources": [
+    {
+      "source": "CNBC",
+      "status": "success",
+      "article_count": 30,
+      "error_message": "",
+      "fetched_at": "2026-06-19T16:30:27.680Z"
+    },
+    {
+      "source": "MarketWatch",
+      "status": "success",
+      "article_count": 10,
+      "error_message": "",
+      "fetched_at": "2026-06-19T16:30:29.545Z"
+    },
+    {
+      "source": "Yahoo Finance",
+      "status": "success",
+      "article_count": 30,
+      "error_message": "",
+      "fetched_at": "2026-06-19T16:30:30.451Z"
+    },
+    {
+      "source": "TechCrunch",
+      "status": "success",
+      "article_count": 20,
+      "error_message": "",
+      "fetched_at": "2026-06-19T16:30:31.511Z"
+    },
+    {
+      "source": "The Verge",
+      "status": "success",
+      "article_count": 10,
+      "error_message": "",
+      "fetched_at": "2026-06-19T16:30:32.254Z"
+    },
+    {
+      "source": "華爾街見聞",
+      "status": "success",
+      "article_count": 30,
+      "error_message": "",
+      "fetched_at": "2026-06-19T16:30:33.074Z"
+    }
+  ]
+}

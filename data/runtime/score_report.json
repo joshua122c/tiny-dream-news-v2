@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-06-19T16:30:36.056Z",
+  "input_file": "data/runtime/news_clusters.json",
+  "input_cluster_count": 92,
+  "output_cluster_count": 92,
+  "top_10_clusters": [
+    {
+      "cluster_id": "news-cluster-003",
+      "title": "8000万桶原油，准备通过霍尔木兹海峡",
+      "heat_score": 78.85,
+      "heat_level": "high"
+    },
+    {
+      "cluster_id": "news-cluster-006",
+      "title": "SpaceX stock sinks for a second day as company slips below Amazon in market cap",
+      "heat_score": 68.4,
+      "heat_level": "medium"
+    },
+    {
+      "cluster_id": "news-cluster-044",
+      "title": "Markets are set for a much more hawkish Warsh Fed than expected",
+      "heat_score": 67.1,
+      "heat_level": "medium"
+    },
+    {
+      "cluster_id": "news-cluster-027",
+      "title": "The film about Sam Altman has been dropped by Amazon MGM",
+      "heat_score": 44.5,
+      "heat_level": "low"
+    },
+    {
+      "cluster_id": "news-cluster-014",
+      "title": "Donald Trump’s Favorite AI Chip Stock in 2026 That Performed Better Than Nvidia (NVDA)",
+      "heat_score": 42.8,
+      "heat_level": "low"
+    },
+    {
+      "cluster_id": "news-cluster-052",
+      "title": "美元反弹终结新兴市场货币牛市，年内最热外汇交易急速降温",
+      "heat_score": 41.75,
+      "heat_level": "low"
+    },
+    {
+      "cluster_id": "news-cluster-085",
+      "title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips",
+      "heat_score": 40.8,
+      "heat_level": "low"
+    },
+    {
+      "cluster_id": "news-cluster-078",
+      "title": "OpenAI is bringing on some big guns in the lead-up to its IPO",
+      "heat_score": 40.6,
+      "heat_level": "low"
+    },
+    {
+      "cluster_id": "news-cluster-037",
+      "title": "债市和美联储预期分化了？市场不怕通胀了！",
+      "heat_score": 38.75,
+      "heat_level": "low"
+    },
+    {
+      "cluster_id": "news-cluster-042",
+      "title": "任命前SK海力士CEO领导封装业务，英特尔股价大涨10%创新高",
+      "heat_score": 38.55,
+      "heat_level": "low"
+    }
+  ],
+  "score_distribution": {
+    "very_high": 0,
+    "high": 1,
+    "medium": 2,
+    "low": 44,
+    "very_low": 45
+  },
+  "warnings": [],
+  "config_files_used": [
+    "config/source-weights.json",
+    "config/topic-weights.json",
+    "config/market-impact-rules.json"
+  ]
+}

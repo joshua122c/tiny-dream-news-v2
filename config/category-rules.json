@@ -1,0 +1,278 @@
+{
+  "categories": [
+    {
+      "name": "美股",
+      "keywords": [
+        "us stocks",
+        "u.s. stocks",
+        "wall street",
+        "s&p 500",
+        "nasdaq",
+        "dow jones",
+        "nyse",
+        "ipo",
+        "shares",
+        "stock market",
+        "美股",
+        "納指",
+        "標普",
+        "道指"
+      ]
+    },
+    {
+      "name": "港股",
+      "keywords": [
+        "hong kong stocks",
+        "hang seng",
+        "hsi",
+        "hstech",
+        "港股",
+        "恒生",
+        "恆生",
+        "港交所",
+        "南向資金"
+      ]
+    },
+    {
+      "name": "中概",
+      "keywords": [
+        "china adr",
+        "chinese adr",
+        "adr",
+        "alibaba",
+        "baba",
+        "jd.com",
+        "pdd",
+        "netease",
+        "baidu",
+        "中概",
+        "阿里巴巴",
+        "京東",
+        "拼多多",
+        "百度",
+        "網易"
+      ]
+    },
+    {
+      "name": "AI",
+      "keywords": [
+        "ai",
+        "artificial intelligence",
+        "generative ai",
+        "openai",
+        "chatgpt",
+        "large language model",
+        "llm",
+        "人工智能",
+        "人工智慧",
+        "生成式",
+        "大模型"
+      ]
+    },
+    {
+      "name": "半導體",
+      "keywords": [
+        "semiconductor",
+        "chip",
+        "chips",
+        "gpu",
+        "memory chip",
+        "hbm",
+        "foundry",
+        "tsmc",
+        "asml",
+        "micron",
+        "nvidia",
+        "amd",
+        "半導體",
+        "晶片",
+        "芯片",
+        "先進封裝",
+        "存儲",
+        "記憶體"
+      ]
+    },
+    {
+      "name": "宏觀",
+      "keywords": [
+        "fed",
+        "federal reserve",
+        "interest rate",
+        "inflation",
+        "cpi",
+        "ppi",
+        "gdp",
+        "jobs report",
+        "treasury yield",
+        "recession",
+        "tariff",
+        "央行",
+        "聯儲",
+        "美聯儲",
+        "通脹",
+        "通膨",
+        "利率",
+        "經濟",
+        "關稅",
+        "降息",
+        "加息"
+      ]
+    },
+    {
+      "name": "加密",
+      "keywords": [
+        "crypto",
+        "cryptocurrency",
+        "bitcoin",
+        "btc",
+        "ethereum",
+        "eth",
+        "stablecoin",
+        "blockchain",
+        "加密",
+        "比特幣",
+        "以太坊",
+        "穩定幣",
+        "區塊鏈"
+      ]
+    },
+    {
+      "name": "外匯",
+      "keywords": [
+        "fx",
+        "forex",
+        "currency",
+        "dollar",
+        "yen",
+        "yuan",
+        "euro",
+        "dxy",
+        "usd",
+        "匯率",
+        "外匯",
+        "美元",
+        "日元",
+        "日圓",
+        "人民幣",
+        "歐元"
+      ]
+    },
+    {
+      "name": "商品",
+      "keywords": [
+        "commodity",
+        "commodities",
+        "oil",
+        "brent",
+        "wti",
+        "gold",
+        "copper",
+        "natural gas",
+        "energy supplies",
+        "原油",
+        "黃金",
+        "商品",
+        "銅",
+        "天然氣",
+        "能源"
+      ]
+    },
+    {
+      "name": "地緣政治",
+      "keywords": [
+        "war",
+        "conflict",
+        "iran",
+        "israel",
+        "russia",
+        "ukraine",
+        "taiwan",
+        "sanction",
+        "tariffs",
+        "hormuz",
+        "geopolitical",
+        "地緣",
+        "戰爭",
+        "衝突",
+        "伊朗",
+        "以色列",
+        "俄羅斯",
+        "烏克蘭",
+        "台海",
+        "制裁",
+        "霍爾木茲"
+      ]
+    },
+    {
+      "name": "企業財報",
+      "keywords": [
+        "earnings",
+        "revenue",
+        "profit",
+        "guidance",
+        "quarterly results",
+        "eps",
+        "財報",
+        "業績",
+        "營收",
+        "盈利",
+        "利潤",
+        "指引"
+      ]
+    },
+    {
+      "name": "科技公司",
+      "keywords": [
+        "big tech",
+        "tech company",
+        "apple",
+        "microsoft",
+        "google",
+        "alphabet",
+        "meta",
+        "amazon",
+        "tesla",
+        "spacex",
+        "科技公司",
+        "蘋果",
+        "微軟",
+        "谷歌",
+        "亞馬遜",
+        "特斯拉"
+      ]
+    }
+  ],
+  "entities": [
+    { "name": "Apple", "type": "company", "aliases": ["apple", "aapl", "蘋果"] },
+    { "name": "Microsoft", "type": "company", "aliases": ["microsoft", "msft", "微軟"] },
+    { "name": "Alphabet", "type": "company", "aliases": ["alphabet", "google", "googl", "谷歌"] },
+    { "name": "Amazon", "type": "company", "aliases": ["amazon", "amzn", "亞馬遜"] },
+    { "name": "Meta", "type": "company", "aliases": ["meta", "facebook"] },
+    { "name": "Tesla", "type": "company", "aliases": ["tesla", "tsla", "特斯拉"] },
+    { "name": "Nvidia", "type": "company", "aliases": ["nvidia", "nvda", "英偉達", "輝達"] },
+    { "name": "AMD", "type": "company", "aliases": ["amd", "advanced micro devices"] },
+    { "name": "TSMC", "type": "company", "aliases": ["tsmc", "taiwan semiconductor", "台積電"] },
+    { "name": "ASML", "type": "company", "aliases": ["asml"] },
+    { "name": "Micron", "type": "company", "aliases": ["micron", "mu", "美光"] },
+    { "name": "Alibaba", "type": "company", "aliases": ["alibaba", "baba", "阿里巴巴"] },
+    { "name": "Tencent", "type": "company", "aliases": ["tencent", "騰訊"] },
+    { "name": "Baidu", "type": "company", "aliases": ["baidu", "bidu", "百度"] },
+    { "name": "JD.com", "type": "company", "aliases": ["jd.com", "jd", "京東"] },
+    { "name": "PDD", "type": "company", "aliases": ["pdd", "pinduoduo", "拼多多"] },
+    { "name": "OpenAI", "type": "company", "aliases": ["openai", "chatgpt"] },
+    { "name": "SpaceX", "type": "company", "aliases": ["spacex"] },
+    { "name": "Bitcoin", "type": "asset", "aliases": ["bitcoin", "btc", "比特幣"] },
+    { "name": "Ethereum", "type": "asset", "aliases": ["ethereum", "eth", "以太坊"] },
+    { "name": "Gold", "type": "asset", "aliases": ["gold", "黃金"] },
+    { "name": "Oil", "type": "asset", "aliases": ["oil", "brent", "wti", "原油"] },
+    { "name": "US Dollar", "type": "macro", "aliases": ["dollar", "dxy", "usd", "美元"] },
+    { "name": "Federal Reserve", "type": "macro", "aliases": ["fed", "federal reserve", "聯儲", "美聯儲"] },
+    { "name": "US Treasury Yield", "type": "macro", "aliases": ["treasury yield", "10-year yield", "us10y", "美債收益率"] },
+    { "name": "Inflation", "type": "macro", "aliases": ["inflation", "cpi", "ppi", "通脹", "通膨"] },
+    { "name": "Interest Rates", "type": "macro", "aliases": ["interest rate", "rates", "利率", "降息", "加息"] },
+    { "name": "S&P 500", "type": "index", "aliases": ["s&p 500", "spx", "標普"] },
+    { "name": "Nasdaq", "type": "index", "aliases": ["nasdaq", "納指"] },
+    { "name": "Hang Seng Index", "type": "index", "aliases": ["hang seng", "hsi", "恒生", "恆生"] }
+  ]
+}
+

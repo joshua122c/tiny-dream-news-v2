@@ -1,0 +1,36 @@
+{
+  "name": "tiny-dream-news-v2",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "fetch:news": "node scripts/fetch-news.mjs",
+    "clean:articles": "node scripts/clean-dedupe-articles.mjs",
+    "cluster:news": "node scripts/cluster-news.mjs",
+    "score:clusters": "node scripts/score-clusters.mjs",
+    "validate:scored-clusters": "node scripts/validate-scored-clusters.mjs",
+    "summarize:clusters": "node scripts/summarize-clusters-mock.mjs",
+    "summarize:mock": "node scripts/summarize-clusters-mock.mjs",
+    "validate:summaries": "node scripts/validate-summarized-clusters.mjs",
+    "daily:generate": "node scripts/generate-daily-brief.mjs",
+    "daily:enhance": "node scripts/enhance-daily-brief-ai.mjs",
+    "validate:daily": "node scripts/validate-daily-brief.mjs",
+    "pipeline": "node scripts/run-daily-pipeline.mjs",
+    "daily": "node scripts/run-daily-pipeline.mjs",
+    "validate:pipeline": "node scripts/validate-pipeline-output.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.13.0",
+    "fast-xml-parser": "^4.5.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
+  },
+  "devDependencies": {}
+}

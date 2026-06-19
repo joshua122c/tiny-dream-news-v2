@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.astro/
+.pnpm-store/
+
+data/logs/
+data/runtime/pipeline-backup/
+*.log

@@ -94,6 +94,25 @@ The MVP must not include:
 - The data schema should remain stable once introduced.
 - Any schema change must be explained before implementation.
 
+## Language Handling Rules
+
+- Intermediate runtime files may preserve source-language text for traceability and debugging.
+- Runtime files that may contain original English or Simplified Chinese include:
+  - `data/runtime/raw_articles.json`
+  - `data/runtime/normalized_articles.json`
+  - `data/runtime/clean_articles.json`
+  - `data/runtime/news_clusters.json`
+  - `data/runtime/scored_clusters.json`
+- User-facing output must be written in Traditional Chinese.
+- User-facing output includes:
+  - `data/runtime/summarized_clusters.json`
+  - `data/daily/latest.json`
+  - `data/archive/YYYY-MM-DD.json`
+  - All website-displayed titles, summaries, key points, reasons, and watch-next items.
+- The website must not display `cluster_title_candidate` as the official headline unless it has first been converted to Traditional Chinese.
+- Formal display headlines should use `headline_zh_hant` or `summary.headline_zh_hant`.
+- User-facing Traditional Chinese text should remain neutral, factual, and faithful to the source articles.
+
 ## Website Requirements
 
 The homepage should look like a high-quality financial morning brief dashboard, not a generic blog list.
@@ -154,4 +173,3 @@ This first documentation task must not implement:
 - Cloudflare Pages deployment
 - Paid APIs
 - Login systems
-

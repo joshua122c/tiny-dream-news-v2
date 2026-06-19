@@ -1,0 +1,191 @@
+name: Daily Tiny Dream News
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_date:
+        description: "Run date in YYYY-MM-DD. Leave blank to use Hong Kong date."
+        required: false
+        type: string
+      ai_mode:
+        description: "AI mode for the daily pipeline."
+        required: true
+        default: mock
+        type: choice
+        options:
+          - mock
+          - real
+      deploy:
+        description: "Deploy to Cloudflare Pages after validation."
+        required: true
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+  schedule:
+    - cron: "15 0 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: daily-tiny-dream-news
+  cancel-in-progress: false
+
+jobs:
+  daily-news:
+    name: Generate daily brief
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      ASTRO_TELEMETRY_DISABLED: "1"
+      AI_MOCK_MODE: ${{ vars.AI_MOCK_MODE || 'true' }}
+      DAILY_BRIEF_AI_MOCK_MODE: ${{ vars.DAILY_BRIEF_AI_MOCK_MODE || vars.AI_MOCK_MODE || 'true' }}
+      AI_DAILY_BUDGET_NEURONS: ${{ vars.AI_DAILY_BUDGET_NEURONS }}
+      AI_MAX_TOTAL_SUMMARIES: ${{ vars.AI_MAX_TOTAL_SUMMARIES }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_AI_MODEL: ${{ secrets.CLOUDFLARE_AI_MODEL }}
+      CLOUDFLARE_PROJECT_NAME: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+      ENABLE_CLOUDFLARE_DEPLOY: ${{ vars.ENABLE_CLOUDFLARE_DEPLOY || 'false' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Prepare run settings
+        id: settings
+        shell: bash
+        env:
+          MANUAL_RUN_DATE: ${{ inputs.run_date || '' }}
+          MANUAL_AI_MODE: ${{ inputs.ai_mode || 'mock' }}
+          MANUAL_DEPLOY: ${{ inputs.deploy || 'false' }}
+          SCHEDULE_AI_MOCK_MODE: ${{ vars.AI_MOCK_MODE || 'true' }}
+          SCHEDULE_DAILY_BRIEF_AI_MOCK_MODE: ${{ vars.DAILY_BRIEF_AI_MOCK_MODE || vars.AI_MOCK_MODE || 'true' }}
+        run: |
+          set -euo pipefail
+
+          if [ -n "${MANUAL_RUN_DATE}" ]; then
+            run_date="${MANUAL_RUN_DATE}"
+          else
+            run_date="$(TZ=Asia/Hong_Kong date +'%Y-%m-%d')"
+          fi
+
+          if ! [[ "${run_date}" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+            echo "::error::run_date must use YYYY-MM-DD format."
+            exit 1
+          fi
+
+          if [ "${GITHUB_EVENT_NAME}" = "workflow_dispatch" ]; then
+            ai_mode="${MANUAL_AI_MODE}"
+            deploy="${MANUAL_DEPLOY}"
+          else
+            if [ "${SCHEDULE_AI_MOCK_MODE}" = "false" ]; then
+              ai_mode="real"
+            else
+              ai_mode="mock"
+            fi
+            deploy="${ENABLE_CLOUDFLARE_DEPLOY}"
+          fi
+
+          if [ "${ENABLE_CLOUDFLARE_DEPLOY}" != "true" ]; then
+            deploy="false"
+          fi
+
+          if [ "${ai_mode}" = "real" ]; then
+            pipeline_ai_flag="--real-ai"
+            echo "AI_MOCK_MODE=false" >> "$GITHUB_ENV"
+            if [ "${GITHUB_EVENT_NAME}" = "workflow_dispatch" ]; then
+              echo "DAILY_BRIEF_AI_MOCK_MODE=false" >> "$GITHUB_ENV"
+            else
+              echo "DAILY_BRIEF_AI_MOCK_MODE=${SCHEDULE_DAILY_BRIEF_AI_MOCK_MODE}" >> "$GITHUB_ENV"
+            fi
+          else
+            pipeline_ai_flag="--mock-ai"
+            echo "AI_MOCK_MODE=true" >> "$GITHUB_ENV"
+            echo "DAILY_BRIEF_AI_MOCK_MODE=true" >> "$GITHUB_ENV"
+          fi
+
+          echo "RUN_DATE=${run_date}" >> "$GITHUB_ENV"
+          echo "PIPELINE_AI_FLAG=${pipeline_ai_flag}" >> "$GITHUB_ENV"
+          echo "EFFECTIVE_AI_MODE=${ai_mode}" >> "$GITHUB_ENV"
+          echo "EFFECTIVE_DEPLOY=${deploy}" >> "$GITHUB_ENV"
+
+          echo "run_date=${run_date}" >> "$GITHUB_OUTPUT"
+          echo "ai_mode=${ai_mode}" >> "$GITHUB_OUTPUT"
+          echo "deploy=${deploy}" >> "$GITHUB_OUTPUT"
+
+      - name: Run daily pipeline
+        run: npm run pipeline -- --date "$RUN_DATE" "$PIPELINE_AI_FLAG"
+
+      - name: Validate generated data
+        run: npm run validate:pipeline -- --date "$RUN_DATE"
+
+      - name: Build static website
+        run: npm run build
+
+      - name: Detect static output directory
+        shell: bash
+        run: |
+          set -euo pipefail
+          for output_dir in dist build out; do
+            if [ -d "$output_dir" ]; then
+              echo "BUILD_OUTPUT_DIR=${output_dir}" >> "$GITHUB_ENV"
+              echo "Detected static output directory: ${output_dir}"
+              exit 0
+            fi
+          done
+
+          echo "::error::No supported static output directory found. Expected one of: dist, build, out."
+          exit 1
+
+      - name: Check Cloudflare deployment settings
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ "${EFFECTIVE_DEPLOY}" != "true" ]; then
+            echo "::warning::Cloudflare deploy skipped because ENABLE_CLOUDFLARE_DEPLOY is not true."
+            echo "DEPLOY_READY=false" >> "$GITHUB_ENV"
+            exit 0
+          fi
+
+          missing=()
+          [ -n "${CLOUDFLARE_ACCOUNT_ID}" ] || missing+=("CLOUDFLARE_ACCOUNT_ID")
+          [ -n "${CLOUDFLARE_API_TOKEN}" ] || missing+=("CLOUDFLARE_API_TOKEN")
+          [ -n "${CLOUDFLARE_PROJECT_NAME}" ] || missing+=("CLOUDFLARE_PROJECT_NAME")
+
+          if [ "${#missing[@]}" -gt 0 ]; then
+            echo "::warning::Cloudflare Pages deployment skipped because required secret(s) are missing: ${missing[*]}"
+            echo "DEPLOY_READY=false" >> "$GITHUB_ENV"
+          else
+            echo "DEPLOY_READY=true" >> "$GITHUB_ENV"
+          fi
+
+      - name: Deploy to Cloudflare Pages
+        if: ${{ success() && env.EFFECTIVE_DEPLOY == 'true' && env.DEPLOY_READY == 'true' }}
+        run: npx wrangler pages deploy "$BUILD_OUTPUT_DIR" --project-name "$CLOUDFLARE_PROJECT_NAME" --branch "$GITHUB_REF_NAME"
+
+      - name: Upload runtime artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tiny-dream-news-${{ env.RUN_DATE || github.run_number }}
+          if-no-files-found: warn
+          retention-days: 14
+          path: |
+            data/runtime/*.json
+            data/runtime/*.log
+            data/daily/latest.json
+            data/archive/*.json
+            data/logs/*.log

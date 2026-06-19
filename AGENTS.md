@@ -45,6 +45,25 @@ For every task:
 - Do not invent facts not supported by source articles.
 - If information is limited, say so clearly.
 
+## Language Handling Rules
+
+- Intermediate runtime files may keep source-language text, including English and Simplified Chinese, for traceability and debugging.
+- Runtime files that may preserve original source text include:
+  - `data/runtime/raw_articles.json`
+  - `data/runtime/normalized_articles.json`
+  - `data/runtime/clean_articles.json`
+  - `data/runtime/news_clusters.json`
+  - `data/runtime/scored_clusters.json`
+- All user-facing output must be Traditional Chinese.
+- User-facing output includes:
+  - `data/runtime/summarized_clusters.json`
+  - `data/daily/latest.json`
+  - `data/archive/YYYY-MM-DD.json`
+  - Website-displayed titles, summaries, key points, heat or score reasons, and watch-next items.
+- Do not show `cluster_title_candidate` on the website as the official title unless it has been converted to Traditional Chinese.
+- Formal display headlines should use `headline_zh_hant` or `summary.headline_zh_hant`.
+- Do not silently fall back to English or Simplified Chinese for user-facing fields.
+
 ## Source Rules
 
 MVP sources are limited to:
@@ -124,4 +143,3 @@ Each card should include:
 - Related assets
 - Summary sections
 - Source links
-

@@ -1,0 +1,26 @@
+---
+import BriefDashboard from "../components/BriefDashboard.astro";
+import "../styles/global.css";
+import latestBrief from "../../data/daily/latest.json";
+---
+
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tiny Dream News V2 static prototype for a global finance and technology morning brief."
+    />
+    <title>Tiny Dream News V2</title>
+  </head>
+  <body>
+    <BriefDashboard
+      brief={latestBrief}
+      pageLabel="Latest Brief"
+      archiveHref="/archive/2026-06-19/"
+    />
+  </body>
+</html>
+

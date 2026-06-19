@@ -1,0 +1,9 @@
+{
+  "max_detailed_summaries": 10,
+  "max_brief_summaries": 20,
+  "max_total_summaries": 30,
+  "mock_mode": true,
+  "language": "zh-Hant",
+  "tone": "neutral",
+  "no_investment_advice": true
+}

@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-06-19T16:30:36.273Z",
+  "date": "2026-06-19",
+  "input_cluster_count": 92,
+  "output_cluster_count": 92,
+  "archive_path": "data/archive/2026-06-19.json",
+  "latest_path": "data/daily/latest.json",
+  "top_five_cluster_ids": [
+    "news-cluster-003",
+    "news-cluster-006",
+    "news-cluster-044",
+    "news-cluster-027",
+    "news-cluster-014"
+  ],
+  "warnings": [],
+  "validation_results": {
+    "latest_has_required_fields": true,
+    "top_five_count": 5,
+    "clusters_sorted_by_heat_score": true,
+    "official_headlines_use_zh_hant": true,
+    "source_score_report_available": true
+  }
+}

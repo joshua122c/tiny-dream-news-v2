@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-06-19T16:30:36.162Z",
+  "input_file": "data/runtime/scored_clusters.json",
+  "input_cluster_count": 92,
+  "detailed_summary_count": 10,
+  "brief_summary_count": 20,
+  "skipped_count": 62,
+  "skipped_budget_limit_count": 0,
+  "mock_mode": true,
+  "model": "mock-local-deterministic-zh-hant",
+  "successful_ai_summary_count": 0,
+  "failed_fallback_count": 0,
+  "warnings": [],
+  "estimated_total_ai_usage": {
+    "estimated_input_tokens": 6537,
+    "estimated_output_tokens": 7800,
+    "estimated_total_tokens": 14337,
+    "estimated_neurons": 14337,
+    "credits_consumed": false,
+    "daily_budget_neurons": null,
+    "note": "Mock mode only; no Cloudflare AI call was made."
+  },
+  "top_summarized_clusters": [
+    {
+      "cluster_id": "news-cluster-003",
+      "summary_type": "detailed",
+      "headline_zh_hant": "重點主題：商品、地緣政治｜Oil",
+      "heat_score": 78.85,
+      "heat_level": "high",
+      "ai_status": "mock_generated"
+    },
+    {
+      "cluster_id": "news-cluster-006",
+      "summary_type": "detailed",
+      "headline_zh_hant": "重點主題：半導體、科技公司、美股｜Amazon、Nvidia、SpaceX",
+      "heat_score": 68.4,
+      "heat_level": "medium",
+      "ai_status": "mock_generated"
+    },
+    {
+      "cluster_id": "news-cluster-044",
+      "summary_type": "detailed",
+      "headline_zh_hant": "重點主題：宏觀、美股｜Federal Reserve、Inflation",
+      "heat_score": 67.1,
+      "heat_level": "medium",
+      "ai_status": "mock_generated"
+    },
+    {
+      "cluster_id": "news-cluster-027",
+      "summary_type": "detailed",
+      "headline_zh_hant": "重點主題：AI、科技公司｜Amazon、OpenAI",
+      "heat_score": 44.5,
+      "heat_level": "low",
+      "ai_status": "mock_generated"
+    },
+    {
+      "cluster_id": "news-cluster-014",
+      "summary_type": "detailed",
+      "headline_zh_hant": "重點主題：AI、半導體｜Nvidia",
+      "heat_score": 42.8,
+      "heat_level": "low",
+      "ai_status": "mock_generated"
+    },
+    {
+      "cluster_id": "news-cluster-052",
+      "summary_type": "detailed",
+      "headline_zh_hant": "重點主題：外匯、宏觀｜Interest Rates、US Dollar",
+      "heat_score": 41.75,
+      "heat_level": "low",
+      "ai_status": "mock_generated"
+    },
+    {
+      "cluster_id": "news-cluster-085",
+      "summary_type": "detailed",
+      "headline_zh_hant": "重點主題：AI、半導體、科技公司｜Amazon、Nvidia",
+      "heat_score": 40.8,
+      "heat_level": "low",
+      "ai_status": "mock_generated"
+    },
+    {
+      "cluster_id": "news-cluster-078",
+      "summary_type": "detailed",
+      "headline_zh_hant": "重點主題：AI、科技公司、美股｜Alphabet、OpenAI",
+      "heat_score": 40.6,
+      "heat_level": "low",
+      "ai_status": "mock_generated"
+    },
+    {
+      "cluster_id": "news-cluster-037",
+      "summary_type": "detailed",
+      "headline_zh_hant": "重點主題：宏觀",
+      "heat_score": 38.75,
+      "heat_level": "low",
+      "ai_status": "mock_generated"
+    },
+    {
+      "cluster_id": "news-cluster-042",
+      "summary_type": "detailed",
+      "headline_zh_hant": "重點主題：AI、半導體",
+      "heat_score": 38.55,
+      "heat_level": "low",
+      "ai_status": "mock_generated"
+    }
+  ],
+  "config_files_used": [
+    "config/ai-summary-config.json"
+  ]
+}

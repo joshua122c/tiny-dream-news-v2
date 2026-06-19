@@ -1,0 +1,130 @@
+{
+  "generated_at": "2026-06-19T16:30:27.594Z",
+  "date": "2026-06-19",
+  "mode": "mock-ai",
+  "steps_run": [
+    {
+      "step": "fetch_news_and_normalize",
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/fetch-news.mjs",
+      "started_at": "2026-06-19T16:30:27.596Z"
+    },
+    {
+      "step": "clean_classify_deduplicate",
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/clean-dedupe-articles.mjs",
+      "started_at": "2026-06-19T16:30:35.583Z"
+    },
+    {
+      "step": "cluster_related_articles",
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/cluster-news.mjs",
+      "started_at": "2026-06-19T16:30:35.787Z"
+    },
+    {
+      "step": "score_clusters",
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/score-clusters.mjs",
+      "started_at": "2026-06-19T16:30:35.985Z"
+    },
+    {
+      "step": "summarize_clusters",
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/summarize-clusters-mock.mjs",
+      "started_at": "2026-06-19T16:30:36.091Z"
+    },
+    {
+      "step": "generate_final_daily_brief_json",
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/generate-daily-brief.mjs --date 2026-06-19",
+      "started_at": "2026-06-19T16:30:36.204Z"
+    },
+    {
+      "step": "enhance_morning_brief",
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/enhance-daily-brief-ai.mjs",
+      "started_at": "2026-06-19T16:30:36.328Z"
+    },
+    {
+      "step": "validate_final_output",
+      "command": "C:\\Program Files\\nodejs\\node.exe scripts/validate-daily-brief.mjs --date 2026-06-19",
+      "started_at": "2026-06-19T16:30:36.435Z"
+    },
+    {
+      "step": "build_static_website",
+      "command": "cmd.exe /c .\\node_modules\\.bin\\astro.CMD build",
+      "started_at": "2026-06-19T16:30:36.536Z"
+    }
+  ],
+  "steps_succeeded": [
+    {
+      "step": "fetch_news_and_normalize",
+      "exit_code": 0,
+      "started_at": "2026-06-19T16:30:27.596Z",
+      "finished_at": "2026-06-19T16:30:35.583Z"
+    },
+    {
+      "step": "clean_classify_deduplicate",
+      "exit_code": 0,
+      "started_at": "2026-06-19T16:30:35.583Z",
+      "finished_at": "2026-06-19T16:30:35.787Z"
+    },
+    {
+      "step": "cluster_related_articles",
+      "exit_code": 0,
+      "started_at": "2026-06-19T16:30:35.787Z",
+      "finished_at": "2026-06-19T16:30:35.985Z"
+    },
+    {
+      "step": "score_clusters",
+      "exit_code": 0,
+      "started_at": "2026-06-19T16:30:35.985Z",
+      "finished_at": "2026-06-19T16:30:36.091Z"
+    },
+    {
+      "step": "summarize_clusters",
+      "exit_code": 0,
+      "started_at": "2026-06-19T16:30:36.091Z",
+      "finished_at": "2026-06-19T16:30:36.200Z"
+    },
+    {
+      "step": "generate_final_daily_brief_json",
+      "exit_code": 0,
+      "started_at": "2026-06-19T16:30:36.204Z",
+      "finished_at": "2026-06-19T16:30:36.328Z"
+    },
+    {
+      "step": "enhance_morning_brief",
+      "exit_code": 0,
+      "started_at": "2026-06-19T16:30:36.328Z",
+      "finished_at": "2026-06-19T16:30:36.435Z"
+    },
+    {
+      "step": "validate_final_output",
+      "exit_code": 0,
+      "started_at": "2026-06-19T16:30:36.435Z",
+      "finished_at": "2026-06-19T16:30:36.536Z"
+    },
+    {
+      "step": "build_static_website",
+      "exit_code": 0,
+      "started_at": "2026-06-19T16:30:36.536Z",
+      "finished_at": "2026-06-19T16:30:41.599Z"
+    }
+  ],
+  "steps_failed": [],
+  "important_output_files": [
+    "data/runtime/raw_articles.json",
+    "data/runtime/normalized_articles.json",
+    "data/runtime/clean_articles.json",
+    "data/runtime/news_clusters.json",
+    "data/runtime/scored_clusters.json",
+    "data/runtime/summarized_clusters.json",
+    "data/daily/latest.json",
+    "data/archive/2026-06-19.json",
+    "data/archive/index.json",
+    "data/runtime/pipeline_report.json"
+  ],
+  "article_count": 111,
+  "clean_article_count": 111,
+  "cluster_count": 92,
+  "summarized_cluster_count": 30,
+  "latest_json_generated": true,
+  "archive_json_generated": true,
+  "website_build_status": "success",
+  "warnings": [],
+  "errors": []
+}

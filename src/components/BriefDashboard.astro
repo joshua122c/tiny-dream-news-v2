@@ -1,0 +1,316 @@
+---
+type MarketMood = {
+  label: string;
+  summary: string;
+};
+
+type TopStory = {
+  rank: number;
+  cluster_id: string;
+  headline_zh?: string;
+  headline_zh_hant?: string;
+  heat_score?: number;
+  categories?: string[];
+  related_assets?: string[];
+};
+
+type SourceLink = {
+  name?: string;
+  source?: string;
+  title: string;
+  url: string;
+  published_at: string;
+};
+
+type Cluster = {
+  cluster_id: string;
+  headline_zh?: string;
+  headline_zh_hant?: string;
+  summary_zh_hant?: string;
+  what_happened_zh_hant?: string;
+  key_points_zh_hant?: string[];
+  why_it_matters_zh_hant?: string;
+  watch_next_zh_hant?: string;
+  summary_type?: string;
+  heat_score: number;
+  heat_reasons: string[];
+  categories: string[];
+  related_markets?: string[];
+  related_assets: string[];
+  source_links?: SourceLink[];
+  sources?: SourceLink[];
+  source_count?: number;
+  ai_status?: string;
+  summary_quality_flags?: string[];
+  summary?: {
+    what_happened: string;
+    key_points: string[];
+    why_it_matters: string;
+    watch_next: string[];
+  };
+};
+
+type SourceStatus = {
+  source: string;
+  status: string;
+  articles_found?: number;
+  article_count?: number;
+};
+
+type BriefData = {
+  date: string;
+  generated_at: string;
+  market_mood: MarketMood | string;
+  market_mood_label_zh_hant?: string;
+  morning_brief?: string;
+  morning_brief_zh_hant?: string;
+  top_five: TopStory[];
+  article_count?: number;
+  source_count?: number;
+  cluster_count?: number;
+  stats?: {
+    source_count: number;
+    article_count: number;
+    cluster_count: number;
+  };
+  clusters: Cluster[];
+  source_status: SourceStatus[];
+};
+
+const {
+  brief,
+  pageLabel = "Latest Brief",
+  archiveHref,
+  homeHref,
+} = Astro.props as {
+  brief: BriefData;
+  pageLabel?: string;
+  archiveHref?: string;
+  homeHref?: string;
+};
+
+const sortedClusters = [...brief.clusters].sort((a, b) => b.heat_score - a.heat_score);
+const categories = Array.from(new Set(sortedClusters.flatMap((cluster) => cluster.categories))).sort();
+const moodLabel =
+  typeof brief.market_mood === "string"
+    ? (brief.market_mood_label_zh_hant ?? brief.market_mood)
+    : brief.market_mood.label;
+const moodSummary =
+  typeof brief.market_mood === "string"
+    ? (brief.market_mood_label_zh_hant ?? brief.market_mood)
+    : brief.market_mood.summary;
+const morningBrief = brief.morning_brief_zh_hant ?? brief.morning_brief ?? "";
+const sourceCount = brief.stats?.source_count ?? brief.source_count ?? 0;
+const articleCount = brief.stats?.article_count ?? brief.article_count ?? 0;
+const clusterCount = brief.stats?.cluster_count ?? brief.cluster_count ?? sortedClusters.length;
+const clusterSources = (cluster: Cluster) => cluster.source_links ?? cluster.sources ?? [];
+const sourceName = (source: SourceLink) => source.source ?? source.name ?? "";
+const clusterHeadline = (cluster: Cluster) => cluster.headline_zh_hant ?? cluster.headline_zh ?? "";
+const storyHeadline = (story: TopStory) => story.headline_zh_hant ?? story.headline_zh ?? "";
+const whatHappened = (cluster: Cluster) => cluster.what_happened_zh_hant ?? cluster.summary?.what_happened ?? "";
+const whyItMatters = (cluster: Cluster) => cluster.why_it_matters_zh_hant ?? cluster.summary?.why_it_matters ?? "";
+const keyPoints = (cluster: Cluster) => cluster.key_points_zh_hant ?? cluster.summary?.key_points ?? [];
+const watchNext = (cluster: Cluster) => {
+  if (cluster.watch_next_zh_hant) return [cluster.watch_next_zh_hant];
+  return cluster.summary?.watch_next ?? [];
+};
+const generatedTime = new Intl.DateTimeFormat("zh-HK", {
+  dateStyle: "medium",
+  timeStyle: "short",
+  timeZone: "Asia/Hong_Kong",
+}).format(new Date(brief.generated_at));
+const totalSourceMentions = sortedClusters.reduce((sum, cluster) => sum + clusterSources(cluster).length, 0);
+---
+
+<main class="brief-shell">
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">TD</span>
+      <span>
+        <strong>Tiny Dream News V2</strong>
+        <small>{pageLabel}</small>
+      </span>
+    </a>
+    <nav class="top-actions" aria-label="Brief navigation">
+      {homeHref && <a href={homeHref}>Latest</a>}
+      {archiveHref && <a href={archiveHref}>Archive</a>}
+    </nav>
+  </header>
+
+  <section class="brief-hero" aria-labelledby="brief-title">
+    <div class="hero-main">
+      <p class="eyebrow">Global finance and technology morning brief</p>
+      <h1 id="brief-title">Tiny Dream News V2</h1>
+      <div class="generated-row">
+        <span>Generated</span>
+        <time datetime={brief.generated_at}>{generatedTime}</time>
+      </div>
+      <div class="mood-strip">
+        <span class="mood-label">{moodLabel}</span>
+        <p>{moodSummary}</p>
+      </div>
+      <p class="mainline">{morningBrief}</p>
+    </div>
+
+    <aside class="top-five" aria-labelledby="top-five-title">
+      <div class="section-heading">
+        <p>Priority Queue</p>
+        <h2 id="top-five-title">Top 5 Stories</h2>
+      </div>
+      <ol>
+        {brief.top_five.map((story) => (
+          <li>
+            <a href={`#${story.cluster_id}`}>
+              <span>{story.rank}</span>
+              <strong>{storyHeadline(story)}</strong>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </aside>
+  </section>
+
+  <section class="stats-grid" aria-label="Daily brief statistics">
+    <div>
+      <span>{sourceCount}</span>
+      <p>Sources analyzed</p>
+    </div>
+    <div>
+      <span>{articleCount}</span>
+      <p>Articles fetched</p>
+    </div>
+    <div>
+      <span>{clusterCount}</span>
+      <p>Clusters generated</p>
+    </div>
+    <div>
+      <span>{totalSourceMentions}</span>
+      <p>Source links shown</p>
+    </div>
+  </section>
+
+  <section class="filter-band" aria-labelledby="filter-title">
+    <div>
+      <p class="eyebrow">Category Filter</p>
+      <h2 id="filter-title">Themes sorted by heat score</h2>
+    </div>
+    <div class="filter-controls" role="list" aria-label="Filter news cards by category">
+      <button type="button" class="filter-button is-active" data-filter="all">All</button>
+      {categories.map((category) => (
+        <button type="button" class="filter-button" data-filter={category}>{category}</button>
+      ))}
+    </div>
+  </section>
+
+  <section class="cluster-list" aria-live="polite">
+    {sortedClusters.map((cluster) => (
+      <article
+        class="cluster-card"
+        id={cluster.cluster_id}
+        data-categories={cluster.categories.join("|")}
+      >
+        <div class="cluster-score">
+          <span>{cluster.heat_score}</span>
+          <p>Heat score</p>
+        </div>
+
+        <div class="cluster-body">
+          <div class="cluster-header">
+            <div>
+              <h2>{clusterHeadline(cluster)}</h2>
+              <div class="tag-row">
+                {cluster.categories.map((category) => <span>{category}</span>)}
+              </div>
+            </div>
+            <div class="source-count">
+              <span>{cluster.source_count ?? clusterSources(cluster).length}</span>
+              <p>sources</p>
+            </div>
+          </div>
+
+          <div class="asset-row" aria-label="Related assets">
+            {cluster.related_assets.map((asset) => <span>{asset}</span>)}
+          </div>
+
+          <div class="summary-grid">
+            <section>
+              <h3>What happened</h3>
+              <p>{whatHappened(cluster)}</p>
+            </section>
+            <section>
+              <h3>Why it matters</h3>
+              <p>{whyItMatters(cluster)}</p>
+            </section>
+            <section>
+              <h3>Key points</h3>
+              <ul>
+                {keyPoints(cluster).map((point) => <li>{point}</li>)}
+              </ul>
+            </section>
+            <section>
+              <h3>Watch next</h3>
+              <ul>
+                {watchNext(cluster).map((item) => <li>{item}</li>)}
+              </ul>
+            </section>
+          </div>
+
+          <div class="heat-reasons">
+            <h3>Heat reasons</h3>
+            <ul>
+              {cluster.heat_reasons.map((reason) => <li>{reason}</li>)}
+            </ul>
+          </div>
+
+          <div class="source-links">
+            <h3>Main sources</h3>
+            <div>
+              {clusterSources(cluster).map((source) => (
+                <a href={source.url} target="_blank" rel="noreferrer">
+                  <span>{sourceName(source)}</span>
+                  <strong>{source.title}</strong>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </article>
+    ))}
+  </section>
+
+  <section class="source-status" aria-labelledby="source-status-title">
+    <div class="section-heading">
+      <p>Sample source status</p>
+      <h2 id="source-status-title">MVP Sources</h2>
+    </div>
+    <div class="source-status-grid">
+      {brief.source_status.map((source) => (
+        <div>
+          <strong>{source.source}</strong>
+          <span>{source.article_count ?? source.articles_found ?? 0} articles</span>
+        </div>
+      ))}
+    </div>
+  </section>
+</main>
+
+<script>
+  const filterButtons = Array.from(document.querySelectorAll(".filter-button"));
+  const cards = Array.from(document.querySelectorAll(".cluster-card"));
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const filter = button.getAttribute("data-filter") || "all";
+
+      filterButtons.forEach((item) => {
+        item.classList.toggle("is-active", item === button);
+      });
+
+      cards.forEach((card) => {
+        const categories = (card.getAttribute("data-categories") || "").split("|");
+        const shouldShow = filter === "all" || categories.includes(filter);
+        card.toggleAttribute("hidden", !shouldShow);
+      });
+    });
+  });
+</script>

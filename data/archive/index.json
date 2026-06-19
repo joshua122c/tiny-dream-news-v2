@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-06-19T16:30:36.299Z",
+  "items": [
+    {
+      "date": "2026-06-20",
+      "generated_at": "2026-06-19T16:15:26.741Z",
+      "path": "data/archive/2026-06-20.json",
+      "top_headline_zh_hant": "重點主題：AI、外匯、宏觀｜Federal Reserve、Inflation、Interest Rates",
+      "cluster_count": 102
+    },
+    {
+      "date": "2026-06-19",
+      "generated_at": "2026-06-19T16:30:36.273Z",
+      "path": "data/archive/2026-06-19.json",
+      "top_headline_zh_hant": "重點主題：商品、地緣政治｜Oil",
+      "cluster_count": 92
+    }
+  ]
+}

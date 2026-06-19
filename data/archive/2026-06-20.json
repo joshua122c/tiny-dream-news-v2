@@ -1,0 +1,5086 @@
+{
+  "date": "2026-06-20",
+  "generated_at": "2026-06-19T16:15:26.741Z",
+  "timezone": "Asia/Hong_Kong",
+  "site_title": "Tiny Dream News V2",
+  "market_mood": "risk_off",
+  "market_mood_label_zh_hant": "風險偏好轉弱",
+  "morning_brief_zh_hant": "今日全球財經科技焦點集中在AI、外匯、宏觀、美股、商品。排名較前的主題包括重點主題：AI、外匯、宏觀｜Federal Reserve、Inflation、Interest Rates、重點主題：外匯、宏觀｜Interest Rates、US Dollar、重點主題：宏觀｜Federal Reserve、Interest Rates，顯示投資者仍在評估宏觀變化與科技成長之間的關係。整體市場訊號為風險偏好轉弱，後續可留意高熱度主題是否獲更多來源確認，以及相關資產與政策訊號是否有新的公開資訊。",
+  "top_five": [
+    {
+      "rank": 1,
+      "headline_zh_hant": "重點主題：AI、外匯、宏觀｜Federal Reserve、Inflation、Interest Rates",
+      "heat_score": 88.25,
+      "categories": [
+        "AI",
+        "外匯",
+        "宏觀",
+        "美股"
+      ],
+      "related_assets": [
+        "Federal Reserve",
+        "Inflation",
+        "Interest Rates",
+        "US Dollar"
+      ],
+      "cluster_id": "news-cluster-001",
+      "brief_reason_zh_hant": "此主題排名第 1，heat score 為 88.25，主要涉及 AI、外匯、宏觀，因此列入今日 Top 5。"
+    },
+    {
+      "rank": 2,
+      "headline_zh_hant": "重點主題：外匯、宏觀｜Interest Rates、US Dollar",
+      "heat_score": 62.75,
+      "categories": [
+        "外匯",
+        "宏觀"
+      ],
+      "related_assets": [
+        "Interest Rates",
+        "US Dollar"
+      ],
+      "cluster_id": "news-cluster-021",
+      "brief_reason_zh_hant": "此主題排名第 2，heat score 為 62.75，主要涉及 外匯、宏觀，因此列入今日 Top 5。"
+    },
+    {
+      "rank": 3,
+      "headline_zh_hant": "重點主題：宏觀｜Federal Reserve、Interest Rates",
+      "heat_score": 62.5,
+      "categories": [
+        "宏觀"
+      ],
+      "related_assets": [
+        "Federal Reserve",
+        "Interest Rates"
+      ],
+      "cluster_id": "news-cluster-005",
+      "brief_reason_zh_hant": "此主題排名第 3，heat score 為 62.5，主要涉及 宏觀，因此列入今日 Top 5。"
+    },
+    {
+      "rank": 4,
+      "headline_zh_hant": "重點主題：商品、外匯、宏觀｜Interest Rates、Oil、US Dollar",
+      "heat_score": 53.95,
+      "categories": [
+        "商品",
+        "外匯",
+        "宏觀"
+      ],
+      "related_assets": [
+        "Interest Rates",
+        "Oil",
+        "US Dollar"
+      ],
+      "cluster_id": "news-cluster-016",
+      "brief_reason_zh_hant": "此主題排名第 4，heat score 為 53.95，主要涉及 商品、外匯、宏觀，因此列入今日 Top 5。"
+    },
+    {
+      "rank": 5,
+      "headline_zh_hant": "重點主題：商品、宏觀｜Inflation、Interest Rates",
+      "heat_score": 50.95,
+      "categories": [
+        "商品",
+        "宏觀"
+      ],
+      "related_assets": [
+        "Inflation",
+        "Interest Rates"
+      ],
+      "cluster_id": "news-cluster-012",
+      "brief_reason_zh_hant": "此主題排名第 5，heat score 為 50.95，主要涉及 商品、宏觀，因此列入今日 Top 5。"
+    }
+  ],
+  "stats": {
+    "source_count": 6,
+    "article_count": 130,
+    "cluster_count": 102,
+    "summarized_cluster_count": 30,
+    "detailed_summary_count": 10,
+    "brief_summary_count": 20,
+    "skipped_cluster_count": 72,
+    "very_high_heat_count": 1,
+    "high_heat_count": 0,
+    "generated_at": "2026-06-19T16:15:26.741Z"
+  },
+  "clusters": [
+    {
+      "cluster_id": "news-cluster-001",
+      "rank": 1,
+      "headline_zh_hant": "重點主題：AI、外匯、宏觀｜Federal Reserve、Inflation、Interest Rates",
+      "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 AI、外匯、宏觀、美股，來源包括 CNBC、MarketWatch、華爾街見聞。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 3 個來源與 4 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 88.25，正式排序仍以非 AI heat scoring 結果為準。",
+        "主要熱度原因包括：同一主題被 3 個來源報導；包含高權重來源 CNBC 與 華爾街見聞。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為同一主題被 3 個來源報導，並且包含高權重來源 CNBC 與 華爾街見聞，並且涉及 AI、宏觀、美股 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+      "summary_type": "detailed",
+      "heat_score": 88.25,
+      "heat_level": "very_high",
+      "heat_reasons": [
+        "同一主題被 3 個來源報導",
+        "包含高權重來源 CNBC 與 華爾街見聞",
+        "涉及 AI、宏觀、美股 等高關注主題",
+        "涉及 Fed、dollar、inflation、interest rates 等重要市場關鍵詞",
+        "新聞發布時間較新",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "AI",
+        "外匯",
+        "宏觀",
+        "美股"
+      ],
+      "related_markets": [
+        "AI",
+        "外匯",
+        "宏觀",
+        "美股"
+      ],
+      "related_assets": [
+        "Federal Reserve",
+        "Inflation",
+        "Interest Rates",
+        "US Dollar"
+      ],
+      "source_count": 3,
+      "source_links": [
+        {
+          "source": "MarketWatch",
+          "title": "Why the Fed’s hawkish stance signals a step-change in U.S. dollar sentiment — and a new direction",
+          "url": "https://www.marketwatch.com/story/why-the-feds-hawkish-stance-signals-a-step-change-in-u-s-dollar-sentiment-and-a-new-direction-742f1fff?mod=mw_rss_topstories",
+          "published_at": "2026-06-19T11:17:00.000Z"
+        },
+        {
+          "source": "華爾街見聞",
+          "title": "沃什放鹰，美元“转折点”来了？",
+          "url": "https://wallstreetcn.com/articles/3775084",
+          "published_at": "2026-06-19T09:08:47.000Z"
+        },
+        {
+          "source": "CNBC",
+          "title": "Markets are set for a much more hawkish Warsh Fed than expected",
+          "url": "https://www.cnbc.com/2026/06/18/markets-are-set-for-a-much-more-hawkish-warsh-fed-than-expected.html",
+          "published_at": "2026-06-18T18:04:41.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "mock_summary",
+        "no_real_ai_call"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Why the Fed’s hawkish stance signals a step-change in U.S. dollar sentiment — and a new direction",
+        "latest_published_at": "2026-06-19T11:17:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-021",
+      "rank": 2,
+      "headline_zh_hant": "重點主題：外匯、宏觀｜Interest Rates、US Dollar",
+      "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 外匯、宏觀，來源包括 CNBC、華爾街見聞。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 2 個來源與 2 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 62.75，正式排序仍以非 AI heat scoring 結果為準。",
+        "主要熱度原因包括：同一主題被 2 個來源報導；包含高權重來源 CNBC 與 華爾街見聞。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為同一主題被 2 個來源報導，並且包含高權重來源 CNBC 與 華爾街見聞，並且涉及 宏觀 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+      "summary_type": "detailed",
+      "heat_score": 62.75,
+      "heat_level": "medium",
+      "heat_reasons": [
+        "同一主題被 2 個來源報導",
+        "包含高權重來源 CNBC 與 華爾街見聞",
+        "涉及 宏觀 等高關注主題",
+        "涉及 dollar、interest rates、yen、利率 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "外匯",
+        "宏觀"
+      ],
+      "related_markets": [
+        "外匯",
+        "宏觀"
+      ],
+      "related_assets": [
+        "Interest Rates",
+        "US Dollar"
+      ],
+      "source_count": 2,
+      "source_links": [
+        {
+          "source": "華爾街見聞",
+          "title": "161！日元跌至近40年低位，财长重申“将采取大胆行动”",
+          "url": "https://wallstreetcn.com/articles/3775080",
+          "published_at": "2026-06-19T07:29:36.000Z"
+        },
+        {
+          "source": "CNBC",
+          "title": "Yen slides past 161 against the dollar, nearing 40-year low and reviving intervention bets",
+          "url": "https://www.cnbc.com/2026/06/19/japan-yen-161-dollar-intervention-risk-currency-markets.html",
+          "published_at": "2026-06-19T03:44:21.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "mock_summary",
+        "no_real_ai_call"
+      ],
+      "debug": {
+        "cluster_title_candidate": "161！日元跌至近40年低位，财长重申“将采取大胆行动”",
+        "latest_published_at": "2026-06-19T07:29:36.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-005",
+      "rank": 3,
+      "headline_zh_hant": "重點主題：宏觀｜Federal Reserve、Interest Rates",
+      "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 宏觀，來源包括 CNBC、MarketWatch、Yahoo Finance。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 3 個來源與 1 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 62.5，正式排序仍以非 AI heat scoring 結果為準。",
+        "主要熱度原因包括：同一主題被 3 個來源報導；包含高權重來源 CNBC 與 MarketWatch。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為同一主題被 3 個來源報導，並且包含高權重來源 CNBC 與 MarketWatch，並且涉及 宏觀 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+      "summary_type": "detailed",
+      "heat_score": 62.5,
+      "heat_level": "medium",
+      "heat_reasons": [
+        "同一主題被 3 個來源報導",
+        "包含高權重來源 CNBC 與 MarketWatch",
+        "涉及 宏觀 等高關注主題",
+        "涉及 Fed、interest rates 等重要市場關鍵詞",
+        "新聞發布時間較新",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [
+        "Federal Reserve",
+        "Interest Rates"
+      ],
+      "source_count": 3,
+      "source_links": [
+        {
+          "source": "MarketWatch",
+          "title": "Warsh’s task forces give the Fed wiggle room to put off changing rates until December",
+          "url": "https://www.marketwatch.com/story/warshs-task-forces-give-the-fed-wiggle-room-to-put-off-changing-rates-until-december-364fc1fc?mod=mw_rss_topstories",
+          "published_at": "2026-06-19T11:00:00.000Z"
+        },
+        {
+          "source": "CNBC",
+          "title": "Kalshi traders see greater than 50% odds the Fed will hike rates this year",
+          "url": "https://www.cnbc.com/2026/06/18/kalshi-traders-see-greater-than-50percent-odds-the-fed-will-hike-rates-this-year.html",
+          "published_at": "2026-06-18T18:33:43.000Z"
+        },
+        {
+          "source": "Yahoo Finance",
+          "title": "Fed Warsh era kicks off with big surprise no one saw coming",
+          "url": "https://finance.yahoo.com/economy/policy/articles/fed-warsh-era-kicks-off-043700459.html",
+          "published_at": "2026-06-18T04:37:00.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "mock_summary",
+        "no_real_ai_call"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Kalshi traders see greater than 50% odds the Fed will hike rates this year",
+        "latest_published_at": "2026-06-19T11:00:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-016",
+      "rank": 4,
+      "headline_zh_hant": "重點主題：商品、外匯、宏觀｜Interest Rates、Oil、US Dollar",
+      "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 商品、外匯、宏觀，來源包括 華爾街見聞。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 3 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 53.95，正式排序仍以非 AI heat scoring 結果為準。",
+        "主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 華爾街見聞。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 華爾街見聞，並且涉及 宏觀 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+      "summary_type": "detailed",
+      "heat_score": 53.95,
+      "heat_level": "medium",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 華爾街見聞",
+        "涉及 宏觀 等高關注主題",
+        "涉及 dollar、interest rates、oil、利率 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "商品",
+        "外匯",
+        "宏觀"
+      ],
+      "related_markets": [
+        "商品",
+        "外匯",
+        "宏觀"
+      ],
+      "related_assets": [
+        "Interest Rates",
+        "Oil",
+        "US Dollar"
+      ],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "華爾街見聞",
+          "title": "霍尔木兹海峡通航，对全球流动性有何影响？",
+          "url": "https://wallstreetcn.com/articles/3775083",
+          "published_at": "2026-06-19T08:13:46.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "霍尔木兹海峡通航，对全球流动性有何影响？",
+        "latest_published_at": "2026-06-19T08:13:46.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-012",
+      "rank": 5,
+      "headline_zh_hant": "重點主題：商品、宏觀｜Inflation、Interest Rates",
+      "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 商品、宏觀，來源包括 華爾街見聞。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 50.95，正式排序仍以非 AI heat scoring 結果為準。",
+        "主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 華爾街見聞。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 華爾街見聞，並且涉及 宏觀 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+      "summary_type": "detailed",
+      "heat_score": 50.95,
+      "heat_level": "medium",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 華爾街見聞",
+        "涉及 宏觀 等高關注主題",
+        "涉及 inflation、interest rates、半导体、通胀 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "商品",
+        "宏觀"
+      ],
+      "related_markets": [
+        "商品",
+        "宏觀"
+      ],
+      "related_assets": [
+        "Inflation",
+        "Interest Rates"
+      ],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "華爾街見聞",
+          "title": "能源成本推升通胀压力！韩国5月PPI同比涨8.5% 创近四年新高",
+          "url": "https://wallstreetcn.com/articles/3775089",
+          "published_at": "2026-06-19T09:51:55.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "能源成本推升通胀压力！韩国5月PPI同比涨8.5% 创近四年新高",
+        "latest_published_at": "2026-06-19T09:51:55.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-059",
+      "rank": 6,
+      "headline_zh_hant": "重點主題：AI、半導體、科技公司｜Amazon、Nvidia",
+      "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 AI、半導體、科技公司，來源包括 TechCrunch。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 3 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 43.8，正式排序仍以非 AI heat scoring 結果為準。",
+        "主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 TechCrunch。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 TechCrunch，並且涉及 AI、半導體 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+      "summary_type": "detailed",
+      "heat_score": 43.8,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 AI、半導體 等高關注主題",
+        "涉及 Amazon、Nvidia、半導體 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "AI",
+        "半導體",
+        "科技公司"
+      ],
+      "related_markets": [
+        "AI",
+        "半導體",
+        "科技公司"
+      ],
+      "related_assets": [
+        "Amazon",
+        "Nvidia"
+      ],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips",
+          "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
+          "published_at": "2026-06-18T18:22:13.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Amazon hopes to challenge Nvidia more directly by selling its AI chips",
+        "latest_published_at": "2026-06-18T18:22:13.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-047",
+      "rank": 7,
+      "headline_zh_hant": "重點主題：AI、科技公司、美股｜Alphabet、OpenAI",
+      "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 AI、科技公司、美股，來源包括 TechCrunch。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 3 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 40.6，正式排序仍以非 AI heat scoring 結果為準。",
+        "主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 TechCrunch。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 TechCrunch，並且涉及 AI、美股 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+      "summary_type": "detailed",
+      "heat_score": 40.6,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 AI、美股 等高關注主題",
+        "涉及 Google、OpenAI 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "AI",
+        "科技公司",
+        "美股"
+      ],
+      "related_markets": [
+        "AI",
+        "科技公司",
+        "美股"
+      ],
+      "related_assets": [
+        "Alphabet",
+        "OpenAI"
+      ],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "OpenAI is bringing on some big guns in the lead-up to its IPO",
+          "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
+          "published_at": "2026-06-18T19:59:22.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "OpenAI is bringing on some big guns in the lead-up to its IPO",
+        "latest_published_at": "2026-06-18T19:59:22.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-019",
+      "rank": 8,
+      "headline_zh_hant": "重點主題：半導體｜ASML",
+      "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 半導體，來源包括 TechCrunch。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 1 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 39.8，正式排序仍以非 AI heat scoring 結果為準。",
+        "主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 TechCrunch。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 TechCrunch，並且涉及 半導體 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+      "summary_type": "detailed",
+      "heat_score": 39.8,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 半導體 等高關注主題",
+        "涉及 ASML、China、半導體 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "半導體"
+      ],
+      "related_markets": [
+        "半導體"
+      ],
+      "related_assets": [
+        "ASML"
+      ],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "The US says ASML’s top chip tool may be in China. ASML says it isn’t",
+          "url": "https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/",
+          "published_at": "2026-06-19T07:59:12.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "The US says ASML’s top chip tool may be in China. ASML says it isn’t",
+        "latest_published_at": "2026-06-19T07:59:12.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-011",
+      "rank": 9,
+      "headline_zh_hant": "重點主題：商品、宏觀｜Federal Reserve、Gold",
+      "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 商品、宏觀，來源包括 MarketWatch。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 39.7，正式排序仍以非 AI heat scoring 結果為準。",
+        "主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 MarketWatch。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 MarketWatch，並且涉及 宏觀 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+      "summary_type": "detailed",
+      "heat_score": 39.7,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 MarketWatch",
+        "涉及 宏觀 等高關注主題",
+        "涉及 Fed、gold 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "商品",
+        "宏觀"
+      ],
+      "related_markets": [
+        "商品",
+        "宏觀"
+      ],
+      "related_assets": [
+        "Federal Reserve",
+        "Gold"
+      ],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "MarketWatch",
+          "title": "The Fed’s new hawkish reality just forced Goldman Sachs to slash its gold forecast by $500",
+          "url": "https://www.marketwatch.com/story/the-feds-new-hawkish-reality-just-forced-goldman-sachs-to-slash-its-gold-forecast-by-500-c166d99f?mod=mw_rss_topstories",
+          "published_at": "2026-06-19T10:03:00.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "The Fed’s new hawkish reality just forced Goldman Sachs to slash its gold forecast by $500",
+        "latest_published_at": "2026-06-19T10:03:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-009",
+      "rank": 10,
+      "headline_zh_hant": "重點主題：地緣政治",
+      "summary_zh_hant": "這是 mock 摘要，用於測試資料流程。此主題涵蓋 地緣政治，來源包括 CNBC。正式摘要會在 Cloudflare AI 接入後生成，並保持中立與事實性。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 1 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 39.4，正式排序仍以非 AI heat scoring 結果為準。",
+        "主要熱度原因包括：目前主要由單一來源報導；包含高權重來源 CNBC。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 CNBC，並且涵蓋 地緣政治 類別。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察更多來源是否確認同一主題，以及相關市場、公司或資產是否出現新的公開資訊。",
+      "summary_type": "detailed",
+      "heat_score": 39.4,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涵蓋 地緣政治 類別",
+        "涉及 Russia、Ukraine 等重要市場關鍵詞",
+        "新聞發布時間較新",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "地緣政治"
+      ],
+      "related_markets": [
+        "地緣政治"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "Russia threatens escalation after Ukraine hits Moscow with largest-ever drone attack",
+          "url": "https://www.cnbc.com/2026/06/19/russia-ukraine-moscow-drone-attack-trump.html",
+          "published_at": "2026-06-19T10:25:57.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Russia threatens escalation after Ukraine hits Moscow with largest-ever drone attack",
+        "latest_published_at": "2026-06-19T10:25:57.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-024",
+      "rank": 11,
+      "headline_zh_hant": "重點主題：地緣政治",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 1 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 37.4，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 CNBC，並且涵蓋 地緣政治 類別。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 37.4,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涵蓋 地緣政治 類別",
+        "涉及 Iran、Middle East 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "地緣政治"
+      ],
+      "related_markets": [
+        "地緣政治"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "U.S.-Iran accord hits early snag after Swiss talks fail to proceed as planned",
+          "url": "https://www.cnbc.com/2026/06/19/us-iran-talks-switzerland-canceled-interim-deal-markets.html",
+          "published_at": "2026-06-19T06:37:26.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "U.S.-Iran accord hits early snag after Swiss talks fail to proceed as planned",
+        "latest_published_at": "2026-06-19T06:37:26.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-023",
+      "rank": 12,
+      "headline_zh_hant": "重點主題：企業財報、外匯｜US Dollar",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 36.75，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 華爾街見聞，並且涵蓋 企業財報、外匯 類別。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 36.75,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 華爾街見聞",
+        "涵蓋 企業財報、外匯 類別",
+        "涉及 dollar、纳指、美元、黄金 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "企業財報",
+        "外匯"
+      ],
+      "related_markets": [
+        "企業財報",
+        "外匯"
+      ],
+      "related_assets": [
+        "US Dollar"
+      ],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "華爾街見聞",
+          "title": "美伊瑞士会谈生变，韩股收跌0.1%，印度IT股大跌，纳指期货跌1%，美元指数站上101关口",
+          "url": "https://wallstreetcn.com/articles/3775074",
+          "published_at": "2026-06-19T07:16:07.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "美伊瑞士会谈生变，韩股收跌0.1%，印度IT股大跌，纳指期货跌1%，美元指数站上101关口",
+        "latest_published_at": "2026-06-19T07:16:07.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-042",
+      "rank": 13,
+      "headline_zh_hant": "重點主題：科技公司、美股｜Amazon、SpaceX",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 36.6，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 CNBC，並且涉及 美股 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 36.6,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涉及 美股 等高關注主題",
+        "涉及 Amazon 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "科技公司",
+        "美股"
+      ],
+      "related_markets": [
+        "科技公司",
+        "美股"
+      ],
+      "related_assets": [
+        "Amazon",
+        "SpaceX"
+      ],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "SpaceX stock sinks for a second day as company slips below Amazon in market cap",
+          "url": "https://www.cnbc.com/2026/06/18/spacex-stock-elon-musk-rally-cools.html",
+          "published_at": "2026-06-18T20:36:50.000Z"
+        },
+        {
+          "source": "CNBC",
+          "title": "The average SpaceX buyer post-IPO is almost under water after two-day slide",
+          "url": "https://www.cnbc.com/2026/06/18/the-average-spacex-buyer-post-ipo-is-almost-under-water-after-two-day-slide.html",
+          "published_at": "2026-06-18T20:10:47.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call"
+      ],
+      "debug": {
+        "cluster_title_candidate": "SpaceX stock sinks for a second day as company slips below Amazon in market cap",
+        "latest_published_at": "2026-06-18T20:36:50.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-030",
+      "rank": 14,
+      "headline_zh_hant": "重點主題：AI、科技公司｜Tesla",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 36.5，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 MarketWatch，並且涉及 AI 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 36.5,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 MarketWatch",
+        "涉及 AI 等高關注主題",
+        "涉及 Dow、Tesla 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "AI",
+        "科技公司"
+      ],
+      "related_markets": [
+        "AI",
+        "科技公司"
+      ],
+      "related_assets": [
+        "Tesla"
+      ],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "MarketWatch",
+          "title": "Is Tesla succeeding in AI? Watch this for a clue.",
+          "url": "https://www.marketwatch.com/story/is-tesla-succeeding-in-ai-watch-this-for-a-clue-c72bc49e?mod=mw_rss_topstories",
+          "published_at": "2026-06-19T02:27:00.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Is Tesla succeeding in AI? Watch this for a clue.",
+        "latest_published_at": "2026-06-19T02:27:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-013",
+      "rank": 15,
+      "headline_zh_hant": "重點主題：商品、地緣政治｜Oil",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 35.6，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 CNBC，並且涵蓋 商品、地緣政治 類別。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 35.6,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涵蓋 商品、地緣政治 類別",
+        "涉及 Iran、oil 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "商品",
+        "地緣政治"
+      ],
+      "related_markets": [
+        "商品",
+        "地緣政治"
+      ],
+      "related_assets": [
+        "Oil"
+      ],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "Oil prices mixed as postponed U.S.-Iran talks temper optimism over ceasefire progress",
+          "url": "https://www.cnbc.com/2026/06/19/oil-prices-wti-brent-crude-us-iran-deal-strait-hormuz-shipping-recovery.html",
+          "published_at": "2026-06-19T09:10:01.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Oil prices mixed as postponed U.S.-Iran talks temper optimism over ceasefire progress",
+        "latest_published_at": "2026-06-19T09:10:01.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-018",
+      "rank": 16,
+      "headline_zh_hant": "重點主題：外匯、美股｜US Dollar",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 35.35，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 華爾街見聞，並且涉及 美股 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 35.35,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 華爾街見聞",
+        "涉及 美股 等高關注主題",
+        "涉及 dollar、美元 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "外匯",
+        "美股"
+      ],
+      "related_markets": [
+        "外匯",
+        "美股"
+      ],
+      "related_assets": [
+        "US Dollar"
+      ],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "華爾街見聞",
+          "title": "Kalshi年化营收突破20亿美元，较去年11月增长三倍，已与投行初步接洽IPO",
+          "url": "https://wallstreetcn.com/articles/3775082",
+          "published_at": "2026-06-19T08:00:47.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Kalshi年化营收突破20亿美元，较去年11月增长三倍，已与投行初步接洽IPO",
+        "latest_published_at": "2026-06-19T08:00:47.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-008",
+      "rank": 17,
+      "headline_zh_hant": "重點主題：科技公司、美股｜SpaceX",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 34.6，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 CNBC，並且涉及 美股 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 34.6,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涉及 美股 等高關注主題",
+        "新聞發布時間較新",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "科技公司",
+        "美股"
+      ],
+      "related_markets": [
+        "科技公司",
+        "美股"
+      ],
+      "related_assets": [
+        "SpaceX"
+      ],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "Musk's SpaceX stake is worth over $1 trillion. Here are the other billionaire shareholders",
+          "url": "https://www.cnbc.com/2026/06/19/musk-spacex-billionaire-shareholders.html",
+          "published_at": "2026-06-19T10:47:57.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Musk's SpaceX stake is worth over $1 trillion. Here are the other billionaire shareholders",
+        "latest_published_at": "2026-06-19T10:47:57.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-002",
+      "rank": 18,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 1 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 33.5，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 MarketWatch，並且涉及 宏觀 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 33.5,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 MarketWatch",
+        "涉及 宏觀 等高關注主題",
+        "新聞發布時間較新",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "MarketWatch",
+          "title": "I inherited a $500,000 IRA. Can I reduce the tax burden by using it for my children’s education?",
+          "url": "https://www.marketwatch.com/story/i-inherited-a-500-000-ira-can-i-reduce-the-tax-burden-by-using-it-for-my-childrens-education-53ddaa0c?mod=mw_rss_topstories",
+          "published_at": "2026-06-19T11:05:00.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "I inherited a $500,000 IRA. Can I reduce the tax burden by using it for my children’s education?",
+        "latest_published_at": "2026-06-19T11:05:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-004",
+      "rank": 19,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 1 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 33.5，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 MarketWatch，並且涉及 宏觀 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 33.5,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 MarketWatch",
+        "涉及 宏觀 等高關注主題",
+        "新聞發布時間較新",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "MarketWatch",
+          "title": "My two sons will inherit a $30,000 annuity from their grandmother. What should I do with the money?",
+          "url": "https://www.marketwatch.com/story/my-two-sons-will-inherit-a-30-000-annuity-from-their-grandmother-what-should-i-do-with-the-money-8882f396?mod=mw_rss_topstories",
+          "published_at": "2026-06-19T11:00:00.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "My two sons will inherit a $30,000 annuity from their grandmother. What should I do with the money?",
+        "latest_published_at": "2026-06-19T11:00:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-026",
+      "rank": 20,
+      "headline_zh_hant": "重點主題：AI｜OpenAI",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 1 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 33.5，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 The Verge，並且涉及 AI 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 33.5,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 The Verge",
+        "涉及 AI 等高關注主題",
+        "涉及 OpenAI 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "related_markets": [
+        "AI"
+      ],
+      "related_assets": [
+        "OpenAI"
+      ],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "The Verge",
+          "title": "Barret Zoph is out at OpenAI again after just five months",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab",
+          "published_at": "2026-06-19T04:49:33.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Barret Zoph is out at OpenAI again after just five months",
+        "latest_published_at": "2026-06-19T04:49:33.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-040",
+      "rank": 21,
+      "headline_zh_hant": "重點主題：AI、商品｜Gold",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 33.2，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 TechCrunch，並且涉及 AI 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 33.2,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 AI 等高關注主題",
+        "涉及 gold 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "AI",
+        "商品"
+      ],
+      "related_markets": [
+        "AI",
+        "商品"
+      ],
+      "related_assets": [
+        "Gold"
+      ],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "AI inference startup Baseten reportedly raising $1.5B months after its last mega-round",
+          "url": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/",
+          "published_at": "2026-06-18T21:20:13.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "AI inference startup Baseten reportedly raising $1.5B months after its last mega-round",
+        "latest_published_at": "2026-06-18T21:20:13.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-014",
+      "rank": 22,
+      "headline_zh_hant": "重點主題：AI、港股",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 32.95，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 華爾街見聞，並且涉及 AI 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 32.95,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 華爾街見聞",
+        "涉及 AI 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "AI",
+        "港股"
+      ],
+      "related_markets": [
+        "AI",
+        "港股"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "華爾街見聞",
+          "title": "Momenta港股上市迈出关键一步",
+          "url": "https://wallstreetcn.com/articles/3775086",
+          "published_at": "2026-06-19T09:03:02.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Momenta港股上市迈出关键一步",
+        "latest_published_at": "2026-06-19T09:03:02.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-017",
+      "rank": 23,
+      "headline_zh_hant": "重點主題：商品、地緣政治",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 32.6，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 CNBC，並且涵蓋 商品、地緣政治 類別。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 32.6,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涵蓋 商品、地緣政治 類別",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "商品",
+        "地緣政治"
+      ],
+      "related_markets": [
+        "商品",
+        "地緣政治"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "Hormuz relief may not ease the economic toll that's already 'baked in,' analysts warn",
+          "url": "https://www.cnbc.com/2026/06/19/hormuz-relief-may-not-ease-the-economic-toll-thats-already-baked-in-analysts-warn.html",
+          "published_at": "2026-06-19T08:08:34.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Hormuz relief may not ease the economic toll that's already 'baked in,' analysts warn",
+        "latest_published_at": "2026-06-19T08:08:34.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-010",
+      "rank": 24,
+      "headline_zh_hant": "重點主題：美股",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 1 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 32.1，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 MarketWatch，並且涉及 美股 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 32.1,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 MarketWatch",
+        "涉及 美股 等高關注主題",
+        "涉及 Fed 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "美股"
+      ],
+      "related_markets": [
+        "美股"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "MarketWatch",
+          "title": "Is the stock market open today for Juneteenth? Will the post office deliver mail?",
+          "url": "https://www.marketwatch.com/story/is-the-stock-market-open-on-juneteenth-will-the-post-office-deliver-mail-0569e453?mod=mw_rss_topstories",
+          "published_at": "2026-06-19T10:13:00.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Is the stock market open today for Juneteenth? Will the post office deliver mail?",
+        "latest_published_at": "2026-06-19T10:13:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-003",
+      "rank": 25,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 1 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 31，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 CNBC，並且涉及 宏觀 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 31,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涉及 宏觀 等高關注主題",
+        "新聞發布時間較新",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "U.S. opens tariff probe targeting Germany’s drug pricing policies",
+          "url": "https://www.cnbc.com/2026/06/19/us-tariff-probe-germany-drug-pricing-policies-mfn.html",
+          "published_at": "2026-06-19T11:01:28.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "U.S. opens tariff probe targeting Germany’s drug pricing policies",
+        "latest_published_at": "2026-06-19T11:01:28.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-006",
+      "rank": 26,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 1 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 31，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 CNBC，並且涉及 宏觀 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 31,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涉及 宏觀 等高關注主題",
+        "新聞發布時間較新",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "UK gilt yields jump as borrowing rises and PM Starmer faces leadership challenge",
+          "url": "https://www.cnbc.com/2026/06/19/andy-burnham-makerfield-by-election.html",
+          "published_at": "2026-06-19T10:51:36.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "UK gilt yields jump as borrowing rises and PM Starmer faces leadership challenge",
+        "latest_published_at": "2026-06-19T10:51:36.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-007",
+      "rank": 27,
+      "headline_zh_hant": "重點主題：美股",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 1 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 30.6，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 CNBC，並且涉及 美股 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 30.6,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涉及 美股 等高關注主題",
+        "新聞發布時間較新",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "美股"
+      ],
+      "related_markets": [
+        "美股"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "India's largest telecom and digital service Jio Platforms files for IPO",
+          "url": "https://www.cnbc.com/2026/06/19/india-jio-platforms-ipo-mukesh-ambani.html",
+          "published_at": "2026-06-19T10:50:22.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "India's largest telecom and digital service Jio Platforms files for IPO",
+        "latest_published_at": "2026-06-19T10:50:22.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-050",
+      "rank": 28,
+      "headline_zh_hant": "重點主題：商品、地緣政治｜Oil",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 30.6，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 CNBC，並且涵蓋 商品、地緣政治 類別。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 30.6,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涵蓋 商品、地緣政治 類別",
+        "涉及 oil 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "商品",
+        "地緣政治"
+      ],
+      "related_markets": [
+        "商品",
+        "地緣政治"
+      ],
+      "related_assets": [
+        "Oil"
+      ],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "Three Saudi oil tankers carrying 6 million barrels cross Strait of Hormuz",
+          "url": "https://www.cnbc.com/2026/06/18/iran-deal-strait-hormuz-oil-tanker-saudi-arabia-traffic.html",
+          "published_at": "2026-06-18T19:31:49.000Z"
+        },
+        {
+          "source": "CNBC",
+          "title": "OPEC chief dismisses IEA supply glut forecast as 'critical' Strait of Hormuz reopens",
+          "url": "https://www.cnbc.com/2026/06/18/opec-iea-supply-glut-forecast-critical-strait-hormuz-reopens-oil.html",
+          "published_at": "2026-06-18T15:19:47.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Three Saudi oil tankers carrying 6 million barrels cross Strait of Hormuz",
+        "latest_published_at": "2026-06-18T19:31:49.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-056",
+      "rank": 29,
+      "headline_zh_hant": "重點主題：科技公司｜Amazon、Apple",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 1 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 30.5，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 The Verge，並且涵蓋 科技公司 類別。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 30.5,
+      "heat_level": "low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 The Verge",
+        "涵蓋 科技公司 類別",
+        "涉及 Amazon、Apple 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "科技公司"
+      ],
+      "related_markets": [
+        "科技公司"
+      ],
+      "related_assets": [
+        "Amazon",
+        "Apple"
+      ],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "The Verge",
+          "title": "The best early Amazon Prime Day deals so far",
+          "url": "https://www.theverge.com/gadgets/944084/best-early-prime-day-deals",
+          "published_at": "2026-06-18T18:54:32.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "The best early Amazon Prime Day deals so far",
+        "latest_published_at": "2026-06-18T18:54:32.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-025",
+      "rank": 30,
+      "headline_zh_hant": "重點主題：企業財報、美股",
+      "summary_zh_hant": "這是 mock 簡短摘要，用於測試前 30 個主題的資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "what_happened_zh_hant": "這是 mock 摘要，用於測試資料流程。正式摘要會在 Cloudflare AI 接入後生成。",
+      "key_points_zh_hant": [
+        "此 mock 摘要根據 1 個來源與 2 個分類建立，用於測試資料流程。",
+        "目前 heat score 為 29.6，正式排序仍以非 AI heat scoring 結果為準。"
+      ],
+      "why_it_matters_zh_hant": "此主題值得關注，因為目前主要由單一來源報導，並且包含高權重來源 CNBC，並且涉及 美股 等高關注主題。以上為 mock 說明，正式版本會只根據來源文章生成。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進此主題。",
+      "summary_type": "brief",
+      "heat_score": 29.6,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涉及 美股 等高關注主題"
+      ],
+      "categories": [
+        "企業財報",
+        "美股"
+      ],
+      "related_markets": [
+        "企業財報",
+        "美股"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "Indian IT stocks slump up to 7% as Accenture cuts revenue outlook, fueling fresh concerns over sector growth",
+          "url": "https://www.cnbc.com/2026/06/19/india-it-stocks-fall-accenture-cuts-revenue-forecast.html",
+          "published_at": "2026-06-19T05:07:14.000Z"
+        }
+      ],
+      "ai_status": "mock_generated",
+      "summary_quality_flags": [
+        "brief_summary_only",
+        "mock_summary",
+        "no_real_ai_call",
+        "single_source_cluster"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Indian IT stocks slump up to 7% as Accenture cuts revenue outlook, fueling fresh concerns over sector growth",
+        "latest_published_at": "2026-06-19T05:07:14.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-032",
+      "rank": 31,
+      "headline_zh_hant": "重點主題：地緣政治",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：地緣政治",
+        "熱度分數：29.4"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 29.4,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涵蓋 地緣政治 類別",
+        "涉及 Iran、Middle East 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "地緣政治"
+      ],
+      "related_markets": [
+        "地緣政治"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "U.S.-Iran deal in photos: ships in the Strait of Hormuz, daily life in Tehran",
+          "url": "https://www.cnbc.com/2026/06/19/us-iran-deal-in-photos-shipping-resumes-as-fragile-peace-takes-hold.html",
+          "published_at": "2026-06-19T01:28:35.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "U.S.-Iran deal in photos: ships in the Strait of Hormuz, daily life in Tehran",
+        "latest_published_at": "2026-06-19T01:28:35.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-031",
+      "rank": 32,
+      "headline_zh_hant": "重點主題：外匯",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：外匯",
+        "熱度分數：29"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 29,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涵蓋 外匯 類別",
+        "涉及 yen 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "外匯"
+      ],
+      "related_markets": [
+        "外匯"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "Why Japan's $70 billion-plus intervention and a rate hike didn't prop up the yen more",
+          "url": "https://www.cnbc.com/2026/06/19/japan-yen-intervention-boj-rate-hike.html",
+          "published_at": "2026-06-19T02:04:53.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Why Japan's $70 billion-plus intervention and a rate hike didn't prop up the yen more",
+        "latest_published_at": "2026-06-19T02:04:53.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-033",
+      "rank": 33,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：29"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 29,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "Telegram ban in India sparks a rush to VPNs, rival apps",
+          "url": "https://techcrunch.com/2026/06/18/telegram-ban-in-india-sparks-a-rush-to-vpns-rival-apps/",
+          "published_at": "2026-06-19T01:01:00.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Telegram ban in India sparks a rush to VPNs, rival apps",
+        "latest_published_at": "2026-06-19T01:01:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-034",
+      "rank": 34,
+      "headline_zh_hant": "重點主題：AI",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：AI",
+        "熱度分數：29"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 29,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 AI 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "related_markets": [
+        "AI"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "Source: Elastic agrees to buy CRV-backed DeductiveAI for up to $85M",
+          "url": "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/",
+          "published_at": "2026-06-19T00:51:11.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Source: Elastic agrees to buy CRV-backed DeductiveAI for up to $85M",
+        "latest_published_at": "2026-06-19T00:51:11.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-044",
+      "rank": 35,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：28.5"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 28.5,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 The Verge",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "The Verge",
+          "title": "Valve is so behind on Steam Controller orders that some won’t ship until 2027",
+          "url": "https://www.theverge.com/games/952582/valve-steam-controller-reservations-orders-behind-estimated-date",
+          "published_at": "2026-06-18T20:26:06.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Valve is so behind on Steam Controller orders that some won’t ship until 2027",
+        "latest_published_at": "2026-06-18T20:26:06.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-045",
+      "rank": 36,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：28.5"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 28.5,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 The Verge",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "The Verge",
+          "title": "You can now use the Game Boy Camera with your phone",
+          "url": "https://www.theverge.com/tech/952173/epilogue-gb-operator-game-boy-camera-ios-android-app-iphone",
+          "published_at": "2026-06-18T20:22:46.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "You can now use the Game Boy Camera with your phone",
+        "latest_published_at": "2026-06-18T20:22:46.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-054",
+      "rank": 37,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：28.5"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 28.5,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 The Verge",
+        "涉及 宏觀 等高關注主題",
+        "涉及 Dow 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "The Verge",
+          "title": "HBO Max’s annual plans are 28 percent off right now",
+          "url": "https://www.theverge.com/gadgets/952326/hbo-max-annual-plan-deal-sale",
+          "published_at": "2026-06-18T19:18:30.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "HBO Max’s annual plans are 28 percent off right now",
+        "latest_published_at": "2026-06-18T19:18:30.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-060",
+      "rank": 38,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：28.5"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 28.5,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 The Verge",
+        "涉及 宏觀 等高關注主題",
+        "涉及 oil 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "The Verge",
+          "title": "This robotic self-driving toilet comes to you",
+          "url": "https://www.theverge.com/tech/952441/yueban-xiaoban-self-driving-autonomous-toilet",
+          "published_at": "2026-06-18T18:08:17.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "This robotic self-driving toilet comes to you",
+        "latest_published_at": "2026-06-18T18:08:17.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-029",
+      "rank": 39,
+      "headline_zh_hant": "重點主題：科技公司",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：科技公司",
+        "熱度分數：28"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 28,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涵蓋 科技公司 類別",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "科技公司"
+      ],
+      "related_markets": [
+        "科技公司"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Jim Cramer sends a stern message to SpaceX buyers",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-sends-stern-message-024700597.html",
+          "published_at": "2026-06-19T02:47:00.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Jim Cramer sends a stern message to SpaceX buyers",
+        "latest_published_at": "2026-06-19T02:47:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-035",
+      "rank": 40,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：28"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 28,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涉及 宏觀 等高關注主題",
+        "涉及 inflation 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "Japan core inflation holds steady in May, matching expectations despite energy price concerns",
+          "url": "https://www.cnbc.com/2026/06/19/japan-core-inflation-holds-steady-in-may-matching-expectations-despite-energy-price-concerns.html",
+          "published_at": "2026-06-19T00:28:16.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Japan core inflation holds steady in May, matching expectations despite energy price concerns",
+        "latest_published_at": "2026-06-19T00:28:16.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-039",
+      "rank": 41,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：28"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 28,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涉及 宏觀 等高關注主題",
+        "涉及 Fed、interest rates 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "Trump administration temporarily cuts student loan interest rates for borrowers on autopay",
+          "url": "https://www.cnbc.com/2026/06/18/trump-student-loan-autopay-interest-rate-discount.html",
+          "published_at": "2026-06-18T21:42:07.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Trump administration temporarily cuts student loan interest rates for borrowers on autopay",
+        "latest_published_at": "2026-06-18T21:42:07.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-015",
+      "rank": 42,
+      "headline_zh_hant": "重點主題：商品",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：商品",
+        "熱度分數：27.95"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 27.95,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 華爾街見聞",
+        "涵蓋 商品 類別",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "商品"
+      ],
+      "related_markets": [
+        "商品"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "華爾街見聞",
+          "title": "甲醇电动加速落子香港",
+          "url": "https://wallstreetcn.com/articles/3775085",
+          "published_at": "2026-06-19T08:59:04.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "甲醇电动加速落子香港",
+        "latest_published_at": "2026-06-19T08:59:04.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-063",
+      "rank": 43,
+      "headline_zh_hant": "重點主題：科技公司",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：科技公司",
+        "熱度分數：27.5"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 27.5,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 The Verge",
+        "涵蓋 科技公司 類別",
+        "涉及 Amazon 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "科技公司"
+      ],
+      "related_markets": [
+        "科技公司"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "The Verge",
+          "title": "A year of Walmart Plus is half off ahead of Prime Day",
+          "url": "https://www.theverge.com/gadgets/952283/walmart-plus-half-off-deal-sale",
+          "published_at": "2026-06-18T17:33:00.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "A year of Walmart Plus is half off ahead of Prime Day",
+        "latest_published_at": "2026-06-18T17:33:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-041",
+      "rank": 44,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：27"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 27,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "In photos: Star-studded crowd gathers to celebrate the Obama Presidential Center dedication",
+          "url": "https://www.cnbc.com/2026/06/18/obama-presidential-center-opening-chicago-photos-trump.html",
+          "published_at": "2026-06-18T20:51:33.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "In photos: Star-studded crowd gathers to celebrate the Obama Presidential Center dedication",
+        "latest_published_at": "2026-06-18T20:51:33.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-049",
+      "rank": 45,
+      "headline_zh_hant": "重點主題：AI、科技公司",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：AI、科技公司",
+        "熱度分數：27"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 27,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涉及 AI 等高關注主題",
+        "涉及 Amazon 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "AI",
+        "科技公司"
+      ],
+      "related_markets": [
+        "AI",
+        "科技公司"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "Amazon investigating engineers who criticized AI data center expansion",
+          "url": "https://www.cnbc.com/2026/06/18/amazon-engineers-ai-data-center-opposition.html",
+          "published_at": "2026-06-18T19:47:59.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Amazon investigating engineers who criticized AI data center expansion",
+        "latest_published_at": "2026-06-18T19:47:59.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-027",
+      "rank": 46,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：26.5"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 26.5,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 MarketWatch",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "MarketWatch",
+          "title": "‘I’ll probably be working until I die’: I’m 60, work as a waiter and have $2,000 in a Roth IRA. What will happen to me?",
+          "url": "https://www.marketwatch.com/story/ill-probably-be-working-until-i-die-im-60-work-as-a-restaurant-server-and-have-2-000-in-an-ira-who-can-help-me-6e36253a?mod=mw_rss_topstories",
+          "published_at": "2026-06-19T04:01:00.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "‘I’ll probably be working until I die’: I’m 60, work as a waiter and have $2,000 in a Roth IRA. What will happen to me?",
+        "latest_published_at": "2026-06-19T04:01:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-036",
+      "rank": 47,
+      "headline_zh_hant": "重點主題：AI",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：AI",
+        "熱度分數：26.5"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 26.5,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 MarketWatch",
+        "涉及 AI 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "related_markets": [
+        "AI"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "MarketWatch",
+          "title": "This AI company wants to replace MRIs with a 60-second dip in the spa. Can that really work?",
+          "url": "https://www.marketwatch.com/story/this-ai-company-wants-to-replace-mris-with-a-60-second-dip-in-the-spa-can-that-really-work-3bce6681?mod=mw_rss_topstories",
+          "published_at": "2026-06-18T23:22:00.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "This AI company wants to replace MRIs with a 60-second dip in the spa. Can that really work?",
+        "latest_published_at": "2026-06-18T23:22:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-037",
+      "rank": 48,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：26.5"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 26.5,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 MarketWatch",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "MarketWatch",
+          "title": "I’m 55 and retiring in 6 years. Should I be switching to Roth 401(k) contributions now?",
+          "url": "https://www.marketwatch.com/story/im-55-and-retiring-in-6-years-should-i-be-switching-to-roth-401-k-now-71d6c468?mod=mw_rss_topstories",
+          "published_at": "2026-06-18T23:11:00.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "I’m 55 and retiring in 6 years. Should I be switching to Roth 401(k) contributions now?",
+        "latest_published_at": "2026-06-18T23:11:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-046",
+      "rank": 49,
+      "headline_zh_hant": "重點主題：地緣政治",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：地緣政治",
+        "熱度分數：26.4"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 26.4,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涵蓋 地緣政治 類別",
+        "涉及 Iran 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "地緣政治"
+      ],
+      "related_markets": [
+        "地緣政治"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "Vance says U.S. isn’t giving Iran ‘a cent’ as he defends Trump peace deal",
+          "url": "https://www.cnbc.com/2026/06/18/vance-iran-war-memo-oil-gas.html",
+          "published_at": "2026-06-18T20:14:38.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Vance says U.S. isn’t giving Iran ‘a cent’ as he defends Trump peace deal",
+        "latest_published_at": "2026-06-18T20:14:38.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-020",
+      "rank": 50,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：26"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 26,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "What this biotech's volatile stock price tells you about the weight loss market right now",
+          "url": "https://www.cnbc.com/2026/06/19/zealand-pharma-stock-weight-loss-drugmaker-novo-lilly.html",
+          "published_at": "2026-06-19T07:30:34.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "What this biotech's volatile stock price tells you about the weight loss market right now",
+        "latest_published_at": "2026-06-19T07:30:34.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-043",
+      "rank": 51,
+      "headline_zh_hant": "重點主題：AI",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：AI",
+        "熱度分數：26"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 26,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 AI 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "related_markets": [
+        "AI"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "Snap spins off AI video team into new company, Dotmo, due to costs",
+          "url": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/",
+          "published_at": "2026-06-18T20:30:00.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Snap spins off AI video team into new company, Dotmo, due to costs",
+        "latest_published_at": "2026-06-18T20:30:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-048",
+      "rank": 52,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：26"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 26,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "The 11 standout startups from YC’s Demo Day, according to VCs",
+          "url": "https://techcrunch.com/2026/06/18/the-11-standout-startups-from-ycs-demo-day-according-to-vcs/",
+          "published_at": "2026-06-18T19:52:19.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "The 11 standout startups from YC’s Demo Day, according to VCs",
+        "latest_published_at": "2026-06-18T19:52:19.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-051",
+      "rank": 53,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：26"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 26,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "Rivian owners file lawsuit alleging false promises on self-driving features",
+          "url": "https://techcrunch.com/2026/06/18/rivian-owners-file-lawsuit-alleging-false-promises-on-self-driving-features/",
+          "published_at": "2026-06-18T19:31:45.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Rivian owners file lawsuit alleging false promises on self-driving features",
+        "latest_published_at": "2026-06-18T19:31:45.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-057",
+      "rank": 54,
+      "headline_zh_hant": "重點主題：AI",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：AI",
+        "熱度分數：26"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 26,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 AI 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "related_markets": [
+        "AI"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "Almost half of US singles feel negatively about AI in dating, Match says",
+          "url": "https://techcrunch.com/2026/06/18/almost-half-of-u-s-singles-feel-negatively-about-ai-in-dating-match-says/",
+          "published_at": "2026-06-18T18:51:46.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Almost half of US singles feel negatively about AI in dating, Match says",
+        "latest_published_at": "2026-06-18T18:51:46.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-066",
+      "rank": 55,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：26"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 26,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 宏觀 等高關注主題",
+        "涉及 Dow 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "The smartphone era created an attention crisis — slow tech is fixing it",
+          "url": "https://techcrunch.com/2026/06/18/the-smartphone-era-created-an-attention-crisis-slowtech-is-fixing-it/",
+          "published_at": "2026-06-18T17:16:30.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "The smartphone era created an attention crisis — slow tech is fixing it",
+        "latest_published_at": "2026-06-18T17:16:30.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-091",
+      "rank": 56,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：26"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 26,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題",
+        "涉及 Meta 等重要市場關鍵詞",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "USA Rare Earth (USAR) Gets 8% Boost as G7 Unites on Critical Metals Devt",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/usa-rare-earth-usar-gets-234752320.html",
+          "published_at": "2026-06-17T23:47:52.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "USA Rare Earth (USAR) Gets 8% Boost as G7 Unites on Critical Metals Devt",
+        "latest_published_at": "2026-06-17T23:47:52.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-098",
+      "rank": 57,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：26"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 26,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Best private student loans for June 2026",
+          "url": "https://finance.yahoo.com/personal-finance/student-loans/article/best-private-student-loans-135459013.html",
+          "published_at": "2026-05-13T13:54:59.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Best private student loans for June 2026",
+        "latest_published_at": "2026-05-13T13:54:59.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-102",
+      "rank": 58,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：26"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 26,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Is now a good time to buy a house?",
+          "url": "https://finance.yahoo.com/personal-finance/mortgages/article/is-now-a-good-time-to-buy-a-house-224612050.html",
+          "published_at": "2024-01-26T22:46:12.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Is now a good time to buy a house?",
+        "latest_published_at": "2024-01-26T22:46:12.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-083",
+      "rank": 59,
+      "headline_zh_hant": "重點主題：半導體",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：半導體",
+        "熱度分數：25.8"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 25.8,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 半導體 等高關注主題",
+        "涉及 AMD、半導體 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "半導體"
+      ],
+      "related_markets": [
+        "半導體"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Rackspace Technology (RXT) Hits 4-Year High on AMD Compute Deal",
+          "url": "https://finance.yahoo.com/technology/ai/articles/rackspace-technology-rxt-hits-4-000529991.html",
+          "published_at": "2026-06-18T00:05:29.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Rackspace Technology (RXT) Hits 4-Year High on AMD Compute Deal",
+        "latest_published_at": "2026-06-18T00:05:29.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-055",
+      "rank": 60,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：25.5"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 25.5,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 The Verge",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "The Verge",
+          "title": "Snap’s Specs look good on nobody",
+          "url": "https://www.theverge.com/podcast/952126/snap-specs-ar-glasses-vergecast",
+          "published_at": "2026-06-18T19:15:03.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Snap’s Specs look good on nobody",
+        "latest_published_at": "2026-06-18T19:15:03.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-064",
+      "rank": 61,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：25.5"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 25.5,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 The Verge",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "The Verge",
+          "title": "Firefox’s new home page widgets are helping me focus",
+          "url": "https://www.theverge.com/tech/952354/firefox-home-page-widgets",
+          "published_at": "2026-06-18T17:29:50.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Firefox’s new home page widgets are helping me focus",
+        "latest_published_at": "2026-06-18T17:29:50.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-068",
+      "rank": 62,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：25.5"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 25.5,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 The Verge",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "The Verge",
+          "title": "The Onion’s rebooted InfoWars is coming July 2nd",
+          "url": "https://www.theverge.com/news/952264/the-onion-infowars-takeover-alex-jones-relaunch",
+          "published_at": "2026-06-18T17:00:00.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "The Onion’s rebooted InfoWars is coming July 2nd",
+        "latest_published_at": "2026-06-18T17:00:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-022",
+      "rank": 63,
+      "headline_zh_hant": "重點主題：地緣政治",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：地緣政治",
+        "熱度分數：24.15"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 24.15,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 華爾街見聞",
+        "涵蓋 地緣政治 類別",
+        "涉及 伊朗 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "地緣政治"
+      ],
+      "related_markets": [
+        "地緣政治"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "華爾街見聞",
+          "title": "美伊会谈，推迟了",
+          "url": "https://wallstreetcn.com/articles/3775081",
+          "published_at": "2026-06-19T07:28:56.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "美伊会谈，推迟了",
+        "latest_published_at": "2026-06-19T07:28:56.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-065",
+      "rank": 64,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：24"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 24,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涉及 宏觀 等高關注主題",
+        "涉及 Fed 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "Trump bid to fire Fed's Lisa Cook cost her more than $1M in legal, security costs: Filing",
+          "url": "https://www.cnbc.com/2026/06/18/trump-federal-reserve-lisa-cook-security-filing.html",
+          "published_at": "2026-06-18T17:24:11.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Trump bid to fire Fed's Lisa Cook cost her more than $1M in legal, security costs: Filing",
+        "latest_published_at": "2026-06-18T17:24:11.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-073",
+      "rank": 65,
+      "headline_zh_hant": "重點主題：AI、科技公司",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：AI、科技公司",
+        "熱度分數：24"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 24,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 AI 等高關注主題"
+      ],
+      "categories": [
+        "AI",
+        "科技公司"
+      ],
+      "related_markets": [
+        "AI",
+        "科技公司"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "A tech worker-backed PAC is bringing a $5M knife to Big Tech’s $100M gunfight",
+          "url": "https://techcrunch.com/2026/06/18/a-tech-worker-backed-pac-is-bringing-a-5m-knife-to-big-techs-100m-gunfight/",
+          "published_at": "2026-06-18T15:13:21.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "A tech worker-backed PAC is bringing a $5M knife to Big Tech’s $100M gunfight",
+        "latest_published_at": "2026-06-18T15:13:21.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-028",
+      "rank": 66,
+      "headline_zh_hant": "重點主題：美股",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：美股",
+        "熱度分數：23.6"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 23.6,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涉及 美股 等高關注主題"
+      ],
+      "categories": [
+        "美股"
+      ],
+      "related_markets": [
+        "美股"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "MSCI isn't done with Indonesia yet: new report signals continued concerns over market transparency",
+          "url": "https://www.cnbc.com/2026/06/19/msci-still-concerned-about-indonesian-stock-market-transparency.html",
+          "published_at": "2026-06-19T03:12:38.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "MSCI isn't done with Indonesia yet: new report signals continued concerns over market transparency",
+        "latest_published_at": "2026-06-19T03:12:38.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-061",
+      "rank": 67,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：23"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 23,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "Mivo’s new app takes a mindful approach to managing screen time",
+          "url": "https://techcrunch.com/2026/06/18/mivos-new-app-takes-a-mindful-approach-to-managing-screen-time/",
+          "published_at": "2026-06-18T18:00:00.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Mivo’s new app takes a mindful approach to managing screen time",
+        "latest_published_at": "2026-06-18T18:00:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-062",
+      "rank": 68,
+      "headline_zh_hant": "重點主題：AI",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：AI",
+        "熱度分數：23"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 23,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 AI 等高關注主題"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "related_markets": [
+        "AI"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "AI data centers just got a government-mandated fast lane to the grid",
+          "url": "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/",
+          "published_at": "2026-06-18T17:49:23.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "AI data centers just got a government-mandated fast lane to the grid",
+        "latest_published_at": "2026-06-18T17:49:23.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-067",
+      "rank": 69,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：23"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 23,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "Texas government data breach allowed hackers to steal 3 million driver’s licenses and passports",
+          "url": "https://techcrunch.com/2026/06/18/texas-government-data-breach-allowed-hackers-to-steal-3-million-drivers-licenses-and-passports/",
+          "published_at": "2026-06-18T17:12:53.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Texas government data breach allowed hackers to steal 3 million driver’s licenses and passports",
+        "latest_published_at": "2026-06-18T17:12:53.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-069",
+      "rank": 70,
+      "headline_zh_hant": "重點主題：AI",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：AI",
+        "熱度分數：23"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 23,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 AI 等高關注主題"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "related_markets": [
+        "AI"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "‘Queer Eye’ life coach Karamo Brown launches Kē, a wellness app featuring his AI digital clone",
+          "url": "https://techcrunch.com/2026/06/18/queer-eyes-life-coach-karamo-brown-launches-ke-a-wellness-app-featuring-his-ai-digital-clone/",
+          "published_at": "2026-06-18T16:55:04.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "‘Queer Eye’ life coach Karamo Brown launches Kē, a wellness app featuring his AI digital clone",
+        "latest_published_at": "2026-06-18T16:55:04.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-080",
+      "rank": 71,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：23"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 23,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Fox stock gets sobering BofA call amid Roku deal",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/fox-stock-gets-sobering-bofa-010300545.html",
+          "published_at": "2026-06-18T01:03:00.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Fox stock gets sobering BofA call amid Roku deal",
+        "latest_published_at": "2026-06-18T01:03:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-089",
+      "rank": 72,
+      "headline_zh_hant": "重點主題：AI",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：AI",
+        "熱度分數：23"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 23,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 AI 等高關注主題",
+        "涉及 OpenAI 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "related_markets": [
+        "AI"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Fermi (FRMI) Climbs 9.9% Further on Lingering OpenAI Buzz",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/fermi-frmi-climbs-9-9-235236349.html",
+          "published_at": "2026-06-17T23:52:36.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Fermi (FRMI) Climbs 9.9% Further on Lingering OpenAI Buzz",
+        "latest_published_at": "2026-06-17T23:52:36.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-090",
+      "rank": 73,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：23"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 23,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Robinhood (HOOD) Jumps 8.78% on Corporate Restructuring",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/robinhood-hood-jumps-8-78-235044844.html",
+          "published_at": "2026-06-17T23:50:44.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Robinhood (HOOD) Jumps 8.78% on Corporate Restructuring",
+        "latest_published_at": "2026-06-17T23:50:44.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-092",
+      "rank": 74,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：23"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 23,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Wolfspeed (WOLF) Jumps 8% After Steep Fall",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/wolfspeed-wolf-jumps-8-steep-234207810.html",
+          "published_at": "2026-06-17T23:42:07.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Wolfspeed (WOLF) Jumps 8% After Steep Fall",
+        "latest_published_at": "2026-06-17T23:42:07.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-094",
+      "rank": 75,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：23"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 23,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Citigroup’s Dividend Yield Now Trails Its Peers, But I’m Still Bullish",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/citigroup-dividend-yield-now-trails-233002701.html",
+          "published_at": "2026-06-17T23:30:02.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Citigroup’s Dividend Yield Now Trails Its Peers, But I’m Still Bullish",
+        "latest_published_at": "2026-06-17T23:30:02.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-096",
+      "rank": 76,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：23"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 23,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Is General Motors (GM) One of the Stocks From Companies Generating High Cash Flow",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/general-motors-gm-one-stocks-232702924.html",
+          "published_at": "2026-06-17T23:27:02.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Is General Motors (GM) One of the Stocks From Companies Generating High Cash Flow",
+        "latest_published_at": "2026-06-17T23:27:02.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-099",
+      "rank": 77,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：23"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 23,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題",
+        "來源首頁位置較前"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "The top 5 safest banks in the U.S.",
+          "url": "https://finance.yahoo.com/personal-finance/banking/article/safest-banks-in-the-us-214632787.html",
+          "published_at": "2026-05-12T21:46:32.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "The top 5 safest banks in the U.S.",
+        "latest_published_at": "2026-05-12T21:46:32.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-052",
+      "rank": 78,
+      "headline_zh_hant": "重點主題：地緣政治",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：地緣政治",
+        "熱度分數：22.4"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 22.4,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涵蓋 地緣政治 類別",
+        "涉及 Iran 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "地緣政治"
+      ],
+      "related_markets": [
+        "地緣政治"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "U.S. Navy ends blockade of Iran's ports and coastal areas",
+          "url": "https://www.cnbc.com/2026/06/18/us-navy-blockade-iran-trump-oil.html",
+          "published_at": "2026-06-18T19:29:26.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "U.S. Navy ends blockade of Iran's ports and coastal areas",
+        "latest_published_at": "2026-06-18T19:29:26.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-088",
+      "rank": 79,
+      "headline_zh_hant": "重點主題：地緣政治",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：地緣政治",
+        "熱度分數：22.4"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 22.4,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涵蓋 地緣政治 類別",
+        "涉及 Iran 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "地緣政治"
+      ],
+      "related_markets": [
+        "地緣政治"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Navan (NAVN) Soars 10.4% as US-Iran Tensions Fade",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/navan-navn-soars-10-4-235555740.html",
+          "published_at": "2026-06-17T23:55:55.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Navan (NAVN) Soars 10.4% as US-Iran Tensions Fade",
+        "latest_published_at": "2026-06-17T23:55:55.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-100",
+      "rank": 80,
+      "headline_zh_hant": "重點主題：商品",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：商品",
+        "熱度分數：22.2"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 22.2,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涵蓋 商品 類別",
+        "涉及 gold 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "商品"
+      ],
+      "related_markets": [
+        "商品"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Should I invest in gold in 2026?",
+          "url": "https://finance.yahoo.com/personal-finance/investing/article/should-i-invest-in-gold-in-2026-211543609.html",
+          "published_at": "2026-03-25T21:15:43.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Should I invest in gold in 2026?",
+        "latest_published_at": "2026-03-25T21:15:43.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-070",
+      "rank": 81,
+      "headline_zh_hant": "重點主題：科技公司",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：科技公司",
+        "熱度分數：22"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 22,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涵蓋 科技公司 類別",
+        "涉及 Apple 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "科技公司"
+      ],
+      "related_markets": [
+        "科技公司"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "Apple opens up App Store to new competition in Brazil",
+          "url": "https://techcrunch.com/2026/06/18/apple-opens-up-app-store-to-new-competition-in-brazil/",
+          "published_at": "2026-06-18T15:48:08.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Apple opens up App Store to new competition in Brazil",
+        "latest_published_at": "2026-06-18T15:48:08.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-079",
+      "rank": 82,
+      "headline_zh_hant": "重點主題：半導體",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：半導體",
+        "熱度分數：21.8"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 21.8,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 半導體 等高關注主題",
+        "涉及 Nvidia、半導體 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "半導體"
+      ],
+      "related_markets": [
+        "半導體"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "NVIDIA (NVDA) – Among the 12 Most Profitable American Stocks to Buy in 2026",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-among-12-most-010953177.html",
+          "published_at": "2026-06-18T01:09:53.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "NVIDIA (NVDA) – Among the 12 Most Profitable American Stocks to Buy in 2026",
+        "latest_published_at": "2026-06-18T01:09:53.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-038",
+      "rank": 83,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：20"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 20,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "Waymo recalls about 3,900 robotaxis after some drove into 'freeway construction zones'",
+          "url": "https://www.cnbc.com/2026/06/18/waymo-nhtsa-voluntary-recall-robotaxis-entered-freeway-construction-zones.html",
+          "published_at": "2026-06-18T21:57:32.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Waymo recalls about 3,900 robotaxis after some drove into 'freeway construction zones'",
+        "latest_published_at": "2026-06-18T21:57:32.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-053",
+      "rank": 84,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：20"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 20,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "Bears step up bets against high-yield sector, shaking up bond traders",
+          "url": "https://www.cnbc.com/2026/06/18/bears-step-up-bets-against-high-yield-sector-shaking-up-bond-traders.html",
+          "published_at": "2026-06-18T19:29:16.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Bears step up bets against high-yield sector, shaking up bond traders",
+        "latest_published_at": "2026-06-18T19:29:16.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-058",
+      "rank": 85,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：20"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 20,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 CNBC",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "CNBC",
+          "title": "Trump DNI pick Pulte poised to get access to U.S. intelligence despite congressional bid to thwart",
+          "url": "https://www.cnbc.com/2026/06/18/pulte-trump-dni-us-intelligence-congress.html",
+          "published_at": "2026-06-18T18:49:36.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Trump DNI pick Pulte poised to get access to U.S. intelligence despite congressional bid to thwart",
+        "latest_published_at": "2026-06-18T18:49:36.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-071",
+      "rank": 86,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：20"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 20,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "MapTap, a daily geography game, is my new Wordle",
+          "url": "https://techcrunch.com/2026/06/18/maptap-a-daily-geography-game-is-my-new-wordle/",
+          "published_at": "2026-06-18T15:47:39.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "MapTap, a daily geography game, is my new Wordle",
+        "latest_published_at": "2026-06-18T15:47:39.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-072",
+      "rank": 87,
+      "headline_zh_hant": "重點主題：AI",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：AI",
+        "熱度分數：20"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 20,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 AI 等高關注主題"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "related_markets": [
+        "AI"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "General Intuition in talks to raise $300M at around $2B valuation",
+          "url": "https://techcrunch.com/2026/06/18/general-intuition-in-talks-to-raise-300m-at-around-2b-valuation/",
+          "published_at": "2026-06-18T15:20:37.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "General Intuition in talks to raise $300M at around $2B valuation",
+        "latest_published_at": "2026-06-18T15:20:37.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-074",
+      "rank": 88,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：20"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 20,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 TechCrunch",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "TechCrunch",
+          "title": "Spotify’s reserved ticket sales to music superfans are now going live",
+          "url": "https://techcrunch.com/2026/06/18/spotifys-reserved-ticket-sales-to-musics-superfans-are-now-going-live/",
+          "published_at": "2026-06-18T14:00:00.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Spotify’s reserved ticket sales to music superfans are now going live",
+        "latest_published_at": "2026-06-18T14:00:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-084",
+      "rank": 89,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：20"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 20,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Biohaven (BHVN) Climbs 12.66% Ahead of Pipeline Updates",
+          "url": "https://finance.yahoo.com/healthcare/articles/biohaven-bhvn-climbs-12-66-000237234.html",
+          "published_at": "2026-06-18T00:02:37.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Biohaven (BHVN) Climbs 12.66% Ahead of Pipeline Updates",
+        "latest_published_at": "2026-06-18T00:02:37.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-085",
+      "rank": 90,
+      "headline_zh_hant": "重點主題：AI",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：AI",
+        "熱度分數：20"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 20,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 AI 等高關注主題"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "related_markets": [
+        "AI"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "The Invisible Energy Crisis Threatening to Derail the AI Boom",
+          "url": "https://finance.yahoo.com/energy/articles/invisible-energy-crisis-threatening-derail-000000469.html",
+          "published_at": "2026-06-18T00:00:00.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "The Invisible Energy Crisis Threatening to Derail the AI Boom",
+        "latest_published_at": "2026-06-18T00:00:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-086",
+      "rank": 91,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：20"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 20,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Eos Energy (EOSE) Rockets 11.6% on European Expansion",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/eos-energy-eose-rockets-11-235954066.html",
+          "published_at": "2026-06-17T23:59:54.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Eos Energy (EOSE) Rockets 11.6% on European Expansion",
+        "latest_published_at": "2026-06-17T23:59:54.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-087",
+      "rank": 92,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：20"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 20,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Moderna (MRNA) Soars 11% Ahead of Investor Day",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/moderna-mrna-soars-11-ahead-235754815.html",
+          "published_at": "2026-06-17T23:57:54.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Moderna (MRNA) Soars 11% Ahead of Investor Day",
+        "latest_published_at": "2026-06-17T23:57:54.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-101",
+      "rank": 93,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：20"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 20,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題",
+        "涉及 Fed 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "How the Fed's rate decision affects your bank accounts, loans, credit cards, and investments",
+          "url": "https://finance.yahoo.com/personal-finance/banking/article/how-the-feds-rate-decision-affects-your-bank-accounts-loans-credit-cards-and-investments-220526730.html",
+          "published_at": "2024-12-17T22:05:26.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "How the Fed's rate decision affects your bank accounts, loans, credit cards, and investments",
+        "latest_published_at": "2024-12-17T22:05:26.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-097",
+      "rank": 94,
+      "headline_zh_hant": "重點主題：科技公司",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：科技公司",
+        "熱度分數：19"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 19,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涵蓋 科技公司 類別"
+      ],
+      "categories": [
+        "科技公司"
+      ],
+      "related_markets": [
+        "科技公司"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Forget SpaceX at $200. Buy This Space ETF Instead for Just $34.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/forget-spacex-200-buy-space-232700562.html",
+          "published_at": "2026-06-17T23:27:00.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Forget SpaceX at $200. Buy This Space ETF Instead for Just $34.",
+        "latest_published_at": "2026-06-17T23:27:00.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-077",
+      "rank": 95,
+      "headline_zh_hant": "重點主題：半導體",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：半導體",
+        "熱度分數：18.8"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 18.8,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 半導體 等高關注主題",
+        "涉及 半導體 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "半導體"
+      ],
+      "related_markets": [
+        "半導體"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Micron Technology (MU) Price Target Lifted by $675 at RBC Capital. Here is Why",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-mu-price-target-011038074.html",
+          "published_at": "2026-06-18T01:10:38.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Micron Technology (MU) Price Target Lifted by $675 at RBC Capital. Here is Why",
+        "latest_published_at": "2026-06-18T01:10:38.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-081",
+      "rank": 96,
+      "headline_zh_hant": "重點主題：美股",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：美股",
+        "熱度分數：18.6"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 18.6,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 美股 等高關注主題",
+        "涉及 Nasdaq 等重要市場關鍵詞"
+      ],
+      "categories": [
+        "美股"
+      ],
+      "related_markets": [
+        "美股"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Is VeriSign Stock Underperforming the Nasdaq?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/verisign-stock-underperforming-nasdaq-002905640.html",
+          "published_at": "2026-06-18T00:29:05.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Is VeriSign Stock Underperforming the Nasdaq?",
+        "latest_published_at": "2026-06-18T00:29:05.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-075",
+      "rank": 97,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：16"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 16,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Lam Research (LRCX) Receives a Price Target Boost at Barclays. Here is Why",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/lam-research-lrcx-receives-price-011116006.html",
+          "published_at": "2026-06-18T01:11:16.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Lam Research (LRCX) Receives a Price Target Boost at Barclays. Here is Why",
+        "latest_published_at": "2026-06-18T01:11:16.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-076",
+      "rank": 98,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：16"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 16,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "KLA Corporation (KLAC) Price Target Raised by $500. Here is Why",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/kla-corporation-klac-price-target-011054076.html",
+          "published_at": "2026-06-18T01:10:54.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "KLA Corporation (KLAC) Price Target Raised by $500. Here is Why",
+        "latest_published_at": "2026-06-18T01:10:54.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-078",
+      "rank": 99,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：16"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 16,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "Morgan Stanley Raises Price Target on Western Digital (WDC). Here is Why",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-raises-price-target-011012346.html",
+          "published_at": "2026-06-18T01:10:12.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "Morgan Stanley Raises Price Target on Western Digital (WDC). Here is Why",
+        "latest_published_at": "2026-06-18T01:10:12.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-082",
+      "rank": 100,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：16"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 16,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "UniQure (QURE) Soars 78% on AMT-130 Progress",
+          "url": "https://finance.yahoo.com/healthcare/articles/uniqure-qure-soars-78-amt-000848195.html",
+          "published_at": "2026-06-18T00:08:48.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "UniQure (QURE) Soars 78% on AMT-130 Progress",
+        "latest_published_at": "2026-06-18T00:08:48.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-093",
+      "rank": 101,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：16"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 16,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "A Starter Home For $1 Million? That's Now The Reality In These 242 US Cities",
+          "url": "https://finance.yahoo.com/real-estate/articles/starter-home-1-million-thats-233046093.html",
+          "published_at": "2026-06-17T23:30:46.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "A Starter Home For $1 Million? That's Now The Reality In These 242 US Cities",
+        "latest_published_at": "2026-06-17T23:30:46.000Z"
+      }
+    },
+    {
+      "cluster_id": "news-cluster-095",
+      "rank": 102,
+      "headline_zh_hant": "重點主題：宏觀",
+      "summary_zh_hant": "此主題暫未進入本輪 AI 摘要範圍，僅保留分類、熱度與來源連結供參考。",
+      "what_happened_zh_hant": "此主題未被選入前 30 個摘要項目；目前只提供來源連結與熱度資訊。",
+      "key_points_zh_hant": [
+        "分類：宏觀",
+        "熱度分數：16"
+      ],
+      "why_it_matters_zh_hant": "此主題的重要性目前以熱度分數、來源數量與分類結果作初步判斷；詳細解讀需等待正式摘要。",
+      "watch_next_zh_hant": "後續可觀察是否有更多來源跟進或提供新的公開資訊。",
+      "summary_type": "none",
+      "heat_score": 16,
+      "heat_level": "very_low",
+      "heat_reasons": [
+        "目前主要由單一來源報導",
+        "包含高權重來源 Yahoo Finance",
+        "涉及 宏觀 等高關注主題"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "related_markets": [
+        "宏觀"
+      ],
+      "related_assets": [],
+      "source_count": 1,
+      "source_links": [
+        {
+          "source": "Yahoo Finance",
+          "title": "The Top 5 Maintenance Franchises on the 2026 Franchise 500",
+          "url": "https://finance.yahoo.com/small-business/articles/top-5-maintenance-franchises-2026-233000111.html",
+          "published_at": "2026-06-17T23:30:00.000Z"
+        }
+      ],
+      "ai_status": "skipped_not_top_ranked",
+      "summary_quality_flags": [
+        "not_selected_for_summary"
+      ],
+      "debug": {
+        "cluster_title_candidate": "The Top 5 Maintenance Franchises on the 2026 Franchise 500",
+        "latest_published_at": "2026-06-17T23:30:00.000Z"
+      }
+    }
+  ],
+  "source_status": [
+    {
+      "source": "CNBC",
+      "status": "success",
+      "article_count": 30,
+      "error_message": "",
+      "fetched_at": "2026-06-19T11:28:30.385Z"
+    },
+    {
+      "source": "MarketWatch",
+      "status": "success",
+      "article_count": 10,
+      "error_message": "",
+      "fetched_at": "2026-06-19T11:28:31.795Z"
+    },
+    {
+      "source": "Yahoo Finance",
+      "status": "success",
+      "article_count": 30,
+      "error_message": "",
+      "fetched_at": "2026-06-19T11:28:32.595Z"
+    },
+    {
+      "source": "TechCrunch",
+      "status": "success",
+      "article_count": 20,
+      "error_message": "",
+      "fetched_at": "2026-06-19T11:28:33.616Z"
+    },
+    {
+      "source": "The Verge",
+      "status": "success",
+      "article_count": 10,
+      "error_message": "",
+      "fetched_at": "2026-06-19T11:28:34.404Z"
+    },
+    {
+      "source": "華爾街見聞",
+      "status": "success",
+      "article_count": 30,
+      "error_message": "",
+      "fetched_at": "2026-06-19T11:28:35.222Z"
+    }
+  ],
+  "ai_usage": {
+    "estimated_input_tokens": 6501,
+    "estimated_output_tokens": 7800,
+    "estimated_total_tokens": 14301,
+    "estimated_neurons": 14301,
+    "credits_consumed": false,
+    "daily_budget_neurons": null,
+    "note": "Mock mode only; no Cloudflare AI call was made."
+  },
+  "warnings": [],
+  "daily_brief_ai_status": "mock",
+  "daily_brief_ai_model": "mock-daily-brief-editorial-zh-hant",
+  "daily_brief_ai_generated_at": "2026-06-19T16:15:26.941Z"
+}
