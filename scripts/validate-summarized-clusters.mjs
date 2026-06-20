@@ -1,4 +1,5 @@
 import { access, readFile } from "node:fs/promises";
+import { hasBadUserFacingText, hasCommonSimplifiedChars, isBadUserFacingHeadline } from "./user-facing-copy.mjs";
 
 const SUMMARY_FILE = new URL("../data/runtime/summarized_clusters.json", import.meta.url);
 const REPORT_FILE = new URL("../data/runtime/ai_summary_report.json", import.meta.url);
@@ -13,7 +14,12 @@ const USER_FACING_FIELDS = [
   "why_it_matters_zh_hant",
   "watch_next_zh_hant",
 ];
-const COMMON_SIMPLIFIED_CHARS = /[这测试资讯数据为会后关联储鲍胀债经济贸币国产发现点简体与将观导称类来对应响时间较场题报显]/;
+const COMMON_SIMPLIFIED_CHARS = /[这为与发后业东个会来时们国对称产经见实现过涨亿万广气报团际质证龙门车网]/;
+const INVESTMENT_ADVICE_PATTERN =
+  /(買入|賣出|持有|加倉|減倉|建議買|建議賣|投資建議|目標價|price target|buy rating|sell rating|hold rating|should buy|should sell)/i;
+const PRICE_PREDICTION_PATTERN =
+  /(將上升|將下跌|會升至|會跌至|上望|下望|看漲至|看跌至|will rise|will fall|could rise to|could fall to|target price)/i;
+const GENERIC_AI_OUTPUT_PATTERN = /(mock 摘要|正式摘要會在|測試資料流程|placeholder|lorem ipsum)/i;
 const VALID_SUMMARIZED_STATUSES = new Set(["mock_generated", "success", "failed_fallback_used"]);
 const VALID_SKIPPED_STATUSES = new Set(["skipped_not_top_ranked", "skipped_budget_limit"]);
 
@@ -47,7 +53,19 @@ function flattenUserFacingValues(cluster) {
 }
 
 function hasCommonSimplifiedText(values) {
-  return values.some((value) => COMMON_SIMPLIFIED_CHARS.test(value));
+  return values.some((value) => COMMON_SIMPLIFIED_CHARS.test(value) || hasCommonSimplifiedChars(value));
+}
+
+function hasMostlyEnglishHeadline(text) {
+  const value = String(text ?? "").trim();
+  if (!value) return true;
+  const asciiLetters = (value.match(/[A-Za-z]/g) ?? []).length;
+  const cjkChars = (value.match(/[\u3400-\u9fff]/g) ?? []).length;
+  return asciiLetters > 12 && cjkChars < 4;
+}
+
+function containsPattern(values, pattern) {
+  return values.some((value) => pattern.test(value));
 }
 
 async function main() {
@@ -72,6 +90,7 @@ async function main() {
   const summarizedClusters = clusters.filter((cluster) => cluster.summary_type !== "none");
   const skippedClusters = clusters.filter((cluster) => cluster.summary_type === "none");
   const maxTotalSummaries = Number(process.env.AI_MAX_TOTAL_SUMMARIES ?? config.max_total_summaries);
+  const realMode = report.mock_mode === false;
 
   if (summarizedClusters.length > maxTotalSummaries) {
     errors.push(`More than max_total_summaries were summarized: ${summarizedClusters.length}`);
@@ -83,6 +102,12 @@ async function main() {
     }
 
     if (!cluster.headline_zh_hant) errors.push(`${cluster.cluster_id}: missing headline_zh_hant`);
+    if (hasMostlyEnglishHeadline(cluster.headline_zh_hant)) {
+      errors.push(`${cluster.cluster_id}: headline_zh_hant appears to be English or lacks Traditional Chinese context`);
+    }
+    if (isBadUserFacingHeadline(cluster.headline_zh_hant, cluster)) {
+      errors.push(`${cluster.cluster_id}: headline_zh_hant is a fallback label, category/entity concatenation, cluster_title_candidate, or mojibake`);
+    }
     if (!cluster.what_happened_zh_hant) errors.push(`${cluster.cluster_id}: missing what_happened_zh_hant`);
     if (!cluster.why_it_matters_zh_hant) errors.push(`${cluster.cluster_id}: missing why_it_matters_zh_hant`);
     if (!cluster.watch_next_zh_hant) errors.push(`${cluster.cluster_id}: missing watch_next_zh_hant`);
@@ -94,8 +119,27 @@ async function main() {
       errors.push(`${cluster.cluster_id}: invalid summarized ai_status ${cluster.ai_status}`);
     }
 
-    if (hasCommonSimplifiedText(flattenUserFacingValues(cluster))) {
+    const userFacingValues = flattenUserFacingValues(cluster);
+    if (hasCommonSimplifiedText(userFacingValues)) {
       errors.push(`${cluster.cluster_id}: user-facing fields contain common Simplified Chinese characters`);
+    }
+    if (containsPattern(userFacingValues, INVESTMENT_ADVICE_PATTERN)) {
+      errors.push(`${cluster.cluster_id}: user-facing fields contain investment advice language`);
+    }
+    if (containsPattern(userFacingValues, PRICE_PREDICTION_PATTERN)) {
+      errors.push(`${cluster.cluster_id}: user-facing fields contain price prediction language`);
+    }
+    if (realMode && cluster.ai_status === "success" && containsPattern(userFacingValues, GENERIC_AI_OUTPUT_PATTERN)) {
+      errors.push(`${cluster.cluster_id}: real AI success output contains generic placeholder or mock text`);
+    }
+    if (userFacingValues.some(hasBadUserFacingText)) {
+      errors.push(`${cluster.cluster_id}: user-facing fields contain fallback labels or mojibake`);
+    }
+    if (cluster.ai_status === "failed_fallback_used" && !cluster.summary_quality_flags?.includes("ai_failed_fallback_used")) {
+      errors.push(`${cluster.cluster_id}: fallback summary missing ai_failed_fallback_used quality flag`);
+    }
+    if (realMode && cluster.ai_status === "success" && cluster.summary_quality_flags?.some((flag) => /mock|no_real_ai_call/i.test(flag))) {
+      errors.push(`${cluster.cluster_id}: real AI success output has mock quality flags`);
     }
   }
 
@@ -141,6 +185,21 @@ async function main() {
     }
     if (!combinedInstructionText.includes("不要輸出簡體中文")) {
       errors.push(`${sample.sample_type}: missing no Simplified Chinese Traditional Chinese instruction`);
+    }
+    if (!combinedInstructionText.includes("Do not make price predictions")) {
+      errors.push(`${sample.sample_type}: missing no price prediction instruction`);
+    }
+    if (!combinedInstructionText.includes("Do not provide investment advice")) {
+      errors.push(`${sample.sample_type}: missing no investment advice instruction`);
+    }
+    if (!combinedInstructionText.includes("Do not use category/entity concatenation as the headline")) {
+      errors.push(`${sample.sample_type}: missing no category/entity headline instruction`);
+    }
+    if (!combinedInstructionText.includes("標題必須是自然的繁體中文新聞標題")) {
+      errors.push(`${sample.sample_type}: missing Traditional Chinese editorial headline instruction`);
+    }
+    if (!combinedInstructionText.includes("標題必須是正式的繁體中文新聞標題")) {
+      errors.push(`${sample.sample_type}: missing Traditional Chinese headline quality instruction`);
     }
   }
 

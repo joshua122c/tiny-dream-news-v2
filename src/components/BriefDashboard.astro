@@ -9,6 +9,7 @@ type TopStory = {
   cluster_id: string;
   headline_zh?: string;
   headline_zh_hant?: string;
+  brief_reason_zh_hant?: string;
   heat_score?: number;
   categories?: string[];
   related_assets?: string[];
@@ -19,7 +20,7 @@ type SourceLink = {
   source?: string;
   title: string;
   url: string;
-  published_at: string;
+  published_at?: string | null;
 };
 
 type Cluster = {
@@ -40,8 +41,6 @@ type Cluster = {
   source_links?: SourceLink[];
   sources?: SourceLink[];
   source_count?: number;
-  ai_status?: string;
-  summary_quality_flags?: string[];
   summary?: {
     what_happened: string;
     key_points: string[];
@@ -59,12 +58,14 @@ type SourceStatus = {
 
 type BriefData = {
   date: string;
+  run_time_hkt?: string;
+  archive_id?: string;
   generated_at: string;
   market_mood: MarketMood | string;
   market_mood_label_zh_hant?: string;
   morning_brief?: string;
   morning_brief_zh_hant?: string;
-  top_five: TopStory[];
+  top_five?: TopStory[];
   article_count?: number;
   source_count?: number;
   cluster_count?: number;
@@ -72,9 +73,10 @@ type BriefData = {
     source_count: number;
     article_count: number;
     cluster_count: number;
+    summarized_cluster_count?: number;
   };
-  clusters: Cluster[];
-  source_status: SourceStatus[];
+  clusters?: Cluster[];
+  source_status?: SourceStatus[];
 };
 
 const {
@@ -89,26 +91,61 @@ const {
   homeHref?: string;
 };
 
-const sortedClusters = [...brief.clusters].sort((a, b) => b.heat_score - a.heat_score);
-const categories = Array.from(new Set(sortedClusters.flatMap((cluster) => cluster.categories))).sort();
+const categoryOrder = [
+  "宏觀",
+  "美股",
+  "港股",
+  "中概",
+  "AI",
+  "半導體",
+  "科技公司",
+  "加密",
+  "外匯",
+  "商品",
+  "地緣政治",
+  "企業財報",
+];
+
+const sortedClusters = [...(brief.clusters ?? [])].sort((a, b) => b.heat_score - a.heat_score);
+const topStories = brief.top_five ?? [];
+const sourceStatus = brief.source_status ?? [];
+const categories = Array.from(new Set(sortedClusters.flatMap((cluster) => cluster.categories ?? []))).sort((a, b) => {
+  const left = categoryOrder.indexOf(a);
+  const right = categoryOrder.indexOf(b);
+  if (left === -1 && right === -1) return a.localeCompare(b, "zh-Hant");
+  if (left === -1) return 1;
+  if (right === -1) return -1;
+  return left - right;
+});
+
+const moodKey = typeof brief.market_mood === "string" ? brief.market_mood : "neutral";
+const moodEnglish =
+  {
+    risk_on: "Risk-on",
+    risk_off: "Risk-off",
+    mixed: "Mixed",
+    neutral: "Neutral",
+  }[moodKey] ?? "Neutral";
 const moodLabel =
   typeof brief.market_mood === "string"
-    ? (brief.market_mood_label_zh_hant ?? brief.market_mood)
+    ? (brief.market_mood_label_zh_hant ?? moodEnglish)
     : brief.market_mood.label;
 const moodSummary =
   typeof brief.market_mood === "string"
-    ? (brief.market_mood_label_zh_hant ?? brief.market_mood)
+    ? (brief.market_mood_label_zh_hant ?? moodEnglish)
     : brief.market_mood.summary;
-const morningBrief = brief.morning_brief_zh_hant ?? brief.morning_brief ?? "";
+const morningBrief = brief.morning_brief_zh_hant ?? brief.morning_brief ?? "目前未有晨報摘要。";
 const sourceCount = brief.stats?.source_count ?? brief.source_count ?? 0;
 const articleCount = brief.stats?.article_count ?? brief.article_count ?? 0;
 const clusterCount = brief.stats?.cluster_count ?? brief.cluster_count ?? sortedClusters.length;
+const summarizedCount = brief.stats?.summarized_cluster_count ?? sortedClusters.filter((cluster) => cluster.summary_type !== "none").length;
 const clusterSources = (cluster: Cluster) => cluster.source_links ?? cluster.sources ?? [];
-const sourceName = (source: SourceLink) => source.source ?? source.name ?? "";
-const clusterHeadline = (cluster: Cluster) => cluster.headline_zh_hant ?? cluster.headline_zh ?? "";
-const storyHeadline = (story: TopStory) => story.headline_zh_hant ?? story.headline_zh ?? "";
-const whatHappened = (cluster: Cluster) => cluster.what_happened_zh_hant ?? cluster.summary?.what_happened ?? "";
-const whyItMatters = (cluster: Cluster) => cluster.why_it_matters_zh_hant ?? cluster.summary?.why_it_matters ?? "";
+const sourceName = (source: SourceLink) => source.source ?? source.name ?? "Source";
+const clusterHeadline = (cluster: Cluster) => cluster.headline_zh_hant ?? cluster.headline_zh ?? "未有正式標題";
+const storyHeadline = (story?: TopStory) => story?.headline_zh_hant ?? story?.headline_zh ?? "";
+const storyReason = (story: TopStory) => story.brief_reason_zh_hant ?? story.categories?.slice(0, 2).join(" / ") ?? "";
+const whatHappened = (cluster: Cluster) => cluster.what_happened_zh_hant ?? cluster.summary?.what_happened ?? cluster.summary_zh_hant ?? "目前公開資訊有限。";
+const whyItMatters = (cluster: Cluster) => cluster.why_it_matters_zh_hant ?? cluster.summary?.why_it_matters ?? "目前公開資訊有限。";
 const keyPoints = (cluster: Cluster) => cluster.key_points_zh_hant ?? cluster.summary?.key_points ?? [];
 const watchNext = (cluster: Cluster) => {
   if (cluster.watch_next_zh_hant) return [cluster.watch_next_zh_hant];
@@ -119,58 +156,114 @@ const generatedTime = new Intl.DateTimeFormat("zh-HK", {
   timeStyle: "short",
   timeZone: "Asia/Hong_Kong",
 }).format(new Date(brief.generated_at));
-const totalSourceMentions = sortedClusters.reduce((sum, cluster) => sum + clusterSources(cluster).length, 0);
+const runTimeLabel = brief.run_time_hkt ? `${brief.run_time_hkt.slice(0, 2)}:${brief.run_time_hkt.slice(2)} HKT` : null;
+const sourceHost = (url: string) => {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return "";
+  }
+};
+const publishedLabel = (publishedAt?: string | null) => {
+  if (!publishedAt) return "";
+  const date = new Date(publishedAt);
+  if (Number.isNaN(date.getTime())) return "";
+  return new Intl.DateTimeFormat("zh-HK", {
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZone: "Asia/Hong_Kong",
+  }).format(date);
+};
+const formatScore = (score: number | undefined) => Number(score ?? 0).toFixed(1);
+const heatLabel = (score: number | undefined) => {
+  const value = Number(score ?? 0);
+  if (value >= 70) return "High";
+  if (value >= 45) return "Elevated";
+  if (value >= 25) return "Watch";
+  return "Low";
+};
+const heatTone = (score: number | undefined) => {
+  const value = Number(score ?? 0);
+  if (value >= 70) return "high";
+  if (value >= 45) return "elevated";
+  if (value >= 25) return "watch";
+  return "low";
+};
+const leadHeadline = storyHeadline(topStories[0]) || (sortedClusters[0] ? clusterHeadline(sortedClusters[0]) : "");
 ---
 
 <main class="brief-shell">
   <header class="topbar">
-    <a class="brand" href="/">
+    <a class="brand" href="/" aria-label="Tiny Dream News V2 home">
       <span class="brand-mark" aria-hidden="true">TD</span>
       <span>
         <strong>Tiny Dream News V2</strong>
-        <small>{pageLabel}</small>
+        <small>Global Finance & Technology Morning Brief</small>
       </span>
     </a>
+
+    <div class="topbar-meta" aria-label="Current brief metadata">
+      <span>{pageLabel}</span>
+      {runTimeLabel && <strong>{runTimeLabel}</strong>}
+    </div>
+
     <nav class="top-actions" aria-label="Brief navigation">
       {homeHref && <a href={homeHref}>Latest</a>}
       {archiveHref && <a href={archiveHref}>Archive</a>}
     </nav>
   </header>
 
-  <section class="brief-hero" aria-labelledby="brief-title">
-    <div class="hero-main">
-      <p class="eyebrow">Global finance and technology morning brief</p>
-      <h1 id="brief-title">Tiny Dream News V2</h1>
-      <div class="generated-row">
-        <span>Generated</span>
+  <section class="command-center" aria-labelledby="brief-title">
+    <div class="morning-panel">
+      <div class="panel-kicker">
+        <span>今日市場主線</span>
         <time datetime={brief.generated_at}>{generatedTime}</time>
       </div>
-      <div class="mood-strip">
-        <span class="mood-label">{moodLabel}</span>
-        <p>{moodSummary}</p>
+      <h1 id="brief-title">{leadHeadline || "Tiny Dream News V2"}</h1>
+      <div class={`mood-card mood-${moodKey}`}>
+        <div>
+          <span class="mood-dot" aria-hidden="true"></span>
+          <strong>{moodEnglish}</strong>
+        </div>
+        <p>{moodLabel}</p>
       </div>
-      <p class="mainline">{morningBrief}</p>
+      <p class="morning-copy">{morningBrief}</p>
     </div>
 
-    <aside class="top-five" aria-labelledby="top-five-title">
+    <aside class="priority-panel" aria-labelledby="top-five-title">
       <div class="section-heading">
         <p>Priority Queue</p>
         <h2 id="top-five-title">Top 5 Stories</h2>
       </div>
-      <ol>
-        {brief.top_five.map((story) => (
-          <li>
-            <a href={`#${story.cluster_id}`}>
-              <span>{story.rank}</span>
-              <strong>{storyHeadline(story)}</strong>
-            </a>
-          </li>
-        ))}
-      </ol>
+      {topStories.length === 0 ? (
+        <div class="empty-state compact">
+          <p>暫時未有重點新聞。</p>
+        </div>
+      ) : (
+        <ol class="priority-list">
+          {topStories.map((story) => (
+            <li>
+              <a href={`#${story.cluster_id}`}>
+                <span class="rank">{story.rank}</span>
+                <span class="story-copy">
+                  <strong>{storyHeadline(story)}</strong>
+                  {storyReason(story) && <em>{storyReason(story)}</em>}
+                  <span class="story-meta">
+                    {story.heat_score != null && <b>{formatScore(story.heat_score)} heat</b>}
+                    {story.categories?.slice(0, 2).map((category) => <small>{category}</small>)}
+                  </span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      )}
     </aside>
   </section>
 
-  <section class="stats-grid" aria-label="Daily brief statistics">
+  <section class="stats-strip" aria-label="Daily brief statistics">
     <div>
       <span>{sourceCount}</span>
       <p>Sources analyzed</p>
@@ -184,113 +277,147 @@ const totalSourceMentions = sortedClusters.reduce((sum, cluster) => sum + cluste
       <p>Clusters generated</p>
     </div>
     <div>
-      <span>{totalSourceMentions}</span>
-      <p>Source links shown</p>
+      <span>{summarizedCount}</span>
+      <p>AI summaries</p>
     </div>
   </section>
 
-  <section class="filter-band" aria-labelledby="filter-title">
+  <section class="market-tabs" aria-labelledby="filter-title">
     <div>
-      <p class="eyebrow">Category Filter</p>
+      <p class="eyebrow">Market Tabs</p>
       <h2 id="filter-title">Themes sorted by heat score</h2>
     </div>
     <div class="filter-controls" role="list" aria-label="Filter news cards by category">
-      <button type="button" class="filter-button is-active" data-filter="all">All</button>
+      <button type="button" class="filter-button is-active" data-filter="all">全部</button>
       {categories.map((category) => (
         <button type="button" class="filter-button" data-filter={category}>{category}</button>
       ))}
     </div>
   </section>
 
-  <section class="cluster-list" aria-live="polite">
-    {sortedClusters.map((cluster) => (
-      <article
-        class="cluster-card"
-        id={cluster.cluster_id}
-        data-categories={cluster.categories.join("|")}
-      >
-        <div class="cluster-score">
-          <span>{cluster.heat_score}</span>
-          <p>Heat score</p>
-        </div>
+  {sortedClusters.length === 0 ? (
+    <section class="empty-state">
+      <h2>暫時未有新聞主題</h2>
+      <p>資料生成完成後，這裡會顯示按 heat score 排序的新聞主題卡。</p>
+    </section>
+  ) : (
+    <section class="cluster-list" aria-live="polite">
+      {sortedClusters.map((cluster) => (
+        <article
+          class="cluster-card"
+          id={cluster.cluster_id}
+          data-categories={(cluster.categories ?? []).join("|")}
+        >
+          <div class={`heat-rail heat-${heatTone(cluster.heat_score)}`}>
+            <span>{formatScore(cluster.heat_score)}</span>
+            <strong>{heatLabel(cluster.heat_score)}</strong>
+            <p>Heat score</p>
+          </div>
 
-        <div class="cluster-body">
-          <div class="cluster-header">
-            <div>
-              <h2>{clusterHeadline(cluster)}</h2>
-              <div class="tag-row">
-                {cluster.categories.map((category) => <span>{category}</span>)}
+          <div class="cluster-body">
+            <header class="cluster-header">
+              <div class="cluster-title-block">
+                <div class="tag-row">
+                  {(cluster.categories ?? []).map((category) => <span>{category}</span>)}
+                </div>
+                <h2>{clusterHeadline(cluster)}</h2>
+                {cluster.summary_zh_hant && <p class="cluster-summary">{cluster.summary_zh_hant}</p>}
               </div>
+              <div class="source-count">
+                <span>{cluster.source_count ?? clusterSources(cluster).length}</span>
+                <p>sources</p>
+              </div>
+            </header>
+
+            {(cluster.related_assets ?? []).length > 0 && (
+              <div class="asset-row" aria-label="Related assets">
+                {(cluster.related_assets ?? []).slice(0, 8).map((asset) => <span>{asset}</span>)}
+              </div>
+            )}
+
+            <div class="summary-grid">
+              <section>
+                <h3>What happened</h3>
+                <p>{whatHappened(cluster)}</p>
+              </section>
+              <section>
+                <h3>Why it matters</h3>
+                <p>{whyItMatters(cluster)}</p>
+              </section>
             </div>
-            <div class="source-count">
-              <span>{cluster.source_count ?? clusterSources(cluster).length}</span>
-              <p>sources</p>
+
+            <div class="detail-grid">
+              {keyPoints(cluster).length > 0 && (
+                <section>
+                  <h3>Key points</h3>
+                  <ul>
+                    {keyPoints(cluster).slice(0, 4).map((point) => <li>{point}</li>)}
+                  </ul>
+                </section>
+              )}
+              {watchNext(cluster).length > 0 && (
+                <section>
+                  <h3>Watch next</h3>
+                  <ul>
+                    {watchNext(cluster).map((item) => <li>{item}</li>)}
+                  </ul>
+                </section>
+              )}
+            </div>
+
+            {(cluster.heat_reasons ?? []).length > 0 && (
+              <div class="heat-reasons">
+                <h3>Heat reasons</h3>
+                <ul>
+                  {(cluster.heat_reasons ?? []).slice(0, 3).map((reason) => <li>{reason}</li>)}
+                </ul>
+              </div>
+            )}
+
+            <div class="source-links">
+              <h3>Main sources</h3>
+              {clusterSources(cluster).length === 0 ? (
+                <p class="source-empty">暫時未有來源連結。</p>
+              ) : (
+                <div>
+                  {clusterSources(cluster).map((source) => (
+                    <a href={source.url} target="_blank" rel="noreferrer">
+                      <span>{sourceName(source)}</span>
+                      <strong>{source.title}</strong>
+                      <small>
+                        {sourceHost(source.url)}
+                        {publishedLabel(source.published_at) && ` · ${publishedLabel(source.published_at)}`}
+                      </small>
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
-
-          <div class="asset-row" aria-label="Related assets">
-            {cluster.related_assets.map((asset) => <span>{asset}</span>)}
-          </div>
-
-          <div class="summary-grid">
-            <section>
-              <h3>What happened</h3>
-              <p>{whatHappened(cluster)}</p>
-            </section>
-            <section>
-              <h3>Why it matters</h3>
-              <p>{whyItMatters(cluster)}</p>
-            </section>
-            <section>
-              <h3>Key points</h3>
-              <ul>
-                {keyPoints(cluster).map((point) => <li>{point}</li>)}
-              </ul>
-            </section>
-            <section>
-              <h3>Watch next</h3>
-              <ul>
-                {watchNext(cluster).map((item) => <li>{item}</li>)}
-              </ul>
-            </section>
-          </div>
-
-          <div class="heat-reasons">
-            <h3>Heat reasons</h3>
-            <ul>
-              {cluster.heat_reasons.map((reason) => <li>{reason}</li>)}
-            </ul>
-          </div>
-
-          <div class="source-links">
-            <h3>Main sources</h3>
-            <div>
-              {clusterSources(cluster).map((source) => (
-                <a href={source.url} target="_blank" rel="noreferrer">
-                  <span>{sourceName(source)}</span>
-                  <strong>{source.title}</strong>
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-      </article>
-    ))}
-  </section>
+        </article>
+      ))}
+    </section>
+  )}
 
   <section class="source-status" aria-labelledby="source-status-title">
     <div class="section-heading">
-      <p>Sample source status</p>
+      <p>Source Health</p>
       <h2 id="source-status-title">MVP Sources</h2>
     </div>
-    <div class="source-status-grid">
-      {brief.source_status.map((source) => (
-        <div>
-          <strong>{source.source}</strong>
-          <span>{source.article_count ?? source.articles_found ?? 0} articles</span>
-        </div>
-      ))}
-    </div>
+    {sourceStatus.length === 0 ? (
+      <div class="empty-state compact">
+        <p>暫時未有來源狀態。</p>
+      </div>
+    ) : (
+      <div class="source-status-grid">
+        {sourceStatus.map((source) => (
+          <div class={`source-status-item status-${source.status}`}>
+            <strong>{source.source}</strong>
+            <span>{source.article_count ?? source.articles_found ?? 0} articles</span>
+          </div>
+        ))}
+      </div>
+    )}
   </section>
 </main>
 

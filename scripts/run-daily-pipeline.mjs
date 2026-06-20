@@ -8,6 +8,7 @@ const ROOT_DIR = new URL("../", import.meta.url);
 const RUNTIME_DIR = new URL("../data/runtime/", import.meta.url);
 const DAILY_FILE = new URL("../data/daily/latest.json", import.meta.url);
 const ARCHIVE_DIR = new URL("../data/archive/", import.meta.url);
+const SEARCH_DIR = new URL("../data/search/", import.meta.url);
 const REPORT_FILE = new URL("../data/runtime/pipeline_report.json", import.meta.url);
 
 function nowIso() {
@@ -21,6 +22,7 @@ function parseArgs(argv) {
     realAi: false,
     skipFetch: false,
     skipBuild: false,
+    runTime: null,
   };
 
   for (let index = 0; index < argv.length; index += 1) {
@@ -38,6 +40,9 @@ function parseArgs(argv) {
       args.skipFetch = true;
     } else if (item === "--skip-build") {
       args.skipBuild = true;
+    } else if (item === "--run-time") {
+      args.runTime = argv[index + 1];
+      index += 1;
     }
   }
 
@@ -53,6 +58,28 @@ function hongKongDate() {
   }).formatToParts(new Date());
   const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
   return `${values.year}-${values.month}-${values.day}`;
+}
+
+function hongKongRunTime() {
+  const parts = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Asia/Hong_Kong",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23",
+  }).formatToParts(new Date());
+  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return `${values.hour}${values.minute}`;
+}
+
+function validateRunTime(runTime) {
+  if (!/^\d{4}$/.test(runTime)) {
+    throw new Error("--run-time must use HHmm format, for example 0815.");
+  }
+  const hour = Number(runTime.slice(0, 2));
+  const minute = Number(runTime.slice(2, 4));
+  if (hour > 23 || minute > 59) {
+    throw new Error("--run-time must be a valid Hong Kong time in HHmm format.");
+  }
 }
 
 async function readJsonIfExists(url, fallback = null) {
@@ -173,13 +200,14 @@ function validateRealAiEnv() {
   return missing;
 }
 
-async function collectMetrics(date) {
+async function collectMetrics(date, runTime) {
   const normalized = await readJsonIfExists(new URL("../data/runtime/normalized_articles.json", import.meta.url), {});
   const clean = await readJsonIfExists(new URL("../data/runtime/clean_articles.json", import.meta.url), {});
   const clusters = await readJsonIfExists(new URL("../data/runtime/news_clusters.json", import.meta.url), {});
   const summarized = await readJsonIfExists(new URL("../data/runtime/summarized_clusters.json", import.meta.url), {});
   const latestExists = existsSync(DAILY_FILE);
-  const archiveExists = existsSync(new URL(`${date}.json`, ARCHIVE_DIR));
+  const archiveId = `${date}-${runTime}`;
+  const archiveExists = existsSync(new URL(`${archiveId}.json`, ARCHIVE_DIR));
 
   return {
     article_count: Array.isArray(normalized.articles) ? normalized.articles.length : 0,
@@ -209,6 +237,9 @@ async function inspectWarnings(report) {
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const date = args.date ?? hongKongDate();
+  const runTime = args.runTime ?? hongKongRunTime();
+  validateRunTime(runTime);
+  const archiveId = `${date}-${runTime}`;
   const mode = args.realAi ? "real-ai" : "mock-ai";
   const env = {
     ...process.env,
@@ -223,6 +254,8 @@ async function main() {
   const report = {
     generated_at: nowIso(),
     date,
+    run_time_hkt: runTime,
+    archive_id: archiveId,
     mode,
     steps_run: [],
     steps_succeeded: [],
@@ -235,8 +268,11 @@ async function main() {
       "data/runtime/scored_clusters.json",
       "data/runtime/summarized_clusters.json",
       "data/daily/latest.json",
+      `data/archive/${archiveId}.json`,
       `data/archive/${date}.json`,
       "data/archive/index.json",
+      "data/search/archive-search-index.json",
+      "data/archive/category-index.json",
       "data/runtime/pipeline_report.json",
     ],
     article_count: 0,
@@ -285,21 +321,37 @@ async function main() {
 
     const backupDir = new URL("../data/runtime/pipeline-backup/", import.meta.url);
     const latestBackup = new URL("latest.backup.json", backupDir);
-    const archiveUrl = new URL(`${date}.json`, ARCHIVE_DIR);
-    const archiveBackup = new URL(`${date}.backup.json`, backupDir);
+    const archiveUrl = new URL(`${archiveId}.json`, ARCHIVE_DIR);
+    const archiveAliasUrl = new URL(`${date}.json`, ARCHIVE_DIR);
+    const archiveIndexUrl = new URL("index.json", ARCHIVE_DIR);
+    const archiveSearchIndexUrl = new URL("archive-search-index.json", SEARCH_DIR);
+    const categoryIndexUrl = new URL("category-index.json", ARCHIVE_DIR);
+    const archiveBackup = new URL(`${archiveId}.backup.json`, backupDir);
+    const archiveAliasBackup = new URL(`${date}.backup.json`, backupDir);
+    const archiveIndexBackup = new URL("archive-index.backup.json", backupDir);
+    const archiveSearchIndexBackup = new URL("archive-search-index.backup.json", backupDir);
+    const categoryIndexBackup = new URL("category-index.backup.json", backupDir);
     await backupIfExists(DAILY_FILE, latestBackup);
     await backupIfExists(archiveUrl, archiveBackup);
+    await backupIfExists(archiveAliasUrl, archiveAliasBackup);
+    await backupIfExists(archiveIndexUrl, archiveIndexBackup);
+    await backupIfExists(archiveSearchIndexUrl, archiveSearchIndexBackup);
+    await backupIfExists(categoryIndexUrl, categoryIndexBackup);
 
     try {
-      await runCommand("generate_final_daily_brief_json", nodeCommand("scripts/generate-daily-brief.mjs", ["--date", date]), env, report);
+      await runCommand("generate_final_daily_brief_json", nodeCommand("scripts/generate-daily-brief.mjs", ["--date", date, "--run-time", runTime]), env, report);
     } catch (error) {
       await restoreIfExists(latestBackup, DAILY_FILE);
       await restoreIfExists(archiveBackup, archiveUrl);
+      await restoreIfExists(archiveAliasBackup, archiveAliasUrl);
+      await restoreIfExists(archiveIndexBackup, archiveIndexUrl);
+      await restoreIfExists(archiveSearchIndexBackup, archiveSearchIndexUrl);
+      await restoreIfExists(categoryIndexBackup, categoryIndexUrl);
       throw error;
     }
 
     await runCommand("enhance_morning_brief", nodeCommand("scripts/enhance-daily-brief-ai.mjs"), env, report);
-    await runCommand("validate_final_output", nodeCommand("scripts/validate-daily-brief.mjs", ["--date", date]), env, report);
+    await runCommand("validate_final_output", nodeCommand("scripts/validate-daily-brief.mjs", ["--date", date, "--run-time", runTime]), env, report);
 
     if (!args.skipBuild) {
       report.website_build_status = "running";
@@ -307,7 +359,7 @@ async function main() {
       report.website_build_status = "success";
     }
 
-    Object.assign(report, await collectMetrics(date));
+    Object.assign(report, await collectMetrics(date, runTime));
     await inspectWarnings(report);
   } catch (error) {
     report.errors.push({
@@ -315,7 +367,7 @@ async function main() {
       occurred_at: nowIso(),
     });
     if (report.website_build_status === "running") report.website_build_status = "failed";
-    Object.assign(report, await collectMetrics(date));
+    Object.assign(report, await collectMetrics(date, runTime));
     await writeJson(REPORT_FILE, report);
     console.error(error.message);
     process.exitCode = 1;
@@ -328,6 +380,8 @@ async function main() {
       {
         generated_at: report.generated_at,
         date,
+        run_time_hkt: runTime,
+        archive_id: archiveId,
         mode,
         steps_succeeded: report.steps_succeeded.length,
         steps_failed: report.steps_failed.length,

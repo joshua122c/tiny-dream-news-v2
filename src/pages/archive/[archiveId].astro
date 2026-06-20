@@ -1,0 +1,60 @@
+---
+import { existsSync, readFileSync } from "node:fs";
+import BriefDashboard from "../../components/BriefDashboard.astro";
+import "../../styles/global.css";
+import archiveIndex from "../../../data/archive/index.json";
+
+type ArchiveItem = {
+  date: string;
+  run_time_hkt?: string;
+  archive_id?: string;
+};
+
+type BriefData = {
+  date: string;
+  run_time_hkt?: string;
+  archive_id?: string;
+};
+
+export function getStaticPaths() {
+  const items = ((archiveIndex as { items?: ArchiveItem[] }).items ?? []).filter((item) => item.archive_id);
+
+  return items
+    .map((item) => {
+      const fileUrl = new URL(`../../../data/archive/${item.archive_id}.json`, import.meta.url);
+      if (!existsSync(fileUrl)) return null;
+      const brief = JSON.parse(readFileSync(fileUrl, "utf8")) as BriefData;
+      return {
+        params: { archiveId: item.archive_id },
+        props: { brief },
+      };
+    })
+    .filter(Boolean);
+}
+
+const { brief } = Astro.props as { brief: BriefData };
+const label = brief.run_time_hkt
+  ? `Archive: ${brief.date} ${brief.run_time_hkt.slice(0, 2)}:${brief.run_time_hkt.slice(2)} HKT`
+  : `Archive: ${brief.date}`;
+---
+
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content={`Tiny Dream News V2 archive page for ${brief.archive_id ?? brief.date}.`}
+    />
+    <title>{brief.archive_id ?? brief.date} | Tiny Dream News V2</title>
+  </head>
+  <body>
+    <BriefDashboard
+      brief={brief}
+      pageLabel={label}
+      homeHref="/"
+      archiveHref="/archive/"
+    />
+  </body>
+</html>

@@ -1,7 +1,16 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { buildCategoryIndex, mergeArchiveIndex, mergeArchiveSearchIndex } from "./archive-indexes.mjs";
+import {
+  buildBriefReason,
+  buildMorningBrief,
+  ensureEditorialHeadline,
+  hasBadUserFacingText,
+  hasCommonSimplifiedChars,
+} from "./user-facing-copy.mjs";
 
 const DAILY_FILE = new URL("../data/daily/latest.json", import.meta.url);
 const ARCHIVE_DIR = new URL("../data/archive/", import.meta.url);
+const SEARCH_DIR = new URL("../data/search/", import.meta.url);
 const RUNTIME_DIR = new URL("../data/runtime/", import.meta.url);
 const CLOUDFLARE_API_BASE = "https://api.cloudflare.com/client/v4";
 const MOCK_MODEL_NAME = "mock-daily-brief-editorial-zh-hant";
@@ -31,6 +40,13 @@ const SUMMARY_JSON_SCHEMA = {
   },
   required: ["morning_brief_zh_hant", "market_mood", "market_mood_label_zh_hant", "top_five_brief_reasons"],
 };
+
+const COMMON_SIMPLIFIED_CHARS = /[这为与发后业东个会来时们国对称产经见实现过涨亿万广气报团际质证龙门车网]/;
+const INVESTMENT_ADVICE_PATTERN =
+  /(買入|賣出|持有|加倉|減倉|建議買|建議賣|投資建議|目標價|price target|buy rating|sell rating|hold rating|should buy|should sell)/i;
+const PRICE_PREDICTION_PATTERN =
+  /(將上升|將下跌|會升至|會跌至|上望|下望|看漲至|看跌至|will rise|will fall|could rise to|could fall to|target price)/i;
+const GENERIC_AI_OUTPUT_PATTERN = /(mock|placeholder|lorem ipsum|測試資料流程|正式摘要會在)/i;
 
 const SIMPLIFIED_TO_TRADITIONAL = new Map([
   ["这", "這"],
@@ -103,6 +119,42 @@ function toZhHant(value) {
     .join("");
 }
 
+function userFacingStringsFromDailyBrief(result) {
+  return [
+    result.morning_brief_zh_hant,
+    result.market_mood_label_zh_hant,
+    ...asArray(result.top_five_brief_reasons).map((item) => item.brief_reason_zh_hant),
+  ].map((value) => String(value ?? ""));
+}
+
+function hasCjk(text) {
+  return /[\u3400-\u9fff]/.test(String(text ?? ""));
+}
+
+function validateUserFacingDailyBrief(result, { allowMockText = false } = {}) {
+  const values = userFacingStringsFromDailyBrief(result);
+  const combined = values.join("\n");
+
+  for (const [index, value] of values.entries()) {
+    if (!value.trim()) throw new Error(`Daily brief user-facing field ${index + 1} is empty`);
+  }
+  if (!values.every(hasCjk)) {
+    throw new Error("Daily brief user-facing fields must contain Traditional Chinese text");
+  }
+  if (COMMON_SIMPLIFIED_CHARS.test(combined)) {
+    throw new Error("Daily brief user-facing fields contain common Simplified Chinese characters");
+  }
+  if (INVESTMENT_ADVICE_PATTERN.test(combined)) {
+    throw new Error("Daily brief user-facing fields contain investment advice language");
+  }
+  if (PRICE_PREDICTION_PATTERN.test(combined)) {
+    throw new Error("Daily brief user-facing fields contain price prediction language");
+  }
+  if (!allowMockText && GENERIC_AI_OUTPUT_PATTERN.test(combined)) {
+    throw new Error("Daily brief user-facing fields contain generic placeholder or mock text");
+  }
+}
+
 function usageEstimate(payload, outputTokens = 360) {
   const inputTokens = Math.ceil(JSON.stringify(payload).length / 4);
   return {
@@ -121,7 +173,7 @@ function compactCluster(cluster) {
   return {
     cluster_id: cluster.cluster_id,
     rank: cluster.rank,
-    headline_zh_hant: cluster.headline_zh_hant,
+    headline_zh_hant: ensureEditorialHeadline(cluster),
     heat_score: cluster.heat_score,
     heat_level: cluster.heat_level,
     categories: cluster.categories,
@@ -138,6 +190,24 @@ function compactCluster(cluster) {
 
 function promptInstructions() {
   return [
+    "All user-facing output must be written in Traditional Chinese.",
+    "Translate and synthesize English source content into Traditional Chinese.",
+    "Convert or rewrite Simplified Chinese source content into Traditional Chinese.",
+    "Do not output Simplified Chinese.",
+    "Do not repeat raw fallback labels such as 重點主題, cluster_title_candidate, or category/entity concatenations.",
+    "If a supplied headline looks like a fallback label, rewrite the morning brief around the actual event or market theme.",
+    "Top 5 brief reasons must be one short Traditional Chinese sentence explaining why the story matters.",
+    "Keep a neutral and factual financial news tone.",
+    "Do not provide investment advice.",
+    "Do not make price predictions.",
+    "Do not include buy, sell, hold, target price, upside, downside, or trading-action language.",
+    "Do not add facts that are not supported by the provided cluster summaries, categories, heat reasons, related assets, and source names.",
+    "If information is limited, clearly say 「目前公開資訊有限」.",
+    "Avoid generic filler. The morning brief must identify the concrete mainline across the top clusters.",
+    "Company names, tickers, product names, and source names may remain in English where appropriate.",
+    "Return valid JSON only.",
+    "Do not include Markdown.",
+    "Do not include explanations outside JSON.",
     "所有面向使用者的內容必須使用繁體中文。",
     "英文來源內容需要翻譯並綜合為繁體中文。",
     "簡體中文來源內容需要轉換或改寫為繁體中文。",
@@ -145,8 +215,11 @@ function promptInstructions() {
     "保持中立、factual 的新聞語氣。",
     "不要提供投資建議。",
     "不要作價格預測。",
+    "不要輸出買入、賣出、持有、目標價、上望、下望或任何交易行動建議。",
     "不要加入來源資料沒有支持的事實。",
     "只可根據提供的 cluster headline、summary、categories、heat reasons、related assets、source names 進行總結。",
+    "如果資料不足，請明確寫出「目前公開資訊有限」。",
+    "避免空泛模板句；晨報主線必須綜合前列 clusters 的具體共通主題。",
     "只輸出 valid JSON。",
     "不要輸出 Markdown。",
     "不要在 JSON 外加入任何說明。",
@@ -198,6 +271,15 @@ function cloudflareRequestBody(promptPayload) {
 
 function mockAiResult(brief) {
   const topFive = asArray(brief.top_five);
+  return {
+    morning_brief_zh_hant: buildMorningBrief(asArray(brief.clusters).slice(0, MAX_PROMPT_CLUSTERS), brief.market_mood_label_zh_hant),
+    market_mood: brief.market_mood,
+    market_mood_label_zh_hant: brief.market_mood_label_zh_hant,
+    top_five_brief_reasons: topFive.map((item) => ({
+      cluster_id: item.cluster_id,
+      brief_reason_zh_hant: buildBriefReason(item),
+    })),
+  };
   const categories = unique(topFive.flatMap((item) => asArray(item.categories))).slice(0, 6);
   const headlines = topFive.map((item) => item.headline_zh_hant).filter(Boolean).slice(0, 3);
   const moodLabel = brief.market_mood_label_zh_hant || "市場訊號分化";
@@ -235,21 +317,11 @@ function parseJsonLoose(value) {
   const text = String(value ?? "").trim();
   if (!text) throw new Error("AI response was empty");
 
-  try {
-    return JSON.parse(text);
-  } catch {
-    const withoutFence = text.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/i, "").trim();
-    try {
-      return JSON.parse(withoutFence);
-    } catch {
-      const firstBrace = withoutFence.indexOf("{");
-      const lastBrace = withoutFence.lastIndexOf("}");
-      if (firstBrace >= 0 && lastBrace > firstBrace) {
-        return JSON.parse(withoutFence.slice(firstBrace, lastBrace + 1));
-      }
-      throw new Error("AI response was not valid JSON");
-    }
+  if (!text.startsWith("{") || !text.endsWith("}")) {
+    throw new Error("AI response included text outside JSON");
   }
+
+  return JSON.parse(text);
 }
 
 function responseContent(cloudflareResponse) {
@@ -299,7 +371,7 @@ async function callCloudflare(requestBody, env) {
 function normalizeAiResult(result, brief) {
   const topFiveIds = asArray(brief.top_five).map((item) => item.cluster_id);
   validateAiResult(result, topFiveIds);
-  return {
+  const normalized = {
     morning_brief_zh_hant: toZhHant(result.morning_brief_zh_hant),
     market_mood: result.market_mood,
     market_mood_label_zh_hant: toZhHant(result.market_mood_label_zh_hant),
@@ -308,6 +380,16 @@ function normalizeAiResult(result, brief) {
       brief_reason_zh_hant: toZhHant(item.brief_reason_zh_hant),
     })),
   };
+  if (hasBadUserFacingText(normalized.morning_brief_zh_hant) || hasCommonSimplifiedChars(normalized.morning_brief_zh_hant)) {
+    throw new Error("AI result morning_brief_zh_hant contains fallback labels, mojibake, or Simplified Chinese");
+  }
+  for (const item of normalized.top_five_brief_reasons) {
+    if (hasBadUserFacingText(item.brief_reason_zh_hant) || hasCommonSimplifiedChars(item.brief_reason_zh_hant)) {
+      throw new Error(`${item.cluster_id}: AI result brief_reason_zh_hant contains fallback labels, mojibake, or Simplified Chinese`);
+    }
+  }
+  validateUserFacingDailyBrief(normalized);
+  return normalized;
 }
 
 function applyEnhancement(brief, aiResult, status, model, generatedAt, warning = null) {
@@ -344,6 +426,14 @@ function envConfig() {
 
 async function readJson(url) {
   return JSON.parse(await readFile(url, "utf8"));
+}
+
+async function readJsonIfExists(url, fallback = null) {
+  try {
+    return JSON.parse(await readFile(url, "utf8"));
+  } catch {
+    return fallback;
+  }
 }
 
 async function writeJson(url, data) {
@@ -407,7 +497,12 @@ async function runRealMode(promptPayload, requestBody, brief, env, errors) {
 async function main() {
   const generatedAt = nowIso();
   const brief = await readJson(DAILY_FILE);
-  const archiveFile = new URL(`${brief.date}.json`, ARCHIVE_DIR);
+  const archiveId = brief.archive_id ?? `${brief.date}-${brief.run_time_hkt ?? "0000"}`;
+  const archiveFile = new URL(`${archiveId}.json`, ARCHIVE_DIR);
+  const archiveAliasFile = new URL(`${brief.date}.json`, ARCHIVE_DIR);
+  const archiveIndexFile = new URL("index.json", ARCHIVE_DIR);
+  const archiveSearchIndexFile = new URL("archive-search-index.json", SEARCH_DIR);
+  const categoryIndexFile = new URL("category-index.json", ARCHIVE_DIR);
   const env = envConfig();
   const promptPayload = buildPromptPayload(brief);
   const requestBody = cloudflareRequestBody(promptPayload);
@@ -494,6 +589,13 @@ async function main() {
 
   await writeJson(DAILY_FILE, outputBrief);
   await writeJson(archiveFile, outputBrief);
+  await writeJson(archiveAliasFile, outputBrief);
+  const archiveIndex = mergeArchiveIndex(await readJsonIfExists(archiveIndexFile, { items: [] }), outputBrief);
+  const archiveSearchIndex = mergeArchiveSearchIndex(await readJsonIfExists(archiveSearchIndexFile, { items: [] }), outputBrief);
+  const categoryIndex = buildCategoryIndex(archiveSearchIndex);
+  await writeJson(archiveIndexFile, archiveIndex);
+  await writeJson(archiveSearchIndexFile, archiveSearchIndex);
+  await writeJson(categoryIndexFile, categoryIndex);
   await writeJson(new URL("daily_brief_ai_report.json", RUNTIME_DIR), report);
   await writeJson(new URL("daily_brief_ai_prompt_sample.json", RUNTIME_DIR), promptSample);
   await writeErrors(errors);
@@ -511,7 +613,11 @@ async function main() {
         error_count: errors.length,
         outputs: [
           "data/daily/latest.json",
+          `data/archive/${archiveId}.json`,
           `data/archive/${brief.date}.json`,
+          "data/archive/index.json",
+          "data/search/archive-search-index.json",
+          "data/archive/category-index.json",
           "data/runtime/daily_brief_ai_report.json",
           "data/runtime/daily_brief_ai_prompt_sample.json",
           ...(errors.length > 0 ? ["data/runtime/daily_brief_ai_errors.json"] : []),

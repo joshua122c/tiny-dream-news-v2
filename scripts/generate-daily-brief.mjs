@@ -1,4 +1,6 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { buildCategoryIndex, mergeArchiveIndex, mergeArchiveSearchIndex } from "./archive-indexes.mjs";
+import { buildBriefReason, buildEditorialHeadline, buildMorningBrief, isBadUserFacingHeadline } from "./user-facing-copy.mjs";
 
 const SUMMARY_FILE = new URL("../data/runtime/summarized_clusters.json", import.meta.url);
 const SOURCE_STATUS_FILE = new URL("../data/runtime/source_status.json", import.meta.url);
@@ -6,6 +8,7 @@ const AI_SUMMARY_REPORT_FILE = new URL("../data/runtime/ai_summary_report.json",
 const SCORE_REPORT_FILE = new URL("../data/runtime/score_report.json", import.meta.url);
 const DAILY_DIR = new URL("../data/daily/", import.meta.url);
 const ARCHIVE_DIR = new URL("../data/archive/", import.meta.url);
+const SEARCH_DIR = new URL("../data/search/", import.meta.url);
 const RUNTIME_DIR = new URL("../data/runtime/", import.meta.url);
 
 const MOOD_LABELS = {
@@ -26,6 +29,9 @@ function parseArgs(argv) {
     if (item === "--date") {
       args.date = argv[index + 1];
       index += 1;
+    } else if (item === "--run-time") {
+      args.runTime = argv[index + 1];
+      index += 1;
     }
   }
   return args;
@@ -40,6 +46,28 @@ function hongKongDate() {
   }).formatToParts(new Date());
   const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
   return `${values.year}-${values.month}-${values.day}`;
+}
+
+function hongKongRunTime() {
+  const parts = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Asia/Hong_Kong",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23",
+  }).formatToParts(new Date());
+  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return `${values.hour}${values.minute}`;
+}
+
+function validateRunTime(runTime) {
+  if (!/^\d{4}$/.test(runTime)) {
+    throw new Error("--run-time must use HHmm format, for example 0815.");
+  }
+  const hour = Number(runTime.slice(0, 2));
+  const minute = Number(runTime.slice(2, 4));
+  if (hour > 23 || minute > 59) {
+    throw new Error("--run-time must be a valid Hong Kong time in HHmm format.");
+  }
 }
 
 function asArray(value) {
@@ -73,16 +101,12 @@ function sortByHeat(clusters) {
 }
 
 function fallbackHeadline(cluster) {
-  const categories = asArray(cluster.categories).slice(0, 3);
-  const assets = asArray(cluster.related_assets).slice(0, 3);
-  const left = categories.length > 0 ? categories.join("、") : "市場";
-  const right = assets.length > 0 ? `｜${assets.join("、")}` : "";
-  return `重點主題：${left}${right}`;
+  return buildEditorialHeadline(cluster);
 }
 
 function displayHeadline(cluster, warnings, shouldWarn = true) {
-  if (cluster.headline_zh_hant) return cluster.headline_zh_hant;
-  if (shouldWarn) warnings.push(`${cluster.cluster_id}: missing headline_zh_hant; deterministic display headline used`);
+  if (cluster.headline_zh_hant && !isBadUserFacingHeadline(cluster.headline_zh_hant, cluster)) return cluster.headline_zh_hant;
+  if (shouldWarn) warnings.push(`${cluster.cluster_id}: missing or invalid headline_zh_hant; deterministic editorial headline used`);
   return fallbackHeadline(cluster);
 }
 
@@ -159,6 +183,8 @@ function finalCluster(cluster, rank, warnings) {
     source_count: Number(cluster.source_count ?? unique(asArray(cluster.articles).map((article) => article.source)).length),
     source_links: sourceLinks(cluster),
     ai_status: cluster.ai_status ?? "unknown",
+    ai_model: cluster.ai_model ?? null,
+    ai_usage_estimate: cluster.ai_usage_estimate ?? null,
     summary_quality_flags: asArray(cluster.summary_quality_flags),
     debug: {
       cluster_title_candidate: cluster.cluster_title_candidate ?? null,
@@ -184,10 +210,8 @@ function determineMarketMood(clusters) {
   return "neutral";
 }
 
-function morningBrief(topFive, mood) {
-  const topics = topFive.map((item) => item.headline_zh_hant).join("、");
-  const categories = unique(topFive.flatMap((item) => item.categories)).slice(0, 5).join("、");
-  return `今日全球財經科技焦點集中在${categories || "主要市場"}。排名較前的主題包括${topics || "暫無足夠主題"}。市場關注來源覆蓋度、熱度分數與後續公開資訊變化，目前整體判斷為${MOOD_LABELS[mood]}。`;
+function morningBrief(topClusters, mood) {
+  return buildMorningBrief(topClusters, MOOD_LABELS[mood]);
 }
 
 function sourceStatusList(sourceStatusData) {
@@ -221,18 +245,32 @@ function stats({ sourceStatus, clusters, aiReport, generatedAt }) {
   };
 }
 
+function labelForRun(date, runTime) {
+  const hourMinute = Number(runTime);
+  let period = "早報";
+  if (hourMinute >= 1100 && hourMinute <= 1459) period = "午報";
+  else if (hourMinute >= 1500 && hourMinute <= 1859) period = "午後更新";
+  else if (hourMinute >= 1900) period = "晚報";
+
+  const [year, month, day] = date.split("-");
+  return `${year}年${month}月${day}日${period}`;
+}
+
 function updateArchiveIndex(existingIndex, entry) {
   const existingItems = asArray(existingIndex?.items ?? existingIndex?.archives);
-  const withoutCurrent = existingItems.filter((item) => item.date !== entry.date);
+  const withoutCurrent = existingItems.filter((item) => item.archive_id && item.archive_id !== entry.archive_id);
   return {
     generated_at: nowIso(),
-    items: [entry, ...withoutCurrent].sort((left, right) => String(right.date).localeCompare(String(left.date))),
+    items: [entry, ...withoutCurrent].sort((left, right) => String(right.archive_id).localeCompare(String(left.archive_id))),
   };
 }
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const date = args.date ?? hongKongDate();
+  const runTime = args.runTime ?? hongKongRunTime();
+  validateRunTime(runTime);
+  const archiveId = `${date}-${runTime}`;
   const generatedAt = nowIso();
   const warnings = [];
   const summaryData = await readJsonIfExists(SUMMARY_FILE);
@@ -249,6 +287,7 @@ async function main() {
   const topFive = clusters.slice(0, 5).map((cluster, index) => ({
     rank: index + 1,
     headline_zh_hant: cluster.headline_zh_hant,
+    brief_reason_zh_hant: buildBriefReason(cluster),
     heat_score: cluster.heat_score,
     categories: cluster.categories,
     related_assets: cluster.related_assets,
@@ -259,12 +298,14 @@ async function main() {
 
   const brief = {
     date,
+    run_time_hkt: runTime,
+    archive_id: archiveId,
     generated_at: generatedAt,
     timezone: "Asia/Hong_Kong",
     site_title: "Tiny Dream News V2",
     market_mood: mood,
     market_mood_label_zh_hant: MOOD_LABELS[mood],
-    morning_brief_zh_hant: morningBrief(topFive, mood),
+    morning_brief_zh_hant: morningBrief(clusters.slice(0, 10), mood),
     top_five: topFive,
     stats: stats({ sourceStatus, clusters, aiReport, generatedAt }),
     clusters,
@@ -274,17 +315,19 @@ async function main() {
   };
 
   const latestUrl = new URL("latest.json", DAILY_DIR);
-  const archiveUrl = new URL(`${date}.json`, ARCHIVE_DIR);
+  const archiveUrl = new URL(`${archiveId}.json`, ARCHIVE_DIR);
+  const archiveAliasUrl = new URL(`${date}.json`, ARCHIVE_DIR);
   const archiveIndexUrl = new URL("index.json", ARCHIVE_DIR);
+  const archiveSearchIndexUrl = new URL("archive-search-index.json", SEARCH_DIR);
+  const categoryIndexUrl = new URL("category-index.json", ARCHIVE_DIR);
   const reportUrl = new URL("daily_brief_report.json", RUNTIME_DIR);
   const existingArchiveIndex = await readJsonIfExists(archiveIndexUrl, { items: [] });
-  const archiveIndex = updateArchiveIndex(existingArchiveIndex, {
-    date,
-    generated_at: generatedAt,
-    path: `data/archive/${date}.json`,
-    top_headline_zh_hant: topFive[0]?.headline_zh_hant ?? "",
-    cluster_count: clusters.length,
-  });
+  const existingArchiveSearchIndex = await readJsonIfExists(archiveSearchIndexUrl, { items: [] });
+  const archiveIndex = mergeArchiveIndex(existingArchiveIndex, brief);
+  const archiveSearchIndex = mergeArchiveSearchIndex(existingArchiveSearchIndex, brief);
+  const categoryIndex = buildCategoryIndex(archiveSearchIndex);
+  const archiveIndexPreviousCount = asArray(existingArchiveIndex?.items ?? existingArchiveIndex?.archives).length;
+  const searchIndexPreviousCount = asArray(existingArchiveSearchIndex?.items).length;
 
   const validationResults = {
     latest_has_required_fields: Boolean(brief.date && brief.generated_at && brief.morning_brief_zh_hant && brief.top_five && brief.stats && brief.clusters),
@@ -297,10 +340,21 @@ async function main() {
   const report = {
     generated_at: generatedAt,
     date,
+    run_time_hkt: runTime,
+    archive_id: archiveId,
     input_cluster_count: sortedInputClusters.length,
     output_cluster_count: clusters.length,
-    archive_path: `data/archive/${date}.json`,
+    archive_path: `data/archive/${archiveId}.json`,
+    archive_alias_path: `data/archive/${date}.json`,
     latest_path: "data/daily/latest.json",
+    archive_index_path: "data/archive/index.json",
+    archive_search_index_path: "data/search/archive-search-index.json",
+    category_index_path: "data/archive/category-index.json",
+    archive_index_previous_count: archiveIndexPreviousCount,
+    archive_index_count: archiveIndex.items.length,
+    search_index_previous_count: searchIndexPreviousCount,
+    search_index_count: archiveSearchIndex.items.length,
+    category_index_category_count: categoryIndex.categories.length,
     top_five_cluster_ids: topFive.map((item) => item.cluster_id),
     warnings: brief.warnings,
     validation_results: validationResults,
@@ -308,10 +362,14 @@ async function main() {
 
   await mkdir(DAILY_DIR, { recursive: true });
   await mkdir(ARCHIVE_DIR, { recursive: true });
+  await mkdir(SEARCH_DIR, { recursive: true });
   await mkdir(RUNTIME_DIR, { recursive: true });
   await writeJson(latestUrl, brief);
   await writeJson(archiveUrl, brief);
+  await writeJson(archiveAliasUrl, brief);
   await writeJson(archiveIndexUrl, archiveIndex);
+  await writeJson(archiveSearchIndexUrl, archiveSearchIndex);
+  await writeJson(categoryIndexUrl, categoryIndex);
   await writeJson(reportUrl, report);
 
   console.log(
@@ -319,13 +377,18 @@ async function main() {
       {
         generated_at: generatedAt,
         date,
+        run_time_hkt: runTime,
+        archive_id: archiveId,
         output_cluster_count: clusters.length,
         top_five_cluster_ids: report.top_five_cluster_ids,
         market_mood: mood,
         outputs: [
           "data/daily/latest.json",
+          `data/archive/${archiveId}.json`,
           `data/archive/${date}.json`,
           "data/archive/index.json",
+          "data/search/archive-search-index.json",
+          "data/archive/category-index.json",
           "data/runtime/daily_brief_report.json",
         ],
       },

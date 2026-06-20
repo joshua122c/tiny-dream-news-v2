@@ -1,0 +1,2192 @@
+{
+  "generated_at": "2026-06-20T06:46:06.158Z",
+  "categories": [
+    {
+      "category": "半導體",
+      "items": [
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-011",
+          "headline_zh_hant": "油價受霍爾木茲海峽與地緣局勢牽動",
+          "heat_score": 75.9,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-008",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 51.75,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-092",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 37.8,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-050",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 34.8,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-011",
+          "headline_zh_hant": "油價受霍爾木茲海峽與地緣局勢牽動",
+          "heat_score": 75.9,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-008",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 51.75,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-092",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 37.8,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-050",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 34.8,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        }
+      ]
+    },
+    {
+      "category": "外匯",
+      "items": [
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-008",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 51.75,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-054",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 47,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-003",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 43.75,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-006",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 37.35,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-005",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 35.75,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-058",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 23,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-008",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 51.75,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-054",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 47,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-003",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 43.75,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-006",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 37.35,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-005",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 35.75,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-058",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 23,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        }
+      ]
+    },
+    {
+      "category": "企業財報",
+      "items": [
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-007",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 51.75,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-012",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 28,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-052",
+          "headline_zh_hant": "企業財報與展望成為市場焦點",
+          "heat_score": 20.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-007",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 51.75,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-012",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 28,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-052",
+          "headline_zh_hant": "企業財報與展望成為市場焦點",
+          "heat_score": 20.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        }
+      ]
+    },
+    {
+      "category": "地緣政治",
+      "items": [
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-011",
+          "headline_zh_hant": "油價受霍爾木茲海峽與地緣局勢牽動",
+          "heat_score": 75.9,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-025",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 35,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-072",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 29.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-049",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 29.4,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-059",
+          "headline_zh_hant": "油價受霍爾木茲海峽與地緣局勢牽動",
+          "heat_score": 26.4,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-011",
+          "headline_zh_hant": "油價受霍爾木茲海峽與地緣局勢牽動",
+          "heat_score": 75.9,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-025",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 35,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-072",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 29.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-049",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 29.4,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-059",
+          "headline_zh_hant": "油價受霍爾木茲海峽與地緣局勢牽動",
+          "heat_score": 26.4,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        }
+      ]
+    },
+    {
+      "category": "宏觀",
+      "items": [
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-004",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 79.85,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-007",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 51.75,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-054",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 47,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-001",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 35.5,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-016",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 33.5,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-009",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 33,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-018",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 31.5,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-019",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 31.5,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-013",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 31,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-024",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 28.5,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-014",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 28,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-017",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 28,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-023",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 27,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-026",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 27,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-037",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 27,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-021",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 26.5,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-022",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 26.5,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-027",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 26,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-073",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 26,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-080",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 26,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-081",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 26,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-036",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 25.5,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-040",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 25.5,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-043",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 25.5,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-033",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 24,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-035",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 24,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-038",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 24,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-041",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 24,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-045",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 24,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-046",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 24,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-091",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 24,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-060",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 23,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-067",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 23,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-010",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 21.75,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-065",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 21,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-051",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-066",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-069",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-070",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-071",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-076",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-077",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-088",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-089",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-093",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-061",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 16,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-063",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 16,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-064",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 16,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-078",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 16,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-082",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 16,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-095",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 16,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-004",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 79.85,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-007",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 51.75,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-054",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 47,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-001",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 35.5,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-016",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 33.5,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-009",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 33,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-018",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 31.5,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-019",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 31.5,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-013",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 31,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-024",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 28.5,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-014",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 28,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-017",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 28,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-023",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 27,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-026",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 27,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-037",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 27,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-021",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 26.5,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-022",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 26.5,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-027",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 26,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-073",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 26,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-080",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 26,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-081",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 26,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-036",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 25.5,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-040",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 25.5,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-043",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 25.5,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-033",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 24,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-035",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 24,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-038",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 24,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-041",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 24,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-045",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 24,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-046",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 24,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-091",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 24,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-060",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 23,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-067",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 23,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-010",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 21.75,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-065",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 21,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-051",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-066",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-069",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-070",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-071",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-076",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-077",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-088",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-089",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-093",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-061",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 16,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-063",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 16,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-064",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 16,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-078",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 16,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-082",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 16,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-095",
+          "headline_zh_hant": "宏觀相關消息升溫，宏觀成為焦點",
+          "heat_score": 16,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        }
+      ]
+    },
+    {
+      "category": "科技公司",
+      "items": [
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-008",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 51.75,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-092",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 37.8,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-034",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 35.5,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-087",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 34.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-048",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 33.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-042",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 32,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-030",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 30.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-020",
+          "headline_zh_hant": "Alphabet相關消息升溫，科技公司成為焦點",
+          "heat_score": 30.5,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-044",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 30.5,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-029",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 28,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-032",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 27.5,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-057",
+          "headline_zh_hant": "SpaceX相關消息升溫，科技公司成為焦點",
+          "heat_score": 25,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-085",
+          "headline_zh_hant": "SpaceX 市值變化引發科技股估值關注",
+          "heat_score": 23.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-008",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 51.75,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-092",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 37.8,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-034",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 35.5,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-087",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 34.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-048",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 33.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-042",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 32,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-030",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 30.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-020",
+          "headline_zh_hant": "Alphabet相關消息升溫，科技公司成為焦點",
+          "heat_score": 30.5,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-044",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 30.5,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-029",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 28,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-032",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 27.5,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-057",
+          "headline_zh_hant": "SpaceX相關消息升溫，科技公司成為焦點",
+          "heat_score": 25,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-085",
+          "headline_zh_hant": "SpaceX 市值變化引發科技股估值關注",
+          "heat_score": 23.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        }
+      ]
+    },
+    {
+      "category": "美股",
+      "items": [
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-004",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 79.85,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-006",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 37.35,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-025",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 35,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-087",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 34.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-048",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 33.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-015",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 30.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-030",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 30.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-028",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 30.1,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-047",
+          "headline_zh_hant": "美股相關消息升溫，美股成為焦點",
+          "heat_score": 23.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-085",
+          "headline_zh_hant": "SpaceX 市值變化引發科技股估值關注",
+          "heat_score": 23.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-052",
+          "headline_zh_hant": "企業財報與展望成為市場焦點",
+          "heat_score": 20.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-068",
+          "headline_zh_hant": "美股相關消息升溫，美股成為焦點",
+          "heat_score": 19.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-056",
+          "headline_zh_hant": "S&P 500相關消息升溫，美股成為焦點",
+          "heat_score": 18.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-055",
+          "headline_zh_hant": "美股相關消息升溫，美股成為焦點",
+          "heat_score": 16.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-079",
+          "headline_zh_hant": "美股相關消息升溫，美股成為焦點",
+          "heat_score": 15.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-096",
+          "headline_zh_hant": "美股相關消息升溫，美股成為焦點",
+          "heat_score": 15.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-004",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 79.85,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-006",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 37.35,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-025",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 35,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-087",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 34.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-048",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 33.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-015",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 30.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-030",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 30.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-028",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 30.1,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-047",
+          "headline_zh_hant": "美股相關消息升溫，美股成為焦點",
+          "heat_score": 23.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-085",
+          "headline_zh_hant": "SpaceX 市值變化引發科技股估值關注",
+          "heat_score": 23.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-052",
+          "headline_zh_hant": "企業財報與展望成為市場焦點",
+          "heat_score": 20.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-068",
+          "headline_zh_hant": "美股相關消息升溫，美股成為焦點",
+          "heat_score": 19.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-056",
+          "headline_zh_hant": "S&P 500相關消息升溫，美股成為焦點",
+          "heat_score": 18.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-055",
+          "headline_zh_hant": "美股相關消息升溫，美股成為焦點",
+          "heat_score": 16.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-079",
+          "headline_zh_hant": "美股相關消息升溫，美股成為焦點",
+          "heat_score": 15.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-096",
+          "headline_zh_hant": "美股相關消息升溫，美股成為焦點",
+          "heat_score": 15.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        }
+      ]
+    },
+    {
+      "category": "商品",
+      "items": [
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-011",
+          "headline_zh_hant": "油價受霍爾木茲海峽與地緣局勢牽動",
+          "heat_score": 75.9,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-072",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 29.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-084",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 27.2,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-011",
+          "headline_zh_hant": "油價受霍爾木茲海峽與地緣局勢牽動",
+          "heat_score": 75.9,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-072",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 29.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-084",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 27.2,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        }
+      ]
+    },
+    {
+      "category": "AI",
+      "items": [
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-007",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 51.75,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-008",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 51.75,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-003",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 43.75,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-002",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 38.75,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-092",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 37.8,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-034",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 35.5,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-087",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 34.6,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-084",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 27.2,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-031",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 26,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-039",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 26,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-074",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 26,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-053",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 25.5,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-075",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 23,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-062",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-086",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-090",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-094",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-1200",
+          "date": "2026-06-20",
+          "run_time_hkt": "1200",
+          "cluster_id": "news-cluster-083",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 16,
+          "archive_path": "/archive/2026-06-20-1200.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-007",
+          "headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+          "heat_score": 51.75,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-008",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 51.75,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-003",
+          "headline_zh_hant": "美元走勢牽動外匯與宏觀市場焦點",
+          "heat_score": 43.75,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-002",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 38.75,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-092",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 37.8,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-034",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 35.5,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-087",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 34.6,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-084",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 27.2,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-031",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 26,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-039",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 26,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-074",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 26,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-053",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 25.5,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-075",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 23,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-062",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-086",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-090",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-094",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 20,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        },
+        {
+          "archive_id": "2026-06-20-0815",
+          "date": "2026-06-20",
+          "run_time_hkt": "0815",
+          "cluster_id": "news-cluster-083",
+          "headline_zh_hant": "AI 與半導體供應鏈動向受市場關注",
+          "heat_score": 16,
+          "archive_path": "/archive/2026-06-20-0815.json"
+        }
+      ]
+    }
+  ]
+}

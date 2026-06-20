@@ -1,8 +1,8 @@
 {
   "date": "2026-06-20",
-  "run_time_hkt": "1200",
-  "archive_id": "2026-06-20-1200",
-  "generated_at": "2026-06-20T06:46:05.906Z",
+  "run_time_hkt": "0815",
+  "archive_id": "2026-06-20-0815",
+  "generated_at": "2026-06-20T06:45:33.682Z",
   "timezone": "Asia/Hong_Kong",
   "site_title": "Tiny Dream News V2",
   "market_mood": "mixed",
@@ -98,7 +98,7 @@
     "skipped_cluster_count": 66,
     "very_high_heat_count": 0,
     "high_heat_count": 2,
-    "generated_at": "2026-06-20T06:46:05.906Z"
+    "generated_at": "2026-06-20T06:45:33.682Z"
   },
   "clusters": [
     {
@@ -5728,42 +5728,42 @@
       "status": "success",
       "article_count": 30,
       "error_message": "",
-      "fetched_at": "2026-06-20T06:45:55.707Z"
+      "fetched_at": "2026-06-20T06:45:23.567Z"
     },
     {
       "source": "MarketWatch",
       "status": "success",
       "article_count": 10,
       "error_message": "",
-      "fetched_at": "2026-06-20T06:45:57.024Z"
+      "fetched_at": "2026-06-20T06:45:25.438Z"
     },
     {
       "source": "Yahoo Finance",
       "status": "success",
       "article_count": 30,
       "error_message": "",
-      "fetched_at": "2026-06-20T06:45:58.234Z"
+      "fetched_at": "2026-06-20T06:45:26.975Z"
     },
     {
       "source": "TechCrunch",
       "status": "success",
       "article_count": 20,
       "error_message": "",
-      "fetched_at": "2026-06-20T06:45:59.963Z"
+      "fetched_at": "2026-06-20T06:45:28.279Z"
     },
     {
       "source": "The Verge",
       "status": "success",
       "article_count": 10,
       "error_message": "",
-      "fetched_at": "2026-06-20T06:46:01.103Z"
+      "fetched_at": "2026-06-20T06:45:29.279Z"
     },
     {
       "source": "華爾街見聞",
       "status": "success",
       "article_count": 30,
       "error_message": "",
-      "fetched_at": "2026-06-20T06:46:02.297Z"
+      "fetched_at": "2026-06-20T06:45:30.226Z"
     }
   ],
   "ai_usage": {
@@ -5778,5 +5778,5 @@
   "warnings": [],
   "daily_brief_ai_status": "mock",
   "daily_brief_ai_model": "mock-daily-brief-editorial-zh-hant",
-  "daily_brief_ai_generated_at": "2026-06-20T06:46:06.091Z"
+  "daily_brief_ai_generated_at": "2026-06-20T06:45:33.909Z"
 }

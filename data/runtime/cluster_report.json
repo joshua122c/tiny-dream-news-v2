@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-19T16:30:35.852Z",
+  "generated_at": "2026-06-20T06:46:05.362Z",
   "input_file": "data/runtime/clean_articles.json",
-  "input_article_count": 111,
-  "cluster_count": 92,
-  "multi_article_cluster_count": 8,
-  "single_article_cluster_count": 84,
+  "input_article_count": 108,
+  "cluster_count": 96,
+  "multi_article_cluster_count": 5,
+  "single_article_cluster_count": 91,
   "all_articles_assigned_once": true,
   "clustering_rules": {
     "same_event_time_window_hours": 36,
@@ -13,453 +13,441 @@
   },
   "article_assignments": [
     {
-      "article_id": "article-0051",
+      "article_id": "article-0031",
       "cluster_id": "news-cluster-001"
     },
     {
-      "article_id": "article-0071",
+      "article_id": "article-0101",
       "cluster_id": "news-cluster-002"
     },
     {
-      "article_id": "article-0031",
-      "cluster_id": "news-cluster-003"
-    },
-    {
-      "article_id": "article-0001",
-      "cluster_id": "news-cluster-003"
-    },
-    {
-      "article_id": "article-0107",
-      "cluster_id": "news-cluster-003"
-    },
-    {
-      "article_id": "article-0021",
-      "cluster_id": "news-cluster-003"
-    },
-    {
-      "article_id": "article-0010",
-      "cluster_id": "news-cluster-003"
-    },
-    {
-      "article_id": "article-0056",
-      "cluster_id": "news-cluster-004"
-    },
-    {
-      "article_id": "article-0061",
-      "cluster_id": "news-cluster-005"
-    },
-    {
-      "article_id": "article-0042",
-      "cluster_id": "news-cluster-006"
-    },
-    {
-      "article_id": "article-0026",
-      "cluster_id": "news-cluster-006"
-    },
-    {
-      "article_id": "article-0066",
-      "cluster_id": "news-cluster-007"
-    },
-    {
-      "article_id": "article-0101",
-      "cluster_id": "news-cluster-008"
-    },
-    {
-      "article_id": "article-0032",
-      "cluster_id": "news-cluster-009"
-    },
-    {
-      "article_id": "article-0043",
-      "cluster_id": "news-cluster-010"
-    },
-    {
-      "article_id": "article-0044",
-      "cluster_id": "news-cluster-011"
-    },
-    {
-      "article_id": "article-0045",
-      "cluster_id": "news-cluster-012"
-    },
-    {
       "article_id": "article-0102",
-      "cluster_id": "news-cluster-013"
-    },
-    {
-      "article_id": "article-0047",
-      "cluster_id": "news-cluster-014"
-    },
-    {
-      "article_id": "article-0048",
-      "cluster_id": "news-cluster-015"
-    },
-    {
-      "article_id": "article-0049",
-      "cluster_id": "news-cluster-016"
-    },
-    {
-      "article_id": "article-0053",
-      "cluster_id": "news-cluster-016"
-    },
-    {
-      "article_id": "article-0055",
-      "cluster_id": "news-cluster-016"
-    },
-    {
-      "article_id": "article-0059",
-      "cluster_id": "news-cluster-016"
-    },
-    {
-      "article_id": "article-0062",
-      "cluster_id": "news-cluster-016"
-    },
-    {
-      "article_id": "article-0063",
-      "cluster_id": "news-cluster-016"
-    },
-    {
-      "article_id": "article-0067",
-      "cluster_id": "news-cluster-016"
-    },
-    {
-      "article_id": "article-0068",
-      "cluster_id": "news-cluster-016"
-    },
-    {
-      "article_id": "article-0069",
-      "cluster_id": "news-cluster-016"
-    },
-    {
-      "article_id": "article-0050",
-      "cluster_id": "news-cluster-017"
-    },
-    {
-      "article_id": "article-0060",
-      "cluster_id": "news-cluster-017"
-    },
-    {
-      "article_id": "article-0052",
-      "cluster_id": "news-cluster-018"
-    },
-    {
-      "article_id": "article-0058",
-      "cluster_id": "news-cluster-018"
-    },
-    {
-      "article_id": "article-0054",
-      "cluster_id": "news-cluster-019"
-    },
-    {
-      "article_id": "article-0070",
-      "cluster_id": "news-cluster-019"
-    },
-    {
-      "article_id": "article-0057",
-      "cluster_id": "news-cluster-020"
-    },
-    {
-      "article_id": "article-0064",
-      "cluster_id": "news-cluster-021"
-    },
-    {
-      "article_id": "article-0065",
-      "cluster_id": "news-cluster-022"
-    },
-    {
-      "article_id": "article-0072",
-      "cluster_id": "news-cluster-023"
-    },
-    {
-      "article_id": "article-0007",
-      "cluster_id": "news-cluster-024"
-    },
-    {
-      "article_id": "article-0091",
-      "cluster_id": "news-cluster-025"
-    },
-    {
-      "article_id": "article-0017",
-      "cluster_id": "news-cluster-026"
-    },
-    {
-      "article_id": "article-0092",
-      "cluster_id": "news-cluster-027"
-    },
-    {
-      "article_id": "article-0033",
-      "cluster_id": "news-cluster-028"
-    },
-    {
-      "article_id": "article-0018",
-      "cluster_id": "news-cluster-029"
-    },
-    {
-      "article_id": "article-0034",
-      "cluster_id": "news-cluster-030"
-    },
-    {
-      "article_id": "article-0093",
-      "cluster_id": "news-cluster-031"
-    },
-    {
-      "article_id": "article-0035",
-      "cluster_id": "news-cluster-032"
-    },
-    {
-      "article_id": "article-0009",
-      "cluster_id": "news-cluster-033"
-    },
-    {
-      "article_id": "article-0011",
-      "cluster_id": "news-cluster-034"
-    },
-    {
-      "article_id": "article-0036",
-      "cluster_id": "news-cluster-035"
-    },
-    {
-      "article_id": "article-0037",
-      "cluster_id": "news-cluster-036"
+      "cluster_id": "news-cluster-003"
     },
     {
       "article_id": "article-0103",
-      "cluster_id": "news-cluster-037"
+      "cluster_id": "news-cluster-004"
     },
     {
-      "article_id": "article-0073",
-      "cluster_id": "news-cluster-038"
+      "article_id": "article-0036",
+      "cluster_id": "news-cluster-004"
     },
     {
-      "article_id": "article-0094",
-      "cluster_id": "news-cluster-039"
-    },
-    {
-      "article_id": "article-0006",
-      "cluster_id": "news-cluster-040"
+      "article_id": "article-0037",
+      "cluster_id": "news-cluster-004"
     },
     {
       "article_id": "article-0038",
-      "cluster_id": "news-cluster-041"
-    },
-    {
-      "article_id": "article-0104",
-      "cluster_id": "news-cluster-042"
-    },
-    {
-      "article_id": "article-0015",
-      "cluster_id": "news-cluster-043"
-    },
-    {
-      "article_id": "article-0039",
-      "cluster_id": "news-cluster-044"
-    },
-    {
-      "article_id": "article-0028",
-      "cluster_id": "news-cluster-044"
-    },
-    {
-      "article_id": "article-0046",
-      "cluster_id": "news-cluster-044"
-    },
-    {
-      "article_id": "article-0105",
-      "cluster_id": "news-cluster-045"
-    },
-    {
-      "article_id": "article-0106",
-      "cluster_id": "news-cluster-046"
-    },
-    {
-      "article_id": "article-0108",
-      "cluster_id": "news-cluster-047"
-    },
-    {
-      "article_id": "article-0003",
-      "cluster_id": "news-cluster-048"
-    },
-    {
-      "article_id": "article-0040",
-      "cluster_id": "news-cluster-049"
-    },
-    {
-      "article_id": "article-0095",
-      "cluster_id": "news-cluster-050"
-    },
-    {
-      "article_id": "article-0096",
-      "cluster_id": "news-cluster-051"
-    },
-    {
-      "article_id": "article-0109",
-      "cluster_id": "news-cluster-052"
-    },
-    {
-      "article_id": "article-0110",
-      "cluster_id": "news-cluster-053"
-    },
-    {
-      "article_id": "article-0111",
-      "cluster_id": "news-cluster-054"
-    },
-    {
-      "article_id": "article-0008",
-      "cluster_id": "news-cluster-055"
-    },
-    {
-      "article_id": "article-0019",
-      "cluster_id": "news-cluster-056"
-    },
-    {
-      "article_id": "article-0014",
-      "cluster_id": "news-cluster-057"
-    },
-    {
-      "article_id": "article-0002",
-      "cluster_id": "news-cluster-058"
-    },
-    {
-      "article_id": "article-0012",
-      "cluster_id": "news-cluster-059"
-    },
-    {
-      "article_id": "article-0013",
-      "cluster_id": "news-cluster-060"
-    },
-    {
-      "article_id": "article-0074",
-      "cluster_id": "news-cluster-061"
-    },
-    {
-      "article_id": "article-0020",
-      "cluster_id": "news-cluster-062"
-    },
-    {
-      "article_id": "article-0023",
-      "cluster_id": "news-cluster-063"
-    },
-    {
-      "article_id": "article-0097",
-      "cluster_id": "news-cluster-064"
-    },
-    {
-      "article_id": "article-0022",
-      "cluster_id": "news-cluster-065"
-    },
-    {
-      "article_id": "article-0025",
-      "cluster_id": "news-cluster-066"
-    },
-    {
-      "article_id": "article-0041",
-      "cluster_id": "news-cluster-067"
-    },
-    {
-      "article_id": "article-0016",
-      "cluster_id": "news-cluster-068"
-    },
-    {
-      "article_id": "article-0004",
-      "cluster_id": "news-cluster-069"
-    },
-    {
-      "article_id": "article-0024",
-      "cluster_id": "news-cluster-069"
-    },
-    {
-      "article_id": "article-0075",
-      "cluster_id": "news-cluster-070"
-    },
-    {
-      "article_id": "article-0076",
-      "cluster_id": "news-cluster-071"
-    },
-    {
-      "article_id": "article-0027",
-      "cluster_id": "news-cluster-072"
-    },
-    {
-      "article_id": "article-0029",
-      "cluster_id": "news-cluster-073"
-    },
-    {
-      "article_id": "article-0077",
-      "cluster_id": "news-cluster-074"
-    },
-    {
-      "article_id": "article-0078",
-      "cluster_id": "news-cluster-075"
-    },
-    {
-      "article_id": "article-0098",
-      "cluster_id": "news-cluster-076"
-    },
-    {
-      "article_id": "article-0099",
-      "cluster_id": "news-cluster-077"
-    },
-    {
-      "article_id": "article-0079",
-      "cluster_id": "news-cluster-078"
-    },
-    {
-      "article_id": "article-0080",
-      "cluster_id": "news-cluster-079"
+      "cluster_id": "news-cluster-004"
     },
     {
       "article_id": "article-0030",
-      "cluster_id": "news-cluster-080"
+      "cluster_id": "news-cluster-004"
     },
     {
-      "article_id": "article-0081",
-      "cluster_id": "news-cluster-081"
+      "article_id": "article-0029",
+      "cluster_id": "news-cluster-004"
     },
     {
-      "article_id": "article-0100",
-      "cluster_id": "news-cluster-082"
+      "article_id": "article-0104",
+      "cluster_id": "news-cluster-005"
     },
     {
-      "article_id": "article-0082",
-      "cluster_id": "news-cluster-083"
+      "article_id": "article-0105",
+      "cluster_id": "news-cluster-006"
+    },
+    {
+      "article_id": "article-0106",
+      "cluster_id": "news-cluster-007"
+    },
+    {
+      "article_id": "article-0107",
+      "cluster_id": "news-cluster-008"
+    },
+    {
+      "article_id": "article-0071",
+      "cluster_id": "news-cluster-009"
+    },
+    {
+      "article_id": "article-0108",
+      "cluster_id": "news-cluster-010"
+    },
+    {
+      "article_id": "article-0001",
+      "cluster_id": "news-cluster-011"
+    },
+    {
+      "article_id": "article-0040",
+      "cluster_id": "news-cluster-011"
+    },
+    {
+      "article_id": "article-0022",
+      "cluster_id": "news-cluster-011"
+    },
+    {
+      "article_id": "article-0048",
+      "cluster_id": "news-cluster-011"
+    },
+    {
+      "article_id": "article-0004",
+      "cluster_id": "news-cluster-012"
+    },
+    {
+      "article_id": "article-0072",
+      "cluster_id": "news-cluster-013"
+    },
+    {
+      "article_id": "article-0046",
+      "cluster_id": "news-cluster-014"
+    },
+    {
+      "article_id": "article-0073",
+      "cluster_id": "news-cluster-015"
+    },
+    {
+      "article_id": "article-0091",
+      "cluster_id": "news-cluster-016"
+    },
+    {
+      "article_id": "article-0074",
+      "cluster_id": "news-cluster-017"
+    },
+    {
+      "article_id": "article-0032",
+      "cluster_id": "news-cluster-018"
+    },
+    {
+      "article_id": "article-0033",
+      "cluster_id": "news-cluster-019"
+    },
+    {
+      "article_id": "article-0092",
+      "cluster_id": "news-cluster-020"
+    },
+    {
+      "article_id": "article-0034",
+      "cluster_id": "news-cluster-021"
+    },
+    {
+      "article_id": "article-0035",
+      "cluster_id": "news-cluster-022"
+    },
+    {
+      "article_id": "article-0008",
+      "cluster_id": "news-cluster-023"
+    },
+    {
+      "article_id": "article-0093",
+      "cluster_id": "news-cluster-024"
+    },
+    {
+      "article_id": "article-0014",
+      "cluster_id": "news-cluster-025"
+    },
+    {
+      "article_id": "article-0007",
+      "cluster_id": "news-cluster-026"
+    },
+    {
+      "article_id": "article-0075",
+      "cluster_id": "news-cluster-027"
+    },
+    {
+      "article_id": "article-0039",
+      "cluster_id": "news-cluster-028"
+    },
+    {
+      "article_id": "article-0076",
+      "cluster_id": "news-cluster-029"
     },
     {
       "article_id": "article-0005",
+      "cluster_id": "news-cluster-030"
+    },
+    {
+      "article_id": "article-0077",
+      "cluster_id": "news-cluster-031"
+    },
+    {
+      "article_id": "article-0094",
+      "cluster_id": "news-cluster-032"
+    },
+    {
+      "article_id": "article-0018",
+      "cluster_id": "news-cluster-033"
+    },
+    {
+      "article_id": "article-0095",
+      "cluster_id": "news-cluster-034"
+    },
+    {
+      "article_id": "article-0019",
+      "cluster_id": "news-cluster-035"
+    },
+    {
+      "article_id": "article-0096",
+      "cluster_id": "news-cluster-036"
+    },
+    {
+      "article_id": "article-0009",
+      "cluster_id": "news-cluster-037"
+    },
+    {
+      "article_id": "article-0012",
+      "cluster_id": "news-cluster-038"
+    },
+    {
+      "article_id": "article-0078",
+      "cluster_id": "news-cluster-039"
+    },
+    {
+      "article_id": "article-0097",
+      "cluster_id": "news-cluster-040"
+    },
+    {
+      "article_id": "article-0016",
+      "cluster_id": "news-cluster-041"
+    },
+    {
+      "article_id": "article-0003",
+      "cluster_id": "news-cluster-042"
+    },
+    {
+      "article_id": "article-0098",
+      "cluster_id": "news-cluster-043"
+    },
+    {
+      "article_id": "article-0099",
+      "cluster_id": "news-cluster-044"
+    },
+    {
+      "article_id": "article-0011",
+      "cluster_id": "news-cluster-045"
+    },
+    {
+      "article_id": "article-0020",
+      "cluster_id": "news-cluster-046"
+    },
+    {
+      "article_id": "article-0015",
+      "cluster_id": "news-cluster-047"
+    },
+    {
+      "article_id": "article-0002",
+      "cluster_id": "news-cluster-048"
+    },
+    {
+      "article_id": "article-0013",
+      "cluster_id": "news-cluster-049"
+    },
+    {
+      "article_id": "article-0079",
+      "cluster_id": "news-cluster-050"
+    },
+    {
+      "article_id": "article-0021",
+      "cluster_id": "news-cluster-051"
+    },
+    {
+      "article_id": "article-0024",
+      "cluster_id": "news-cluster-052"
+    },
+    {
+      "article_id": "article-0100",
+      "cluster_id": "news-cluster-053"
+    },
+    {
+      "article_id": "article-0023",
+      "cluster_id": "news-cluster-054"
+    },
+    {
+      "article_id": "article-0054",
+      "cluster_id": "news-cluster-054"
+    },
+    {
+      "article_id": "article-0026",
+      "cluster_id": "news-cluster-055"
+    },
+    {
+      "article_id": "article-0067",
+      "cluster_id": "news-cluster-056"
+    },
+    {
+      "article_id": "article-0041",
+      "cluster_id": "news-cluster-057"
+    },
+    {
+      "article_id": "article-0017",
+      "cluster_id": "news-cluster-058"
+    },
+    {
+      "article_id": "article-0010",
+      "cluster_id": "news-cluster-059"
+    },
+    {
+      "article_id": "article-0025",
+      "cluster_id": "news-cluster-059"
+    },
+    {
+      "article_id": "article-0080",
+      "cluster_id": "news-cluster-060"
+    },
+    {
+      "article_id": "article-0064",
+      "cluster_id": "news-cluster-061"
+    },
+    {
+      "article_id": "article-0081",
+      "cluster_id": "news-cluster-062"
+    },
+    {
+      "article_id": "article-0062",
+      "cluster_id": "news-cluster-063"
+    },
+    {
+      "article_id": "article-0061",
+      "cluster_id": "news-cluster-064"
+    },
+    {
+      "article_id": "article-0028",
+      "cluster_id": "news-cluster-065"
+    },
+    {
+      "article_id": "article-0056",
+      "cluster_id": "news-cluster-066"
+    },
+    {
+      "article_id": "article-0052",
+      "cluster_id": "news-cluster-066"
+    },
+    {
+      "article_id": "article-0053",
+      "cluster_id": "news-cluster-066"
+    },
+    {
+      "article_id": "article-0050",
+      "cluster_id": "news-cluster-067"
+    },
+    {
+      "article_id": "article-0055",
+      "cluster_id": "news-cluster-068"
+    },
+    {
+      "article_id": "article-0058",
+      "cluster_id": "news-cluster-069"
+    },
+    {
+      "article_id": "article-0057",
+      "cluster_id": "news-cluster-070"
+    },
+    {
+      "article_id": "article-0059",
+      "cluster_id": "news-cluster-071"
+    },
+    {
+      "article_id": "article-0049",
+      "cluster_id": "news-cluster-072"
+    },
+    {
+      "article_id": "article-0047",
+      "cluster_id": "news-cluster-073"
+    },
+    {
+      "article_id": "article-0045",
+      "cluster_id": "news-cluster-074"
+    },
+    {
+      "article_id": "article-0044",
+      "cluster_id": "news-cluster-075"
+    },
+    {
+      "article_id": "article-0060",
+      "cluster_id": "news-cluster-076"
+    },
+    {
+      "article_id": "article-0051",
+      "cluster_id": "news-cluster-077"
+    },
+    {
+      "article_id": "article-0065",
+      "cluster_id": "news-cluster-078"
+    },
+    {
+      "article_id": "article-0070",
+      "cluster_id": "news-cluster-079"
+    },
+    {
+      "article_id": "article-0042",
+      "cluster_id": "news-cluster-080"
+    },
+    {
+      "article_id": "article-0043",
+      "cluster_id": "news-cluster-081"
+    },
+    {
+      "article_id": "article-0063",
+      "cluster_id": "news-cluster-082"
+    },
+    {
+      "article_id": "article-0066",
+      "cluster_id": "news-cluster-083"
+    },
+    {
+      "article_id": "article-0082",
       "cluster_id": "news-cluster-084"
     },
     {
-      "article_id": "article-0083",
+      "article_id": "article-0027",
       "cluster_id": "news-cluster-085"
     },
     {
-      "article_id": "article-0084",
+      "article_id": "article-0083",
       "cluster_id": "news-cluster-086"
     },
     {
-      "article_id": "article-0085",
+      "article_id": "article-0084",
       "cluster_id": "news-cluster-087"
     },
     {
-      "article_id": "article-0086",
+      "article_id": "article-0085",
       "cluster_id": "news-cluster-088"
     },
     {
-      "article_id": "article-0087",
+      "article_id": "article-0086",
       "cluster_id": "news-cluster-089"
     },
     {
-      "article_id": "article-0088",
+      "article_id": "article-0087",
       "cluster_id": "news-cluster-090"
     },
     {
-      "article_id": "article-0089",
+      "article_id": "article-0006",
       "cluster_id": "news-cluster-091"
     },
     {
-      "article_id": "article-0090",
+      "article_id": "article-0088",
       "cluster_id": "news-cluster-092"
+    },
+    {
+      "article_id": "article-0089",
+      "cluster_id": "news-cluster-093"
+    },
+    {
+      "article_id": "article-0090",
+      "cluster_id": "news-cluster-094"
+    },
+    {
+      "article_id": "article-0069",
+      "cluster_id": "news-cluster-095"
+    },
+    {
+      "article_id": "article-0068",
+      "cluster_id": "news-cluster-096"
     }
   ],
   "grouping_decisions": [
     {
-      "article_id": "article-0051",
+      "article_id": "article-0031",
       "assigned_cluster_id": "cluster-001",
       "decision": "seed",
       "confidence": 1,
@@ -468,7 +456,7 @@
       ]
     },
     {
-      "article_id": "article-0071",
+      "article_id": "article-0101",
       "assigned_cluster_id": "cluster-002",
       "decision": "seed",
       "confidence": 1,
@@ -477,7 +465,7 @@
       ]
     },
     {
-      "article_id": "article-0031",
+      "article_id": "article-0102",
       "assigned_cluster_id": "cluster-003",
       "decision": "seed",
       "confidence": 1,
@@ -486,7 +474,7 @@
       ]
     },
     {
-      "article_id": "article-0056",
+      "article_id": "article-0103",
       "assigned_cluster_id": "cluster-004",
       "decision": "seed",
       "confidence": 1,
@@ -495,7 +483,7 @@
       ]
     },
     {
-      "article_id": "article-0061",
+      "article_id": "article-0104",
       "assigned_cluster_id": "cluster-005",
       "decision": "seed",
       "confidence": 1,
@@ -504,7 +492,7 @@
       ]
     },
     {
-      "article_id": "article-0042",
+      "article_id": "article-0105",
       "assigned_cluster_id": "cluster-006",
       "decision": "seed",
       "confidence": 1,
@@ -513,7 +501,7 @@
       ]
     },
     {
-      "article_id": "article-0066",
+      "article_id": "article-0106",
       "assigned_cluster_id": "cluster-007",
       "decision": "seed",
       "confidence": 1,
@@ -522,13 +510,285 @@
       ]
     },
     {
+      "article_id": "article-0107",
+      "assigned_cluster_id": "cluster-008",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0071",
+      "assigned_cluster_id": "cluster-009",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0108",
+      "assigned_cluster_id": "cluster-010",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
       "article_id": "article-0001",
-      "assigned_cluster_id": "cluster-003",
+      "assigned_cluster_id": "cluster-011",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0004",
+      "assigned_cluster_id": "cluster-012",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0072",
+      "assigned_cluster_id": "cluster-013",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0046",
+      "assigned_cluster_id": "cluster-014",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0073",
+      "assigned_cluster_id": "cluster-015",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0091",
+      "assigned_cluster_id": "cluster-016",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0074",
+      "assigned_cluster_id": "cluster-017",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0032",
+      "assigned_cluster_id": "cluster-018",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0033",
+      "assigned_cluster_id": "cluster-019",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0092",
+      "assigned_cluster_id": "cluster-020",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0034",
+      "assigned_cluster_id": "cluster-021",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0035",
+      "assigned_cluster_id": "cluster-022",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0008",
+      "assigned_cluster_id": "cluster-023",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0036",
+      "assigned_cluster_id": "cluster-004",
+      "decision": "grouped",
+      "shouldGroup": true,
+      "confidence": 0.76,
+      "title_similarity": 0.111,
+      "token_containment": 0.333,
+      "shared_title_tokens": [
+        "rates",
+        "warsh"
+      ],
+      "category_overlap": 1,
+      "shared_entities": [
+        "Interest Rates"
+      ],
+      "time_window_hours": 9.42,
+      "cross_language": true,
+      "reasons": [
+        "shared_entity_and_distinctive_title_terms",
+        "cross_language_multi_entity_category_time_window",
+        "shared_entity_broad_topic_short_window"
+      ],
+      "matched_article_id": "article-0103"
+    },
+    {
+      "article_id": "article-0093",
+      "assigned_cluster_id": "cluster-024",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0014",
+      "assigned_cluster_id": "cluster-025",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0037",
+      "assigned_cluster_id": "cluster-004",
       "decision": "grouped",
       "shouldGroup": true,
       "confidence": 0.8,
-      "title_similarity": 0.167,
-      "token_containment": 0.333,
+      "title_similarity": 0.115,
+      "token_containment": 0.214,
+      "shared_title_tokens": [
+        "warsh",
+        "rates",
+        "federal_reserve"
+      ],
+      "category_overlap": 1,
+      "shared_entities": [
+        "Federal Reserve",
+        "Interest Rates"
+      ],
+      "time_window_hours": 0.28,
+      "cross_language": false,
+      "reasons": [
+        "shared_distinctive_title_terms_category_time_window",
+        "shared_entity_and_distinctive_title_terms"
+      ],
+      "matched_article_id": "article-0036"
+    },
+    {
+      "article_id": "article-0038",
+      "assigned_cluster_id": "cluster-004",
+      "decision": "grouped",
+      "shouldGroup": true,
+      "confidence": 0.76,
+      "title_similarity": 0.083,
+      "token_containment": 0.167,
+      "shared_title_tokens": [
+        "federal_reserve",
+        "warsh"
+      ],
+      "category_overlap": 0.5,
+      "shared_entities": [
+        "Federal Reserve"
+      ],
+      "time_window_hours": 0.43,
+      "cross_language": false,
+      "reasons": [
+        "shared_entity_and_distinctive_title_terms"
+      ],
+      "matched_article_id": "article-0036"
+    },
+    {
+      "article_id": "article-0007",
+      "assigned_cluster_id": "cluster-026",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0075",
+      "assigned_cluster_id": "cluster-027",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0039",
+      "assigned_cluster_id": "cluster-028",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0076",
+      "assigned_cluster_id": "cluster-029",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0040",
+      "assigned_cluster_id": "cluster-011",
+      "decision": "grouped",
+      "shouldGroup": true,
+      "confidence": 0.8,
+      "title_similarity": 0.125,
+      "token_containment": 0.25,
       "shared_title_tokens": [
         "oil",
         "strait",
@@ -538,460 +798,16 @@
       "shared_entities": [
         "Oil"
       ],
-      "time_window_hours": 0.13,
+      "time_window_hours": 6.92,
       "cross_language": false,
       "reasons": [
         "shared_distinctive_title_terms_category_time_window",
-        "shared_entity_and_distinctive_title_terms",
-        "shared_entity_broad_topic_short_window"
+        "shared_entity_and_distinctive_title_terms"
       ],
-      "matched_article_id": "article-0031"
+      "matched_article_id": "article-0001"
     },
     {
-      "article_id": "article-0101",
-      "assigned_cluster_id": "cluster-008",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0032",
-      "assigned_cluster_id": "cluster-009",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0043",
-      "assigned_cluster_id": "cluster-010",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0044",
-      "assigned_cluster_id": "cluster-011",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0045",
-      "assigned_cluster_id": "cluster-012",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0102",
-      "assigned_cluster_id": "cluster-013",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0047",
-      "assigned_cluster_id": "cluster-014",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0048",
-      "assigned_cluster_id": "cluster-015",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0049",
-      "assigned_cluster_id": "cluster-016",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0050",
-      "assigned_cluster_id": "cluster-017",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0052",
-      "assigned_cluster_id": "cluster-018",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0053",
-      "assigned_cluster_id": "cluster-016",
-      "decision": "grouped",
-      "shouldGroup": true,
-      "confidence": 0.8,
-      "title_similarity": 0.455,
-      "token_containment": 0.625,
-      "shared_title_tokens": [
-        "inc",
-        "good",
-        "now"
-      ],
-      "category_overlap": 1,
-      "shared_entities": [],
-      "time_window_hours": 0.01,
-      "cross_language": false,
-      "reasons": [
-        "shared_distinctive_title_terms_category_time_window"
-      ],
-      "matched_article_id": "article-0049"
-    },
-    {
-      "article_id": "article-0054",
-      "assigned_cluster_id": "cluster-019",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0055",
-      "assigned_cluster_id": "cluster-016",
-      "decision": "grouped",
-      "shouldGroup": true,
-      "confidence": 0.8,
-      "title_similarity": 0.417,
-      "token_containment": 0.625,
-      "shared_title_tokens": [
-        "inc",
-        "good",
-        "now"
-      ],
-      "category_overlap": 1,
-      "shared_entities": [],
-      "time_window_hours": 0.02,
-      "cross_language": false,
-      "reasons": [
-        "shared_distinctive_title_terms_category_time_window"
-      ],
-      "matched_article_id": "article-0049"
-    },
-    {
-      "article_id": "article-0057",
-      "assigned_cluster_id": "cluster-020",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0058",
-      "assigned_cluster_id": "cluster-018",
-      "decision": "grouped",
-      "shouldGroup": true,
-      "confidence": 0.8,
-      "title_similarity": 0.333,
-      "token_containment": 0.5,
-      "shared_title_tokens": [
-        "donald",
-        "trumps",
-        "pick"
-      ],
-      "category_overlap": 1,
-      "shared_entities": [],
-      "time_window_hours": 0.03,
-      "cross_language": false,
-      "reasons": [
-        "shared_distinctive_title_terms_category_time_window"
-      ],
-      "matched_article_id": "article-0052"
-    },
-    {
-      "article_id": "article-0059",
-      "assigned_cluster_id": "cluster-016",
-      "decision": "grouped",
-      "shouldGroup": true,
-      "confidence": 0.8,
-      "title_similarity": 0.6,
-      "token_containment": 0.75,
-      "shared_title_tokens": [
-        "industries",
-        "inc",
-        "good",
-        "now"
-      ],
-      "category_overlap": 1,
-      "shared_entities": [],
-      "time_window_hours": 0.04,
-      "cross_language": false,
-      "reasons": [
-        "shared_distinctive_title_terms_category_time_window"
-      ],
-      "matched_article_id": "article-0049"
-    },
-    {
-      "article_id": "article-0060",
-      "assigned_cluster_id": "cluster-017",
-      "decision": "grouped",
-      "shouldGroup": true,
-      "confidence": 0.8,
-      "title_similarity": 0.417,
-      "token_containment": 0.625,
-      "shared_title_tokens": [
-        "limited",
-        "good",
-        "now"
-      ],
-      "category_overlap": 1,
-      "shared_entities": [],
-      "time_window_hours": 0.04,
-      "cross_language": false,
-      "reasons": [
-        "shared_distinctive_title_terms_category_time_window"
-      ],
-      "matched_article_id": "article-0050"
-    },
-    {
-      "article_id": "article-0062",
-      "assigned_cluster_id": "cluster-016",
-      "decision": "grouped",
-      "shouldGroup": true,
-      "confidence": 0.8,
-      "title_similarity": 0.455,
-      "token_containment": 0.625,
-      "shared_title_tokens": [
-        "inc",
-        "good",
-        "now"
-      ],
-      "category_overlap": 1,
-      "shared_entities": [],
-      "time_window_hours": 0.06,
-      "cross_language": false,
-      "reasons": [
-        "shared_distinctive_title_terms_category_time_window"
-      ],
-      "matched_article_id": "article-0049"
-    },
-    {
-      "article_id": "article-0063",
-      "assigned_cluster_id": "cluster-016",
-      "decision": "grouped",
-      "shouldGroup": true,
-      "confidence": 0.82,
-      "title_similarity": 0.667,
-      "token_containment": 0.857,
-      "shared_title_tokens": [
-        "group",
-        "inc",
-        "good",
-        "now"
-      ],
-      "category_overlap": 1,
-      "shared_entities": [],
-      "time_window_hours": 0.02,
-      "cross_language": false,
-      "reasons": [
-        "similar_title_category_time_window",
-        "shared_distinctive_title_terms_category_time_window"
-      ],
-      "matched_article_id": "article-0062"
-    },
-    {
-      "article_id": "article-0064",
-      "assigned_cluster_id": "cluster-021",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0065",
-      "assigned_cluster_id": "cluster-022",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0072",
-      "assigned_cluster_id": "cluster-023",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0007",
-      "assigned_cluster_id": "cluster-024",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0067",
-      "assigned_cluster_id": "cluster-016",
-      "decision": "grouped",
-      "shouldGroup": true,
-      "confidence": 0.8,
-      "title_similarity": 0.455,
-      "token_containment": 0.625,
-      "shared_title_tokens": [
-        "inc",
-        "good",
-        "now"
-      ],
-      "category_overlap": 1,
-      "shared_entities": [],
-      "time_window_hours": 0.55,
-      "cross_language": false,
-      "reasons": [
-        "shared_distinctive_title_terms_category_time_window"
-      ],
-      "matched_article_id": "article-0049"
-    },
-    {
-      "article_id": "article-0068",
-      "assigned_cluster_id": "cluster-016",
-      "decision": "grouped",
-      "shouldGroup": true,
-      "confidence": 0.8,
-      "title_similarity": 0.5,
-      "token_containment": 0.714,
-      "shared_title_tokens": [
-        "inc",
-        "good",
-        "now"
-      ],
-      "category_overlap": 1,
-      "shared_entities": [],
-      "time_window_hours": 0.56,
-      "cross_language": false,
-      "reasons": [
-        "shared_distinctive_title_terms_category_time_window"
-      ],
-      "matched_article_id": "article-0049"
-    },
-    {
-      "article_id": "article-0069",
-      "assigned_cluster_id": "cluster-016",
-      "decision": "grouped",
-      "shouldGroup": true,
-      "confidence": 0.8,
-      "title_similarity": 0.455,
-      "token_containment": 0.625,
-      "shared_title_tokens": [
-        "inc",
-        "good",
-        "now"
-      ],
-      "category_overlap": 1,
-      "shared_entities": [],
-      "time_window_hours": 0.57,
-      "cross_language": false,
-      "reasons": [
-        "shared_distinctive_title_terms_category_time_window"
-      ],
-      "matched_article_id": "article-0049"
-    },
-    {
-      "article_id": "article-0070",
-      "assigned_cluster_id": "cluster-019",
-      "decision": "grouped",
-      "shouldGroup": true,
-      "confidence": 0.8,
-      "title_similarity": 0.455,
-      "token_containment": 0.625,
-      "shared_title_tokens": [
-        "corporation",
-        "good",
-        "now"
-      ],
-      "category_overlap": 1,
-      "shared_entities": [],
-      "time_window_hours": 0.56,
-      "cross_language": false,
-      "reasons": [
-        "shared_distinctive_title_terms_category_time_window"
-      ],
-      "matched_article_id": "article-0054"
-    },
-    {
-      "article_id": "article-0091",
-      "assigned_cluster_id": "cluster-025",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0017",
-      "assigned_cluster_id": "cluster-026",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0092",
-      "assigned_cluster_id": "cluster-027",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0033",
-      "assigned_cluster_id": "cluster-028",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0018",
-      "assigned_cluster_id": "cluster-029",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0034",
+      "article_id": "article-0005",
       "assigned_cluster_id": "cluster-030",
       "decision": "seed",
       "confidence": 1,
@@ -1000,7 +816,7 @@
       ]
     },
     {
-      "article_id": "article-0093",
+      "article_id": "article-0077",
       "assigned_cluster_id": "cluster-031",
       "decision": "seed",
       "confidence": 1,
@@ -1009,7 +825,7 @@
       ]
     },
     {
-      "article_id": "article-0035",
+      "article_id": "article-0094",
       "assigned_cluster_id": "cluster-032",
       "decision": "seed",
       "confidence": 1,
@@ -1018,7 +834,7 @@
       ]
     },
     {
-      "article_id": "article-0009",
+      "article_id": "article-0018",
       "assigned_cluster_id": "cluster-033",
       "decision": "seed",
       "confidence": 1,
@@ -1027,7 +843,7 @@
       ]
     },
     {
-      "article_id": "article-0011",
+      "article_id": "article-0095",
       "assigned_cluster_id": "cluster-034",
       "decision": "seed",
       "confidence": 1,
@@ -1036,7 +852,7 @@
       ]
     },
     {
-      "article_id": "article-0036",
+      "article_id": "article-0019",
       "assigned_cluster_id": "cluster-035",
       "decision": "seed",
       "confidence": 1,
@@ -1045,7 +861,7 @@
       ]
     },
     {
-      "article_id": "article-0037",
+      "article_id": "article-0096",
       "assigned_cluster_id": "cluster-036",
       "decision": "seed",
       "confidence": 1,
@@ -1054,7 +870,7 @@
       ]
     },
     {
-      "article_id": "article-0103",
+      "article_id": "article-0009",
       "assigned_cluster_id": "cluster-037",
       "decision": "seed",
       "confidence": 1,
@@ -1063,7 +879,7 @@
       ]
     },
     {
-      "article_id": "article-0073",
+      "article_id": "article-0012",
       "assigned_cluster_id": "cluster-038",
       "decision": "seed",
       "confidence": 1,
@@ -1072,7 +888,7 @@
       ]
     },
     {
-      "article_id": "article-0094",
+      "article_id": "article-0078",
       "assigned_cluster_id": "cluster-039",
       "decision": "seed",
       "confidence": 1,
@@ -1081,7 +897,7 @@
       ]
     },
     {
-      "article_id": "article-0006",
+      "article_id": "article-0097",
       "assigned_cluster_id": "cluster-040",
       "decision": "seed",
       "confidence": 1,
@@ -1090,7 +906,7 @@
       ]
     },
     {
-      "article_id": "article-0038",
+      "article_id": "article-0016",
       "assigned_cluster_id": "cluster-041",
       "decision": "seed",
       "confidence": 1,
@@ -1099,7 +915,7 @@
       ]
     },
     {
-      "article_id": "article-0104",
+      "article_id": "article-0003",
       "assigned_cluster_id": "cluster-042",
       "decision": "seed",
       "confidence": 1,
@@ -1108,7 +924,7 @@
       ]
     },
     {
-      "article_id": "article-0015",
+      "article_id": "article-0098",
       "assigned_cluster_id": "cluster-043",
       "decision": "seed",
       "confidence": 1,
@@ -1117,7 +933,7 @@
       ]
     },
     {
-      "article_id": "article-0039",
+      "article_id": "article-0099",
       "assigned_cluster_id": "cluster-044",
       "decision": "seed",
       "confidence": 1,
@@ -1126,7 +942,7 @@
       ]
     },
     {
-      "article_id": "article-0105",
+      "article_id": "article-0011",
       "assigned_cluster_id": "cluster-045",
       "decision": "seed",
       "confidence": 1,
@@ -1135,7 +951,7 @@
       ]
     },
     {
-      "article_id": "article-0106",
+      "article_id": "article-0020",
       "assigned_cluster_id": "cluster-046",
       "decision": "seed",
       "confidence": 1,
@@ -1144,32 +960,7 @@
       ]
     },
     {
-      "article_id": "article-0107",
-      "assigned_cluster_id": "cluster-003",
-      "decision": "grouped",
-      "shouldGroup": true,
-      "confidence": 0.76,
-      "title_similarity": 0.182,
-      "token_containment": 0.5,
-      "shared_title_tokens": [
-        "hormuz",
-        "oil"
-      ],
-      "category_overlap": 1,
-      "shared_entities": [
-        "Oil"
-      ],
-      "time_window_hours": 4.02,
-      "cross_language": true,
-      "reasons": [
-        "shared_entity_and_distinctive_title_terms",
-        "cross_language_multi_entity_category_time_window",
-        "shared_entity_broad_topic_short_window"
-      ],
-      "matched_article_id": "article-0031"
-    },
-    {
-      "article_id": "article-0108",
+      "article_id": "article-0015",
       "assigned_cluster_id": "cluster-047",
       "decision": "seed",
       "confidence": 1,
@@ -1178,7 +969,7 @@
       ]
     },
     {
-      "article_id": "article-0003",
+      "article_id": "article-0002",
       "assigned_cluster_id": "cluster-048",
       "decision": "seed",
       "confidence": 1,
@@ -1187,7 +978,7 @@
       ]
     },
     {
-      "article_id": "article-0040",
+      "article_id": "article-0013",
       "assigned_cluster_id": "cluster-049",
       "decision": "seed",
       "confidence": 1,
@@ -1196,7 +987,7 @@
       ]
     },
     {
-      "article_id": "article-0095",
+      "article_id": "article-0079",
       "assigned_cluster_id": "cluster-050",
       "decision": "seed",
       "confidence": 1,
@@ -1205,7 +996,7 @@
       ]
     },
     {
-      "article_id": "article-0096",
+      "article_id": "article-0021",
       "assigned_cluster_id": "cluster-051",
       "decision": "seed",
       "confidence": 1,
@@ -1214,7 +1005,7 @@
       ]
     },
     {
-      "article_id": "article-0109",
+      "article_id": "article-0024",
       "assigned_cluster_id": "cluster-052",
       "decision": "seed",
       "confidence": 1,
@@ -1223,7 +1014,7 @@
       ]
     },
     {
-      "article_id": "article-0110",
+      "article_id": "article-0100",
       "assigned_cluster_id": "cluster-053",
       "decision": "seed",
       "confidence": 1,
@@ -1232,7 +1023,7 @@
       ]
     },
     {
-      "article_id": "article-0111",
+      "article_id": "article-0023",
       "assigned_cluster_id": "cluster-054",
       "decision": "seed",
       "confidence": 1,
@@ -1241,7 +1032,7 @@
       ]
     },
     {
-      "article_id": "article-0008",
+      "article_id": "article-0026",
       "assigned_cluster_id": "cluster-055",
       "decision": "seed",
       "confidence": 1,
@@ -1250,7 +1041,7 @@
       ]
     },
     {
-      "article_id": "article-0019",
+      "article_id": "article-0067",
       "assigned_cluster_id": "cluster-056",
       "decision": "seed",
       "confidence": 1,
@@ -1259,7 +1050,7 @@
       ]
     },
     {
-      "article_id": "article-0014",
+      "article_id": "article-0041",
       "assigned_cluster_id": "cluster-057",
       "decision": "seed",
       "confidence": 1,
@@ -1268,7 +1059,7 @@
       ]
     },
     {
-      "article_id": "article-0002",
+      "article_id": "article-0017",
       "assigned_cluster_id": "cluster-058",
       "decision": "seed",
       "confidence": 1,
@@ -1277,7 +1068,7 @@
       ]
     },
     {
-      "article_id": "article-0012",
+      "article_id": "article-0010",
       "assigned_cluster_id": "cluster-059",
       "decision": "seed",
       "confidence": 1,
@@ -1286,98 +1077,8 @@
       ]
     },
     {
-      "article_id": "article-0013",
-      "assigned_cluster_id": "cluster-060",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0074",
-      "assigned_cluster_id": "cluster-061",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0020",
-      "assigned_cluster_id": "cluster-062",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0023",
-      "assigned_cluster_id": "cluster-063",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0097",
-      "assigned_cluster_id": "cluster-064",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
       "article_id": "article-0022",
-      "assigned_cluster_id": "cluster-065",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0025",
-      "assigned_cluster_id": "cluster-066",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0041",
-      "assigned_cluster_id": "cluster-067",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0016",
-      "assigned_cluster_id": "cluster-068",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0004",
-      "assigned_cluster_id": "cluster-069",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0021",
-      "assigned_cluster_id": "cluster-003",
+      "assigned_cluster_id": "cluster-011",
       "decision": "grouped",
       "shouldGroup": true,
       "confidence": 0.8,
@@ -1391,7 +1092,7 @@
       ],
       "category_overlap": 0.5,
       "shared_entities": [],
-      "time_window_hours": 14.48,
+      "time_window_hours": 21.53,
       "cross_language": false,
       "reasons": [
         "shared_distinctive_title_terms_category_time_window"
@@ -1399,7 +1100,146 @@
       "matched_article_id": "article-0001"
     },
     {
-      "article_id": "article-0075",
+      "article_id": "article-0080",
+      "assigned_cluster_id": "cluster-060",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0064",
+      "assigned_cluster_id": "cluster-061",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0081",
+      "assigned_cluster_id": "cluster-062",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0062",
+      "assigned_cluster_id": "cluster-063",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0061",
+      "assigned_cluster_id": "cluster-064",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0028",
+      "assigned_cluster_id": "cluster-065",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0056",
+      "assigned_cluster_id": "cluster-066",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0052",
+      "assigned_cluster_id": "cluster-066",
+      "decision": "grouped",
+      "shouldGroup": true,
+      "confidence": 0.8,
+      "title_similarity": 0.563,
+      "token_containment": 0.75,
+      "shared_title_tokens": [
+        "among",
+        "land",
+        "owner",
+        "hard",
+        "asset",
+        "value"
+      ],
+      "category_overlap": 1,
+      "shared_entities": [],
+      "time_window_hours": 0,
+      "cross_language": false,
+      "reasons": [
+        "shared_distinctive_title_terms_category_time_window"
+      ],
+      "matched_article_id": "article-0056"
+    },
+    {
+      "article_id": "article-0053",
+      "assigned_cluster_id": "cluster-066",
+      "decision": "grouped",
+      "shouldGroup": true,
+      "confidence": 0.8,
+      "title_similarity": 0.444,
+      "token_containment": 0.615,
+      "shared_title_tokens": [
+        "land",
+        "owner",
+        "hard",
+        "asset",
+        "value"
+      ],
+      "category_overlap": 1,
+      "shared_entities": [],
+      "time_window_hours": 0,
+      "cross_language": false,
+      "reasons": [
+        "shared_distinctive_title_terms_category_time_window"
+      ],
+      "matched_article_id": "article-0056"
+    },
+    {
+      "article_id": "article-0050",
+      "assigned_cluster_id": "cluster-067",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0055",
+      "assigned_cluster_id": "cluster-068",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0058",
+      "assigned_cluster_id": "cluster-069",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0057",
       "assigned_cluster_id": "cluster-070",
       "decision": "seed",
       "confidence": 1,
@@ -1408,7 +1248,32 @@
       ]
     },
     {
-      "article_id": "article-0076",
+      "article_id": "article-0054",
+      "assigned_cluster_id": "cluster-054",
+      "decision": "grouped",
+      "shouldGroup": true,
+      "confidence": 0.8,
+      "title_similarity": 0.2,
+      "token_containment": 0.364,
+      "shared_title_tokens": [
+        "dollar",
+        "bets",
+        "yen"
+      ],
+      "category_overlap": 0.5,
+      "shared_entities": [
+        "US Dollar"
+      ],
+      "time_window_hours": 3.36,
+      "cross_language": false,
+      "reasons": [
+        "shared_distinctive_title_terms_category_time_window",
+        "shared_entity_and_distinctive_title_terms"
+      ],
+      "matched_article_id": "article-0023"
+    },
+    {
+      "article_id": "article-0059",
       "assigned_cluster_id": "cluster-071",
       "decision": "seed",
       "confidence": 1,
@@ -1417,7 +1282,7 @@
       ]
     },
     {
-      "article_id": "article-0027",
+      "article_id": "article-0049",
       "assigned_cluster_id": "cluster-072",
       "decision": "seed",
       "confidence": 1,
@@ -1426,7 +1291,32 @@
       ]
     },
     {
-      "article_id": "article-0029",
+      "article_id": "article-0048",
+      "assigned_cluster_id": "cluster-011",
+      "decision": "grouped",
+      "shouldGroup": true,
+      "confidence": 0.8,
+      "title_similarity": 0.176,
+      "token_containment": 0.375,
+      "shared_title_tokens": [
+        "rise",
+        "iran",
+        "deal"
+      ],
+      "category_overlap": 0.667,
+      "shared_entities": [
+        "Oil"
+      ],
+      "time_window_hours": 22.8,
+      "cross_language": false,
+      "reasons": [
+        "shared_distinctive_title_terms_category_time_window",
+        "shared_entity_and_distinctive_title_terms"
+      ],
+      "matched_article_id": "article-0001"
+    },
+    {
+      "article_id": "article-0047",
       "assigned_cluster_id": "cluster-073",
       "decision": "seed",
       "confidence": 1,
@@ -1435,7 +1325,7 @@
       ]
     },
     {
-      "article_id": "article-0077",
+      "article_id": "article-0045",
       "assigned_cluster_id": "cluster-074",
       "decision": "seed",
       "confidence": 1,
@@ -1444,30 +1334,7 @@
       ]
     },
     {
-      "article_id": "article-0026",
-      "assigned_cluster_id": "cluster-006",
-      "decision": "grouped",
-      "shouldGroup": true,
-      "confidence": 0.76,
-      "title_similarity": 0.091,
-      "token_containment": 0.2,
-      "shared_title_tokens": [
-        "spacex",
-        "decline"
-      ],
-      "category_overlap": 0.667,
-      "shared_entities": [
-        "SpaceX"
-      ],
-      "time_window_hours": 19.4,
-      "cross_language": false,
-      "reasons": [
-        "shared_entity_and_distinctive_title_terms"
-      ],
-      "matched_article_id": "article-0042"
-    },
-    {
-      "article_id": "article-0078",
+      "article_id": "article-0044",
       "assigned_cluster_id": "cluster-075",
       "decision": "seed",
       "confidence": 1,
@@ -1476,7 +1343,7 @@
       ]
     },
     {
-      "article_id": "article-0098",
+      "article_id": "article-0060",
       "assigned_cluster_id": "cluster-076",
       "decision": "seed",
       "confidence": 1,
@@ -1485,7 +1352,7 @@
       ]
     },
     {
-      "article_id": "article-0099",
+      "article_id": "article-0051",
       "assigned_cluster_id": "cluster-077",
       "decision": "seed",
       "confidence": 1,
@@ -1494,8 +1361,112 @@
       ]
     },
     {
-      "article_id": "article-0024",
-      "assigned_cluster_id": "cluster-069",
+      "article_id": "article-0065",
+      "assigned_cluster_id": "cluster-078",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0070",
+      "assigned_cluster_id": "cluster-079",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0042",
+      "assigned_cluster_id": "cluster-080",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0043",
+      "assigned_cluster_id": "cluster-081",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0063",
+      "assigned_cluster_id": "cluster-082",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0066",
+      "assigned_cluster_id": "cluster-083",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0030",
+      "assigned_cluster_id": "cluster-004",
+      "decision": "grouped",
+      "shouldGroup": true,
+      "confidence": 0.76,
+      "title_similarity": 0.087,
+      "token_containment": 0.2,
+      "shared_title_tokens": [
+        "trump",
+        "rates"
+      ],
+      "category_overlap": 1,
+      "shared_entities": [
+        "Interest Rates"
+      ],
+      "time_window_hours": 19.43,
+      "cross_language": false,
+      "reasons": [
+        "shared_entity_and_distinctive_title_terms"
+      ],
+      "matched_article_id": "article-0037"
+    },
+    {
+      "article_id": "article-0082",
+      "assigned_cluster_id": "cluster-084",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0027",
+      "assigned_cluster_id": "cluster-085",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0083",
+      "assigned_cluster_id": "cluster-086",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0025",
+      "assigned_cluster_id": "cluster-059",
       "decision": "grouped",
       "shouldGroup": true,
       "confidence": 0.8,
@@ -1513,114 +1484,10 @@
       "reasons": [
         "shared_distinctive_title_terms_category_time_window"
       ],
-      "matched_article_id": "article-0004"
-    },
-    {
-      "article_id": "article-0079",
-      "assigned_cluster_id": "cluster-078",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0080",
-      "assigned_cluster_id": "cluster-079",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0030",
-      "assigned_cluster_id": "cluster-080",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0081",
-      "assigned_cluster_id": "cluster-081",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0100",
-      "assigned_cluster_id": "cluster-082",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0082",
-      "assigned_cluster_id": "cluster-083",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0005",
-      "assigned_cluster_id": "cluster-084",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0083",
-      "assigned_cluster_id": "cluster-085",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0028",
-      "assigned_cluster_id": "cluster-044",
-      "decision": "grouped",
-      "shouldGroup": true,
-      "confidence": 0.76,
-      "title_similarity": 0.118,
-      "token_containment": 0.286,
-      "shared_title_tokens": [
-        "warsh",
-        "federal_reserve"
-      ],
-      "category_overlap": 0.5,
-      "shared_entities": [
-        "Federal Reserve"
-      ],
-      "time_window_hours": 18.09,
-      "cross_language": false,
-      "reasons": [
-        "shared_entity_and_distinctive_title_terms"
-      ],
-      "matched_article_id": "article-0039"
+      "matched_article_id": "article-0010"
     },
     {
       "article_id": "article-0084",
-      "assigned_cluster_id": "cluster-086",
-      "decision": "seed",
-      "confidence": 1,
-      "reasons": [
-        "seed_article"
-      ]
-    },
-    {
-      "article_id": "article-0085",
       "assigned_cluster_id": "cluster-087",
       "decision": "seed",
       "confidence": 1,
@@ -1629,7 +1496,7 @@
       ]
     },
     {
-      "article_id": "article-0086",
+      "article_id": "article-0085",
       "assigned_cluster_id": "cluster-088",
       "decision": "seed",
       "confidence": 1,
@@ -1638,7 +1505,7 @@
       ]
     },
     {
-      "article_id": "article-0087",
+      "article_id": "article-0086",
       "assigned_cluster_id": "cluster-089",
       "decision": "seed",
       "confidence": 1,
@@ -1647,7 +1514,7 @@
       ]
     },
     {
-      "article_id": "article-0088",
+      "article_id": "article-0087",
       "assigned_cluster_id": "cluster-090",
       "decision": "seed",
       "confidence": 1,
@@ -1656,7 +1523,7 @@
       ]
     },
     {
-      "article_id": "article-0089",
+      "article_id": "article-0006",
       "assigned_cluster_id": "cluster-091",
       "decision": "seed",
       "confidence": 1,
@@ -1665,7 +1532,7 @@
       ]
     },
     {
-      "article_id": "article-0090",
+      "article_id": "article-0088",
       "assigned_cluster_id": "cluster-092",
       "decision": "seed",
       "confidence": 1,
@@ -1674,52 +1541,63 @@
       ]
     },
     {
-      "article_id": "article-0010",
-      "assigned_cluster_id": "cluster-003",
+      "article_id": "article-0029",
+      "assigned_cluster_id": "cluster-004",
       "decision": "grouped",
       "shouldGroup": true,
       "confidence": 0.76,
-      "title_similarity": 0.111,
-      "token_containment": 0.222,
+      "title_similarity": 0.105,
+      "token_containment": 0.286,
       "shared_title_tokens": [
-        "strait",
-        "hormuz"
+        "warsh",
+        "federal_reserve"
       ],
       "category_overlap": 1,
       "shared_entities": [
-        "Oil"
-      ],
-      "time_window_hours": 24.75,
-      "cross_language": false,
-      "reasons": [
-        "shared_entity_and_distinctive_title_terms"
-      ],
-      "matched_article_id": "article-0031"
-    },
-    {
-      "article_id": "article-0046",
-      "assigned_cluster_id": "cluster-044",
-      "decision": "grouped",
-      "shouldGroup": true,
-      "confidence": 0.8,
-      "title_similarity": 0.15,
-      "token_containment": 0.273,
-      "shared_title_tokens": [
-        "federal_reserve",
-        "warsh",
-        "era"
-      ],
-      "category_overlap": 0.5,
-      "shared_entities": [
         "Federal Reserve"
       ],
-      "time_window_hours": 31.55,
+      "time_window_hours": 23.34,
       "cross_language": false,
       "reasons": [
-        "shared_distinctive_title_terms_category_time_window",
         "shared_entity_and_distinctive_title_terms"
       ],
-      "matched_article_id": "article-0039"
+      "matched_article_id": "article-0036"
+    },
+    {
+      "article_id": "article-0089",
+      "assigned_cluster_id": "cluster-093",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0090",
+      "assigned_cluster_id": "cluster-094",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0069",
+      "assigned_cluster_id": "cluster-095",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
+    },
+    {
+      "article_id": "article-0068",
+      "assigned_cluster_id": "cluster-096",
+      "decision": "seed",
+      "confidence": 1,
+      "reasons": [
+        "seed_article"
+      ]
     }
   ],
   "clusters": [
@@ -1727,10 +1605,10 @@
       "cluster_id": "news-cluster-001",
       "article_count": 1,
       "sources": [
-        "Yahoo Finance"
+        "MarketWatch"
       ],
       "categories": [
-        "加密"
+        "宏觀"
       ],
       "detected_entities": [],
       "cluster_confidence": 0.5,
@@ -1738,11 +1616,581 @@
         "single_article_no_related_match"
       ],
       "source_urls": [
-        "https://finance.yahoo.com/markets/crypto/articles/better-crypto-under-1-cardano-161000958.html"
+        "https://www.marketwatch.com/story/my-mother-was-co-owner-of-my-late-grandmothers-bank-account-should-she-share-the-money-with-her-siblings-e54ed4df?mod=mw_rss_topstories"
       ]
     },
     {
       "cluster_id": "news-cluster-002",
+      "article_count": 1,
+      "sources": [
+        "華爾街見聞"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://wallstreetcn.com/premium/articles/3774876?layout=wscn-layout"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-003",
+      "article_count": 1,
+      "sources": [
+        "華爾街見聞"
+      ],
+      "categories": [
+        "AI",
+        "外匯"
+      ],
+      "detected_entities": [
+        {
+          "name": "US Dollar",
+          "type": "macro"
+        }
+      ],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://wallstreetcn.com/articles/3775111"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-004",
+      "article_count": 6,
+      "sources": [
+        "CNBC",
+        "MarketWatch",
+        "華爾街見聞"
+      ],
+      "categories": [
+        "宏觀",
+        "美股"
+      ],
+      "detected_entities": [
+        {
+          "name": "Federal Reserve",
+          "type": "macro"
+        },
+        {
+          "name": "Inflation",
+          "type": "macro"
+        },
+        {
+          "name": "Interest Rates",
+          "type": "macro"
+        }
+      ],
+      "cluster_confidence": 0.768,
+      "cluster_reasons": [
+        "shared_entity_and_distinctive_title_terms",
+        "cross_language_multi_entity_category_time_window",
+        "shared_entity_broad_topic_short_window",
+        "shared_distinctive_title_terms_category_time_window"
+      ],
+      "source_urls": [
+        "https://wallstreetcn.com/articles/3775110",
+        "https://www.marketwatch.com/story/warshs-task-forces-give-the-fed-wiggle-room-to-put-off-changing-rates-until-december-364fc1fc?mod=mw_rss_topstories",
+        "https://www.marketwatch.com/story/trump-picked-kevin-warsh-to-cut-rates-the-new-fed-chief-just-told-us-he-has-other-plans-096bba56?mod=mw_rss_topstories",
+        "https://www.marketwatch.com/story/fed-watching-is-looking-very-different-now-two-charts-can-help-you-in-the-warsh-era-d2372c15?mod=mw_rss_topstories",
+        "https://www.cnbc.com/2026/06/18/trump-student-loan-autopay-interest-rate-discount.html",
+        "https://www.cnbc.com/2026/06/18/markets-are-set-for-a-much-more-hawkish-warsh-fed-than-expected.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-005",
+      "article_count": 1,
+      "sources": [
+        "華爾街見聞"
+      ],
+      "categories": [
+        "外匯"
+      ],
+      "detected_entities": [
+        {
+          "name": "US Dollar",
+          "type": "macro"
+        }
+      ],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://wallstreetcn.com/articles/3775108"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-006",
+      "article_count": 1,
+      "sources": [
+        "華爾街見聞"
+      ],
+      "categories": [
+        "外匯",
+        "美股"
+      ],
+      "detected_entities": [
+        {
+          "name": "US Dollar",
+          "type": "macro"
+        }
+      ],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://wallstreetcn.com/articles/3775107"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-007",
+      "article_count": 1,
+      "sources": [
+        "華爾街見聞"
+      ],
+      "categories": [
+        "AI",
+        "企業財報",
+        "宏觀"
+      ],
+      "detected_entities": [
+        {
+          "name": "Interest Rates",
+          "type": "macro"
+        }
+      ],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://wallstreetcn.com/articles/3775106"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-008",
+      "article_count": 1,
+      "sources": [
+        "華爾街見聞"
+      ],
+      "categories": [
+        "AI",
+        "半導體",
+        "外匯",
+        "科技公司"
+      ],
+      "detected_entities": [
+        {
+          "name": "Alphabet",
+          "type": "company"
+        },
+        {
+          "name": "US Dollar",
+          "type": "macro"
+        }
+      ],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://wallstreetcn.com/articles/3775105"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-009",
+      "article_count": 1,
+      "sources": [
+        "TechCrunch"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://techcrunch.com/2026/06/19/he-made-your-free-video-player-run-smoothly-now-hes-doing-that-for-robots/"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-010",
+      "article_count": 1,
+      "sources": [
+        "華爾街見聞"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://wallstreetcn.com/articles/3775103"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-011",
+      "article_count": 4,
+      "sources": [
+        "CNBC",
+        "MarketWatch",
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "半導體",
+        "商品",
+        "地緣政治"
+      ],
+      "detected_entities": [
+        {
+          "name": "Oil",
+          "type": "asset"
+        }
+      ],
+      "cluster_confidence": 0.8,
+      "cluster_reasons": [
+        "shared_distinctive_title_terms_category_time_window",
+        "shared_entity_and_distinctive_title_terms"
+      ],
+      "source_urls": [
+        "https://www.cnbc.com/2026/06/19/iran-oil-tanker-traffic-strait-hormuz-gulf-vlcc.html",
+        "https://www.marketwatch.com/story/oil-prices-under-new-wave-of-pressure-amid-lingering-questions-over-a-strait-of-hormuz-reopening-c58fc9e8?mod=mw_rss_topstories",
+        "https://www.cnbc.com/2026/06/19/us-iran-deal-in-photos-shipping-resumes-as-fragile-peace-takes-hold.html",
+        "https://finance.yahoo.com/news/asian-stocks-steady-oil-lower-014248739.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-012",
+      "article_count": 1,
+      "sources": [
+        "CNBC"
+      ],
+      "categories": [
+        "企業財報"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://www.cnbc.com/2026/06/19/doj-anti-weaponization-fund-trump.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-013",
+      "article_count": 1,
+      "sources": [
+        "TechCrunch"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work/"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-014",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-dumps-nearly-60-223300469.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-015",
+      "article_count": 1,
+      "sources": [
+        "TechCrunch"
+      ],
+      "categories": [
+        "美股"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://techcrunch.com/2026/06/19/go-eyes-robotaxis-and-acquisitions-after-japans-biggest-ipo-of-2026-heres-why-it-matters/"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-016",
+      "article_count": 1,
+      "sources": [
+        "The Verge"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://www.theverge.com/gadgets/953066/nothing-cmf-phone-delayed-ram-prices"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-017",
+      "article_count": 1,
+      "sources": [
+        "TechCrunch"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://techcrunch.com/2026/06/19/auras-impressive-e-ink-photo-frame-doesnt-even-look-digital/"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-018",
+      "article_count": 1,
+      "sources": [
+        "MarketWatch"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://www.marketwatch.com/story/my-two-sons-will-inherit-a-30-000-annuity-from-their-grandmother-what-should-i-do-with-the-money-8882f396?mod=mw_rss_topstories"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-019",
+      "article_count": 1,
+      "sources": [
+        "MarketWatch"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://www.marketwatch.com/story/employers-to-college-students-skip-the-perfect-gpa-and-go-get-a-summer-job-e9ca5530?mod=mw_rss_topstories"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-020",
+      "article_count": 1,
+      "sources": [
+        "The Verge"
+      ],
+      "categories": [
+        "科技公司"
+      ],
+      "detected_entities": [
+        {
+          "name": "Alphabet",
+          "type": "company"
+        }
+      ],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://www.theverge.com/science/952988/nasa-relativity-space-eric-schmidt-mars"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-021",
+      "article_count": 1,
+      "sources": [
+        "MarketWatch"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://www.marketwatch.com/story/we-are-habitually-frugal-my-wife-and-i-have-money-how-do-we-help-our-children-without-ruining-their-independence-a1e30cec?mod=mw_rss_topstories"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-022",
+      "article_count": 1,
+      "sources": [
+        "MarketWatch"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://www.marketwatch.com/story/ill-probably-be-working-until-i-die-im-60-work-as-a-restaurant-server-and-have-2-000-in-an-ira-who-can-help-me-6e36253a?mod=mw_rss_topstories"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-023",
+      "article_count": 1,
+      "sources": [
+        "CNBC"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://www.cnbc.com/2026/06/19/nevada-workforce-job-market.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-024",
+      "article_count": 1,
+      "sources": [
+        "The Verge"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://www.theverge.com/tech/952953/phillips-hue-wired-wall-module-play-lamp-candle-bulb"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-025",
+      "article_count": 1,
+      "sources": [
+        "CNBC"
+      ],
+      "categories": [
+        "地緣政治",
+        "美股"
+      ],
+      "detected_entities": [
+        {
+          "name": "S&P 500",
+          "type": "index"
+        }
+      ],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://www.cnbc.com/2026/06/19/fedspeak-vs-war-deal-here-are-the-things-that-drove-this-weeks-stock-market.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-026",
+      "article_count": 1,
+      "sources": [
+        "CNBC"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://www.cnbc.com/2026/06/19/netjets-first-fatal-crash-kills-influential-texas-vc-founder.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-027",
+      "article_count": 1,
+      "sources": [
+        "TechCrunch"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://techcrunch.com/2026/06/19/every-fusion-startup-that-has-raised-over-100m/"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-028",
+      "article_count": 1,
+      "sources": [
+        "MarketWatch"
+      ],
+      "categories": [
+        "美股"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://www.marketwatch.com/story/is-the-stock-market-open-on-juneteenth-will-the-post-office-deliver-mail-0569e453?mod=mw_rss_topstories"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-029",
       "article_count": 1,
       "sources": [
         "TechCrunch"
@@ -1765,184 +2213,17 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-003",
-      "article_count": 5,
-      "sources": [
-        "CNBC",
-        "MarketWatch",
-        "華爾街見聞"
-      ],
-      "categories": [
-        "商品",
-        "地緣政治"
-      ],
-      "detected_entities": [
-        {
-          "name": "Oil",
-          "type": "asset"
-        }
-      ],
-      "cluster_confidence": 0.78,
-      "cluster_reasons": [
-        "shared_distinctive_title_terms_category_time_window",
-        "shared_entity_and_distinctive_title_terms",
-        "shared_entity_broad_topic_short_window",
-        "cross_language_multi_entity_category_time_window"
-      ],
-      "source_urls": [
-        "https://www.marketwatch.com/story/oil-prices-under-new-wave-of-pressure-amid-lingering-questions-over-a-strait-of-hormuz-reopening-c58fc9e8?mod=mw_rss_topstories",
-        "https://www.cnbc.com/2026/06/19/iran-oil-tanker-traffic-strait-hormuz-gulf-vlcc.html",
-        "https://wallstreetcn.com/articles/3775096",
-        "https://www.cnbc.com/2026/06/19/us-iran-deal-in-photos-shipping-resumes-as-fragile-peace-takes-hold.html",
-        "https://www.cnbc.com/2026/06/18/opec-iea-supply-glut-forecast-critical-strait-hormuz-reopens-oil.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-004",
+      "cluster_id": "news-cluster-030",
       "article_count": 1,
       "sources": [
-        "Yahoo Finance"
+        "CNBC"
       ],
       "categories": [
-        "科技公司"
-      ],
-      "detected_entities": [
-        {
-          "name": "Apple",
-          "type": "company"
-        }
-      ],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/bank-america-predicts-major-pricing-160300106.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-005",
-      "article_count": 1,
-      "sources": [
-        "Yahoo Finance"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/6-yielding-stock-keeps-raising-160200123.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-006",
-      "article_count": 2,
-      "sources": [
-        "CNBC",
-        "Yahoo Finance"
-      ],
-      "categories": [
-        "半導體",
         "科技公司",
         "美股"
       ],
       "detected_entities": [
         {
-          "name": "Amazon",
-          "type": "company"
-        },
-        {
-          "name": "Nvidia",
-          "type": "company"
-        },
-        {
-          "name": "SpaceX",
-          "type": "company"
-        }
-      ],
-      "cluster_confidence": 0.76,
-      "cluster_reasons": [
-        "shared_entity_and_distinctive_title_terms"
-      ],
-      "source_urls": [
-        "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-5-chips-buy-points-spacex-stock/?src=A00220&yptr=yahoo",
-        "https://www.cnbc.com/2026/06/18/spacex-stock-elon-musk-rally-cools.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-007",
-      "article_count": 1,
-      "sources": [
-        "Yahoo Finance"
-      ],
-      "categories": [
-        "加密"
-      ],
-      "detected_entities": [
-        {
-          "name": "Bitcoin",
-          "type": "asset"
-        }
-      ],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://finance.yahoo.com/markets/crypto/articles/veteran-analyst-sends-blunt-message-160000344.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-008",
-      "article_count": 1,
-      "sources": [
-        "華爾街見聞"
-      ],
-      "categories": [
-        "地緣政治"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://wallstreetcn.com/articles/3775099"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-009",
-      "article_count": 1,
-      "sources": [
-        "MarketWatch"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://www.marketwatch.com/story/we-are-habitually-frugal-my-wife-and-i-have-money-how-do-we-help-our-children-without-ruining-their-independence-a1e30cec?mod=mw_rss_topstories"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-010",
-      "article_count": 1,
-      "sources": [
-        "Yahoo Finance"
-      ],
-      "categories": [
-        "科技公司"
-      ],
-      "detected_entities": [
-        {
           "name": "SpaceX",
           "type": "company"
         }
@@ -1952,245 +2233,11 @@
         "single_article_no_related_match"
       ],
       "source_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/forget-spacex-hype-donald-trump-154556812.html"
+        "https://www.cnbc.com/2026/06/19/spacex-stock-risk-buy-sell.html"
       ]
     },
     {
-      "cluster_id": "news-cluster-011",
-      "article_count": 1,
-      "sources": [
-        "Yahoo Finance"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://finance.yahoo.com/energy/articles/bloom-energy-best-energy-stock-154102684.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-012",
-      "article_count": 1,
-      "sources": [
-        "Yahoo Finance"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/beyond-trump-hype-does-intel-153956796.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-013",
-      "article_count": 1,
-      "sources": [
-        "華爾街見聞"
-      ],
-      "categories": [
-        "地緣政治"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://wallstreetcn.com/articles/3775098"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-014",
-      "article_count": 1,
-      "sources": [
-        "Yahoo Finance"
-      ],
-      "categories": [
-        "AI",
-        "半導體"
-      ],
-      "detected_entities": [
-        {
-          "name": "Nvidia",
-          "type": "company"
-        }
-      ],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://finance.yahoo.com/technology/ai/articles/donald-trump-favorite-ai-chip-153822311.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-015",
-      "article_count": 1,
-      "sources": [
-        "Yahoo Finance"
-      ],
-      "categories": [
-        "加密"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/donald-trump-top-crypto-stock-153544302.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-016",
-      "article_count": 9,
-      "sources": [
-        "Yahoo Finance"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.802,
-      "cluster_reasons": [
-        "shared_distinctive_title_terms_category_time_window",
-        "similar_title_category_time_window"
-      ],
-      "source_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/myers-industries-inc-mye-good-153424644.html",
-        "https://finance.yahoo.com/markets/stocks/articles/penguin-solutions-inc-peng-good-153339902.html",
-        "https://finance.yahoo.com/markets/stocks/articles/red-cat-holdings-inc-rcat-153307656.html",
-        "https://finance.yahoo.com/markets/stocks/articles/gibraltar-industries-inc-rock-good-153154589.html",
-        "https://finance.yahoo.com/markets/stocks/articles/willdan-group-inc-wldn-good-153105346.html",
-        "https://finance.yahoo.com/markets/stocks/articles/zillow-group-inc-z-good-153006665.html",
-        "https://finance.yahoo.com/markets/stocks/articles/dxp-enterprises-inc-dxpe-good-150111135.html",
-        "https://finance.yahoo.com/markets/stocks/articles/ezcorp-inc-ezpw-good-stock-150059680.html",
-        "https://finance.yahoo.com/markets/stocks/articles/ast-spacemobile-inc-asts-good-150008750.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-017",
-      "article_count": 2,
-      "sources": [
-        "Yahoo Finance"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.8,
-      "cluster_reasons": [
-        "shared_distinctive_title_terms_category_time_window"
-      ],
-      "source_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/nordic-american-tankers-limited-nat-153409488.html",
-        "https://finance.yahoo.com/markets/stocks/articles/super-group-sghc-limited-sghc-153139767.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-018",
-      "article_count": 2,
-      "sources": [
-        "Yahoo Finance"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.8,
-      "cluster_reasons": [
-        "shared_distinctive_title_terms_category_time_window"
-      ],
-      "source_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/donald-trump-under-radar-tech-153404937.html",
-        "https://finance.yahoo.com/markets/stocks/articles/sandisk-sndk-donald-trump-top-153230468.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-019",
-      "article_count": 2,
-      "sources": [
-        "Yahoo Finance"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.8,
-      "cluster_reasons": [
-        "shared_distinctive_title_terms_category_time_window"
-      ],
-      "source_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/procept-biorobotics-corporation-prct-good-153320309.html",
-        "https://finance.yahoo.com/markets/stocks/articles/blue-bird-corporation-blbd-good-145953748.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-020",
-      "article_count": 1,
-      "sources": [
-        "Yahoo Finance"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/dell-technologies-dell-among-best-153305423.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-021",
-      "article_count": 1,
-      "sources": [
-        "Yahoo Finance"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://finance.yahoo.com/energy/articles/equinor-boost-troll-gas-output-153000121.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-022",
-      "article_count": 1,
-      "sources": [
-        "Yahoo Finance"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/titan-america-sa-ttam-good-152936112.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-023",
+      "cluster_id": "news-cluster-031",
       "article_count": 1,
       "sources": [
         "TechCrunch"
@@ -2208,25 +2255,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-024",
-      "article_count": 1,
-      "sources": [
-        "CNBC"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://www.cnbc.com/2026/06/19/nevada-workforce-job-market.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-025",
+      "cluster_id": "news-cluster-032",
       "article_count": 1,
       "sources": [
         "The Verge"
@@ -2249,7 +2278,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-026",
+      "cluster_id": "news-cluster-033",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -2267,7 +2296,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-027",
+      "cluster_id": "news-cluster-034",
       "article_count": 1,
       "sources": [
         "The Verge"
@@ -2295,25 +2324,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-028",
-      "article_count": 1,
-      "sources": [
-        "MarketWatch"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://www.marketwatch.com/story/we-own-our-home-outright-i-am-67-and-earn-100-000-do-i-take-my-30-000-social-security-now-or-wait-bbe1e123?mod=mw_rss_topstories"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-029",
+      "cluster_id": "news-cluster-035",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -2331,25 +2342,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-030",
-      "article_count": 1,
-      "sources": [
-        "MarketWatch"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://www.marketwatch.com/story/the-loneliness-crisis-has-gotten-so-bad-that-lawmakers-are-ready-to-spend-millions-of-dollars-to-fight-it-f7e7c7b7?mod=mw_rss_topstories"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-031",
+      "cluster_id": "news-cluster-036",
       "article_count": 1,
       "sources": [
         "The Verge"
@@ -2367,25 +2360,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-032",
-      "article_count": 1,
-      "sources": [
-        "MarketWatch"
-      ],
-      "categories": [
-        "半導體"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://www.marketwatch.com/story/chip-stocks-are-setting-records-but-this-hidden-chart-pattern-says-momentum-favors-the-bears-5ba98c10?mod=mw_rss_topstories"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-033",
+      "cluster_id": "news-cluster-037",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -2403,7 +2378,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-034",
+      "cluster_id": "news-cluster-038",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -2421,61 +2396,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-035",
-      "article_count": 1,
-      "sources": [
-        "MarketWatch"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://www.marketwatch.com/story/ill-probably-be-working-until-i-die-im-60-work-as-a-restaurant-server-and-have-2-000-in-an-ira-who-can-help-me-6e36253a?mod=mw_rss_topstories"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-036",
-      "article_count": 1,
-      "sources": [
-        "MarketWatch"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://www.marketwatch.com/story/im-a-realist-im-50-with-6-5-million-saved-should-i-quit-my-200-000-job-and-retire-early-a89624fa?mod=mw_rss_topstories"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-037",
-      "article_count": 1,
-      "sources": [
-        "華爾街見聞"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://wallstreetcn.com/premium/articles/3775054?layout=wscn-layout"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-038",
+      "cluster_id": "news-cluster-039",
       "article_count": 1,
       "sources": [
         "TechCrunch"
@@ -2493,7 +2414,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-039",
+      "cluster_id": "news-cluster-040",
       "article_count": 1,
       "sources": [
         "The Verge"
@@ -2511,62 +2432,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-040",
-      "article_count": 1,
-      "sources": [
-        "CNBC"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://www.cnbc.com/2026/06/19/netjets-first-fatal-crash-kills-influential-texas-vc-founder.html"
-      ]
-    },
-    {
       "cluster_id": "news-cluster-041",
-      "article_count": 1,
-      "sources": [
-        "MarketWatch"
-      ],
-      "categories": [
-        "美股"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://www.marketwatch.com/story/trading-in-french-server-company-suspended-after-short-sellers-accusations-trigger-stock-collapse-861135d2?mod=mw_rss_topstories"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-042",
-      "article_count": 1,
-      "sources": [
-        "華爾街見聞"
-      ],
-      "categories": [
-        "AI",
-        "半導體"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://wallstreetcn.com/articles/3775097"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-043",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -2584,110 +2450,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-044",
-      "article_count": 3,
-      "sources": [
-        "CNBC",
-        "MarketWatch",
-        "Yahoo Finance"
-      ],
-      "categories": [
-        "宏觀",
-        "美股"
-      ],
-      "detected_entities": [
-        {
-          "name": "Federal Reserve",
-          "type": "macro"
-        },
-        {
-          "name": "Inflation",
-          "type": "macro"
-        }
-      ],
-      "cluster_confidence": 0.78,
-      "cluster_reasons": [
-        "shared_entity_and_distinctive_title_terms",
-        "shared_distinctive_title_terms_category_time_window"
-      ],
-      "source_urls": [
-        "https://www.marketwatch.com/story/fed-watching-is-looking-very-different-now-two-charts-can-help-you-in-the-warsh-era-d2372c15?mod=mw_rss_topstories",
-        "https://www.cnbc.com/2026/06/18/markets-are-set-for-a-much-more-hawkish-warsh-fed-than-expected.html",
-        "https://finance.yahoo.com/economy/policy/articles/fed-warsh-era-kicks-off-043700459.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-045",
-      "article_count": 1,
-      "sources": [
-        "華爾街見聞"
-      ],
-      "categories": [
-        "AI",
-        "科技公司"
-      ],
-      "detected_entities": [
-        {
-          "name": "Alphabet",
-          "type": "company"
-        },
-        {
-          "name": "OpenAI",
-          "type": "company"
-        }
-      ],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://wallstreetcn.com/articles/3775088"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-046",
-      "article_count": 1,
-      "sources": [
-        "華爾街見聞"
-      ],
-      "categories": [
-        "AI",
-        "外匯"
-      ],
-      "detected_entities": [
-        {
-          "name": "US Dollar",
-          "type": "macro"
-        }
-      ],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://wallstreetcn.com/articles/3775094"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-047",
-      "article_count": 1,
-      "sources": [
-        "華爾街見聞"
-      ],
-      "categories": [
-        "AI"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://wallstreetcn.com/articles/3775093"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-048",
+      "cluster_id": "news-cluster-042",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -2710,25 +2473,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-049",
-      "article_count": 1,
-      "sources": [
-        "MarketWatch"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://www.marketwatch.com/story/i-became-invisible-when-i-turned-60-the-hidden-crisis-of-late-career-unemployment-5bf76c00?mod=mw_rss_topstories"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-050",
+      "cluster_id": "news-cluster-043",
       "article_count": 1,
       "sources": [
         "The Verge"
@@ -2746,7 +2491,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-051",
+      "cluster_id": "news-cluster-044",
       "article_count": 1,
       "sources": [
         "The Verge"
@@ -2773,71 +2518,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-052",
-      "article_count": 1,
-      "sources": [
-        "華爾街見聞"
-      ],
-      "categories": [
-        "外匯",
-        "宏觀"
-      ],
-      "detected_entities": [
-        {
-          "name": "Interest Rates",
-          "type": "macro"
-        },
-        {
-          "name": "US Dollar",
-          "type": "macro"
-        }
-      ],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://wallstreetcn.com/articles/3775095"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-053",
-      "article_count": 1,
-      "sources": [
-        "華爾街見聞"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://wallstreetcn.com/articles/3775092"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-054",
-      "article_count": 1,
-      "sources": [
-        "華爾街見聞"
-      ],
-      "categories": [
-        "AI"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://wallstreetcn.com/articles/3775091"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-055",
+      "cluster_id": "news-cluster-045",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -2855,7 +2536,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-056",
+      "cluster_id": "news-cluster-046",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -2873,7 +2554,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-057",
+      "cluster_id": "news-cluster-047",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -2891,7 +2572,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-058",
+      "cluster_id": "news-cluster-048",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -2915,7 +2596,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-059",
+      "cluster_id": "news-cluster-049",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -2933,26 +2614,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-060",
-      "article_count": 1,
-      "sources": [
-        "CNBC"
-      ],
-      "categories": [
-        "商品",
-        "地緣政治"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://www.cnbc.com/2026/06/19/hormuz-relief-may-not-ease-the-economic-toll-thats-already-baked-in-analysts-warn.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-061",
+      "cluster_id": "news-cluster-050",
       "article_count": 1,
       "sources": [
         "TechCrunch"
@@ -2975,7 +2637,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-062",
+      "cluster_id": "news-cluster-051",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -2993,7 +2655,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-063",
+      "cluster_id": "news-cluster-052",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -3012,7 +2674,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-064",
+      "cluster_id": "news-cluster-053",
       "article_count": 1,
       "sources": [
         "The Verge"
@@ -3035,30 +2697,38 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-065",
-      "article_count": 1,
+      "cluster_id": "news-cluster-054",
+      "article_count": 2,
       "sources": [
-        "CNBC"
+        "CNBC",
+        "Yahoo Finance"
       ],
       "categories": [
-        "外匯"
+        "外匯",
+        "宏觀"
       ],
       "detected_entities": [
+        {
+          "name": "Federal Reserve",
+          "type": "macro"
+        },
         {
           "name": "US Dollar",
           "type": "macro"
         }
       ],
-      "cluster_confidence": 0.5,
+      "cluster_confidence": 0.8,
       "cluster_reasons": [
-        "single_article_no_related_match"
+        "shared_distinctive_title_terms_category_time_window",
+        "shared_entity_and_distinctive_title_terms"
       ],
       "source_urls": [
-        "https://www.cnbc.com/2026/06/19/japan-yen-161-dollar-intervention-risk-currency-markets.html"
+        "https://www.cnbc.com/2026/06/19/japan-yen-161-dollar-intervention-risk-currency-markets.html",
+        "https://finance.yahoo.com/news/dollar-clings-two-month-peak-013742192.html"
       ]
     },
     {
-      "cluster_id": "news-cluster-066",
+      "cluster_id": "news-cluster-055",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -3076,7 +2746,30 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-067",
+      "cluster_id": "news-cluster-056",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "美股"
+      ],
+      "detected_entities": [
+        {
+          "name": "S&P 500",
+          "type": "index"
+        }
+      ],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/quest-diagnostics-stock-underperforming-p-031158298.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-057",
       "article_count": 1,
       "sources": [
         "Yahoo Finance"
@@ -3099,7 +2792,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-068",
+      "cluster_id": "news-cluster-058",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -3117,7 +2810,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-069",
+      "cluster_id": "news-cluster-059",
       "article_count": 2,
       "sources": [
         "CNBC"
@@ -3141,7 +2834,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-070",
+      "cluster_id": "news-cluster-060",
       "article_count": 1,
       "sources": [
         "TechCrunch"
@@ -3159,7 +2852,25 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-071",
+      "cluster_id": "news-cluster-061",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/idex-corporation-stock-performance-compared-005847201.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-062",
       "article_count": 1,
       "sources": [
         "TechCrunch"
@@ -3177,7 +2888,43 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-072",
+      "cluster_id": "news-cluster-063",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/news/dram-investors-want-photonics-etf-004955512.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-064",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/gen-digital-stock-gen-underperforming-004117505.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-065",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -3200,18 +2947,129 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-073",
-      "article_count": 1,
+      "cluster_id": "news-cluster-066",
+      "article_count": 3,
       "sources": [
-        "CNBC"
+        "Yahoo Finance"
       ],
       "categories": [
         "宏觀"
       ],
+      "detected_entities": [],
+      "cluster_confidence": 0.8,
+      "cluster_reasons": [
+        "shared_distinctive_title_terms_category_time_window"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/real-estate/articles/american-tower-corporation-amt-among-002516603.html",
+        "https://finance.yahoo.com/real-estate/articles/why-umh-properties-inc-umh-002506113.html",
+        "https://finance.yahoo.com/real-estate/articles/simon-property-group-inc-spg-002459622.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-067",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/energy/articles/11-yield-exposure-across-28-002452398.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-068",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "美股"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/real-estate/articles/extra-space-storage-exr-faces-002441810.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-069",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/real-estate/articles/why-rbc-still-likes-sun-002431959.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-070",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/real-estate/articles/avalonbay-avb-could-benefit-changing-002422308.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-071",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/energy/articles/energy-fuels-lands-725-million-001728062.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-072",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "商品",
+        "地緣政治"
+      ],
       "detected_entities": [
         {
-          "name": "Interest Rates",
-          "type": "macro"
+          "name": "Oil",
+          "type": "asset"
         }
       ],
       "cluster_confidence": 0.5,
@@ -3219,11 +3077,209 @@
         "single_article_no_related_match"
       ],
       "source_urls": [
-        "https://www.cnbc.com/2026/06/18/trump-student-loan-autopay-interest-rate-discount.html"
+        "https://finance.yahoo.com/energy/articles/oil-slips-again-us-iran-005602163.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-073",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/mid-america-apartment-stock-underperforming-000652353.html"
       ]
     },
     {
       "cluster_id": "news-cluster-074",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/energy/articles/forget-critical-metals-electricity-real-000000768.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-075",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/news/commonwealth-bank-australia-appoints-cio-235755970.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-076",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/why-centrus-energy-group-stock-234733003.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-077",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/real-estate/articles/bed-bath-beyond-bets-53-234523748.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-078",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/rigetti-computing-stock-buy-now-233300624.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-079",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "美股"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/real-estate/articles/elizabeth-warrens-housing-bill-could-233033845.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-080",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/why-weakness-dividend-paying-costco-233002861.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-081",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/headline-valuations-arent-seem-225822955.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-082",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/energy/articles/average-gas-price-drops-below-221900203.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-083",
+      "article_count": 1,
+      "sources": [
+        "Yahoo Finance"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "detected_entities": [],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://finance.yahoo.com/technology/ai/articles/pe-yet-prove-ai-bets-220208825.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-084",
       "article_count": 1,
       "sources": [
         "TechCrunch"
@@ -3247,7 +3303,35 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-075",
+      "cluster_id": "news-cluster-085",
+      "article_count": 1,
+      "sources": [
+        "CNBC"
+      ],
+      "categories": [
+        "科技公司",
+        "美股"
+      ],
+      "detected_entities": [
+        {
+          "name": "Amazon",
+          "type": "company"
+        },
+        {
+          "name": "SpaceX",
+          "type": "company"
+        }
+      ],
+      "cluster_confidence": 0.5,
+      "cluster_reasons": [
+        "single_article_no_related_match"
+      ],
+      "source_urls": [
+        "https://www.cnbc.com/2026/06/18/spacex-stock-elon-musk-rally-cools.html"
+      ]
+    },
+    {
+      "cluster_id": "news-cluster-086",
       "article_count": 1,
       "sources": [
         "TechCrunch"
@@ -3265,43 +3349,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-076",
-      "article_count": 1,
-      "sources": [
-        "The Verge"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://www.theverge.com/games/952582/valve-steam-controller-reservations-orders-behind-estimated-date"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-077",
-      "article_count": 1,
-      "sources": [
-        "The Verge"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://www.theverge.com/tech/952173/epilogue-gb-operator-game-boy-camera-ios-android-app-iphone"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-078",
+      "cluster_id": "news-cluster-087",
       "article_count": 1,
       "sources": [
         "TechCrunch"
@@ -3330,7 +3378,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-079",
+      "cluster_id": "news-cluster-088",
       "article_count": 1,
       "sources": [
         "TechCrunch"
@@ -3348,31 +3396,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-080",
-      "article_count": 1,
-      "sources": [
-        "CNBC"
-      ],
-      "categories": [
-        "AI",
-        "科技公司"
-      ],
-      "detected_entities": [
-        {
-          "name": "Amazon",
-          "type": "company"
-        }
-      ],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://www.cnbc.com/2026/06/18/amazon-engineers-ai-data-center-opposition.html"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-081",
+      "cluster_id": "news-cluster-089",
       "article_count": 1,
       "sources": [
         "TechCrunch"
@@ -3390,25 +3414,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-082",
-      "article_count": 1,
-      "sources": [
-        "The Verge"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://www.theverge.com/gadgets/952326/hbo-max-annual-plan-deal-sale"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-083",
+      "cluster_id": "news-cluster-090",
       "article_count": 1,
       "sources": [
         "TechCrunch"
@@ -3426,7 +3432,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-084",
+      "cluster_id": "news-cluster-091",
       "article_count": 1,
       "sources": [
         "CNBC"
@@ -3444,7 +3450,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-085",
+      "cluster_id": "news-cluster-092",
       "article_count": 1,
       "sources": [
         "TechCrunch"
@@ -3473,7 +3479,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-086",
+      "cluster_id": "news-cluster-093",
       "article_count": 1,
       "sources": [
         "TechCrunch"
@@ -3491,7 +3497,7 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-087",
+      "cluster_id": "news-cluster-094",
       "article_count": 1,
       "sources": [
         "TechCrunch"
@@ -3509,10 +3515,10 @@
       ]
     },
     {
-      "cluster_id": "news-cluster-088",
+      "cluster_id": "news-cluster-095",
       "article_count": 1,
       "sources": [
-        "TechCrunch"
+        "Yahoo Finance"
       ],
       "categories": [
         "宏觀"
@@ -3523,17 +3529,17 @@
         "single_article_no_related_match"
       ],
       "source_urls": [
-        "https://techcrunch.com/2026/06/18/the-smartphone-era-created-an-attention-crisis-slowtech-is-fixing-it/"
+        "https://finance.yahoo.com/personal-finance/credit-cards/review/amex-blue-cash-preferred-review-200056855.html"
       ]
     },
     {
-      "cluster_id": "news-cluster-089",
+      "cluster_id": "news-cluster-096",
       "article_count": 1,
       "sources": [
-        "TechCrunch"
+        "Yahoo Finance"
       ],
       "categories": [
-        "宏觀"
+        "美股"
       ],
       "detected_entities": [],
       "cluster_confidence": 0.5,
@@ -3541,66 +3547,7 @@
         "single_article_no_related_match"
       ],
       "source_urls": [
-        "https://techcrunch.com/2026/06/18/texas-government-data-breach-allowed-hackers-to-steal-3-million-drivers-licenses-and-passports/"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-090",
-      "article_count": 1,
-      "sources": [
-        "TechCrunch"
-      ],
-      "categories": [
-        "AI"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://techcrunch.com/2026/06/18/queer-eyes-life-coach-karamo-brown-launches-ke-a-wellness-app-featuring-his-ai-digital-clone/"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-091",
-      "article_count": 1,
-      "sources": [
-        "TechCrunch"
-      ],
-      "categories": [
-        "科技公司"
-      ],
-      "detected_entities": [
-        {
-          "name": "Apple",
-          "type": "company"
-        }
-      ],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://techcrunch.com/2026/06/18/apple-opens-up-app-store-to-new-competition-in-brazil/"
-      ]
-    },
-    {
-      "cluster_id": "news-cluster-092",
-      "article_count": 1,
-      "sources": [
-        "TechCrunch"
-      ],
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "cluster_confidence": 0.5,
-      "cluster_reasons": [
-        "single_article_no_related_match"
-      ],
-      "source_urls": [
-        "https://techcrunch.com/2026/06/18/maptap-a-daily-geography-game-is-my-new-wordle/"
+        "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-juneteenth-heres-the-holiday-trading-schedule-in-2026-210239142.html"
       ]
     }
   ]

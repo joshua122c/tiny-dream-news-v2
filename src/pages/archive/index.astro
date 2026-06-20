@@ -1,0 +1,161 @@
+---
+import "../../styles/global.css";
+import archiveIndex from "../../../data/archive/index.json";
+
+type ArchiveItem = {
+  date: string;
+  run_time_hkt?: string;
+  archive_id?: string;
+  generated_at?: string;
+  path?: string;
+  label_zh_hant?: string;
+  top_headline_zh_hant?: string;
+  market_mood_label_zh_hant?: string;
+  cluster_count?: number;
+  source_count?: number;
+  article_count?: number;
+};
+
+const items = [...((archiveIndex as { items?: ArchiveItem[] }).items ?? [])].sort((a, b) => {
+  const left = `${a.date}-${a.run_time_hkt ?? "0000"}`;
+  const right = `${b.date}-${b.run_time_hkt ?? "0000"}`;
+  return right.localeCompare(left);
+});
+
+const groupedItems = items.reduce<Record<string, ArchiveItem[]>>((groups, item) => {
+  groups[item.date] ??= [];
+  groups[item.date].push(item);
+  return groups;
+}, {});
+
+const dates = Object.keys(groupedItems).sort((a, b) => b.localeCompare(a));
+
+const runLabel = (runTime?: string) => {
+  if (!runTime || !/^\d{4}$/.test(runTime)) return "歷史版本";
+  const hour = Number(runTime.slice(0, 2));
+  if (hour < 12) return "早上版";
+  if (hour < 14) return "中午版";
+  if (hour < 18) return "下午版";
+  return "晚間版";
+};
+
+const timeLabel = (runTime?: string) => {
+  if (!runTime || !/^\d{4}$/.test(runTime)) return "時間未標示";
+  return `${runTime.slice(0, 2)}:${runTime.slice(2)} HKT`;
+};
+
+const dateLabel = (date: string) =>
+  new Intl.DateTimeFormat("zh-HK", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    weekday: "short",
+    timeZone: "Asia/Hong_Kong",
+  }).format(new Date(`${date}T00:00:00+08:00`));
+
+const generatedLabel = (generatedAt?: string) => {
+  if (!generatedAt) return "生成時間未標示";
+  return new Intl.DateTimeFormat("zh-HK", {
+    dateStyle: "medium",
+    timeStyle: "short",
+    timeZone: "Asia/Hong_Kong",
+  }).format(new Date(generatedAt));
+};
+
+const archiveHref = (item: ArchiveItem) => {
+  if (item.archive_id) return `/archive/${item.archive_id}/`;
+  if (item.date) return `/archive/${item.date}/`;
+  return item.path ?? "#";
+};
+---
+
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tiny Dream News V2 archive index for daily finance and technology morning briefs."
+    />
+    <title>Archive | Tiny Dream News V2</title>
+  </head>
+  <body>
+    <main class="brief-shell archive-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Tiny Dream News V2 home">
+          <span class="brand-mark" aria-hidden="true">TD</span>
+          <span>
+            <strong>Tiny Dream News V2</strong>
+            <small>Global Finance & Technology Morning Brief</small>
+          </span>
+        </a>
+
+        <div class="topbar-meta" aria-label="Archive metadata">
+          <span>Archive</span>
+          <strong>{items.length} runs</strong>
+        </div>
+
+        <nav class="top-actions" aria-label="Brief navigation">
+          <a href="/">Latest</a>
+        </nav>
+      </header>
+
+      <section class="archive-hero" aria-labelledby="archive-title">
+        <div>
+          <p class="eyebrow">Brief Archive</p>
+          <h1 id="archive-title">歷史晨報</h1>
+          <p>
+            按日期與香港時間排列每日生成版本。同一天的早上版、中午版、下午版與晚間版會分開顯示，方便比較不同時間的市場主線變化。
+          </p>
+        </div>
+        <div class="archive-summary">
+          <span>{dates.length}</span>
+          <p>days covered</p>
+          <span>{items.length}</span>
+          <p>saved runs</p>
+        </div>
+      </section>
+
+      {items.length === 0 ? (
+        <section class="empty-state">
+          <h2>暫時未有 archive</h2>
+          <p>完成一次 daily pipeline 後，這裡會顯示可查看的歷史晨報。</p>
+        </section>
+      ) : (
+        <section class="archive-groups" aria-label="Archive runs">
+          {dates.map((date) => (
+            <section class="archive-day" aria-labelledby={`archive-${date}`}>
+              <div class="archive-day-heading">
+                <div>
+                  <p class="eyebrow">Trading Briefs</p>
+                  <h2 id={`archive-${date}`}>{dateLabel(date)}</h2>
+                </div>
+                <span>{groupedItems[date].length} runs</span>
+              </div>
+
+              <div class="archive-run-list">
+                {groupedItems[date].map((item) => (
+                  <article class="archive-run-card">
+                    <a href={archiveHref(item)} aria-label={`Open ${item.archive_id ?? item.date}`}>
+                      <span class="run-badge">{runLabel(item.run_time_hkt)}</span>
+                      <span class="run-time">{timeLabel(item.run_time_hkt)}</span>
+                      <strong>{item.top_headline_zh_hant || "未有主題標題"}</strong>
+                      {item.market_mood_label_zh_hant && <em>{item.market_mood_label_zh_hant}</em>}
+                      <small>Generated {generatedLabel(item.generated_at)}</small>
+                      <span class="archive-metrics">
+                        <b>{item.source_count ?? 0} sources</b>
+                        <b>{item.article_count ?? 0} articles</b>
+                        <b>{item.cluster_count ?? 0} clusters</b>
+                      </span>
+                    </a>
+                  </article>
+                ))}
+              </div>
+            </section>
+          ))}
+        </section>
+      )}
+    </main>
+  </body>
+</html>

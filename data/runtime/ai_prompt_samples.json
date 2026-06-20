@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-19T16:30:36.173Z",
+  "generated_at": "2026-06-20T06:46:05.782Z",
   "mock_mode": true,
   "note": "These payloads are samples only. Mock mode does not call Cloudflare AI.",
   "samples": [
     {
       "sample_type": "detailed",
-      "cluster_id": "news-cluster-003",
+      "cluster_id": "news-cluster-004",
       "prompt_payload": {
         "summary_type": "detailed",
         "mock_mode": true,
@@ -16,12 +16,20 @@
           "Translate and synthesize English source content into Traditional Chinese.",
           "Convert or rewrite Simplified Chinese source content into Traditional Chinese.",
           "Do not output Simplified Chinese in user-facing fields.",
+          "The headline must be a real Traditional Chinese news headline, not a category list and not an English title.",
+          "Create a concise Traditional Chinese editorial headline based on the provided source titles and snippets.",
+          "Do not use raw English entity lists as the headline.",
+          "Do not use category/entity concatenation as the headline.",
+          "Do not start the headline with fallback labels such as 重點主題 or unreadable mojibake text.",
+          "The headline should summarize the actual news event or market theme.",
           "Keep a neutral and factual news tone.",
           "Do not provide investment advice.",
           "Do not make price predictions.",
+          "Do not include buy, sell, hold, target price, upside, downside, or trading-action language.",
           "Do not add facts that are not supported by the provided source data.",
           "Summarize only from the provided titles, snippets, categories, heat reasons, source names, and URLs.",
           "If information is limited, clearly say that currently available public information is limited.",
+          "Avoid generic filler. Every sentence must refer to a concrete source-supported development, theme, market, company, asset, or uncertainty.",
           "Company names, tickers, product names, and source names may remain in English where appropriate.",
           "Return valid JSON only.",
           "Do not include Markdown.",
@@ -30,15 +38,24 @@
         ],
         "zh_hant_requirements": [
           "所有面向使用者的內容必須使用繁體中文。",
+          "標題必須是自然的繁體中文新聞標題，概括實際事件或市場主題。",
+          "不要把分類、資產或英文 entity 清單直接拼成標題。",
+          "不要使用「重點主題：」或 cluster_title_candidate 作為正式標題。",
+          "不要輸出亂碼、簡體中文、Markdown 或 JSON 外的說明。",
+          "保持中立、 factual 的新聞語氣，不要提供投資建議，也不要作價格預測。",
+          "所有面向使用者的內容必須使用繁體中文。",
           "英文來源內容需要翻譯並綜合為繁體中文。",
           "簡體中文來源內容需要轉換或改寫為繁體中文。",
           "不要輸出簡體中文。",
+          "標題必須是正式的繁體中文新聞標題，不可以只是分類列表，也不可以直接使用英文標題。",
           "保持中立、factual 的新聞語氣。",
           "不要提供投資建議。",
           "不要作價格預測。",
+          "不要輸出買入、賣出、持有、目標價、上望、下望或任何交易行動建議。",
           "不要加入來源資料沒有支持的事實。",
           "只可根據提供的標題、摘要、分類、熱度原因、來源名稱和 URL 進行摘要。",
           "如果資料不足，請明確寫出「目前公開資訊有限」。",
+          "避免空泛模板句；每一句都應對應到來源支持的事件、主題、市場、公司、資產或不確定性。",
           "公司名稱、股票代號、產品名稱和來源名稱可在適當情況下保留英文。",
           "只輸出 valid JSON，不要輸出 Markdown，不要在 JSON 外加入任何說明。"
         ],
@@ -62,25 +79,33 @@
           ]
         },
         "source_cluster": {
-          "cluster_id": "news-cluster-003",
-          "cluster_title_candidate": "8000万桶原油，准备通过霍尔木兹海峡",
-          "heat_score": 78.85,
+          "cluster_id": "news-cluster-004",
+          "cluster_title_candidate": "Markets are set for a much more hawkish Warsh Fed than expected",
+          "heat_score": 79.85,
           "heat_level": "high",
           "categories": [
-            "商品",
-            "地緣政治"
+            "宏觀",
+            "美股"
           ],
           "detected_entities": [
             {
-              "name": "Oil",
-              "type": "asset"
+              "name": "Federal Reserve",
+              "type": "macro"
+            },
+            {
+              "name": "Inflation",
+              "type": "macro"
+            },
+            {
+              "name": "Interest Rates",
+              "type": "macro"
             }
           ],
           "heat_reasons": [
             "同一主題被 3 個來源報導",
             "包含高權重來源 CNBC 與 華爾街見聞",
-            "涵蓋 商品、地緣政治 類別",
-            "涉及 Iran、Middle East、oil、制裁 等重要市場關鍵詞",
+            "涉及 宏觀、美股 等高關注主題",
+            "涉及 Fed、inflation、interest rates、利率 等重要市場關鍵詞",
             "新聞發布時間較新",
             "來源首頁位置較前"
           ],
@@ -91,39 +116,46 @@
           ],
           "articles": [
             {
-              "source": "MarketWatch",
-              "title": "Oil prices under new wave of pressure amid lingering questions over a Strait of Hormuz reopening",
-              "snippet": "A flurry of headlines on Friday point to an increasingly fragile deal between the U.S. and Iran.",
-              "url": "https://www.marketwatch.com/story/oil-prices-under-new-wave-of-pressure-amid-lingering-questions-over-a-strait-of-hormuz-reopening-c58fc9e8?mod=mw_rss_topstories",
-              "published_at": "2026-06-19T16:05:00.000Z"
-            },
-            {
-              "source": "CNBC",
-              "title": "Oil tanker traffic in Strait of Hormuz jumps after U.S. and Iran implement deal to open sea lane",
-              "snippet": "The U.S.-Iran deal has raised questions about how the Strait of Hormuz will be governed after the toll-free period ends.",
-              "url": "https://www.cnbc.com/2026/06/19/iran-oil-tanker-traffic-strait-hormuz-gulf-vlcc.html",
-              "published_at": "2026-06-19T15:57:27.000Z"
-            },
-            {
               "source": "華爾街見聞",
-              "title": "8000万桶原油，准备通过霍尔木兹海峡",
-              "snippet": "波斯湾40艘超级油轮上约8000万桶非受制裁原油已蓄势待发，部分船只率先尝试通行，有望缓解亚洲炼厂因前期局势导致的断供与库存压力；但行业组织警告水雷等重大安全风险依然存在，全面复航仍具不确定性。",
-              "url": "https://wallstreetcn.com/articles/3775096",
-              "published_at": "2026-06-19T12:04:03.000Z"
+              "title": "德银“向沃什投降”：今年将加息50基点，甚至可能在7月提前加息",
+              "snippet": "德银彻底扭转原有宽松预期，全面上调通胀预测，预计今年将加息两次共50个基点，利率升至4.1%；并警告美联储行动或更激进，甚至可能在7月提前加息，或全年加息75个基点。触发因素为新主席沃什鹰派表态及通胀压力广泛持续。",
+              "url": "https://wallstreetcn.com/articles/3775110",
+              "published_at": "2026-06-20T02:50:25.000Z"
+            },
+            {
+              "source": "MarketWatch",
+              "title": "Warsh’s new task forces give the Fed wiggle room to put off changing rates until December",
+              "snippet": "During his first press conference as Fed chair Wednesday, Kevin Warsh repeated one refrain in his answers to many reporters’ questions: A task force is looking into it.",
+              "url": "https://www.marketwatch.com/story/warshs-task-forces-give-the-fed-wiggle-room-to-put-off-changing-rates-until-december-364fc1fc?mod=mw_rss_topstories",
+              "published_at": "2026-06-19T17:25:00.000Z"
+            },
+            {
+              "source": "MarketWatch",
+              "title": "Trump picked Kevin Warsh to cut rates. The new Fed chief just told us he has other plans.",
+              "snippet": "Here’s what the central bank’s hawkish agenda means for your money.",
+              "url": "https://www.marketwatch.com/story/trump-picked-kevin-warsh-to-cut-rates-the-new-fed-chief-just-told-us-he-has-other-plans-096bba56?mod=mw_rss_topstories",
+              "published_at": "2026-06-19T17:08:00.000Z"
+            },
+            {
+              "source": "MarketWatch",
+              "title": "Fed watching is looking very different now. Two charts can help you in the Warsh era.",
+              "snippet": "Kevin Warsh is forcing Wall Street to do the heavy lifting. Use these benchmarks to find your footing.",
+              "url": "https://www.marketwatch.com/story/fed-watching-is-looking-very-different-now-two-charts-can-help-you-in-the-warsh-era-d2372c15?mod=mw_rss_topstories",
+              "published_at": "2026-06-19T16:59:00.000Z"
             },
             {
               "source": "CNBC",
-              "title": "U.S.-Iran deal in photos: ships in the Strait of Hormuz, daily life in Tehran",
-              "snippet": "The first signs of a post-war recovery are emerging across the Middle East after the United States and Iran signed a memorandum aimed at ending the conflict.",
-              "url": "https://www.cnbc.com/2026/06/19/us-iran-deal-in-photos-shipping-resumes-as-fragile-peace-takes-hold.html",
-              "published_at": "2026-06-19T01:28:35.000Z"
+              "title": "Trump administration temporarily cuts student loan interest rates for borrowers on autopay",
+              "snippet": "The Trump administration announced it will offer federal student loan borrowers who sign up for autopay a larger interest rate discount.",
+              "url": "https://www.cnbc.com/2026/06/18/trump-student-loan-autopay-interest-rate-discount.html",
+              "published_at": "2026-06-18T21:42:07.000Z"
             },
             {
               "source": "CNBC",
-              "title": "OPEC chief dismisses IEA supply glut forecast as 'critical' Strait of Hormuz reopens",
-              "snippet": "The IEA said on Wednesday that a lasting resolution to the conflict could drive a surge in supply volumes and trigger a major oil overhang next year.",
-              "url": "https://www.cnbc.com/2026/06/18/opec-iea-supply-glut-forecast-critical-strait-hormuz-reopens-oil.html",
-              "published_at": "2026-06-18T15:19:47.000Z"
+              "title": "Markets are set for a much more hawkish Warsh Fed than expected",
+              "snippet": "Fed Chairman Kevin Warsh's tough talk on inflation Wednesday reverberated through financial markets.",
+              "url": "https://www.cnbc.com/2026/06/18/markets-are-set-for-a-much-more-hawkish-warsh-fed-than-expected.html",
+              "published_at": "2026-06-18T18:04:41.000Z"
             }
           ]
         }
@@ -132,11 +164,11 @@
         "messages": [
           {
             "role": "system",
-            "content": "You are a cautious financial and technology news summarization engine.\nReturn only JSON that matches the supplied schema.\nDo not include Markdown or any text outside JSON.\nAll user-facing output fields must be written in Traditional Chinese.\nTranslate and synthesize English source content into Traditional Chinese.\nConvert or rewrite Simplified Chinese source content into Traditional Chinese.\nDo not output Simplified Chinese in user-facing fields.\nKeep a neutral and factual news tone.\nDo not provide investment advice.\nDo not make price predictions.\nDo not add facts that are not supported by the provided source data.\nSummarize only from the provided titles, snippets, categories, heat reasons, source names, and URLs.\nIf information is limited, clearly say that currently available public information is limited.\nCompany names, tickers, product names, and source names may remain in English where appropriate.\nReturn valid JSON only.\nDo not include Markdown.\nDo not wrap the JSON in Markdown code fences.\nDo not include explanations outside the JSON.\n所有面向使用者的內容必須使用繁體中文。\n英文來源內容需要翻譯並綜合為繁體中文。\n簡體中文來源內容需要轉換或改寫為繁體中文。\n不要輸出簡體中文。\n保持中立、factual 的新聞語氣。\n不要提供投資建議。\n不要作價格預測。\n不要加入來源資料沒有支持的事實。\n只可根據提供的標題、摘要、分類、熱度原因、來源名稱和 URL 進行摘要。\n如果資料不足，請明確寫出「目前公開資訊有限」。\n公司名稱、股票代號、產品名稱和來源名稱可在適當情況下保留英文。\n只輸出 valid JSON，不要輸出 Markdown，不要在 JSON 外加入任何說明。"
+            "content": "You are a cautious financial and technology news summarization engine.\nReturn only JSON that matches the supplied schema.\nDo not include Markdown or any text outside JSON.\nAll user-facing output fields must be written in Traditional Chinese.\nTranslate and synthesize English source content into Traditional Chinese.\nConvert or rewrite Simplified Chinese source content into Traditional Chinese.\nDo not output Simplified Chinese in user-facing fields.\nThe headline must be a real Traditional Chinese news headline, not a category list and not an English title.\nCreate a concise Traditional Chinese editorial headline based on the provided source titles and snippets.\nDo not use raw English entity lists as the headline.\nDo not use category/entity concatenation as the headline.\nDo not start the headline with fallback labels such as 重點主題 or unreadable mojibake text.\nThe headline should summarize the actual news event or market theme.\nKeep a neutral and factual news tone.\nDo not provide investment advice.\nDo not make price predictions.\nDo not include buy, sell, hold, target price, upside, downside, or trading-action language.\nDo not add facts that are not supported by the provided source data.\nSummarize only from the provided titles, snippets, categories, heat reasons, source names, and URLs.\nIf information is limited, clearly say that currently available public information is limited.\nAvoid generic filler. Every sentence must refer to a concrete source-supported development, theme, market, company, asset, or uncertainty.\nCompany names, tickers, product names, and source names may remain in English where appropriate.\nReturn valid JSON only.\nDo not include Markdown.\nDo not wrap the JSON in Markdown code fences.\nDo not include explanations outside the JSON.\n所有面向使用者的內容必須使用繁體中文。\n標題必須是自然的繁體中文新聞標題，概括實際事件或市場主題。\n不要把分類、資產或英文 entity 清單直接拼成標題。\n不要使用「重點主題：」或 cluster_title_candidate 作為正式標題。\n不要輸出亂碼、簡體中文、Markdown 或 JSON 外的說明。\n保持中立、 factual 的新聞語氣，不要提供投資建議，也不要作價格預測。\n所有面向使用者的內容必須使用繁體中文。\n英文來源內容需要翻譯並綜合為繁體中文。\n簡體中文來源內容需要轉換或改寫為繁體中文。\n不要輸出簡體中文。\n標題必須是正式的繁體中文新聞標題，不可以只是分類列表，也不可以直接使用英文標題。\n保持中立、factual 的新聞語氣。\n不要提供投資建議。\n不要作價格預測。\n不要輸出買入、賣出、持有、目標價、上望、下望或任何交易行動建議。\n不要加入來源資料沒有支持的事實。\n只可根據提供的標題、摘要、分類、熱度原因、來源名稱和 URL 進行摘要。\n如果資料不足，請明確寫出「目前公開資訊有限」。\n避免空泛模板句；每一句都應對應到來源支持的事件、主題、市場、公司、資產或不確定性。\n公司名稱、股票代號、產品名稱和來源名稱可在適當情況下保留英文。\n只輸出 valid JSON，不要輸出 Markdown，不要在 JSON 外加入任何說明。"
           },
           {
             "role": "user",
-            "content": "{\n  \"summary_type\": \"detailed\",\n  \"mock_mode\": true,\n  \"target_language\": \"zh-Hant\",\n  \"tone\": \"neutral\",\n  \"instructions\": [\n    \"All user-facing output fields must be written in Traditional Chinese.\",\n    \"Translate and synthesize English source content into Traditional Chinese.\",\n    \"Convert or rewrite Simplified Chinese source content into Traditional Chinese.\",\n    \"Do not output Simplified Chinese in user-facing fields.\",\n    \"Keep a neutral and factual news tone.\",\n    \"Do not provide investment advice.\",\n    \"Do not make price predictions.\",\n    \"Do not add facts that are not supported by the provided source data.\",\n    \"Summarize only from the provided titles, snippets, categories, heat reasons, source names, and URLs.\",\n    \"If information is limited, clearly say that currently available public information is limited.\",\n    \"Company names, tickers, product names, and source names may remain in English where appropriate.\",\n    \"Return valid JSON only.\",\n    \"Do not include Markdown.\",\n    \"Do not wrap the JSON in Markdown code fences.\",\n    \"Do not include explanations outside the JSON.\"\n  ],\n  \"zh_hant_requirements\": [\n    \"所有面向使用者的內容必須使用繁體中文。\",\n    \"英文來源內容需要翻譯並綜合為繁體中文。\",\n    \"簡體中文來源內容需要轉換或改寫為繁體中文。\",\n    \"不要輸出簡體中文。\",\n    \"保持中立、factual 的新聞語氣。\",\n    \"不要提供投資建議。\",\n    \"不要作價格預測。\",\n    \"不要加入來源資料沒有支持的事實。\",\n    \"只可根據提供的標題、摘要、分類、熱度原因、來源名稱和 URL 進行摘要。\",\n    \"如果資料不足，請明確寫出「目前公開資訊有限」。\",\n    \"公司名稱、股票代號、產品名稱和來源名稱可在適當情況下保留英文。\",\n    \"只輸出 valid JSON，不要輸出 Markdown，不要在 JSON 外加入任何說明。\"\n  ],\n  \"output_schema\": {\n    \"headline_zh_hant\": \"string\",\n    \"summary_zh_hant\": \"string\",\n    \"what_happened_zh_hant\": \"string\",\n    \"key_points_zh_hant\": [\n      \"string\"\n    ],\n    \"why_it_matters_zh_hant\": \"string\",\n    \"related_markets\": [\n      \"string\"\n    ],\n    \"related_assets\": [\n      \"string\"\n    ],\n    \"watch_next_zh_hant\": \"string\",\n    \"summary_quality_flags\": [\n      \"string\"\n    ]\n  },\n  \"source_cluster\": {\n    \"cluster_id\": \"news-cluster-003\",\n    \"cluster_title_candidate\": \"8000万桶原油，准备通过霍尔木兹海峡\",\n    \"heat_score\": 78.85,\n    \"heat_level\": \"high\",\n    \"categories\": [\n      \"商品\",\n      \"地緣政治\"\n    ],\n    \"detected_entities\": [\n      {\n        \"name\": \"Oil\",\n        \"type\": \"asset\"\n      }\n    ],\n    \"heat_reasons\": [\n      \"同一主題被 3 個來源報導\",\n      \"包含高權重來源 CNBC 與 華爾街見聞\",\n      \"涵蓋 商品、地緣政治 類別\",\n      \"涉及 Iran、Middle East、oil、制裁 等重要市場關鍵詞\",\n      \"新聞發布時間較新\",\n      \"來源首頁位置較前\"\n    ],\n    \"sources\": [\n      \"CNBC\",\n      \"MarketWatch\",\n      \"華爾街見聞\"\n    ],\n    \"articles\": [\n      {\n        \"source\": \"MarketWatch\",\n        \"title\": \"Oil prices under new wave of pressure amid lingering questions over a Strait of Hormuz reopening\",\n        \"snippet\": \"A flurry of headlines on Friday point to an increasingly fragile deal between the U.S. and Iran.\",\n        \"url\": \"https://www.marketwatch.com/story/oil-prices-under-new-wave-of-pressure-amid-lingering-questions-over-a-strait-of-hormuz-reopening-c58fc9e8?mod=mw_rss_topstories\",\n        \"published_at\": \"2026-06-19T16:05:00.000Z\"\n      },\n      {\n        \"source\": \"CNBC\",\n        \"title\": \"Oil tanker traffic in Strait of Hormuz jumps after U.S. and Iran implement deal to open sea lane\",\n        \"snippet\": \"The U.S.-Iran deal has raised questions about how the Strait of Hormuz will be governed after the toll-free period ends.\",\n        \"url\": \"https://www.cnbc.com/2026/06/19/iran-oil-tanker-traffic-strait-hormuz-gulf-vlcc.html\",\n        \"published_at\": \"2026-06-19T15:57:27.000Z\"\n      },\n      {\n        \"source\": \"華爾街見聞\",\n        \"title\": \"8000万桶原油，准备通过霍尔木兹海峡\",\n        \"snippet\": \"波斯湾40艘超级油轮上约8000万桶非受制裁原油已蓄势待发，部分船只率先尝试通行，有望缓解亚洲炼厂因前期局势导致的断供与库存压力；但行业组织警告水雷等重大安全风险依然存在，全面复航仍具不确定性。\",\n        \"url\": \"https://wallstreetcn.com/articles/3775096\",\n        \"published_at\": \"2026-06-19T12:04:03.000Z\"\n      },\n      {\n        \"source\": \"CNBC\",\n        \"title\": \"U.S.-Iran deal in photos: ships in the Strait of Hormuz, daily life in Tehran\",\n        \"snippet\": \"The first signs of a post-war recovery are emerging across the Middle East after the United States and Iran signed a memorandum aimed at ending the conflict.\",\n        \"url\": \"https://www.cnbc.com/2026/06/19/us-iran-deal-in-photos-shipping-resumes-as-fragile-peace-takes-hold.html\",\n        \"published_at\": \"2026-06-19T01:28:35.000Z\"\n      },\n      {\n        \"source\": \"CNBC\",\n        \"title\": \"OPEC chief dismisses IEA supply glut forecast as 'critical' Strait of Hormuz reopens\",\n        \"snippet\": \"The IEA said on Wednesday that a lasting resolution to the conflict could drive a surge in supply volumes and trigger a major oil overhang next year.\",\n        \"url\": \"https://www.cnbc.com/2026/06/18/opec-iea-supply-glut-forecast-critical-strait-hormuz-reopens-oil.html\",\n        \"published_at\": \"2026-06-18T15:19:47.000Z\"\n      }\n    ]\n  }\n}"
+            "content": "{\n  \"summary_type\": \"detailed\",\n  \"mock_mode\": true,\n  \"target_language\": \"zh-Hant\",\n  \"tone\": \"neutral\",\n  \"instructions\": [\n    \"All user-facing output fields must be written in Traditional Chinese.\",\n    \"Translate and synthesize English source content into Traditional Chinese.\",\n    \"Convert or rewrite Simplified Chinese source content into Traditional Chinese.\",\n    \"Do not output Simplified Chinese in user-facing fields.\",\n    \"The headline must be a real Traditional Chinese news headline, not a category list and not an English title.\",\n    \"Create a concise Traditional Chinese editorial headline based on the provided source titles and snippets.\",\n    \"Do not use raw English entity lists as the headline.\",\n    \"Do not use category/entity concatenation as the headline.\",\n    \"Do not start the headline with fallback labels such as 重點主題 or unreadable mojibake text.\",\n    \"The headline should summarize the actual news event or market theme.\",\n    \"Keep a neutral and factual news tone.\",\n    \"Do not provide investment advice.\",\n    \"Do not make price predictions.\",\n    \"Do not include buy, sell, hold, target price, upside, downside, or trading-action language.\",\n    \"Do not add facts that are not supported by the provided source data.\",\n    \"Summarize only from the provided titles, snippets, categories, heat reasons, source names, and URLs.\",\n    \"If information is limited, clearly say that currently available public information is limited.\",\n    \"Avoid generic filler. Every sentence must refer to a concrete source-supported development, theme, market, company, asset, or uncertainty.\",\n    \"Company names, tickers, product names, and source names may remain in English where appropriate.\",\n    \"Return valid JSON only.\",\n    \"Do not include Markdown.\",\n    \"Do not wrap the JSON in Markdown code fences.\",\n    \"Do not include explanations outside the JSON.\"\n  ],\n  \"zh_hant_requirements\": [\n    \"所有面向使用者的內容必須使用繁體中文。\",\n    \"標題必須是自然的繁體中文新聞標題，概括實際事件或市場主題。\",\n    \"不要把分類、資產或英文 entity 清單直接拼成標題。\",\n    \"不要使用「重點主題：」或 cluster_title_candidate 作為正式標題。\",\n    \"不要輸出亂碼、簡體中文、Markdown 或 JSON 外的說明。\",\n    \"保持中立、 factual 的新聞語氣，不要提供投資建議，也不要作價格預測。\",\n    \"所有面向使用者的內容必須使用繁體中文。\",\n    \"英文來源內容需要翻譯並綜合為繁體中文。\",\n    \"簡體中文來源內容需要轉換或改寫為繁體中文。\",\n    \"不要輸出簡體中文。\",\n    \"標題必須是正式的繁體中文新聞標題，不可以只是分類列表，也不可以直接使用英文標題。\",\n    \"保持中立、factual 的新聞語氣。\",\n    \"不要提供投資建議。\",\n    \"不要作價格預測。\",\n    \"不要輸出買入、賣出、持有、目標價、上望、下望或任何交易行動建議。\",\n    \"不要加入來源資料沒有支持的事實。\",\n    \"只可根據提供的標題、摘要、分類、熱度原因、來源名稱和 URL 進行摘要。\",\n    \"如果資料不足，請明確寫出「目前公開資訊有限」。\",\n    \"避免空泛模板句；每一句都應對應到來源支持的事件、主題、市場、公司、資產或不確定性。\",\n    \"公司名稱、股票代號、產品名稱和來源名稱可在適當情況下保留英文。\",\n    \"只輸出 valid JSON，不要輸出 Markdown，不要在 JSON 外加入任何說明。\"\n  ],\n  \"output_schema\": {\n    \"headline_zh_hant\": \"string\",\n    \"summary_zh_hant\": \"string\",\n    \"what_happened_zh_hant\": \"string\",\n    \"key_points_zh_hant\": [\n      \"string\"\n    ],\n    \"why_it_matters_zh_hant\": \"string\",\n    \"related_markets\": [\n      \"string\"\n    ],\n    \"related_assets\": [\n      \"string\"\n    ],\n    \"watch_next_zh_hant\": \"string\",\n    \"summary_quality_flags\": [\n      \"string\"\n    ]\n  },\n  \"source_cluster\": {\n    \"cluster_id\": \"news-cluster-004\",\n    \"cluster_title_candidate\": \"Markets are set for a much more hawkish Warsh Fed than expected\",\n    \"heat_score\": 79.85,\n    \"heat_level\": \"high\",\n    \"categories\": [\n      \"宏觀\",\n      \"美股\"\n    ],\n    \"detected_entities\": [\n      {\n        \"name\": \"Federal Reserve\",\n        \"type\": \"macro\"\n      },\n      {\n        \"name\": \"Inflation\",\n        \"type\": \"macro\"\n      },\n      {\n        \"name\": \"Interest Rates\",\n        \"type\": \"macro\"\n      }\n    ],\n    \"heat_reasons\": [\n      \"同一主題被 3 個來源報導\",\n      \"包含高權重來源 CNBC 與 華爾街見聞\",\n      \"涉及 宏觀、美股 等高關注主題\",\n      \"涉及 Fed、inflation、interest rates、利率 等重要市場關鍵詞\",\n      \"新聞發布時間較新\",\n      \"來源首頁位置較前\"\n    ],\n    \"sources\": [\n      \"CNBC\",\n      \"MarketWatch\",\n      \"華爾街見聞\"\n    ],\n    \"articles\": [\n      {\n        \"source\": \"華爾街見聞\",\n        \"title\": \"德银“向沃什投降”：今年将加息50基点，甚至可能在7月提前加息\",\n        \"snippet\": \"德银彻底扭转原有宽松预期，全面上调通胀预测，预计今年将加息两次共50个基点，利率升至4.1%；并警告美联储行动或更激进，甚至可能在7月提前加息，或全年加息75个基点。触发因素为新主席沃什鹰派表态及通胀压力广泛持续。\",\n        \"url\": \"https://wallstreetcn.com/articles/3775110\",\n        \"published_at\": \"2026-06-20T02:50:25.000Z\"\n      },\n      {\n        \"source\": \"MarketWatch\",\n        \"title\": \"Warsh’s new task forces give the Fed wiggle room to put off changing rates until December\",\n        \"snippet\": \"During his first press conference as Fed chair Wednesday, Kevin Warsh repeated one refrain in his answers to many reporters’ questions: A task force is looking into it.\",\n        \"url\": \"https://www.marketwatch.com/story/warshs-task-forces-give-the-fed-wiggle-room-to-put-off-changing-rates-until-december-364fc1fc?mod=mw_rss_topstories\",\n        \"published_at\": \"2026-06-19T17:25:00.000Z\"\n      },\n      {\n        \"source\": \"MarketWatch\",\n        \"title\": \"Trump picked Kevin Warsh to cut rates. The new Fed chief just told us he has other plans.\",\n        \"snippet\": \"Here’s what the central bank’s hawkish agenda means for your money.\",\n        \"url\": \"https://www.marketwatch.com/story/trump-picked-kevin-warsh-to-cut-rates-the-new-fed-chief-just-told-us-he-has-other-plans-096bba56?mod=mw_rss_topstories\",\n        \"published_at\": \"2026-06-19T17:08:00.000Z\"\n      },\n      {\n        \"source\": \"MarketWatch\",\n        \"title\": \"Fed watching is looking very different now. Two charts can help you in the Warsh era.\",\n        \"snippet\": \"Kevin Warsh is forcing Wall Street to do the heavy lifting. Use these benchmarks to find your footing.\",\n        \"url\": \"https://www.marketwatch.com/story/fed-watching-is-looking-very-different-now-two-charts-can-help-you-in-the-warsh-era-d2372c15?mod=mw_rss_topstories\",\n        \"published_at\": \"2026-06-19T16:59:00.000Z\"\n      },\n      {\n        \"source\": \"CNBC\",\n        \"title\": \"Trump administration temporarily cuts student loan interest rates for borrowers on autopay\",\n        \"snippet\": \"The Trump administration announced it will offer federal student loan borrowers who sign up for autopay a larger interest rate discount.\",\n        \"url\": \"https://www.cnbc.com/2026/06/18/trump-student-loan-autopay-interest-rate-discount.html\",\n        \"published_at\": \"2026-06-18T21:42:07.000Z\"\n      },\n      {\n        \"source\": \"CNBC\",\n        \"title\": \"Markets are set for a much more hawkish Warsh Fed than expected\",\n        \"snippet\": \"Fed Chairman Kevin Warsh's tough talk on inflation Wednesday reverberated through financial markets.\",\n        \"url\": \"https://www.cnbc.com/2026/06/18/markets-are-set-for-a-much-more-hawkish-warsh-fed-than-expected.html\",\n        \"published_at\": \"2026-06-18T18:04:41.000Z\"\n      }\n    ]\n  }\n}"
           }
         ],
         "response_format": {
@@ -206,7 +238,7 @@
     },
     {
       "sample_type": "brief",
-      "cluster_id": "news-cluster-008",
+      "cluster_id": "news-cluster-001",
       "prompt_payload": {
         "summary_type": "brief",
         "mock_mode": true,
@@ -217,12 +249,20 @@
           "Translate and synthesize English source content into Traditional Chinese.",
           "Convert or rewrite Simplified Chinese source content into Traditional Chinese.",
           "Do not output Simplified Chinese in user-facing fields.",
+          "The headline must be a real Traditional Chinese news headline, not a category list and not an English title.",
+          "Create a concise Traditional Chinese editorial headline based on the provided source titles and snippets.",
+          "Do not use raw English entity lists as the headline.",
+          "Do not use category/entity concatenation as the headline.",
+          "Do not start the headline with fallback labels such as 重點主題 or unreadable mojibake text.",
+          "The headline should summarize the actual news event or market theme.",
           "Keep a neutral and factual news tone.",
           "Do not provide investment advice.",
           "Do not make price predictions.",
+          "Do not include buy, sell, hold, target price, upside, downside, or trading-action language.",
           "Do not add facts that are not supported by the provided source data.",
           "Summarize only from the provided titles, snippets, categories, heat reasons, source names, and URLs.",
           "If information is limited, clearly say that currently available public information is limited.",
+          "Avoid generic filler. Every sentence must refer to a concrete source-supported development, theme, market, company, asset, or uncertainty.",
           "Company names, tickers, product names, and source names may remain in English where appropriate.",
           "Return valid JSON only.",
           "Do not include Markdown.",
@@ -231,15 +271,24 @@
         ],
         "zh_hant_requirements": [
           "所有面向使用者的內容必須使用繁體中文。",
+          "標題必須是自然的繁體中文新聞標題，概括實際事件或市場主題。",
+          "不要把分類、資產或英文 entity 清單直接拼成標題。",
+          "不要使用「重點主題：」或 cluster_title_candidate 作為正式標題。",
+          "不要輸出亂碼、簡體中文、Markdown 或 JSON 外的說明。",
+          "保持中立、 factual 的新聞語氣，不要提供投資建議，也不要作價格預測。",
+          "所有面向使用者的內容必須使用繁體中文。",
           "英文來源內容需要翻譯並綜合為繁體中文。",
           "簡體中文來源內容需要轉換或改寫為繁體中文。",
           "不要輸出簡體中文。",
+          "標題必須是正式的繁體中文新聞標題，不可以只是分類列表，也不可以直接使用英文標題。",
           "保持中立、factual 的新聞語氣。",
           "不要提供投資建議。",
           "不要作價格預測。",
+          "不要輸出買入、賣出、持有、目標價、上望、下望或任何交易行動建議。",
           "不要加入來源資料沒有支持的事實。",
           "只可根據提供的標題、摘要、分類、熱度原因、來源名稱和 URL 進行摘要。",
           "如果資料不足，請明確寫出「目前公開資訊有限」。",
+          "避免空泛模板句；每一句都應對應到來源支持的事件、主題、市場、公司、資產或不確定性。",
           "公司名稱、股票代號、產品名稱和來源名稱可在適當情況下保留英文。",
           "只輸出 valid JSON，不要輸出 Markdown，不要在 JSON 外加入任何說明。"
         ],
@@ -263,32 +312,31 @@
           ]
         },
         "source_cluster": {
-          "cluster_id": "news-cluster-008",
-          "cluster_title_candidate": "伊朗否认霍尔木兹关闭，暂免通行费但未来或加收保险费，美军称20余船已通过海峡",
-          "heat_score": 38.15,
+          "cluster_id": "news-cluster-001",
+          "cluster_title_candidate": "My mother was co-owner of my late grandmother’s bank account. Should she share the money with her siblings?",
+          "heat_score": 35.5,
           "heat_level": "low",
           "categories": [
-            "地緣政治"
+            "宏觀"
           ],
           "detected_entities": [],
           "heat_reasons": [
             "目前主要由單一來源報導",
-            "包含高權重來源 華爾街見聞",
-            "涵蓋 地緣政治 類別",
-            "涉及 伊朗 等重要市場關鍵詞",
+            "包含高權重來源 MarketWatch",
+            "涉及 宏觀 等高關注主題",
             "新聞發布時間較新",
             "來源首頁位置較前"
           ],
           "sources": [
-            "華爾街見聞"
+            "MarketWatch"
           ],
           "articles": [
             {
-              "source": "華爾街見聞",
-              "title": "伊朗否认霍尔木兹关闭，暂免通行费但未来或加收保险费，美军称20余船已通过海峡",
-              "snippet": "伊朗管理霍尔木兹海峡的机构称，美伊谈判60天内免除海峡通行费；自本周五起，所有经过海峡船舶必须至少提前48小时向伊方提交过境申请；所有通过海峡船只必须办理一项强制性保险，该保险目前免费，未来可能收费。",
-              "url": "https://wallstreetcn.com/articles/3775099",
-              "published_at": "2026-06-19T15:53:50.000Z"
+              "source": "MarketWatch",
+              "title": "My mother was co-owner of my late grandmother’s bank account. Should she share the money with her siblings?",
+              "snippet": "“The will stated that the estate was to be divided equally among her children.”",
+              "url": "https://www.marketwatch.com/story/my-mother-was-co-owner-of-my-late-grandmothers-bank-account-should-she-share-the-money-with-her-siblings-e54ed4df?mod=mw_rss_topstories",
+              "published_at": "2026-06-20T05:18:00.000Z"
             }
           ]
         }
@@ -297,11 +345,11 @@
         "messages": [
           {
             "role": "system",
-            "content": "You are a cautious financial and technology news summarization engine.\nReturn only JSON that matches the supplied schema.\nDo not include Markdown or any text outside JSON.\nAll user-facing output fields must be written in Traditional Chinese.\nTranslate and synthesize English source content into Traditional Chinese.\nConvert or rewrite Simplified Chinese source content into Traditional Chinese.\nDo not output Simplified Chinese in user-facing fields.\nKeep a neutral and factual news tone.\nDo not provide investment advice.\nDo not make price predictions.\nDo not add facts that are not supported by the provided source data.\nSummarize only from the provided titles, snippets, categories, heat reasons, source names, and URLs.\nIf information is limited, clearly say that currently available public information is limited.\nCompany names, tickers, product names, and source names may remain in English where appropriate.\nReturn valid JSON only.\nDo not include Markdown.\nDo not wrap the JSON in Markdown code fences.\nDo not include explanations outside the JSON.\n所有面向使用者的內容必須使用繁體中文。\n英文來源內容需要翻譯並綜合為繁體中文。\n簡體中文來源內容需要轉換或改寫為繁體中文。\n不要輸出簡體中文。\n保持中立、factual 的新聞語氣。\n不要提供投資建議。\n不要作價格預測。\n不要加入來源資料沒有支持的事實。\n只可根據提供的標題、摘要、分類、熱度原因、來源名稱和 URL 進行摘要。\n如果資料不足，請明確寫出「目前公開資訊有限」。\n公司名稱、股票代號、產品名稱和來源名稱可在適當情況下保留英文。\n只輸出 valid JSON，不要輸出 Markdown，不要在 JSON 外加入任何說明。"
+            "content": "You are a cautious financial and technology news summarization engine.\nReturn only JSON that matches the supplied schema.\nDo not include Markdown or any text outside JSON.\nAll user-facing output fields must be written in Traditional Chinese.\nTranslate and synthesize English source content into Traditional Chinese.\nConvert or rewrite Simplified Chinese source content into Traditional Chinese.\nDo not output Simplified Chinese in user-facing fields.\nThe headline must be a real Traditional Chinese news headline, not a category list and not an English title.\nCreate a concise Traditional Chinese editorial headline based on the provided source titles and snippets.\nDo not use raw English entity lists as the headline.\nDo not use category/entity concatenation as the headline.\nDo not start the headline with fallback labels such as 重點主題 or unreadable mojibake text.\nThe headline should summarize the actual news event or market theme.\nKeep a neutral and factual news tone.\nDo not provide investment advice.\nDo not make price predictions.\nDo not include buy, sell, hold, target price, upside, downside, or trading-action language.\nDo not add facts that are not supported by the provided source data.\nSummarize only from the provided titles, snippets, categories, heat reasons, source names, and URLs.\nIf information is limited, clearly say that currently available public information is limited.\nAvoid generic filler. Every sentence must refer to a concrete source-supported development, theme, market, company, asset, or uncertainty.\nCompany names, tickers, product names, and source names may remain in English where appropriate.\nReturn valid JSON only.\nDo not include Markdown.\nDo not wrap the JSON in Markdown code fences.\nDo not include explanations outside the JSON.\n所有面向使用者的內容必須使用繁體中文。\n標題必須是自然的繁體中文新聞標題，概括實際事件或市場主題。\n不要把分類、資產或英文 entity 清單直接拼成標題。\n不要使用「重點主題：」或 cluster_title_candidate 作為正式標題。\n不要輸出亂碼、簡體中文、Markdown 或 JSON 外的說明。\n保持中立、 factual 的新聞語氣，不要提供投資建議，也不要作價格預測。\n所有面向使用者的內容必須使用繁體中文。\n英文來源內容需要翻譯並綜合為繁體中文。\n簡體中文來源內容需要轉換或改寫為繁體中文。\n不要輸出簡體中文。\n標題必須是正式的繁體中文新聞標題，不可以只是分類列表，也不可以直接使用英文標題。\n保持中立、factual 的新聞語氣。\n不要提供投資建議。\n不要作價格預測。\n不要輸出買入、賣出、持有、目標價、上望、下望或任何交易行動建議。\n不要加入來源資料沒有支持的事實。\n只可根據提供的標題、摘要、分類、熱度原因、來源名稱和 URL 進行摘要。\n如果資料不足，請明確寫出「目前公開資訊有限」。\n避免空泛模板句；每一句都應對應到來源支持的事件、主題、市場、公司、資產或不確定性。\n公司名稱、股票代號、產品名稱和來源名稱可在適當情況下保留英文。\n只輸出 valid JSON，不要輸出 Markdown，不要在 JSON 外加入任何說明。"
           },
           {
             "role": "user",
-            "content": "{\n  \"summary_type\": \"brief\",\n  \"mock_mode\": true,\n  \"target_language\": \"zh-Hant\",\n  \"tone\": \"neutral\",\n  \"instructions\": [\n    \"All user-facing output fields must be written in Traditional Chinese.\",\n    \"Translate and synthesize English source content into Traditional Chinese.\",\n    \"Convert or rewrite Simplified Chinese source content into Traditional Chinese.\",\n    \"Do not output Simplified Chinese in user-facing fields.\",\n    \"Keep a neutral and factual news tone.\",\n    \"Do not provide investment advice.\",\n    \"Do not make price predictions.\",\n    \"Do not add facts that are not supported by the provided source data.\",\n    \"Summarize only from the provided titles, snippets, categories, heat reasons, source names, and URLs.\",\n    \"If information is limited, clearly say that currently available public information is limited.\",\n    \"Company names, tickers, product names, and source names may remain in English where appropriate.\",\n    \"Return valid JSON only.\",\n    \"Do not include Markdown.\",\n    \"Do not wrap the JSON in Markdown code fences.\",\n    \"Do not include explanations outside the JSON.\"\n  ],\n  \"zh_hant_requirements\": [\n    \"所有面向使用者的內容必須使用繁體中文。\",\n    \"英文來源內容需要翻譯並綜合為繁體中文。\",\n    \"簡體中文來源內容需要轉換或改寫為繁體中文。\",\n    \"不要輸出簡體中文。\",\n    \"保持中立、factual 的新聞語氣。\",\n    \"不要提供投資建議。\",\n    \"不要作價格預測。\",\n    \"不要加入來源資料沒有支持的事實。\",\n    \"只可根據提供的標題、摘要、分類、熱度原因、來源名稱和 URL 進行摘要。\",\n    \"如果資料不足，請明確寫出「目前公開資訊有限」。\",\n    \"公司名稱、股票代號、產品名稱和來源名稱可在適當情況下保留英文。\",\n    \"只輸出 valid JSON，不要輸出 Markdown，不要在 JSON 外加入任何說明。\"\n  ],\n  \"output_schema\": {\n    \"headline_zh_hant\": \"string\",\n    \"summary_zh_hant\": \"string\",\n    \"what_happened_zh_hant\": \"string\",\n    \"key_points_zh_hant\": [\n      \"string\"\n    ],\n    \"why_it_matters_zh_hant\": \"string\",\n    \"related_markets\": [\n      \"string\"\n    ],\n    \"related_assets\": [\n      \"string\"\n    ],\n    \"watch_next_zh_hant\": \"string\",\n    \"summary_quality_flags\": [\n      \"string\"\n    ]\n  },\n  \"source_cluster\": {\n    \"cluster_id\": \"news-cluster-008\",\n    \"cluster_title_candidate\": \"伊朗否认霍尔木兹关闭，暂免通行费但未来或加收保险费，美军称20余船已通过海峡\",\n    \"heat_score\": 38.15,\n    \"heat_level\": \"low\",\n    \"categories\": [\n      \"地緣政治\"\n    ],\n    \"detected_entities\": [],\n    \"heat_reasons\": [\n      \"目前主要由單一來源報導\",\n      \"包含高權重來源 華爾街見聞\",\n      \"涵蓋 地緣政治 類別\",\n      \"涉及 伊朗 等重要市場關鍵詞\",\n      \"新聞發布時間較新\",\n      \"來源首頁位置較前\"\n    ],\n    \"sources\": [\n      \"華爾街見聞\"\n    ],\n    \"articles\": [\n      {\n        \"source\": \"華爾街見聞\",\n        \"title\": \"伊朗否认霍尔木兹关闭，暂免通行费但未来或加收保险费，美军称20余船已通过海峡\",\n        \"snippet\": \"伊朗管理霍尔木兹海峡的机构称，美伊谈判60天内免除海峡通行费；自本周五起，所有经过海峡船舶必须至少提前48小时向伊方提交过境申请；所有通过海峡船只必须办理一项强制性保险，该保险目前免费，未来可能收费。\",\n        \"url\": \"https://wallstreetcn.com/articles/3775099\",\n        \"published_at\": \"2026-06-19T15:53:50.000Z\"\n      }\n    ]\n  }\n}"
+            "content": "{\n  \"summary_type\": \"brief\",\n  \"mock_mode\": true,\n  \"target_language\": \"zh-Hant\",\n  \"tone\": \"neutral\",\n  \"instructions\": [\n    \"All user-facing output fields must be written in Traditional Chinese.\",\n    \"Translate and synthesize English source content into Traditional Chinese.\",\n    \"Convert or rewrite Simplified Chinese source content into Traditional Chinese.\",\n    \"Do not output Simplified Chinese in user-facing fields.\",\n    \"The headline must be a real Traditional Chinese news headline, not a category list and not an English title.\",\n    \"Create a concise Traditional Chinese editorial headline based on the provided source titles and snippets.\",\n    \"Do not use raw English entity lists as the headline.\",\n    \"Do not use category/entity concatenation as the headline.\",\n    \"Do not start the headline with fallback labels such as 重點主題 or unreadable mojibake text.\",\n    \"The headline should summarize the actual news event or market theme.\",\n    \"Keep a neutral and factual news tone.\",\n    \"Do not provide investment advice.\",\n    \"Do not make price predictions.\",\n    \"Do not include buy, sell, hold, target price, upside, downside, or trading-action language.\",\n    \"Do not add facts that are not supported by the provided source data.\",\n    \"Summarize only from the provided titles, snippets, categories, heat reasons, source names, and URLs.\",\n    \"If information is limited, clearly say that currently available public information is limited.\",\n    \"Avoid generic filler. Every sentence must refer to a concrete source-supported development, theme, market, company, asset, or uncertainty.\",\n    \"Company names, tickers, product names, and source names may remain in English where appropriate.\",\n    \"Return valid JSON only.\",\n    \"Do not include Markdown.\",\n    \"Do not wrap the JSON in Markdown code fences.\",\n    \"Do not include explanations outside the JSON.\"\n  ],\n  \"zh_hant_requirements\": [\n    \"所有面向使用者的內容必須使用繁體中文。\",\n    \"標題必須是自然的繁體中文新聞標題，概括實際事件或市場主題。\",\n    \"不要把分類、資產或英文 entity 清單直接拼成標題。\",\n    \"不要使用「重點主題：」或 cluster_title_candidate 作為正式標題。\",\n    \"不要輸出亂碼、簡體中文、Markdown 或 JSON 外的說明。\",\n    \"保持中立、 factual 的新聞語氣，不要提供投資建議，也不要作價格預測。\",\n    \"所有面向使用者的內容必須使用繁體中文。\",\n    \"英文來源內容需要翻譯並綜合為繁體中文。\",\n    \"簡體中文來源內容需要轉換或改寫為繁體中文。\",\n    \"不要輸出簡體中文。\",\n    \"標題必須是正式的繁體中文新聞標題，不可以只是分類列表，也不可以直接使用英文標題。\",\n    \"保持中立、factual 的新聞語氣。\",\n    \"不要提供投資建議。\",\n    \"不要作價格預測。\",\n    \"不要輸出買入、賣出、持有、目標價、上望、下望或任何交易行動建議。\",\n    \"不要加入來源資料沒有支持的事實。\",\n    \"只可根據提供的標題、摘要、分類、熱度原因、來源名稱和 URL 進行摘要。\",\n    \"如果資料不足，請明確寫出「目前公開資訊有限」。\",\n    \"避免空泛模板句；每一句都應對應到來源支持的事件、主題、市場、公司、資產或不確定性。\",\n    \"公司名稱、股票代號、產品名稱和來源名稱可在適當情況下保留英文。\",\n    \"只輸出 valid JSON，不要輸出 Markdown，不要在 JSON 外加入任何說明。\"\n  ],\n  \"output_schema\": {\n    \"headline_zh_hant\": \"string\",\n    \"summary_zh_hant\": \"string\",\n    \"what_happened_zh_hant\": \"string\",\n    \"key_points_zh_hant\": [\n      \"string\"\n    ],\n    \"why_it_matters_zh_hant\": \"string\",\n    \"related_markets\": [\n      \"string\"\n    ],\n    \"related_assets\": [\n      \"string\"\n    ],\n    \"watch_next_zh_hant\": \"string\",\n    \"summary_quality_flags\": [\n      \"string\"\n    ]\n  },\n  \"source_cluster\": {\n    \"cluster_id\": \"news-cluster-001\",\n    \"cluster_title_candidate\": \"My mother was co-owner of my late grandmother’s bank account. Should she share the money with her siblings?\",\n    \"heat_score\": 35.5,\n    \"heat_level\": \"low\",\n    \"categories\": [\n      \"宏觀\"\n    ],\n    \"detected_entities\": [],\n    \"heat_reasons\": [\n      \"目前主要由單一來源報導\",\n      \"包含高權重來源 MarketWatch\",\n      \"涉及 宏觀 等高關注主題\",\n      \"新聞發布時間較新\",\n      \"來源首頁位置較前\"\n    ],\n    \"sources\": [\n      \"MarketWatch\"\n    ],\n    \"articles\": [\n      {\n        \"source\": \"MarketWatch\",\n        \"title\": \"My mother was co-owner of my late grandmother’s bank account. Should she share the money with her siblings?\",\n        \"snippet\": \"“The will stated that the estate was to be divided equally among her children.”\",\n        \"url\": \"https://www.marketwatch.com/story/my-mother-was-co-owner-of-my-late-grandmothers-bank-account-should-she-share-the-money-with-her-siblings-e54ed4df?mod=mw_rss_topstories\",\n        \"published_at\": \"2026-06-20T05:18:00.000Z\"\n      }\n    ]\n  }\n}"
           }
         ],
         "response_format": {

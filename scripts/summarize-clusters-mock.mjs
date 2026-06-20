@@ -1,4 +1,10 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
+import {
+  buildEditorialHeadline,
+  hasCommonSimplifiedChars,
+  hasMostlyEnglishText,
+  isBadUserFacingHeadline,
+} from "./user-facing-copy.mjs";
 
 const INPUT_FILE = new URL("../data/runtime/scored_clusters.json", import.meta.url);
 const CONFIG_FILE = new URL("../config/ai-summary-config.json", import.meta.url);
@@ -84,6 +90,13 @@ const SUMMARY_JSON_SCHEMA = {
   ],
 };
 
+const COMMON_SIMPLIFIED_CHARS = /[这为与发后业东个会来时们国对称产经见实现过涨亿万广气报团际质证龙门车网]/;
+const INVESTMENT_ADVICE_PATTERN =
+  /(買入|賣出|持有|加倉|減倉|建議買|建議賣|投資建議|目標價|price target|buy rating|sell rating|hold rating|should buy|should sell)/i;
+const PRICE_PREDICTION_PATTERN =
+  /(將上升|將下跌|會升至|會跌至|上望|下望|看漲至|看跌至|will rise|will fall|could rise to|could fall to|target price)/i;
+const GENERIC_AI_OUTPUT_PATTERN = /(mock 摘要|正式摘要會在|測試資料流程|placeholder|lorem ipsum)/i;
+
 function nowIso() {
   return new Date().toISOString();
 }
@@ -122,6 +135,52 @@ function toZhHant(value) {
     .join("");
 }
 
+function userFacingStringsFromSummary(summary) {
+  return [
+    summary.headline_zh_hant,
+    summary.summary_zh_hant,
+    summary.what_happened_zh_hant,
+    ...asArray(summary.key_points_zh_hant),
+    summary.why_it_matters_zh_hant,
+    summary.watch_next_zh_hant,
+  ].map((value) => String(value ?? ""));
+}
+
+function hasCjk(text) {
+  return /[\u3400-\u9fff]/.test(String(text ?? ""));
+}
+
+function hasMostlyEnglishHeadline(text) {
+  return hasMostlyEnglishText(text, { minLetters: 12, minCjk: 4 });
+}
+
+function validateUserFacingSummary(summary, { allowMockText = false } = {}) {
+  const values = userFacingStringsFromSummary(summary);
+  const combined = values.join("\n");
+
+  for (const [index, value] of values.entries()) {
+    if (!value.trim()) throw new Error(`AI user-facing field ${index + 1} is empty`);
+  }
+  if (hasMostlyEnglishHeadline(summary.headline_zh_hant)) {
+    throw new Error("headline_zh_hant appears to be English or lacks Traditional Chinese context");
+  }
+  if (!values.every(hasCjk)) {
+    throw new Error("AI user-facing fields must contain Traditional Chinese text");
+  }
+  if (COMMON_SIMPLIFIED_CHARS.test(combined)) {
+    throw new Error("AI user-facing fields contain common Simplified Chinese characters");
+  }
+  if (INVESTMENT_ADVICE_PATTERN.test(combined)) {
+    throw new Error("AI user-facing fields contain investment advice language");
+  }
+  if (PRICE_PREDICTION_PATTERN.test(combined)) {
+    throw new Error("AI user-facing fields contain price prediction language");
+  }
+  if (!allowMockText && GENERIC_AI_OUTPUT_PATTERN.test(combined)) {
+    throw new Error("AI user-facing fields contain generic placeholder or mock text");
+  }
+}
+
 function toRank(index) {
   return index + 1;
 }
@@ -157,11 +216,7 @@ function relatedMarkets(cluster) {
 }
 
 function headlineZhHant(cluster) {
-  const categories = relatedMarkets(cluster).slice(0, 3);
-  const entities = topEntities(cluster, 3);
-  const left = categories.length > 0 ? categories.join("、") : "市場";
-  const right = entities.length > 0 ? `｜${entities.join("、")}` : "";
-  return toZhHant(`重點主題：${left}${right}`);
+  return buildEditorialHeadline(cluster);
 }
 
 function sourceLinks(cluster) {
@@ -309,12 +364,20 @@ function englishInstructions() {
     "Translate and synthesize English source content into Traditional Chinese.",
     "Convert or rewrite Simplified Chinese source content into Traditional Chinese.",
     "Do not output Simplified Chinese in user-facing fields.",
+    "The headline must be a real Traditional Chinese news headline, not a category list and not an English title.",
+    "Create a concise Traditional Chinese editorial headline based on the provided source titles and snippets.",
+    "Do not use raw English entity lists as the headline.",
+    "Do not use category/entity concatenation as the headline.",
+    "Do not start the headline with fallback labels such as 重點主題 or unreadable mojibake text.",
+    "The headline should summarize the actual news event or market theme.",
     "Keep a neutral and factual news tone.",
     "Do not provide investment advice.",
     "Do not make price predictions.",
+    "Do not include buy, sell, hold, target price, upside, downside, or trading-action language.",
     "Do not add facts that are not supported by the provided source data.",
     "Summarize only from the provided titles, snippets, categories, heat reasons, source names, and URLs.",
     "If information is limited, clearly say that currently available public information is limited.",
+    "Avoid generic filler. Every sentence must refer to a concrete source-supported development, theme, market, company, asset, or uncertainty.",
     "Company names, tickers, product names, and source names may remain in English where appropriate.",
     "Return valid JSON only.",
     "Do not include Markdown.",
@@ -326,15 +389,24 @@ function englishInstructions() {
 function zhHantRequirements() {
   return [
     "所有面向使用者的內容必須使用繁體中文。",
+    "標題必須是自然的繁體中文新聞標題，概括實際事件或市場主題。",
+    "不要把分類、資產或英文 entity 清單直接拼成標題。",
+    "不要使用「重點主題：」或 cluster_title_candidate 作為正式標題。",
+    "不要輸出亂碼、簡體中文、Markdown 或 JSON 外的說明。",
+    "保持中立、 factual 的新聞語氣，不要提供投資建議，也不要作價格預測。",
+    "所有面向使用者的內容必須使用繁體中文。",
     "英文來源內容需要翻譯並綜合為繁體中文。",
     "簡體中文來源內容需要轉換或改寫為繁體中文。",
     "不要輸出簡體中文。",
+    "標題必須是正式的繁體中文新聞標題，不可以只是分類列表，也不可以直接使用英文標題。",
     "保持中立、factual 的新聞語氣。",
     "不要提供投資建議。",
     "不要作價格預測。",
+    "不要輸出買入、賣出、持有、目標價、上望、下望或任何交易行動建議。",
     "不要加入來源資料沒有支持的事實。",
     "只可根據提供的標題、摘要、分類、熱度原因、來源名稱和 URL 進行摘要。",
     "如果資料不足，請明確寫出「目前公開資訊有限」。",
+    "避免空泛模板句；每一句都應對應到來源支持的事件、主題、市場、公司、資產或不確定性。",
     "公司名稱、股票代號、產品名稱和來源名稱可在適當情況下保留英文。",
     "只輸出 valid JSON，不要輸出 Markdown，不要在 JSON 外加入任何說明。",
   ];
@@ -557,21 +629,11 @@ function parseJsonLoose(value) {
   const text = String(value ?? "").trim();
   if (!text) throw new Error("AI response was empty");
 
-  try {
-    return JSON.parse(text);
-  } catch {
-    const withoutFence = text.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/i, "").trim();
-    try {
-      return JSON.parse(withoutFence);
-    } catch {
-      const firstBrace = withoutFence.indexOf("{");
-      const lastBrace = withoutFence.lastIndexOf("}");
-      if (firstBrace >= 0 && lastBrace > firstBrace) {
-        return JSON.parse(withoutFence.slice(firstBrace, lastBrace + 1));
-      }
-      throw new Error("AI response was not valid JSON");
-    }
+  if (!text.startsWith("{") || !text.endsWith("}")) {
+    throw new Error("AI response included text outside JSON");
   }
+
+  return JSON.parse(text);
 }
 
 function normalizeAiSummary(summary, cluster, summaryType) {
@@ -592,7 +654,7 @@ function normalizeAiSummary(summary, cluster, summaryType) {
     throw new Error("AI JSON missing required field: key_points_zh_hant");
   }
 
-  return {
+  const normalized = {
     summary_type: summaryType,
     headline_zh_hant: toZhHant(summary.headline_zh_hant),
     summary_zh_hant: toZhHant(summary.summary_zh_hant),
@@ -606,6 +668,12 @@ function normalizeAiSummary(summary, cluster, summaryType) {
     ai_status: "success",
     summary_quality_flags: uniqueSorted(asArray(summary.summary_quality_flags).map(toZhHant)),
   };
+  if (isBadUserFacingHeadline(normalized.headline_zh_hant, cluster) || hasCommonSimplifiedChars(normalized.headline_zh_hant)) {
+    normalized.headline_zh_hant = buildEditorialHeadline(cluster);
+    normalized.summary_quality_flags = uniqueSorted([...normalized.summary_quality_flags, "headline_deterministic_fallback_used"]);
+  }
+  validateUserFacingSummary(normalized);
+  return normalized;
 }
 
 async function summarizeWithCloudflare(cluster, summaryType, config, aiErrors) {

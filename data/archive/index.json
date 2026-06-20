@@ -1,19 +1,137 @@
 {
-  "generated_at": "2026-06-19T16:30:36.299Z",
+  "generated_at": "2026-06-20T06:46:06.152Z",
   "items": [
     {
+      "archive_id": "2026-06-20-1200",
       "date": "2026-06-20",
-      "generated_at": "2026-06-19T16:15:26.741Z",
-      "path": "data/archive/2026-06-20.json",
-      "top_headline_zh_hant": "重點主題：AI、外匯、宏觀｜Federal Reserve、Inflation、Interest Rates",
-      "cluster_count": 102
+      "run_time_hkt": "1200",
+      "generated_at": "2026-06-20T06:46:05.906Z",
+      "path": "/archive/2026-06-20-1200.json",
+      "label_zh_hant": "2026年06月20日 中午版",
+      "market_mood": "mixed",
+      "market_mood_label_zh_hant": "市場訊號分化",
+      "top_headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+      "top_five_headlines": [
+        "聯準會政策路徑與通膨訊號牽動市場情緒",
+        "油價受霍爾木茲海峽與地緣局勢牽動",
+        "聯準會政策路徑與通膨訊號牽動市場情緒",
+        "美元走勢牽動外匯與宏觀市場焦點",
+        "聯準會政策路徑與通膨訊號牽動市場情緒"
+      ],
+      "categories": [
+        "宏觀",
+        "美股",
+        "半導體",
+        "商品",
+        "地緣政治",
+        "AI",
+        "企業財報",
+        "外匯",
+        "科技公司"
+      ],
+      "related_assets": [
+        "Federal Reserve",
+        "Inflation",
+        "Interest Rates",
+        "Oil",
+        "Alphabet",
+        "US Dollar",
+        "Amazon",
+        "Nvidia",
+        "OpenAI",
+        "S&P 500",
+        "ASML",
+        "SpaceX",
+        "Apple"
+      ],
+      "source_count": 6,
+      "article_count": 130,
+      "cluster_count": 96,
+      "ai_summary_count": 30
     },
     {
-      "date": "2026-06-19",
-      "generated_at": "2026-06-19T16:30:36.273Z",
-      "path": "data/archive/2026-06-19.json",
-      "top_headline_zh_hant": "重點主題：商品、地緣政治｜Oil",
-      "cluster_count": 92
+      "archive_id": "2026-06-20-0815",
+      "date": "2026-06-20",
+      "run_time_hkt": "0815",
+      "generated_at": "2026-06-20T06:45:33.682Z",
+      "path": "/archive/2026-06-20-0815.json",
+      "label_zh_hant": "2026年06月20日 早上版",
+      "market_mood": "mixed",
+      "market_mood_label_zh_hant": "市場訊號分化",
+      "top_headline_zh_hant": "聯準會政策路徑與通膨訊號牽動市場情緒",
+      "top_five_headlines": [
+        "聯準會政策路徑與通膨訊號牽動市場情緒",
+        "油價受霍爾木茲海峽與地緣局勢牽動",
+        "聯準會政策路徑與通膨訊號牽動市場情緒",
+        "美元走勢牽動外匯與宏觀市場焦點",
+        "聯準會政策路徑與通膨訊號牽動市場情緒"
+      ],
+      "categories": [
+        "宏觀",
+        "美股",
+        "半導體",
+        "商品",
+        "地緣政治",
+        "AI",
+        "企業財報",
+        "外匯",
+        "科技公司"
+      ],
+      "related_assets": [
+        "Federal Reserve",
+        "Inflation",
+        "Interest Rates",
+        "Oil",
+        "Alphabet",
+        "US Dollar",
+        "Amazon",
+        "Nvidia",
+        "OpenAI",
+        "S&P 500",
+        "ASML",
+        "SpaceX",
+        "Apple"
+      ],
+      "source_count": 6,
+      "article_count": 130,
+      "cluster_count": 96,
+      "ai_summary_count": 30
+    },
+    {
+      "date": "2026-06-20",
+      "run_time_hkt": "1250",
+      "archive_id": "2026-06-20-1250",
+      "generated_at": "2026-06-20T04:50:26.067Z",
+      "path": "/archive/2026-06-20-1250.json",
+      "label_zh_hant": "2026年06月20日午報",
+      "top_headline_zh_hant": "油價受霍爾木茲海峽與地緣局勢牽動",
+      "cluster_count": 92,
+      "source_count": 6,
+      "article_count": 130
+    },
+    {
+      "date": "2026-06-20",
+      "run_time_hkt": "1249",
+      "archive_id": "2026-06-20-1249",
+      "generated_at": "2026-06-20T04:49:46.033Z",
+      "path": "/archive/2026-06-20-1249.json",
+      "label_zh_hant": "2026年06月20日午報",
+      "top_headline_zh_hant": "油價受霍爾木茲海峽與地緣局勢牽動",
+      "cluster_count": 92,
+      "source_count": 6,
+      "article_count": 130
+    },
+    {
+      "date": "2026-06-20",
+      "run_time_hkt": "1248",
+      "archive_id": "2026-06-20-1248",
+      "generated_at": "2026-06-20T04:48:38.866Z",
+      "path": "/archive/2026-06-20-1248.json",
+      "label_zh_hant": "2026年06月20日午報",
+      "top_headline_zh_hant": "油價受霍爾木茲海峽與地緣局勢牽動",
+      "cluster_count": 92,
+      "source_count": 6,
+      "article_count": 130
     }
   ]
 }

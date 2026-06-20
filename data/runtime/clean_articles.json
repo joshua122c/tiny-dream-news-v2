@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-19T16:30:35.668Z",
-  "input_article_count": 111,
-  "article_count": 111,
+  "generated_at": "2026-06-20T06:46:05.150Z",
+  "input_article_count": 108,
+  "article_count": 108,
   "articles": [
     {
       "source": "CNBC",
       "language": "en",
       "title": "Oil tanker traffic in Strait of Hormuz jumps after U.S. and Iran implement deal to open sea lane",
       "url": "https://www.cnbc.com/2026/06/19/iran-oil-tanker-traffic-strait-hormuz-gulf-vlcc.html",
-      "published_at": "2026-06-19T15:57:27.000Z",
+      "published_at": "2026-06-19T23:00:29.000Z",
       "snippet": "The U.S.-Iran deal has raised questions about how the Strait of Hormuz will be governed after the toll-free period ends.",
       "source_position": 1,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "商品",
         "地緣政治"
@@ -37,7 +37,7 @@
       "snippet": "SpaceX shares were up 37% after its historic debut last week, which offered shares at a set price of $135.",
       "source_position": 2,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "美股",
         "科技公司"
@@ -62,7 +62,7 @@
       "snippet": "Apple appears poised to take the rare step of increasing prices to deal with what CEO Tim Cook called an \"unsustainable\" memory shortage.",
       "source_position": 3,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "科技公司"
       ],
@@ -80,19 +80,44 @@
     {
       "source": "CNBC",
       "language": "en",
-      "title": "Trump claims Iran deal is 'unconditional surrender,' says his power has 'no limits': Axios",
-      "url": "https://www.cnbc.com/2026/06/19/trump-claims-iran-deal-is-unconditional-surrender-axios-.html",
-      "published_at": "2026-06-19T02:00:46.000Z",
-      "snippet": "Trump said in an interview with Axios on Thursday evening stateside that he negotiated the deal to prevent the conflict from triggering a global depression.",
+      "title": "DOJ rebuffs judge's request to put in writing it won't move forward with 'anti-weaponization' fund",
+      "url": "https://www.cnbc.com/2026/06/19/doj-anti-weaponization-fund-trump.html",
+      "published_at": "2026-06-19T22:53:09.000Z",
+      "snippet": "The DOJ in May announced it was creating the fund as part of a settlement of President Donald Trump's $10 billion lawsuit against the Internal Revenue Service.",
       "source_position": 4,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
-        "地緣政治"
+        "企業財報"
       ],
       "detected_entities": [],
       "quality_flags": [],
-      "normalized_title": "trump claims iran deal is unconditional surrender says his power has no limits axios",
+      "normalized_title": "doj rebuffs judges request to put in writing it wont move forward with anti weaponization fund",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "CNBC",
+      "language": "en",
+      "title": "The riskiest SpaceX stock trade of all had a big first week",
+      "url": "https://www.cnbc.com/2026/06/19/spacex-stock-risk-buy-sell.html",
+      "published_at": "2026-06-19T15:53:11.000Z",
+      "snippet": "SpaceX's IPO did not just mint the biggest debut in market history and a trillionaire, but it also triggered a historic land grab in risky leveraged ETFs.",
+      "source_position": 5,
+      "section": "Top News",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "美股",
+        "科技公司"
+      ],
+      "detected_entities": [
+        {
+          "name": "SpaceX",
+          "type": "company",
+          "matched_alias": "spacex"
+        }
+      ],
+      "quality_flags": [],
+      "normalized_title": "the riskiest spacex stock trade of all had a big first week",
       "duplicate_group_id": null
     },
     {
@@ -102,9 +127,9 @@
       "url": "https://www.cnbc.com/2026/06/18/pulte-trump-dni-us-intelligence-congress.html",
       "published_at": "2026-06-18T18:49:36.000Z",
       "snippet": "With President Donald Trump halting his nomination of U.S. Attorney Jay Clayton as director of national intelligence, Bill Pulte is set to take on the role.",
-      "source_position": 5,
+      "source_position": 6,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -120,11 +145,11 @@
       "language": "en",
       "title": "NetJets' first fatal crash kills influential Texas VC founder",
       "url": "https://www.cnbc.com/2026/06/19/netjets-first-fatal-crash-kills-influential-texas-vc-founder.html",
-      "published_at": "2026-06-19T12:46:55.000Z",
+      "published_at": "2026-06-19T16:50:59.000Z",
       "snippet": "NetJets is not speculating on what caused one of its planes to crash onto a highway in Laredo, Texas late Tuesday, killing a prominent tech entrepreneur.",
-      "source_position": 6,
+      "source_position": 7,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -140,11 +165,11 @@
       "language": "en",
       "title": "Struggling to find a job? Try looking in Nevada",
       "url": "https://www.cnbc.com/2026/06/19/nevada-workforce-job-market.html",
-      "published_at": "2026-06-19T15:01:59.000Z",
+      "published_at": "2026-06-19T17:56:52.000Z",
       "snippet": "The sparsely populated state known for its world-class casinos and dry climate has been a hiring hot spot.",
-      "source_position": 7,
+      "source_position": 8,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -158,33 +183,13 @@
     {
       "source": "CNBC",
       "language": "en",
-      "title": "Bob Iger reflects on 10 years of Shanghai Disneyland as it defies the Chinese pullback",
-      "url": "https://www.cnbc.com/2026/06/19/bob-iger-shanghai-disneyland-chinese-pullback.html",
-      "published_at": "2026-06-19T11:00:01.000Z",
-      "snippet": "Shanghai Disneyland hit 100 million cumulative visitors in 2025, according to the company. It's a relatively new but important foothold in Disney's history.",
-      "source_position": 8,
-      "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "category_fallback"
-      ],
-      "normalized_title": "bob iger reflects on 10 years of shanghai disneyland as it defies the chinese pullback",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "CNBC",
-      "language": "en",
       "title": "In photos: Star-studded crowd gathers to celebrate the Obama Presidential Center dedication",
       "url": "https://www.cnbc.com/2026/06/18/obama-presidential-center-opening-chicago-photos-trump.html",
       "published_at": "2026-06-19T13:51:01.000Z",
       "snippet": "Barack Obama opened his presidential center in Chicago with former presidents, celebrities and dignitaries in attendance. President Donald Trump was absent.",
       "source_position": 9,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -198,26 +203,39 @@
     {
       "source": "CNBC",
       "language": "en",
-      "title": "OPEC chief dismisses IEA supply glut forecast as 'critical' Strait of Hormuz reopens",
-      "url": "https://www.cnbc.com/2026/06/18/opec-iea-supply-glut-forecast-critical-strait-hormuz-reopens-oil.html",
-      "published_at": "2026-06-18T15:19:47.000Z",
-      "snippet": "The IEA said on Wednesday that a lasting resolution to the conflict could drive a surge in supply volumes and trigger a major oil overhang next year.",
+      "title": "Trump claims Iran deal is 'unconditional surrender,' says his power has 'no limits': Axios",
+      "url": "https://www.cnbc.com/2026/06/19/trump-claims-iran-deal-is-unconditional-surrender-axios-.html",
+      "published_at": "2026-06-19T02:00:46.000Z",
+      "snippet": "Trump said in an interview with Axios on Thursday evening stateside that he negotiated the deal to prevent the conflict from triggering a global depression.",
       "source_position": 10,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
-        "商品",
         "地緣政治"
       ],
-      "detected_entities": [
-        {
-          "name": "Oil",
-          "type": "asset",
-          "matched_alias": "oil"
-        }
-      ],
+      "detected_entities": [],
       "quality_flags": [],
-      "normalized_title": "opec chief dismisses iea supply glut forecast as critical strait of hormuz reopens",
+      "normalized_title": "trump claims iran deal is unconditional surrender says his power has no limits axios",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "CNBC",
+      "language": "en",
+      "title": "Bob Iger reflects on 10 years of Shanghai Disneyland as it defies the Chinese pullback",
+      "url": "https://www.cnbc.com/2026/06/19/bob-iger-shanghai-disneyland-chinese-pullback.html",
+      "published_at": "2026-06-19T11:00:01.000Z",
+      "snippet": "Shanghai Disneyland hit 100 million cumulative visitors in 2025, according to the company. It's a relatively new but important foothold in Disney's history.",
+      "source_position": 11,
+      "section": "Top News",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "quality_flags": [
+        "category_fallback"
+      ],
+      "normalized_title": "bob iger reflects on 10 years of shanghai disneyland as it defies the chinese pullback",
       "duplicate_group_id": null
     },
     {
@@ -227,9 +245,9 @@
       "url": "https://www.cnbc.com/2026/06/19/home-equity-borrow.html",
       "published_at": "2026-06-19T13:30:01.000Z",
       "snippet": "While high home values mean homeowners are sitting on an estimated $11 trillion in equity, it should not be viewed as free money, experts say.",
-      "source_position": 11,
+      "source_position": 12,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -247,9 +265,9 @@
       "url": "https://www.cnbc.com/2026/06/19/russia-ukraine-moscow-drone-attack-trump.html",
       "published_at": "2026-06-19T10:25:57.000Z",
       "snippet": "Russia has pledged to carry out frequent and \"massive group strikes\" against Ukraine shortly after Kyiv launched a barrage of drones on Moscow.",
-      "source_position": 12,
+      "source_position": 13,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "地緣政治"
       ],
@@ -261,20 +279,26 @@
     {
       "source": "CNBC",
       "language": "en",
-      "title": "Hormuz relief may not ease the economic toll that's already 'baked in,' analysts warn",
-      "url": "https://www.cnbc.com/2026/06/19/hormuz-relief-may-not-ease-the-economic-toll-thats-already-baked-in-analysts-warn.html",
-      "published_at": "2026-06-19T08:08:34.000Z",
-      "snippet": "Early signs of reopening of the Strait of Hormuz have lifted the most acute threat to global energy supplies but economic damages from the war will take months to unwind.",
-      "source_position": 13,
+      "title": "Fedspeak vs. war deal: Here are the things that drove this week's stock market",
+      "url": "https://www.cnbc.com/2026/06/19/fedspeak-vs-war-deal-here-are-the-things-that-drove-this-weeks-stock-market.html",
+      "published_at": "2026-06-19T17:24:10.000Z",
+      "snippet": "The S&P 500 surged on Thursday, making up for losses seen after central bankers convened.",
+      "source_position": 14,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
-        "商品",
+        "美股",
         "地緣政治"
       ],
-      "detected_entities": [],
+      "detected_entities": [
+        {
+          "name": "S&P 500",
+          "type": "index",
+          "matched_alias": "s&p 500"
+        }
+      ],
       "quality_flags": [],
-      "normalized_title": "hormuz relief may not ease the economic toll thats already baked in analysts warn",
+      "normalized_title": "fedspeak vs war deal here are the things that drove this weeks stock market",
       "duplicate_group_id": null
     },
     {
@@ -284,9 +308,9 @@
       "url": "https://www.cnbc.com/2026/06/19/india-jio-platforms-ipo-mukesh-ambani.html",
       "published_at": "2026-06-19T10:50:22.000Z",
       "snippet": "India's largest wireless operator and digital service provider, Jio Platforms files for IPO",
-      "source_position": 14,
+      "source_position": 15,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "美股"
       ],
@@ -302,9 +326,9 @@
       "url": "https://www.cnbc.com/2026/06/19/jio-platforms-low-earth-orbit-satellites-starlink.html",
       "published_at": "2026-06-19T12:16:34.000Z",
       "snippet": "Jio Platforms, India's largest telecom operator and digital services company, wants to rollout statelite communication in the country where Starlink still awaits launch.",
-      "source_position": 15,
+      "source_position": 16,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -322,9 +346,9 @@
       "url": "https://www.cnbc.com/2026/06/19/japan-yen-intervention-boj-rate-hike.html",
       "published_at": "2026-06-19T02:04:53.000Z",
       "snippet": "Japan was willing to step in to defend the yen around the 160 level before, and it's at that point again.",
-      "source_position": 16,
+      "source_position": 17,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "外匯"
       ],
@@ -340,9 +364,9 @@
       "url": "https://www.cnbc.com/2026/06/19/us-tariff-probe-germany-drug-pricing-policies-mfn.html",
       "published_at": "2026-06-19T14:44:37.000Z",
       "snippet": "U.S. Trade Representative Jamieson Greer said Germany's proposal to reduce spending on medicines was \"a serious step backwards.\"",
-      "source_position": 17,
+      "source_position": 18,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -360,9 +384,9 @@
       "url": "https://www.cnbc.com/2026/06/19/29-year-old-software-engineer-worked-undercover-at-a-coffee-chain.html",
       "published_at": "2026-06-19T14:00:01.000Z",
       "snippet": "Michelle Yeung wasn't happy in tech, despite earning $250,000 a year. Before opening Matcha House, she spent months learning the business.",
-      "source_position": 18,
+      "source_position": 19,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -380,9 +404,9 @@
       "url": "https://www.cnbc.com/2026/06/19/andy-burnham-makerfield-by-election.html",
       "published_at": "2026-06-19T10:51:36.000Z",
       "snippet": "Andy Burnham won the Makerfield by-election, defeating Reform UK by more than 9,000 votes with nearly 55% of the vote.",
-      "source_position": 19,
+      "source_position": 20,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -400,9 +424,9 @@
       "url": "https://www.cnbc.com/2026/06/19/zealand-pharma-stock-weight-loss-drugmaker-novo-lilly.html",
       "published_at": "2026-06-19T07:30:34.000Z",
       "snippet": "While the market's enthusiasm for one of Zealand's experimental drugs has cooled, investors are shifting focus to amylin-based medicines as a growth driver",
-      "source_position": 20,
+      "source_position": 21,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -420,9 +444,9 @@
       "url": "https://www.cnbc.com/2026/06/19/us-iran-deal-in-photos-shipping-resumes-as-fragile-peace-takes-hold.html",
       "published_at": "2026-06-19T01:28:35.000Z",
       "snippet": "The first signs of a post-war recovery are emerging across the Middle East after the United States and Iran signed a memorandum aimed at ending the conflict.",
-      "source_position": 21,
+      "source_position": 22,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "地緣政治"
       ],
@@ -438,9 +462,9 @@
       "url": "https://www.cnbc.com/2026/06/19/japan-yen-161-dollar-intervention-risk-currency-markets.html",
       "published_at": "2026-06-19T03:44:21.000Z",
       "snippet": "On Thursday the yen saw a sharp depreciation a high of 161.80, its weakest since July 2024.",
-      "source_position": 22,
+      "source_position": 23,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "外匯"
       ],
@@ -462,9 +486,9 @@
       "url": "https://www.cnbc.com/2026/06/19/india-it-stocks-fall-accenture-cuts-revenue-forecast.html",
       "published_at": "2026-06-19T05:07:14.000Z",
       "snippet": "Shares of major Indian IT companies fall up to 7% after global sector leader Accenture cuts its revenue guidance.",
-      "source_position": 23,
+      "source_position": 24,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "美股",
         "企業財報"
@@ -481,9 +505,9 @@
       "url": "https://www.cnbc.com/2026/06/18/vance-iran-war-memo-oil-gas.html",
       "published_at": "2026-06-18T20:14:38.000Z",
       "snippet": "\"The only way the Iranians get any of these resources ... is if they comply fully\" with the terms of the deal, Vice President JD Vance said.",
-      "source_position": 24,
+      "source_position": 25,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "地緣政治"
       ],
@@ -505,9 +529,9 @@
       "url": "https://www.cnbc.com/2026/06/19/msci-still-concerned-about-indonesian-stock-market-transparency.html",
       "published_at": "2026-06-19T03:12:38.000Z",
       "snippet": "MSCI flagged growing concerns about transparency in Indonesia's stock market.",
-      "source_position": 25,
+      "source_position": 26,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "美股"
       ],
@@ -523,9 +547,9 @@
       "url": "https://www.cnbc.com/2026/06/18/spacex-stock-elon-musk-rally-cools.html",
       "published_at": "2026-06-18T20:36:50.000Z",
       "snippet": "Investor bullishness showed signs of waning on Wednesday, as shares sank 5%.",
-      "source_position": 26,
+      "source_position": 27,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "美股",
         "科技公司"
@@ -553,9 +577,9 @@
       "url": "https://www.cnbc.com/2026/06/19/japan-core-inflation-holds-steady-in-may-matching-expectations-despite-energy-price-concerns.html",
       "published_at": "2026-06-19T00:28:16.000Z",
       "snippet": "Headline inflation edged up to 1.5% from 1.4%, while the so called \"core-core\" inflation rate, eased to 1.8% from 1.9%.",
-      "source_position": 27,
+      "source_position": 28,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -577,9 +601,9 @@
       "url": "https://www.cnbc.com/2026/06/18/markets-are-set-for-a-much-more-hawkish-warsh-fed-than-expected.html",
       "published_at": "2026-06-18T18:04:41.000Z",
       "snippet": "Fed Chairman Kevin Warsh's tough talk on inflation Wednesday reverberated through financial markets.",
-      "source_position": 28,
+      "source_position": 29,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -606,9 +630,9 @@
       "url": "https://www.cnbc.com/2026/06/18/trump-student-loan-autopay-interest-rate-discount.html",
       "published_at": "2026-06-18T21:42:07.000Z",
       "snippet": "The Trump administration announced it will offer federal student loan borrowers who sign up for autopay a larger interest rate discount.",
-      "source_position": 29,
+      "source_position": 30,
       "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -624,53 +648,63 @@
       "duplicate_group_id": null
     },
     {
-      "source": "CNBC",
+      "source": "MarketWatch",
       "language": "en",
-      "title": "Amazon investigating engineers who criticized AI data center expansion",
-      "url": "https://www.cnbc.com/2026/06/18/amazon-engineers-ai-data-center-opposition.html",
-      "published_at": "2026-06-18T19:47:59.000Z",
-      "snippet": "Five Amazon employees testified at Seattle City Council meetings where officials sought feedback on a year-long data center new construction pause.",
-      "source_position": 30,
-      "section": "Top News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "title": "My mother was co-owner of my late grandmother’s bank account. Should she share the money with her siblings?",
+      "url": "https://www.marketwatch.com/story/my-mother-was-co-owner-of-my-late-grandmothers-bank-account-should-she-share-the-money-with-her-siblings-e54ed4df?mod=mw_rss_topstories",
+      "published_at": "2026-06-20T05:18:00.000Z",
+      "snippet": "“The will stated that the estate was to be divided equally among her children.”",
+      "source_position": 1,
+      "section": "Top Stories",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
-        "AI",
-        "科技公司"
+        "宏觀"
       ],
-      "detected_entities": [
-        {
-          "name": "Amazon",
-          "type": "company",
-          "matched_alias": "amazon"
-        }
+      "detected_entities": [],
+      "quality_flags": [
+        "category_fallback"
       ],
-      "quality_flags": [],
-      "normalized_title": "amazon investigating engineers who criticized ai data center expansion",
+      "normalized_title": "my mother was co owner of my late grandmothers bank account should she share the money with her siblings",
       "duplicate_group_id": null
     },
     {
       "source": "MarketWatch",
       "language": "en",
-      "title": "Oil prices under new wave of pressure amid lingering questions over a Strait of Hormuz reopening",
-      "url": "https://www.marketwatch.com/story/oil-prices-under-new-wave-of-pressure-amid-lingering-questions-over-a-strait-of-hormuz-reopening-c58fc9e8?mod=mw_rss_topstories",
-      "published_at": "2026-06-19T16:05:00.000Z",
-      "snippet": "A flurry of headlines on Friday point to an increasingly fragile deal between the U.S. and Iran.",
-      "source_position": 1,
+      "title": "My two sons will inherit a $30,000 annuity from their grandmother. What should I do with the money?",
+      "url": "https://www.marketwatch.com/story/my-two-sons-will-inherit-a-30-000-annuity-from-their-grandmother-what-should-i-do-with-the-money-8882f396?mod=mw_rss_topstories",
+      "published_at": "2026-06-19T19:00:00.000Z",
+      "snippet": "“My understanding is that they have five years to withdraw the money.”",
+      "source_position": 2,
       "section": "Top Stories",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
-        "商品",
-        "地緣政治"
+        "宏觀"
       ],
-      "detected_entities": [
-        {
-          "name": "Oil",
-          "type": "asset",
-          "matched_alias": "oil"
-        }
+      "detected_entities": [],
+      "quality_flags": [
+        "category_fallback"
       ],
-      "quality_flags": [],
-      "normalized_title": "oil prices under new wave of pressure amid lingering questions over a strait of hormuz reopening",
+      "normalized_title": "my two sons will inherit a 30 000 annuity from their grandmother what should i do with the money",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "MarketWatch",
+      "language": "en",
+      "title": "Employers to college students: Never mind that 4.0 GPA. Go out and get a summer job.",
+      "url": "https://www.marketwatch.com/story/employers-to-college-students-skip-the-perfect-gpa-and-go-get-a-summer-job-e9ca5530?mod=mw_rss_topstories",
+      "published_at": "2026-06-19T18:52:00.000Z",
+      "snippet": "College students with any sort of work experience on their résumés are twice as likely to be employed shortly after graduating.",
+      "source_position": 3,
+      "section": "Top Stories",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "quality_flags": [
+        "category_fallback"
+      ],
+      "normalized_title": "employers to college students never mind that 4 0 gpa go out and get a summer job",
       "duplicate_group_id": null
     },
     {
@@ -678,11 +712,11 @@
       "language": "en",
       "title": "‘We are habitually frugal’: My wife and I have money. How do we help our children without ruining their independence?",
       "url": "https://www.marketwatch.com/story/we-are-habitually-frugal-my-wife-and-i-have-money-how-do-we-help-our-children-without-ruining-their-independence-a1e30cec?mod=mw_rss_topstories",
-      "published_at": "2026-06-19T15:49:00.000Z",
+      "published_at": "2026-06-19T18:30:00.000Z",
       "snippet": "“Partly due to some mental-health issues, they may continue to go through life living paycheck to paycheck, or worse.”",
-      "source_position": 2,
+      "source_position": 4,
       "section": "Top Stories",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -696,71 +730,13 @@
     {
       "source": "MarketWatch",
       "language": "en",
-      "title": "‘We own our home outright’: I am 67 and earn $100,000. Do I take my $30,000-a-year Social Security now or wait?",
-      "url": "https://www.marketwatch.com/story/we-own-our-home-outright-i-am-67-and-earn-100-000-do-i-take-my-30-000-social-security-now-or-wait-bbe1e123?mod=mw_rss_topstories",
-      "published_at": "2026-06-19T14:10:00.000Z",
-      "snippet": "“We have combined savings of $950,000 in retirement plans, Roth IRAs and Treasuries.”",
-      "source_position": 3,
-      "section": "Top Stories",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "category_fallback"
-      ],
-      "normalized_title": "we own our home outright i am 67 and earn 100 000 do i take my 30 000 a year social security now or wait",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "MarketWatch",
-      "language": "en",
-      "title": "The loneliness crisis has gotten so bad that lawmakers are ready to spend millions of dollars to fight it",
-      "url": "https://www.marketwatch.com/story/the-loneliness-crisis-has-gotten-so-bad-that-lawmakers-are-ready-to-spend-millions-of-dollars-to-fight-it-f7e7c7b7?mod=mw_rss_topstories",
-      "published_at": "2026-06-19T14:00:00.000Z",
-      "snippet": "The health damage of loneliness is similar to heavy smoking and obesity",
-      "source_position": 4,
-      "section": "Top Stories",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "category_fallback"
-      ],
-      "normalized_title": "the loneliness crisis has gotten so bad that lawmakers are ready to spend millions of dollars to fight it",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "MarketWatch",
-      "language": "en",
-      "title": "Chip stocks are setting records, but this hidden chart pattern says momentum favors the bears",
-      "url": "https://www.marketwatch.com/story/chip-stocks-are-setting-records-but-this-hidden-chart-pattern-says-momentum-favors-the-bears-5ba98c10?mod=mw_rss_topstories",
-      "published_at": "2026-06-19T13:56:00.000Z",
-      "snippet": "The SOXX’s RSI indicator has fallen further below the overbought threshold despite prices making record highs. History suggests that’s a bad sign.",
-      "source_position": 5,
-      "section": "Top Stories",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "半導體"
-      ],
-      "detected_entities": [],
-      "quality_flags": [],
-      "normalized_title": "chip stocks are setting records but this hidden chart pattern says momentum favors the bears",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "MarketWatch",
-      "language": "en",
       "title": "‘I’ll probably be working until I die’: I’m 60, work as a waiter and have $2,000 in a Roth IRA. What will happen to me?",
       "url": "https://www.marketwatch.com/story/ill-probably-be-working-until-i-die-im-60-work-as-a-restaurant-server-and-have-2-000-in-an-ira-who-can-help-me-6e36253a?mod=mw_rss_topstories",
-      "published_at": "2026-06-19T13:11:00.000Z",
+      "published_at": "2026-06-19T18:00:00.000Z",
       "snippet": "“I’m afraid I’m in a bad place.”",
-      "source_position": 6,
+      "source_position": 5,
       "section": "Top Stories",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -775,39 +751,59 @@
     {
       "source": "MarketWatch",
       "language": "en",
-      "title": "‘I’m a realist’: I’m 50 with $6.5 million saved. Should I quit my $200,000 job and retire early?",
-      "url": "https://www.marketwatch.com/story/im-a-realist-im-50-with-6-5-million-saved-should-i-quit-my-200-000-job-and-retire-early-a89624fa?mod=mw_rss_topstories",
-      "published_at": "2026-06-19T13:08:00.000Z",
-      "snippet": "“I have been considering leaving my job so that I can focus on my trading activities full time.”",
-      "source_position": 7,
+      "title": "Warsh’s new task forces give the Fed wiggle room to put off changing rates until December",
+      "url": "https://www.marketwatch.com/story/warshs-task-forces-give-the-fed-wiggle-room-to-put-off-changing-rates-until-december-364fc1fc?mod=mw_rss_topstories",
+      "published_at": "2026-06-19T17:25:00.000Z",
+      "snippet": "During his first press conference as Fed chair Wednesday, Kevin Warsh repeated one refrain in his answers to many reporters’ questions: A task force is looking into it.",
+      "source_position": 6,
       "section": "Top Stories",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
-      "detected_entities": [],
-      "quality_flags": [
-        "category_fallback"
+      "detected_entities": [
+        {
+          "name": "Federal Reserve",
+          "type": "macro",
+          "matched_alias": "fed"
+        },
+        {
+          "name": "Interest Rates",
+          "type": "macro",
+          "matched_alias": "rates"
+        }
       ],
-      "normalized_title": "im a realist im 50 with 6 5 million saved should i quit my 200 000 job and retire early",
+      "quality_flags": [],
+      "normalized_title": "warshs new task forces give the fed wiggle room to put off changing rates until december",
       "duplicate_group_id": null
     },
     {
       "source": "MarketWatch",
       "language": "en",
-      "title": "Trading in French server company suspended after short seller’s accusations trigger stock collapse",
-      "url": "https://www.marketwatch.com/story/trading-in-french-server-company-suspended-after-short-sellers-accusations-trigger-stock-collapse-861135d2?mod=mw_rss_topstories",
-      "published_at": "2026-06-19T12:33:00.000Z",
-      "snippet": "2CRSi shares suspended from trade on the Paris exchange “until further notice.”",
-      "source_position": 8,
+      "title": "Trump picked Kevin Warsh to cut rates. The new Fed chief just told us he has other plans.",
+      "url": "https://www.marketwatch.com/story/trump-picked-kevin-warsh-to-cut-rates-the-new-fed-chief-just-told-us-he-has-other-plans-096bba56?mod=mw_rss_topstories",
+      "published_at": "2026-06-19T17:08:00.000Z",
+      "snippet": "Here’s what the central bank’s hawkish agenda means for your money.",
+      "source_position": 7,
       "section": "Top Stories",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
-        "美股"
+        "宏觀"
       ],
-      "detected_entities": [],
+      "detected_entities": [
+        {
+          "name": "Federal Reserve",
+          "type": "macro",
+          "matched_alias": "fed"
+        },
+        {
+          "name": "Interest Rates",
+          "type": "macro",
+          "matched_alias": "rates"
+        }
+      ],
       "quality_flags": [],
-      "normalized_title": "trading in french server company suspended after short sellers accusations trigger stock collapse",
+      "normalized_title": "trump picked kevin warsh to cut rates the new fed chief just told us he has other plans",
       "duplicate_group_id": null
     },
     {
@@ -815,11 +811,11 @@
       "language": "en",
       "title": "Fed watching is looking very different now. Two charts can help you in the Warsh era.",
       "url": "https://www.marketwatch.com/story/fed-watching-is-looking-very-different-now-two-charts-can-help-you-in-the-warsh-era-d2372c15?mod=mw_rss_topstories",
-      "published_at": "2026-06-19T12:10:00.000Z",
+      "published_at": "2026-06-19T16:59:00.000Z",
       "snippet": "Kevin Warsh is forcing Wall Street to do the heavy lifting. Use these benchmarks to find your footing.",
-      "source_position": 9,
+      "source_position": 8,
       "section": "Top Stories",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "美股",
         "宏觀"
@@ -838,21 +834,44 @@
     {
       "source": "MarketWatch",
       "language": "en",
-      "title": "‘I became invisible when I turned 60’: The hidden crisis of late-career unemployment",
-      "url": "https://www.marketwatch.com/story/i-became-invisible-when-i-turned-60-the-hidden-crisis-of-late-career-unemployment-5bf76c00?mod=mw_rss_topstories",
-      "published_at": "2026-06-19T12:00:00.000Z",
-      "snippet": "A job loss is devastating at any age. After 50, it can completely shatter your finances.",
-      "source_position": 10,
+      "title": "Is the stock market closed today for Juneteenth? Will the post office deliver mail?",
+      "url": "https://www.marketwatch.com/story/is-the-stock-market-open-on-juneteenth-will-the-post-office-deliver-mail-0569e453?mod=mw_rss_topstories",
+      "published_at": "2026-06-19T16:41:00.000Z",
+      "snippet": "The June 19 federal holiday falls on a Friday this year. Here’s how trading hours and other services are affected.",
+      "source_position": 9,
       "section": "Top Stories",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
-        "宏觀"
+        "美股"
       ],
       "detected_entities": [],
-      "quality_flags": [
-        "category_fallback"
+      "quality_flags": [],
+      "normalized_title": "is the stock market closed today for juneteenth will the post office deliver mail",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "MarketWatch",
+      "language": "en",
+      "title": "Oil prices face fresh wave of volatility amid conflicting reports about Strait of Hormuz reopening and ongoing regional strife",
+      "url": "https://www.marketwatch.com/story/oil-prices-under-new-wave-of-pressure-amid-lingering-questions-over-a-strait-of-hormuz-reopening-c58fc9e8?mod=mw_rss_topstories",
+      "published_at": "2026-06-19T16:05:00.000Z",
+      "snippet": "A flurry of headlines on Friday point to an increasingly fragile deal between the U.S. and Iran.",
+      "source_position": 10,
+      "section": "Top Stories",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "商品",
+        "地緣政治"
       ],
-      "normalized_title": "i became invisible when i turned 60 the hidden crisis of late career unemployment",
+      "detected_entities": [
+        {
+          "name": "Oil",
+          "type": "asset",
+          "matched_alias": "oil"
+        }
+      ],
+      "quality_flags": [],
+      "normalized_title": "oil prices face fresh wave of volatility amid conflicting reports about strait of hormuz reopening and ongoing regional strife",
       "duplicate_group_id": null
     },
     {
@@ -864,7 +883,7 @@
       "snippet": "",
       "source_position": 1,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "科技公司"
       ],
@@ -884,118 +903,286 @@
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "Dow Jones Futures Fall With U.S. Markets Shut; Nvidia Leads 5 Stocks Near Buy Points, SpaceX Needs This",
-      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-5-chips-buy-points-spacex-stock/?src=A00220&yptr=yahoo",
-      "published_at": "2026-06-19T16:00:40.000Z",
+      "title": "Why Weakness in Dividend-Paying Costco Stock Is a Strong Buying Opportunity",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-weakness-dividend-paying-costco-233002861.html",
+      "published_at": "2026-06-18T23:30:02.000Z",
       "snippet": "",
       "source_position": 2,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
-        "美股",
-        "半導體",
-        "科技公司"
+        "宏觀"
       ],
-      "detected_entities": [
-        {
-          "name": "Nvidia",
-          "type": "company",
-          "matched_alias": "nvidia"
-        },
-        {
-          "name": "SpaceX",
-          "type": "company",
-          "matched_alias": "spacex"
-        }
-      ],
+      "detected_entities": [],
       "quality_flags": [
-        "missing_snippet"
+        "missing_snippet",
+        "category_fallback"
       ],
-      "normalized_title": "dow jones futures fall with u s markets shut nvidia leads 5 stocks near buy points spacex needs this",
+      "normalized_title": "why weakness in dividend paying costco stock is a strong buying opportunity",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "Forget SpaceX Hype: Donald Trump Bought This Top Space Stock in 2026",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/forget-spacex-hype-donald-trump-154556812.html",
-      "published_at": "2026-06-19T15:45:56.000Z",
+      "title": "When headline valuations aren't what they seem",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/headline-valuations-arent-seem-225822955.html",
+      "published_at": "2026-06-18T22:58:22.000Z",
       "snippet": "",
       "source_position": 3,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
-        "科技公司"
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "quality_flags": [
+        "missing_snippet",
+        "category_fallback"
+      ],
+      "normalized_title": "when headline valuations arent what they seem",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "Yahoo Finance",
+      "language": "en",
+      "title": "Commonwealth Bank of Australia appoints new CIO, CTO to boost technology, AI strategy",
+      "url": "https://finance.yahoo.com/news/commonwealth-bank-australia-appoints-cio-235755970.html",
+      "published_at": "2026-06-18T23:57:55.000Z",
+      "snippet": "",
+      "source_position": 4,
+      "section": "Finance News",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "AI"
+      ],
+      "detected_entities": [],
+      "quality_flags": [
+        "missing_snippet"
+      ],
+      "normalized_title": "commonwealth bank of australia appoints new cio cto to boost technology ai strategy",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "Yahoo Finance",
+      "language": "en",
+      "title": "Forget Critical Metals, Electricity is The Real Bottleneck for AI",
+      "url": "https://finance.yahoo.com/energy/articles/forget-critical-metals-electricity-real-000000768.html",
+      "published_at": "2026-06-19T00:00:00.000Z",
+      "snippet": "",
+      "source_position": 5,
+      "section": "Finance News",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "AI"
+      ],
+      "detected_entities": [],
+      "quality_flags": [
+        "missing_snippet"
+      ],
+      "normalized_title": "forget critical metals electricity is the real bottleneck for ai",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "Yahoo Finance",
+      "language": "en",
+      "title": "Cathie Wood dumps nearly $60 million in popular growth stocks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-dumps-nearly-60-223300469.html",
+      "published_at": "2026-06-19T22:33:00.000Z",
+      "snippet": "",
+      "source_position": 6,
+      "section": "Finance News",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "quality_flags": [
+        "missing_snippet",
+        "category_fallback"
+      ],
+      "normalized_title": "cathie wood dumps nearly 60 million in popular growth stocks",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "Yahoo Finance",
+      "language": "en",
+      "title": "Is Mid-America Apartment Stock Underperforming the Dow?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/mid-america-apartment-stock-underperforming-000652353.html",
+      "published_at": "2026-06-19T00:06:52.000Z",
+      "snippet": "",
+      "source_position": 7,
+      "section": "Finance News",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "quality_flags": [
+        "missing_snippet",
+        "category_fallback"
+      ],
+      "normalized_title": "is mid america apartment stock underperforming the dow",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "Yahoo Finance",
+      "language": "en",
+      "title": "Stocks climb on chips, Brent gains on Iran deal doubts",
+      "url": "https://finance.yahoo.com/news/asian-stocks-steady-oil-lower-014248739.html",
+      "published_at": "2026-06-19T00:12:31.000Z",
+      "snippet": "",
+      "source_position": 8,
+      "section": "Finance News",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "半導體",
+        "商品",
+        "地緣政治"
       ],
       "detected_entities": [
         {
-          "name": "SpaceX",
-          "type": "company",
-          "matched_alias": "spacex"
+          "name": "Oil",
+          "type": "asset",
+          "matched_alias": "brent"
         }
       ],
       "quality_flags": [
         "missing_snippet"
       ],
-      "normalized_title": "forget spacex hype donald trump bought this top space stock in 2026",
+      "normalized_title": "stocks climb on chips brent gains on iran deal doubts",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "Is Bloom Energy (BE) The Best Energy Stock in Trump’s Latest Portfolio?",
-      "url": "https://finance.yahoo.com/energy/articles/bloom-energy-best-energy-stock-154102684.html",
-      "published_at": "2026-06-19T15:41:02.000Z",
+      "title": "Brent rises after Vance warns Israel against breaking ceasefire",
+      "url": "https://finance.yahoo.com/energy/articles/oil-slips-again-us-iran-005602163.html",
+      "published_at": "2026-06-19T00:15:06.000Z",
       "snippet": "",
-      "source_position": 4,
+      "source_position": 9,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "missing_snippet",
-        "category_fallback"
-      ],
-      "normalized_title": "is bloom energy be the best energy stock in trumps latest portfolio",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "Yahoo Finance",
-      "language": "en",
-      "title": "Beyond Trump Hype: Does Intel (INTC) Have Long-Term Growth Catalysts?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/beyond-trump-hype-does-intel-153956796.html",
-      "published_at": "2026-06-19T15:39:56.000Z",
-      "snippet": "",
-      "source_position": 5,
-      "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "missing_snippet",
-        "category_fallback"
-      ],
-      "normalized_title": "beyond trump hype does intel intc have long term growth catalysts",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "Yahoo Finance",
-      "language": "en",
-      "title": "Fed Warsh era kicks off with big surprise no one saw coming",
-      "url": "https://finance.yahoo.com/economy/policy/articles/fed-warsh-era-kicks-off-043700459.html",
-      "published_at": "2026-06-18T04:37:00.000Z",
-      "snippet": "",
-      "source_position": 6,
-      "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀"
+        "商品",
+        "地緣政治"
       ],
       "detected_entities": [
+        {
+          "name": "Oil",
+          "type": "asset",
+          "matched_alias": "brent"
+        }
+      ],
+      "quality_flags": [
+        "missing_snippet"
+      ],
+      "normalized_title": "brent rises after vance warns israel against breaking ceasefire",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "Yahoo Finance",
+      "language": "en",
+      "title": "An 11% Yield and Exposure Across 28 States: What Makes Kimbell Royalty (KRP) Stand Out?",
+      "url": "https://finance.yahoo.com/energy/articles/11-yield-exposure-across-28-002452398.html",
+      "published_at": "2026-06-19T00:24:52.000Z",
+      "snippet": "",
+      "source_position": 10,
+      "section": "Finance News",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "quality_flags": [
+        "missing_snippet",
+        "category_fallback"
+      ],
+      "normalized_title": "an 11 yield and exposure across 28 states what makes kimbell royalty krp stand out",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "Yahoo Finance",
+      "language": "en",
+      "title": "Bed Bath & Beyond bets $53 million on beating Zillow, Redfin",
+      "url": "https://finance.yahoo.com/real-estate/articles/bed-bath-beyond-bets-53-234523748.html",
+      "published_at": "2026-06-18T23:45:23.000Z",
+      "snippet": "",
+      "source_position": 11,
+      "section": "Finance News",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "quality_flags": [
+        "missing_snippet",
+        "category_fallback"
+      ],
+      "normalized_title": "bed bath beyond bets 53 million on beating zillow redfin",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "Yahoo Finance",
+      "language": "en",
+      "title": "Here is why UMH Properties, Inc. (UMH) is among the Best “Land Owner” Stocks to Buy for Hard Asset Value",
+      "url": "https://finance.yahoo.com/real-estate/articles/why-umh-properties-inc-umh-002506113.html",
+      "published_at": "2026-06-19T00:25:06.000Z",
+      "snippet": "",
+      "source_position": 12,
+      "section": "Finance News",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "quality_flags": [
+        "missing_snippet",
+        "category_fallback"
+      ],
+      "normalized_title": "here is why umh properties inc umh is among the best land owner stocks to buy for hard asset value",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "Yahoo Finance",
+      "language": "en",
+      "title": "Simon Property Group, Inc. (SPG): 7 Best “Land Owner” Stocks to Buy for Hard Asset Value",
+      "url": "https://finance.yahoo.com/real-estate/articles/simon-property-group-inc-spg-002459622.html",
+      "published_at": "2026-06-19T00:24:59.000Z",
+      "snippet": "",
+      "source_position": 13,
+      "section": "Finance News",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "quality_flags": [
+        "missing_snippet",
+        "category_fallback"
+      ],
+      "normalized_title": "simon property group inc spg 7 best land owner stocks to buy for hard asset value",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "Yahoo Finance",
+      "language": "en",
+      "title": "Dollar hits one-year high on Fed hike bets; Japan warns on yen",
+      "url": "https://finance.yahoo.com/news/dollar-clings-two-month-peak-013742192.html",
+      "published_at": "2026-06-19T00:22:52.000Z",
+      "snippet": "",
+      "source_position": 14,
+      "section": "Finance News",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "宏觀",
+        "外匯"
+      ],
+      "detected_entities": [
+        {
+          "name": "US Dollar",
+          "type": "macro",
+          "matched_alias": "dollar"
+        },
         {
           "name": "Federal Reserve",
           "type": "macro",
@@ -1005,238 +1192,60 @@
       "quality_flags": [
         "missing_snippet"
       ],
-      "normalized_title": "fed warsh era kicks off with big surprise no one saw coming",
+      "normalized_title": "dollar hits one year high on fed hike bets japan warns on yen",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "Donald Trump’s Favorite AI Chip Stock in 2026 That Performed Better Than Nvidia (NVDA)",
-      "url": "https://finance.yahoo.com/technology/ai/articles/donald-trump-favorite-ai-chip-153822311.html",
-      "published_at": "2026-06-19T15:38:22.000Z",
-      "snippet": "",
-      "source_position": 7,
-      "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "AI",
-        "半導體"
-      ],
-      "detected_entities": [
-        {
-          "name": "Nvidia",
-          "type": "company",
-          "matched_alias": "nvidia"
-        }
-      ],
-      "quality_flags": [
-        "missing_snippet"
-      ],
-      "normalized_title": "donald trumps favorite ai chip stock in 2026 that performed better than nvidia nvda",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "Yahoo Finance",
-      "language": "en",
-      "title": "Here’s Donald Trump’s Top Crypto Stock Pick in 2026",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/donald-trump-top-crypto-stock-153544302.html",
-      "published_at": "2026-06-19T15:35:44.000Z",
-      "snippet": "",
-      "source_position": 8,
-      "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "加密"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "missing_snippet"
-      ],
-      "normalized_title": "heres donald trumps top crypto stock pick in 2026",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "Yahoo Finance",
-      "language": "en",
-      "title": "Is Myers Industries, Inc. (MYE) A Good Stock To Buy Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/myers-industries-inc-mye-good-153424644.html",
-      "published_at": "2026-06-19T15:34:24.000Z",
-      "snippet": "",
-      "source_position": 9,
-      "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "missing_snippet",
-        "category_fallback"
-      ],
-      "normalized_title": "is myers industries inc mye a good stock to buy now",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "Yahoo Finance",
-      "language": "en",
-      "title": "Is Nordic American Tankers Limited (NAT) A Good Stock To Buy Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nordic-american-tankers-limited-nat-153409488.html",
-      "published_at": "2026-06-19T15:34:09.000Z",
-      "snippet": "",
-      "source_position": 10,
-      "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "missing_snippet",
-        "category_fallback"
-      ],
-      "normalized_title": "is nordic american tankers limited nat a good stock to buy now",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "Yahoo Finance",
-      "language": "en",
-      "title": "Better Crypto Under $1: Cardano vs. Canton",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/better-crypto-under-1-cardano-161000958.html",
-      "published_at": "2026-06-19T16:10:00.000Z",
-      "snippet": "",
-      "source_position": 11,
-      "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "加密"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "missing_snippet"
-      ],
-      "normalized_title": "better crypto under 1 cardano vs canton",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "Yahoo Finance",
-      "language": "en",
-      "title": "Donald Trump’s Under-The-Radar Tech Stock Pick Everyone’s Ignoring",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/donald-trump-under-radar-tech-153404937.html",
-      "published_at": "2026-06-19T15:34:04.000Z",
-      "snippet": "",
-      "source_position": 12,
-      "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "missing_snippet",
-        "category_fallback"
-      ],
-      "normalized_title": "donald trumps under the radar tech stock pick everyones ignoring",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "Yahoo Finance",
-      "language": "en",
-      "title": "Is Penguin Solutions, Inc. (PENG) A Good Stock To Buy Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/penguin-solutions-inc-peng-good-153339902.html",
-      "published_at": "2026-06-19T15:33:39.000Z",
-      "snippet": "",
-      "source_position": 13,
-      "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "missing_snippet",
-        "category_fallback"
-      ],
-      "normalized_title": "is penguin solutions inc peng a good stock to buy now",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "Yahoo Finance",
-      "language": "en",
-      "title": "Is PROCEPT BioRobotics Corporation (PRCT) A Good Stock To Buy Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/procept-biorobotics-corporation-prct-good-153320309.html",
-      "published_at": "2026-06-19T15:33:20.000Z",
-      "snippet": "",
-      "source_position": 14,
-      "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "missing_snippet",
-        "category_fallback"
-      ],
-      "normalized_title": "is procept biorobotics corporation prct a good stock to buy now",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "Yahoo Finance",
-      "language": "en",
-      "title": "Is Red Cat Holdings, Inc. (RCAT) A Good Stock To Buy Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/red-cat-holdings-inc-rcat-153307656.html",
-      "published_at": "2026-06-19T15:33:07.000Z",
+      "title": "Extra Space Storage (EXR) Faces New Supply Risks—So Why Is Wall Street Still Bullish?",
+      "url": "https://finance.yahoo.com/real-estate/articles/extra-space-storage-exr-faces-002441810.html",
+      "published_at": "2026-06-19T00:24:41.000Z",
       "snippet": "",
       "source_position": 15,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
-        "宏觀"
+        "美股"
       ],
       "detected_entities": [],
       "quality_flags": [
-        "missing_snippet",
-        "category_fallback"
+        "missing_snippet"
       ],
-      "normalized_title": "is red cat holdings inc rcat a good stock to buy now",
+      "normalized_title": "extra space storage exr faces new supply risks so why is wall street still bullish",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "Bank of America predicts a major pricing shift for Apple",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/bank-america-predicts-major-pricing-160300106.html",
-      "published_at": "2026-06-19T16:03:00.000Z",
+      "title": "Is American Tower Corporation (AMT) among the 7 Best “Land Owner” Stocks to Buy for Hard Asset Value",
+      "url": "https://finance.yahoo.com/real-estate/articles/american-tower-corporation-amt-among-002516603.html",
+      "published_at": "2026-06-19T00:25:16.000Z",
       "snippet": "",
       "source_position": 16,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
-        "科技公司"
+        "宏觀"
       ],
-      "detected_entities": [
-        {
-          "name": "Apple",
-          "type": "company",
-          "matched_alias": "apple"
-        }
-      ],
+      "detected_entities": [],
       "quality_flags": [
-        "missing_snippet"
+        "missing_snippet",
+        "category_fallback"
       ],
-      "normalized_title": "bank of america predicts a major pricing shift for apple",
+      "normalized_title": "is american tower corporation amt among the 7 best land owner stocks to buy for hard asset value",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "Dell Technologies (DELL) is Among The Best Donad Trump Stock Picks in 2026",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/dell-technologies-dell-among-best-153305423.html",
-      "published_at": "2026-06-19T15:33:05.000Z",
+      "title": "AvalonBay (AVB) Could Benefit From a Changing Housing Market, Says Mizuho",
+      "url": "https://finance.yahoo.com/real-estate/articles/avalonbay-avb-could-benefit-changing-002422308.html",
+      "published_at": "2026-06-19T00:24:22.000Z",
       "snippet": "",
       "source_position": 17,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -1245,19 +1254,19 @@
         "missing_snippet",
         "category_fallback"
       ],
-      "normalized_title": "dell technologies dell is among the best donad trump stock picks in 2026",
+      "normalized_title": "avalonbay avb could benefit from a changing housing market says mizuho",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "SanDisk (SNDK): Donald Trump’s Top Stock Pick in 2026",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/sandisk-sndk-donald-trump-top-153230468.html",
-      "published_at": "2026-06-19T15:32:30.000Z",
+      "title": "Why RBC Still Likes Sun Communities (SUI) After Its Latest Asset Sale",
+      "url": "https://finance.yahoo.com/real-estate/articles/why-rbc-still-likes-sun-002431959.html",
+      "published_at": "2026-06-19T00:24:31.000Z",
       "snippet": "",
       "source_position": 18,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -1266,19 +1275,19 @@
         "missing_snippet",
         "category_fallback"
       ],
-      "normalized_title": "sandisk sndk donald trumps top stock pick in 2026",
+      "normalized_title": "why rbc still likes sun communities sui after its latest asset sale",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "Is Gibraltar Industries, Inc. (ROCK) A Good Stock To Buy Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/gibraltar-industries-inc-rock-good-153154589.html",
-      "published_at": "2026-06-19T15:31:54.000Z",
+      "title": "Energy Fuels Lands $725 Million U.S. Backing for Rare Earth Buildout",
+      "url": "https://finance.yahoo.com/energy/articles/energy-fuels-lands-725-million-001728062.html",
+      "published_at": "2026-06-19T00:17:28.000Z",
       "snippet": "",
       "source_position": 19,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -1287,19 +1296,19 @@
         "missing_snippet",
         "category_fallback"
       ],
-      "normalized_title": "is gibraltar industries inc rock a good stock to buy now",
+      "normalized_title": "energy fuels lands 725 million u s backing for rare earth buildout",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "Is Super Group (SGHC) Limited (SGHC) A Good Stock To Buy Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/super-group-sghc-limited-sghc-153139767.html",
-      "published_at": "2026-06-19T15:31:39.000Z",
+      "title": "Why Centrus Energy Group Stock Surged 12% Higher Today",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-centrus-energy-group-stock-234733003.html",
+      "published_at": "2026-06-18T23:47:33.000Z",
       "snippet": "",
       "source_position": 20,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -1308,19 +1317,19 @@
         "missing_snippet",
         "category_fallback"
       ],
-      "normalized_title": "is super group sghc limited sghc a good stock to buy now",
+      "normalized_title": "why centrus energy group stock surged 12 higher today",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "This 6%-Yielding Stock Keeps Raising Its Payout No Matter What the Economy Does",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/6-yielding-stock-keeps-raising-160200123.html",
-      "published_at": "2026-06-19T16:02:00.000Z",
+      "title": "Gen Digital Stock: Is GEN Underperforming the Technology Sector?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/gen-digital-stock-gen-underperforming-004117505.html",
+      "published_at": "2026-06-19T00:41:17.000Z",
       "snippet": "",
       "source_position": 21,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -1329,19 +1338,19 @@
         "missing_snippet",
         "category_fallback"
       ],
-      "normalized_title": "this 6 yielding stock keeps raising its payout no matter what the economy does",
+      "normalized_title": "gen digital stock is gen underperforming the technology sector",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "Is Willdan Group, Inc. (WLDN) A Good Stock To Buy Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/willdan-group-inc-wldn-good-153105346.html",
-      "published_at": "2026-06-19T15:31:05.000Z",
+      "title": "After DRAM, Investors Want a Photonics ETF",
+      "url": "https://finance.yahoo.com/news/dram-investors-want-photonics-etf-004955512.html",
+      "published_at": "2026-06-19T00:49:55.000Z",
       "snippet": "",
       "source_position": 22,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -1350,19 +1359,19 @@
         "missing_snippet",
         "category_fallback"
       ],
-      "normalized_title": "is willdan group inc wldn a good stock to buy now",
+      "normalized_title": "after dram investors want a photonics etf",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "Is Zillow Group, Inc. (Z) A Good Stock To Buy Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/zillow-group-inc-z-good-153006665.html",
-      "published_at": "2026-06-19T15:30:06.000Z",
+      "title": "Average Gas Price Drops Below $4 for First Time Since March",
+      "url": "https://finance.yahoo.com/energy/articles/average-gas-price-drops-below-221900203.html",
+      "published_at": "2026-06-18T22:19:00.000Z",
       "snippet": "",
       "source_position": 23,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -1371,19 +1380,19 @@
         "missing_snippet",
         "category_fallback"
       ],
-      "normalized_title": "is zillow group inc z a good stock to buy now",
+      "normalized_title": "average gas price drops below 4 for first time since march",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "Equinor to Boost Troll Gas Output with $412 Million Subsea Development",
-      "url": "https://finance.yahoo.com/energy/articles/equinor-boost-troll-gas-output-153000121.html",
-      "published_at": "2026-06-19T15:30:00.000Z",
+      "title": "How Is IDEX Corporation 's Stock Performance Compared to Other Industrial Stocks?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/idex-corporation-stock-performance-compared-005847201.html",
+      "published_at": "2026-06-19T00:58:47.000Z",
       "snippet": "",
       "source_position": 24,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -1392,19 +1401,19 @@
         "missing_snippet",
         "category_fallback"
       ],
-      "normalized_title": "equinor to boost troll gas output with 412 million subsea development",
+      "normalized_title": "how is idex corporation s stock performance compared to other industrial stocks",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "Is Titan America SA (TTAM) A Good Stock To Buy Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/titan-america-sa-ttam-good-152936112.html",
-      "published_at": "2026-06-19T15:29:36.000Z",
+      "title": "Is Rigetti Computing Stock a Buy Right Now?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/rigetti-computing-stock-buy-now-233300624.html",
+      "published_at": "2026-06-18T23:33:00.000Z",
       "snippet": "",
       "source_position": 25,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -1413,87 +1422,85 @@
         "missing_snippet",
         "category_fallback"
       ],
-      "normalized_title": "is titan america sa ttam a good stock to buy now",
+      "normalized_title": "is rigetti computing stock a buy right now",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "Veteran analyst sends blunt message on Saylor's Bitcoin strategy",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/veteran-analyst-sends-blunt-message-160000344.html",
-      "published_at": "2026-06-19T16:00:00.000Z",
+      "title": "PE has yet to prove its AI bets to investors",
+      "url": "https://finance.yahoo.com/technology/ai/articles/pe-yet-prove-ai-bets-220208825.html",
+      "published_at": "2026-06-18T22:02:08.000Z",
       "snippet": "",
       "source_position": 26,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
-        "加密"
+        "AI"
+      ],
+      "detected_entities": [],
+      "quality_flags": [
+        "missing_snippet"
+      ],
+      "normalized_title": "pe has yet to prove its ai bets to investors",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "Yahoo Finance",
+      "language": "en",
+      "title": "Is Quest Diagnostics Stock Underperforming the S&P 500?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/quest-diagnostics-stock-underperforming-p-031158298.html",
+      "published_at": "2026-06-19T03:11:58.000Z",
+      "snippet": "",
+      "source_position": 27,
+      "section": "Finance News",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "美股"
       ],
       "detected_entities": [
         {
-          "name": "Bitcoin",
-          "type": "asset",
-          "matched_alias": "bitcoin"
+          "name": "S&P 500",
+          "type": "index",
+          "matched_alias": "s&p 500"
         }
       ],
       "quality_flags": [
         "missing_snippet"
       ],
-      "normalized_title": "veteran analyst sends blunt message on saylors bitcoin strategy",
+      "normalized_title": "is quest diagnostics stock underperforming the s p 500",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "Is DXP Enterprises, Inc. (DXPE) A Good Stock To Buy Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/dxp-enterprises-inc-dxpe-good-150111135.html",
-      "published_at": "2026-06-19T15:01:11.000Z",
-      "snippet": "",
-      "source_position": 27,
-      "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "missing_snippet",
-        "category_fallback"
-      ],
-      "normalized_title": "is dxp enterprises inc dxpe a good stock to buy now",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "Yahoo Finance",
-      "language": "en",
-      "title": "Is EZCORP, Inc. (EZPW) A Good Stock To Buy Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/ezcorp-inc-ezpw-good-stock-150059680.html",
-      "published_at": "2026-06-19T15:00:59.000Z",
+      "title": "Is the stock market open on Juneteenth? Here's the holiday trading schedule in 2026.",
+      "url": "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-juneteenth-heres-the-holiday-trading-schedule-in-2026-210239142.html",
+      "published_at": "2024-03-25T21:02:39.000Z",
       "snippet": "",
       "source_position": 28,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
-        "宏觀"
+        "美股"
       ],
       "detected_entities": [],
       "quality_flags": [
-        "missing_snippet",
-        "category_fallback"
+        "missing_snippet"
       ],
-      "normalized_title": "is ezcorp inc ezpw a good stock to buy now",
+      "normalized_title": "is the stock market open on juneteenth heres the holiday trading schedule in 2026",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "Is AST SpaceMobile, Inc. (ASTS) A Good Stock To Buy Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/ast-spacemobile-inc-asts-good-150008750.html",
-      "published_at": "2026-06-19T15:00:08.000Z",
+      "title": "Amex Blue Cash Preferred Card review: Big grocery rewards and more everyday savings",
+      "url": "https://finance.yahoo.com/personal-finance/credit-cards/review/amex-blue-cash-preferred-review-200056855.html",
+      "published_at": "2024-11-04T20:00:56.000Z",
       "snippet": "",
       "source_position": 29,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -1502,28 +1509,125 @@
         "missing_snippet",
         "category_fallback"
       ],
-      "normalized_title": "is ast spacemobile inc asts a good stock to buy now",
+      "normalized_title": "amex blue cash preferred card review big grocery rewards and more everyday savings",
       "duplicate_group_id": null
     },
     {
       "source": "Yahoo Finance",
       "language": "en",
-      "title": "Is Blue Bird Corporation (BLBD) A Good Stock To Buy Now?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/blue-bird-corporation-blbd-good-145953748.html",
-      "published_at": "2026-06-19T14:59:53.000Z",
+      "title": "Elizabeth Warren's New Housing Bill Could Stop Wall Street From Buying Up Family Homes",
+      "url": "https://finance.yahoo.com/real-estate/articles/elizabeth-warrens-housing-bill-could-233033845.html",
+      "published_at": "2026-06-18T23:30:33.000Z",
       "snippet": "",
       "source_position": 30,
       "section": "Finance News",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "美股"
+      ],
+      "detected_entities": [],
+      "quality_flags": [
+        "missing_snippet"
+      ],
+      "normalized_title": "elizabeth warrens new housing bill could stop wall street from buying up family homes",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "TechCrunch",
+      "language": "en",
+      "title": "He made your free video player run smoothly. Now he’s doing that for robots.",
+      "url": "https://techcrunch.com/2026/06/19/he-made-your-free-video-player-run-smoothly-now-hes-doing-that-for-robots/",
+      "published_at": "2026-06-20T00:47:44.000Z",
+      "snippet": "French serial entrepreneur and open-source legend Jean-Baptiste Kempf has been building Kyber, an infrastructure layer to control remote devices in real time.",
+      "source_position": 1,
+      "section": "Technology",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
       "detected_entities": [],
       "quality_flags": [
-        "missing_snippet",
         "category_fallback"
       ],
-      "normalized_title": "is blue bird corporation blbd a good stock to buy now",
+      "normalized_title": "he made your free video player run smoothly now hes doing that for robots",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "TechCrunch",
+      "language": "en",
+      "title": "From PGP to Mythos: a brief history of export controls that didn’t stop anyone",
+      "url": "https://techcrunch.com/2026/06/19/encryption-spyware-and-now-mythos-history-shows-why-cyber-export-control-doesnt-work/",
+      "published_at": "2026-06-19T22:40:14.000Z",
+      "snippet": "For the last 30 years, stopping the flow of cybersecurity-related software has proven to be ineffective. It's unclear why it would work now with Anthropic’s cybersecurity model Mythos.",
+      "source_position": 2,
+      "section": "Technology",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "quality_flags": [
+        "category_fallback"
+      ],
+      "normalized_title": "from pgp to mythos a brief history of export controls that didnt stop anyone",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "TechCrunch",
+      "language": "en",
+      "title": "Go eyes robotaxis and acquisitions after Japan’s biggest IPO of 2026. Here’s why it matters",
+      "url": "https://techcrunch.com/2026/06/19/go-eyes-robotaxis-and-acquisitions-after-japans-biggest-ipo-of-2026-heres-why-it-matters/",
+      "published_at": "2026-06-19T21:45:00.000Z",
+      "snippet": "Go’s IPO — Japan’s biggest so far this year — has done more than provide a much-needed boost to the country’s languishing listing season. It has also supplied the taxi-hailing app with the capital required to address an existential issue: Japan’s shortage of drivers. Go, which went public Tuesday, plans to use the ¥88.6 billion […]",
+      "source_position": 3,
+      "section": "Technology",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "美股"
+      ],
+      "detected_entities": [],
+      "quality_flags": [],
+      "normalized_title": "go eyes robotaxis and acquisitions after japans biggest ipo of 2026 heres why it matters",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "TechCrunch",
+      "language": "en",
+      "title": "Aura’s impressive e-ink photo frame doesn’t even look digital",
+      "url": "https://techcrunch.com/2026/06/19/auras-impressive-e-ink-photo-frame-doesnt-even-look-digital/",
+      "published_at": "2026-06-19T21:00:34.000Z",
+      "snippet": "What’s the most cliche possible gift you can give a relative? A digital photo frame, displaying a rotating slideshow of family photos. Now Aura has completely refreshed this product space with its gorgeous Aura Ink frame, which uses e-ink to create a display that doesn’t even look digital. Digital frames have always been so popular […]",
+      "source_position": 4,
+      "section": "Technology",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "quality_flags": [
+        "category_fallback"
+      ],
+      "normalized_title": "auras impressive e ink photo frame doesnt even look digital",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "TechCrunch",
+      "language": "en",
+      "title": "Every fusion startup that has raised over $100M",
+      "url": "https://techcrunch.com/2026/06/19/every-fusion-startup-that-has-raised-over-100m/",
+      "published_at": "2026-06-19T16:50:58.000Z",
+      "snippet": "Fusion startups have raised $7.1 billion to date, with the majority of it going to a handful of companies.",
+      "source_position": 5,
+      "section": "Technology",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [],
+      "quality_flags": [
+        "category_fallback"
+      ],
+      "normalized_title": "every fusion startup that has raised over 100m",
       "duplicate_group_id": null
     },
     {
@@ -1533,9 +1637,9 @@
       "url": "https://techcrunch.com/video/is-the-us-governments-anthropic-ban-accidentally-helping-the-brand/",
       "published_at": "2026-06-19T16:08:17.000Z",
       "snippet": "Just as last week was ending, the US government forced Anthropic to pull its two newest models, Fable 5 and Mythos 5, citing national security concerns after Amazon researchers allegedly found a way to bypass Fable 5’s guardrails. Cybersecurity researchers have since signed an open letter calling the move dangerous, and Anthropic itself noted the same jailbreaks exist in other models. So is […]",
-      "source_position": 1,
+      "source_position": 6,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "科技公司"
       ],
@@ -1557,9 +1661,9 @@
       "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/",
       "published_at": "2026-06-19T15:23:28.000Z",
       "snippet": "Reliance is weaving AI into telecom services used by more than 500 million people.",
-      "source_position": 2,
+      "source_position": 7,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "AI"
       ],
@@ -1571,31 +1675,31 @@
     {
       "source": "TechCrunch",
       "language": "en",
-      "title": "The CEO of Allbirds’ new AI biz has a plan, but no employees",
+      "title": "The CEO of Allbirds’ new AI biz has a plan, but no team",
       "url": "https://techcrunch.com/2026/06/19/the-ceo-of-allbirds-new-ai-biz-has-a-plan-but-no-employees/",
       "published_at": "2026-06-19T13:00:00.000Z",
       "snippet": "Call it a startup with a sole founder and a very large seed round, but what's next is less clear.",
-      "source_position": 3,
+      "source_position": 8,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "AI"
       ],
       "detected_entities": [],
       "quality_flags": [],
-      "normalized_title": "the ceo of allbirds new ai biz has a plan but no employees",
+      "normalized_title": "the ceo of allbirds new ai biz has a plan but no team",
       "duplicate_group_id": null
     },
     {
       "source": "TechCrunch",
       "language": "en",
-      "title": "The US says ASML’s top chip tool may be in China. ASML says it isn’t",
+      "title": "The US says ASML’s top chip tool may be in China, but how?",
       "url": "https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/",
       "published_at": "2026-06-19T07:59:12.000Z",
       "snippet": "There's a commercial logic that cuts against the idea that ASML would risk its export license to arm a Chinese customer.",
-      "source_position": 4,
+      "source_position": 9,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "半導體"
       ],
@@ -1607,7 +1711,7 @@
         }
       ],
       "quality_flags": [],
-      "normalized_title": "the us says asmls top chip tool may be in china asml says it isnt",
+      "normalized_title": "the us says asmls top chip tool may be in china but how",
       "duplicate_group_id": null
     },
     {
@@ -1617,9 +1721,9 @@
       "url": "https://techcrunch.com/2026/06/18/telegram-ban-in-india-sparks-a-rush-to-vpns-rival-apps/",
       "published_at": "2026-06-19T01:01:00.000Z",
       "snippet": "Telegram argues India should block specific content, not an entire platform used by millions.",
-      "source_position": 5,
+      "source_position": 10,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -1633,19 +1737,19 @@
     {
       "source": "TechCrunch",
       "language": "en",
-      "title": "Source: Elastic agrees to buy CRV-backed DeductiveAI for up to $85M",
+      "title": "Source: Elastic agrees to buy CRV-backed Deductive AI for up to $85M",
       "url": "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/",
       "published_at": "2026-06-19T00:51:11.000Z",
-      "snippet": "DeductiveAI, a startup that uses AI to catch and resolve bugs in software, was founded just three years ago.",
-      "source_position": 6,
+      "snippet": "Deductive AI, a startup that uses AI to catch and resolve bugs in software, was founded just three years ago.",
+      "source_position": 11,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "AI"
       ],
       "detected_entities": [],
       "quality_flags": [],
-      "normalized_title": "source elastic agrees to buy crv backed deductiveai for up to 85m",
+      "normalized_title": "source elastic agrees to buy crv backed deductive ai for up to 85m",
       "duplicate_group_id": null
     },
     {
@@ -1655,9 +1759,9 @@
       "url": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/",
       "published_at": "2026-06-18T21:20:13.000Z",
       "snippet": "Startup Baseten is reportedly close to finalizing a $1.5 billion round at a $13 billion as the “inference gold rush\" marches on.",
-      "source_position": 7,
+      "source_position": 12,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "AI",
         "商品"
@@ -1680,9 +1784,9 @@
       "url": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/",
       "published_at": "2026-06-18T20:30:00.000Z",
       "snippet": "The Snapchat maker is spinning off yet another internal unit. Dotmo will be composed of current Snap staff who are leaving the social media company to focus on AI video development.",
-      "source_position": 8,
+      "source_position": 13,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "AI"
       ],
@@ -1698,9 +1802,9 @@
       "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/",
       "published_at": "2026-06-18T19:59:22.000Z",
       "snippet": "OpenAI is bulking up before its IPO, landing Transformer co-inventor Noam Shazeer from Google DeepMind and former Trump AI policy official Dean Ball in the same week.",
-      "source_position": 9,
+      "source_position": 14,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "美股",
         "AI",
@@ -1729,9 +1833,9 @@
       "url": "https://techcrunch.com/2026/06/18/the-11-standout-startups-from-ycs-demo-day-according-to-vcs/",
       "published_at": "2026-06-18T19:52:19.000Z",
       "snippet": "TechCrunch spoke to investors to find the hottest startups in the Spring 2026 YC batch. Some of them commanded valuations of over $175 million, VCs said.",
-      "source_position": 10,
+      "source_position": 15,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -1749,9 +1853,9 @@
       "url": "https://techcrunch.com/2026/06/18/rivian-owners-file-lawsuit-alleging-false-promises-on-self-driving-features/",
       "published_at": "2026-06-18T19:31:45.000Z",
       "snippet": "Plaintiffs in the class -action complaint allege Rivian falsely promised for years it would bring hands-free driving to its first-generation R1 vehicles.",
-      "source_position": 11,
+      "source_position": 16,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -1769,9 +1873,9 @@
       "url": "https://techcrunch.com/2026/06/18/almost-half-of-u-s-singles-feel-negatively-about-ai-in-dating-match-says/",
       "published_at": "2026-06-18T18:51:46.000Z",
       "snippet": "About 47% of singles look negatively at the use of AI in dating -- but many dating app users are open to AI helping with profile punch-ups and conversation starters.",
-      "source_position": 12,
+      "source_position": 17,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "AI"
       ],
@@ -1787,9 +1891,9 @@
       "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/",
       "published_at": "2026-06-18T18:22:13.000Z",
       "snippet": "AWS is in talks to sell its chips to other data centers. CEO Andy Jassy has said this represents a $50 billion opportunity for the company.",
-      "source_position": 13,
+      "source_position": 18,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "AI",
         "半導體",
@@ -1818,9 +1922,9 @@
       "url": "https://techcrunch.com/2026/06/18/mivos-new-app-takes-a-mindful-approach-to-managing-screen-time/",
       "published_at": "2026-06-18T18:00:00.000Z",
       "snippet": "Notably, unlike other apps that might just try to pull you away from your phone, Mivo lets the user decide if they want to continue, encouraging users to become more aware of how and why they’re using it instead.",
-      "source_position": 14,
+      "source_position": 19,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -1838,9 +1942,9 @@
       "url": "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/",
       "published_at": "2026-06-18T17:49:23.000Z",
       "snippet": "FERC told grid operators to give data centers a fast lane for interconnections, but it failed to address electricity supply shortages.",
-      "source_position": 15,
+      "source_position": 20,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "AI"
       ],
@@ -1850,15 +1954,15 @@
       "duplicate_group_id": null
     },
     {
-      "source": "TechCrunch",
+      "source": "The Verge",
       "language": "en",
-      "title": "The smartphone era created an attention crisis — slow tech is fixing it",
-      "url": "https://techcrunch.com/2026/06/18/the-smartphone-era-created-an-attention-crisis-slowtech-is-fixing-it/",
-      "published_at": "2026-06-18T17:16:30.000Z",
-      "snippet": "“People just really want to take back control of their time, their lives, their attention... They’re down for whatever helps them do that.”",
-      "source_position": 16,
+      "title": "Nothing cancels this year’s CMF phone due to RAM prices",
+      "url": "https://www.theverge.com/gadgets/953066/nothing-cmf-phone-delayed-ram-prices",
+      "published_at": "2026-06-19T21:28:39.000Z",
+      "snippet": "Nothing's next budget phone is the latest victim of RAMageddon. As 9to5Google reports, Nothing co-founder Akis Evangelidis announced in a post on X that a follow-up to the CMF Phone 2 Pro won't be coming this year: We were working on a successor but with memory prices where they are right now, we can't build […]",
+      "source_position": 1,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -1866,81 +1970,43 @@
       "quality_flags": [
         "category_fallback"
       ],
-      "normalized_title": "the smartphone era created an attention crisis slow tech is fixing it",
+      "normalized_title": "nothing cancels this years cmf phone due to ram prices",
       "duplicate_group_id": null
     },
     {
-      "source": "TechCrunch",
+      "source": "The Verge",
       "language": "en",
-      "title": "Texas government data breach allowed hackers to steal 3 million driver’s licenses and passports",
-      "url": "https://techcrunch.com/2026/06/18/texas-government-data-breach-allowed-hackers-to-steal-3-million-drivers-licenses-and-passports/",
-      "published_at": "2026-06-18T17:12:53.000Z",
-      "snippet": "A data breach involving government-issued ID documents affects over 3 million people in Texas.",
-      "source_position": 17,
+      "title": "NASA selects Eric Schmidt’s rocket company for a 2028 mission to Mars",
+      "url": "https://www.theverge.com/science/952988/nasa-relativity-space-eric-schmidt-mars",
+      "published_at": "2026-06-19T18:41:48.000Z",
+      "snippet": "Relativity Space, the rocket company led by former Google executive Eric Schmidt, was picked to launch NASA's Aeolus payload to Mars in 2028, as reported earlier by TechCrunch. Under a new public-private partnership, Relativity Space will provide the \"spacecraft, rocket, and cruise operations\" to fly Aeolus to Mars, where the payload will \"provide the first […]",
+      "source_position": 2,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "category_fallback"
-      ],
-      "normalized_title": "texas government data breach allowed hackers to steal 3 million drivers licenses and passports",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "TechCrunch",
-      "language": "en",
-      "title": "‘Queer Eye’ life coach Karamo Brown launches Kē, a wellness app featuring his AI digital clone",
-      "url": "https://techcrunch.com/2026/06/18/queer-eyes-life-coach-karamo-brown-launches-ke-a-wellness-app-featuring-his-ai-digital-clone/",
-      "published_at": "2026-06-18T16:55:04.000Z",
-      "snippet": "After spending a year and a half focusing on his own journey — from fitness and nutrition to meditation, sobriety, relationships, and personal growth — Brown wants to help others do the same.",
-      "source_position": 18,
-      "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "AI"
-      ],
-      "detected_entities": [],
-      "quality_flags": [],
-      "normalized_title": "queer eye life coach karamo brown launches kē a wellness app featuring his ai digital clone",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "TechCrunch",
-      "language": "en",
-      "title": "Apple opens up App Store to new competition in Brazil",
-      "url": "https://techcrunch.com/2026/06/18/apple-opens-up-app-store-to-new-competition-in-brazil/",
-      "published_at": "2026-06-18T15:48:08.000Z",
-      "snippet": "Apple’s grip on iPhone app distribution is loosening in another major market: Brazil.",
-      "source_position": 19,
-      "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "科技公司"
       ],
       "detected_entities": [
         {
-          "name": "Apple",
+          "name": "Alphabet",
           "type": "company",
-          "matched_alias": "apple"
+          "matched_alias": "google"
         }
       ],
       "quality_flags": [],
-      "normalized_title": "apple opens up app store to new competition in brazil",
+      "normalized_title": "nasa selects eric schmidts rocket company for a 2028 mission to mars",
       "duplicate_group_id": null
     },
     {
-      "source": "TechCrunch",
+      "source": "The Verge",
       "language": "en",
-      "title": "MapTap, a daily geography game, is my new Wordle",
-      "url": "https://techcrunch.com/2026/06/18/maptap-a-daily-geography-game-is-my-new-wordle/",
-      "published_at": "2026-06-18T15:47:39.000Z",
-      "snippet": "MapTap is a phone game that will make you feel smarter after you play it.",
-      "source_position": 20,
+      "title": "Hue’s wired wall modules bring non-smart lights into its ecosystem",
+      "url": "https://www.theverge.com/tech/952953/phillips-hue-wired-wall-module-play-lamp-candle-bulb",
+      "published_at": "2026-06-19T17:24:45.000Z",
+      "snippet": "Smart lighting company Philips Hue has launched its first wired wall modules. Installed behind existing wall switches, the new devices bring non-smart lights into the Hue ecosystem for the first time. Hue also announced new Play table and floor lamps that are more affordable versions of its Signe series, along with upgrades to its E14 […]",
+      "source_position": 3,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -1948,7 +2014,7 @@
       "quality_flags": [
         "category_fallback"
       ],
-      "normalized_title": "maptap a daily geography game is my new wordle",
+      "normalized_title": "hues wired wall modules bring non smart lights into its ecosystem",
       "duplicate_group_id": null
     },
     {
@@ -1958,9 +2024,9 @@
       "url": "https://www.theverge.com/entertainment/952910/nts-radio-player-atonemo-music-streaming",
       "published_at": "2026-06-19T14:53:53.000Z",
       "snippet": "NTS Radio and Swedish audio company Atonemo have teamed up on a dedicated player that brings NTS's genre-defying mixes and streaming stations to almost any stereo or speaker setup. And, like Atonemo's existing Streamplayer, you can also listen to your favorite streaming services with it, using AirPlay 2, Google Cast, Spotify Connect, or Tidal Connect. […]",
-      "source_position": 1,
+      "source_position": 4,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "科技公司"
       ],
@@ -1982,9 +2048,9 @@
       "url": "https://www.theverge.com/ai-artificial-intelligence/952906/sam-altman-film-artificial-openai-amazon-mgm-dropped",
       "published_at": "2026-06-19T14:15:29.000Z",
       "snippet": "Luca Guadagnino's film about OpenAI CEO Sam Altman, Artificial, has reportedly been dropped by Amazon MGM. The film, which stars Andrew Garfield and covers the rollercoaster five days in 2023 spanning Altman's termination and reinstatement as CEO, had been in the works for about a year. The cast also includes A Complete Unknown actress Monica […]",
-      "source_position": 2,
+      "source_position": 5,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "AI",
         "科技公司"
@@ -2012,9 +2078,9 @@
       "url": "https://www.theverge.com/column/952744/optimizer-sunscreen-bemotrizinol-fda-health",
       "published_at": "2026-06-19T14:00:00.000Z",
       "snippet": "This is Optimizer, a weekly newsletter sent from Verge senior reviewer Victoria Song that dissects and discusses the latest gizmos and potions that swear they're going to change your life. Opt in for Optimizer here. On TikTok, the tanned youths are explaining why they no longer wear sunscreen. In one video, a young man films […]",
-      "source_position": 3,
+      "source_position": 6,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -2032,9 +2098,9 @@
       "url": "https://www.theverge.com/gadgets/952274/t1-phone-pr-firm-not-assisting-trump-mobile-any-further",
       "published_at": "2026-06-19T13:00:00.000Z",
       "snippet": "Where's the Trump phone? We're going to keep talking about it every week. We don't have the phones we preordered yet, but this week we received unexpected news from Trump Mobile's media relations manager. If you've been following my reporting on the Trump phone, you'll know that Trump Mobile doesn't exactly keep open lines of […]",
-      "source_position": 4,
+      "source_position": 7,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -2052,9 +2118,9 @@
       "url": "https://www.theverge.com/entertainment/951638/sugar-season-2-colin-farrell-interview-apple-tv",
       "published_at": "2026-06-19T12:00:00.000Z",
       "snippet": "When Colin Farrell was doing press for the first season of the detective series Sugar, he had to be very careful with how he spoke. Sugar is a story about a quirky private detective, but it's also secretly a work of science fiction, something that doesn't become clear until halfway through the season. \"I knew […]",
-      "source_position": 5,
+      "source_position": 8,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
@@ -2072,9 +2138,9 @@
       "url": "https://www.theverge.com/tech/951718/kaleidescape-strato-e-review",
       "published_at": "2026-06-19T12:00:00.000Z",
       "snippet": "We've lost something in the past 15 years. Netflix, Amazon, Disney, Apple; they've all convinced us that streaming is the best way to watch movies and shows at home. With everything at our fingertips, there's no need to run to Blockbuster for the weekend's entertainment, or wait for a DVD rental to arrive in the […]",
-      "source_position": 6,
+      "source_position": 9,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "科技公司"
       ],
@@ -2101,9 +2167,9 @@
       "url": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab",
       "published_at": "2026-06-19T04:49:33.000Z",
       "snippet": "Five months after returning to OpenAI, Barret Zoph - the company's head of enterprise AI sales - has departed, The Verge has learned. Zoph returned to OpenAI in mid-January after a stint as co-founder and CTO of Thinking Machines Lab, the competing AI company founded by former OpenAI CTO Mira Murati. Shortly after Zoph returned […]",
-      "source_position": 7,
+      "source_position": 10,
       "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "AI"
       ],
@@ -2119,153 +2185,163 @@
       "duplicate_group_id": null
     },
     {
-      "source": "The Verge",
-      "language": "en",
-      "title": "Valve is so behind on Steam Controller orders that some won’t ship until 2027",
-      "url": "https://www.theverge.com/games/952582/valve-steam-controller-reservations-orders-behind-estimated-date",
-      "published_at": "2026-06-18T20:26:06.000Z",
-      "snippet": "Valve has some good news and bad news about Steam Controllers. The good news: If you make a reservation for a Steam Controller, the company will now show you one of three estimates of when you'll be able to actually order your gamepad: by September 2026, by December 2026, or sometime in 2027. The bad […]",
-      "source_position": 8,
-      "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "category_fallback"
-      ],
-      "normalized_title": "valve is so behind on steam controller orders that some wont ship until 2027",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "The Verge",
-      "language": "en",
-      "title": "You can now use the Game Boy Camera with your phone",
-      "url": "https://www.theverge.com/tech/952173/epilogue-gb-operator-game-boy-camera-ios-android-app-iphone",
-      "published_at": "2026-06-18T20:22:46.000Z",
-      "snippet": "The $50 GB Operator is an accessory that lets you connect, play, and authenticate Game Boy, Game Boy Color, and Game Boy Advance cartridges on PCs and other devices. Now it's getting some new functionality for the Game Boy Camera. After turning the Game Boy Camera into a charmingly awful desktop webcam two years ago, […]",
-      "source_position": 9,
-      "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "category_fallback"
-      ],
-      "normalized_title": "you can now use the game boy camera with your phone",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "The Verge",
-      "language": "en",
-      "title": "HBO Max’s annual plans are 28 percent off right now",
-      "url": "https://www.theverge.com/gadgets/952326/hbo-max-annual-plan-deal-sale",
-      "published_at": "2026-06-18T19:18:30.000Z",
-      "snippet": "The easiest way to save on a streaming service is often to pay for a year upfront, which HBO Max is currently making a lot cheaper. Through July 15, 2026, new and returning subscribers can get 28 percent off any of HBO Max’s yearly plans, bringing the ad-supported tier down to $78.99 ($31 off) per […]",
-      "source_position": 10,
-      "section": "Technology",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀"
-      ],
-      "detected_entities": [],
-      "quality_flags": [
-        "category_fallback"
-      ],
-      "normalized_title": "hbo maxs annual plans are 28 percent off right now",
-      "duplicate_group_id": null
-    },
-    {
       "source": "華爾街見聞",
       "language": "zh",
-      "title": "伊朗否认霍尔木兹关闭，暂免通行费但未来或加收保险费，美军称20余船已通过海峡",
-      "url": "https://wallstreetcn.com/articles/3775099",
-      "published_at": "2026-06-19T15:53:50.000Z",
-      "snippet": "伊朗管理霍尔木兹海峡的机构称，美伊谈判60天内免除海峡通行费；自本周五起，所有经过海峡船舶必须至少提前48小时向伊方提交过境申请；所有通过海峡船只必须办理一项强制性保险，该保险目前免费，未来可能收费。",
+      "title": "AI算力的物理基石：PTFE从“塑料王”到“M10高速互联刚需材料”的范式跃迁",
+      "url": "https://wallstreetcn.com/premium/articles/3774876?layout=wscn-layout",
+      "published_at": "2026-06-20T04:11:40.000Z",
+      "snippet": "PTFE：又一个被AI再造的新材料。",
       "source_position": 1,
       "section": "Global",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
-        "地緣政治"
-      ],
-      "detected_entities": [],
-      "quality_flags": [],
-      "normalized_title": "伊朗否认霍尔木兹关闭 暂免通行费但未来或加收保险费 美军称20余船已通过海峡",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "華爾街見聞",
-      "language": "zh",
-      "title": "以色列被曝与黎真主党达成停火，伊朗证实推迟与美谈判，特朗普施压“耗完60天”",
-      "url": "https://wallstreetcn.com/articles/3775098",
-      "published_at": "2026-06-19T15:39:36.000Z",
-      "snippet": "多家媒体称以色列和真主党同意自当地时间周五下午4时停火；以军方发言人未承认停火，以媒称双方已处停火状态；美媒称停火生效后一小时内双方还各有动作。伊外交部指美对黎局势负直接责任，称目前正讨论未来几天举行谈判的计划。特朗普称，谈判是因为伊朗、而不是美方走投无路，伊方拿不到钱、一分都没有。巴基斯坦外长：伊美谈判因伊斯兰教历一月到来而推迟。",
-      "source_position": 5,
-      "section": "Global",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "地緣政治"
-      ],
-      "detected_entities": [],
-      "quality_flags": [],
-      "normalized_title": "以色列被曝与黎真主党达成停火 伊朗证实推迟与美谈判 特朗普施压 耗完60天",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "華爾街見聞",
-      "language": "zh",
-      "title": "债市和美联储预期分化了？市场不怕通胀了！",
-      "url": "https://wallstreetcn.com/premium/articles/3775054?layout=wscn-layout",
-      "published_at": "2026-06-19T13:07:44.000Z",
-      "snippet": "因油价暴跌与美联储鹰派转向，盈亏平衡通胀率大幅下行，市场已提前交易通胀回落。",
-      "source_position": 10,
-      "section": "Global",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀"
+        "AI"
       ],
       "detected_entities": [],
       "quality_flags": [
-        "short_snippet",
-        "category_fallback"
+        "short_snippet"
       ],
-      "normalized_title": "债市和美联储预期分化了 市场不怕通胀了",
+      "normalized_title": "ai算力的物理基石 ptfe从 塑料王 到 m10高速互联刚需材料 的范式跃迁",
       "duplicate_group_id": null
     },
     {
       "source": "華爾街見聞",
       "language": "zh",
-      "title": "任命前SK海力士CEO领导封装业务，英特尔股价大涨10%创新高",
-      "url": "https://wallstreetcn.com/articles/3775097",
-      "published_at": "2026-06-19T12:23:08.000Z",
-      "snippet": "英特尔加速重整代工业务，发力AI芯片市场。公司任命SK海力士前CEO Seok-Hee Lee主导先进封装，直接向CEO陈立武汇报；同日苹果确认与英特尔合作在美国本土设计制造芯片。双重利好推动股价飙升10%创历史新高。先进封装被确立为独立运营板块，EMIB-T与HBI技术正推进量产。",
+      "title": "相比“开源模型”，“前沿模型”溢价类似“奢侈品包包”！德银：这可能导致市场重估AI",
+      "url": "https://wallstreetcn.com/articles/3775111",
+      "published_at": "2026-06-20T03:31:58.000Z",
+      "snippet": "德银认为，前沿专有AI模型（如Claude Fable 5，每任务成本约3.25美元）与开源模型（如DeepSeek V4-Pro，约5美分）存在约65倍的成本鸿沟，但对90%的日常任务而言，两者表现相当。随着AI计费模式转向按量收费，企业成本意识觉醒，AI定价锚点正从“算力需求”转向“运营成本”，可能引发比\"DeepSeek时刻\"更深远的市场重估。",
+      "source_position": 4,
+      "section": "Global",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "AI",
+        "外匯"
+      ],
+      "detected_entities": [
+        {
+          "name": "US Dollar",
+          "type": "macro",
+          "matched_alias": "美元"
+        }
+      ],
+      "quality_flags": [],
+      "normalized_title": "相比 开源模型 前沿模型 溢价类似 奢侈品包包 德银 这可能导致市场重估ai",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "華爾街見聞",
+      "language": "zh",
+      "title": "德银“向沃什投降”：今年将加息50基点，甚至可能在7月提前加息",
+      "url": "https://wallstreetcn.com/articles/3775110",
+      "published_at": "2026-06-20T02:50:25.000Z",
+      "snippet": "德银彻底扭转原有宽松预期，全面上调通胀预测，预计今年将加息两次共50个基点，利率升至4.1%；并警告美联储行动或更激进，甚至可能在7月提前加息，或全年加息75个基点。触发因素为新主席沃什鹰派表态及通胀压力广泛持续。",
+      "source_position": 7,
+      "section": "Global",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "宏觀"
+      ],
+      "detected_entities": [
+        {
+          "name": "Interest Rates",
+          "type": "macro",
+          "matched_alias": "利率"
+        }
+      ],
+      "quality_flags": [],
+      "normalized_title": "德银 向沃什投降 今年将加息50基点 甚至可能在7月提前加息",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "華爾街見聞",
+      "language": "zh",
+      "title": "鸿海董事长：每1GW Vera Rubin数据中心，资本开支高达470亿美元，每年电力成本13亿美元",
+      "url": "https://wallstreetcn.com/articles/3775108",
+      "published_at": "2026-06-20T02:23:41.000Z",
+      "snippet": "刘扬伟引述数据称，建立1GW以Vera Rubin为核心的AIDC，所需机柜数量约为3557座，而单一座Vera Rubin机柜售价即达910万美元，1GW规模的AIDC每年电力支出达13亿美元，而硬件折旧费用更是电力成本的六倍，意味着年度折旧负担约达78亿美元。他预计2030年全球算力将新增106GW电力需求。",
       "source_position": 12,
       "section": "Global",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
-        "AI",
-        "半導體"
+        "外匯"
       ],
-      "detected_entities": [],
+      "detected_entities": [
+        {
+          "name": "US Dollar",
+          "type": "macro",
+          "matched_alias": "美元"
+        }
+      ],
       "quality_flags": [],
-      "normalized_title": "任命前sk海力士ceo领导封装业务 英特尔股价大涨10 创新高",
+      "normalized_title": "鸿海董事长 每1gw vera rubin数据中心 资本开支高达470亿美元 每年电力成本13亿美元",
       "duplicate_group_id": null
     },
     {
       "source": "華爾街見聞",
       "language": "zh",
-      "title": "谷歌微软联手推新协议，传统科技巨头借标准战围堵Anthropic和OpenAI",
-      "url": "https://wallstreetcn.com/articles/3775088",
-      "published_at": "2026-06-19T12:09:15.000Z",
-      "snippet": "谷歌、微软等传统科技巨头联合推出“代理资源发现”（ARD）新协议，旨在将自身产品打造为企业AI的统一入口，通过标准战围堵Anthropic与OpenAI。此举与后两者试图将Claude和ChatGPT打造成独立主入口的战略直接冲突，凸显了双方在企业AI生态主导权上的激烈争夺。ARD能否被广泛采纳，仍有待观察。",
+      "title": "1192亿美元！本周美股吸引创纪录资金，投资者涌向科技股",
+      "url": "https://wallstreetcn.com/articles/3775107",
+      "published_at": "2026-06-20T02:06:05.000Z",
+      "snippet": "截至6月17日当周，流入美国股票基金的资金规模达到创纪录的1192亿美元，刷新历史峰值。科技股成为资金追捧的核心标的，单周流入规模达192亿美元，亦为历史最高。美银警告，如果特朗普支持率在9月前未能出现明显反弹，多头情绪将变得'焦虑不安'。",
       "source_position": 15,
       "section": "Global",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "美股",
+        "外匯"
+      ],
+      "detected_entities": [
+        {
+          "name": "US Dollar",
+          "type": "macro",
+          "matched_alias": "美元"
+        }
+      ],
+      "quality_flags": [],
+      "normalized_title": "1192亿美元 本周美股吸引创纪录资金 投资者涌向科技股",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "華爾街見聞",
+      "language": "zh",
+      "title": "“新美联储通讯社”：1996还是1999？沃什的第一场考验是“如何看AI”",
+      "url": "https://wallstreetcn.com/articles/3775106",
+      "published_at": "2026-06-20T01:35:27.000Z",
+      "snippet": "Timiraos认为，沃什执掌美联储的首要考验是判断AI繁荣本质：是1996年的生产率红利（按兵不动），还是1999年的需求过热（需加息）。他倾向拥抱AI生产率叙事而暂不加息，但面临着关税与赤字压力、内部“AI预期透支推高通胀”的分歧，以及废除前瞻指引的政策两难。",
+      "source_position": 18,
+      "section": "Global",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "AI",
+        "宏觀",
+        "企業財報"
+      ],
+      "detected_entities": [
+        {
+          "name": "Interest Rates",
+          "type": "macro",
+          "matched_alias": "加息"
+        }
+      ],
+      "quality_flags": [],
+      "normalized_title": "新美联储通讯社 1996还是1999 沃什的第一场考验是 如何看ai",
+      "duplicate_group_id": null
+    },
+    {
+      "source": "華爾街見聞",
+      "language": "zh",
+      "title": "学习英伟达“好榜样”，谷歌和博通都开始“有样学样”，开启“AI芯片闭环”",
+      "url": "https://wallstreetcn.com/articles/3775105",
+      "published_at": "2026-06-20T01:10:09.000Z",
+      "snippet": "谷歌为数据中心提供担保以撬动自研芯片销售，以850亿美元融资计划为后盾争夺算力客户，博通联合阿波罗、黑石设立350亿美元AI算力平台，并提供信用背书。分析指，这种深度绑定芯片厂商、私募信贷与算力需求的“融资闭环”正重塑市场格局，实质性冲击英伟达的垄断份额。",
+      "source_position": 24,
+      "section": "Global",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
+      "categories": [
+        "AI",
+        "半導體",
+        "外匯",
         "科技公司"
       ],
       "detected_entities": [
@@ -2275,149 +2351,34 @@
           "matched_alias": "谷歌"
         },
         {
-          "name": "OpenAI",
-          "type": "company",
-          "matched_alias": "openai"
-        }
-      ],
-      "quality_flags": [],
-      "normalized_title": "谷歌微软联手推新协议 传统科技巨头借标准战围堵anthropic和openai",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "華爾街見聞",
-      "language": "zh",
-      "title": "从\"Token竞赛\"到\"Token节流\"：月人均成本7500美元，天价账单倒逼巨头集体踩刹车",
-      "url": "https://wallstreetcn.com/articles/3775094",
-      "published_at": "2026-06-19T12:04:15.000Z",
-      "snippet": "企业AI支出从“极限消耗”转向“极限节流”，巨头纷纷为AI使用和智能体工具设置上限以应对失控的成本压力。这一预算管控浪潮引发了企业在控本与生产率之间的分歧，同时也让微软、Databricks等提供成本优化、网关工具及模型路由器的基础设施商迎来红利。",
-      "source_position": 18,
-      "section": "Global",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "AI",
-        "外匯"
-      ],
-      "detected_entities": [
-        {
           "name": "US Dollar",
           "type": "macro",
           "matched_alias": "美元"
         }
       ],
       "quality_flags": [],
-      "normalized_title": "从 token竞赛 到 token节流 月人均成本7500美元 天价账单倒逼巨头集体踩刹车",
+      "normalized_title": "学习英伟达 好榜样 谷歌和博通都开始 有样学样 开启 ai芯片闭环",
       "duplicate_group_id": null
     },
     {
       "source": "華爾街見聞",
       "language": "zh",
-      "title": "8000万桶原油，准备通过霍尔木兹海峡",
-      "url": "https://wallstreetcn.com/articles/3775096",
-      "published_at": "2026-06-19T12:04:03.000Z",
-      "snippet": "波斯湾40艘超级油轮上约8000万桶非受制裁原油已蓄势待发，部分船只率先尝试通行，有望缓解亚洲炼厂因前期局势导致的断供与库存压力；但行业组织警告水雷等重大安全风险依然存在，全面复航仍具不确定性。",
-      "source_position": 20,
+      "title": "华尔街见闻早餐FM-Radio | 2026年6月20日",
+      "url": "https://wallstreetcn.com/articles/3775103",
+      "published_at": "2026-06-19T23:17:59.000Z",
+      "snippet": "五分钟看懂全球市场，尽在财经早餐。",
+      "source_position": 28,
       "section": "Global",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "商品",
-        "地緣政治"
-      ],
-      "detected_entities": [
-        {
-          "name": "Oil",
-          "type": "asset",
-          "matched_alias": "原油"
-        }
-      ],
-      "quality_flags": [],
-      "normalized_title": "8000万桶原油 准备通过霍尔木兹海峡",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "華爾街見聞",
-      "language": "zh",
-      "title": "广东服务业蓝图出炉：剑指11万亿增加值，算力网络、6G与人工智能成三大战略支点",
-      "url": "https://wallstreetcn.com/articles/3775093",
-      "published_at": "2026-06-19T12:03:43.000Z",
-      "snippet": "《方案》明确，到2030年全省服务业增加值突破11万亿元，通过数智化、标准化、融合化、国际化“四化”提升，推动生产性服务业向高端延伸、生活性服务业向高品质升级。方案以算力网络、6G与人工智能为三大战略支点，加快建设粤港澳大湾区算力枢纽，前瞻布局6G与卫星互联网，推进人工智能全域全时应用，并系统部署金融、物流、文旅等多领域，全面构建优质高效的现代化服务业体系。",
-      "source_position": 22,
-      "section": "Global",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "AI"
-      ],
-      "detected_entities": [],
-      "quality_flags": [],
-      "normalized_title": "广东服务业蓝图出炉 剑指11万亿增加值 算力网络 6g与人工智能成三大战略支点",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "華爾街見聞",
-      "language": "zh",
-      "title": "美元反弹终结新兴市场货币牛市，年内最热外汇交易急速降温",
-      "url": "https://wallstreetcn.com/articles/3775095",
-      "published_at": "2026-06-19T11:46:35.000Z",
-      "snippet": "美联储新帅首秀放鹰，彻底击碎降息预期，引发全球汇市巨震。美元强势反弹，期权市场看涨买盘全面爆发。受此冲击，年内大热的新兴市场“套息交易”面临集体平仓，资金加速回流。短期内，强势美元已重新主导全球资本格局。",
-      "source_position": 24,
-      "section": "Global",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "宏觀",
-        "外匯"
-      ],
-      "detected_entities": [
-        {
-          "name": "US Dollar",
-          "type": "macro",
-          "matched_alias": "美元"
-        },
-        {
-          "name": "Interest Rates",
-          "type": "macro",
-          "matched_alias": "降息"
-        }
-      ],
-      "quality_flags": [],
-      "normalized_title": "美元反弹终结新兴市场货币牛市 年内最热外汇交易急速降温",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "華爾街見聞",
-      "language": "zh",
-      "title": "津巴布韦锂企联合申请推迟精矿出口禁令，目前仅华友钴业建成硫酸锂产线",
-      "url": "https://wallstreetcn.com/articles/3775092",
-      "published_at": "2026-06-19T11:34:27.000Z",
-      "snippet": "锂生产商协会主席当地时间6月18日公开发言称，协会已向矿产部长、常务秘书及津巴布韦矿产营销公司等监管部门递交申诉，请求给予行业多一点宽限余地，将选矿禁令生效节点从2027年1月延后约五个月。Rukweza表示七大主要锂生产商中，目前仅有华友钴业的硫酸锂工厂在津巴布韦建成投产并实现了产品发运；中矿资源旗下的比基塔矿山与雅化集团旗下的卡马蒂维锂矿硫酸锂项目仍在建设中，国有桑达瓦纳矿场的加工方案甚至尚处于可行性研究阶段。",
-      "source_position": 25,
-      "section": "Global",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
+      "fetched_at": "2026-06-20T06:45:55.705Z",
       "categories": [
         "宏觀"
       ],
       "detected_entities": [],
       "quality_flags": [
+        "short_snippet",
         "category_fallback"
       ],
-      "normalized_title": "津巴布韦锂企联合申请推迟精矿出口禁令 目前仅华友钴业建成硫酸锂产线",
-      "duplicate_group_id": null
-    },
-    {
-      "source": "華爾街見聞",
-      "language": "zh",
-      "title": "SemiAnalysis：半数2026年美国数据中心将取消？这是被\"AI编码\"出来的假警报",
-      "url": "https://wallstreetcn.com/articles/3775091",
-      "published_at": "2026-06-19T11:25:24.000Z",
-      "snippet": "SemiAnalysis指出，市场恐慌源头实为AI工具批量抓取未经核实的GW级项目新闻稿，再通过模型生成耸动结论。机构强调，恐慌源于早期投机项目被误纳入统计分母，而核心在建产能实则稳定，预测调整幅度仅1%。局部延期虽存，但属基建常态，集中于无实质支撑的早期项目，不代表行业基本面崩塌。市场情绪被三类无效噪音放大，理性审视下，产能曲线远未触及断崖水平。",
-      "source_position": 28,
-      "section": "Global",
-      "fetched_at": "2026-06-19T16:30:27.679Z",
-      "categories": [
-        "AI"
-      ],
-      "detected_entities": [],
-      "quality_flags": [],
-      "normalized_title": "semianalysis 半数2026年美国数据中心将取消 这是被 ai编码 出来的假警报",
+      "normalized_title": "华尔街见闻早餐fm radio 2026年6月20日",
       "duplicate_group_id": null
     }
   ]

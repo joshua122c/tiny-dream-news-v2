@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-06-19T16:30:36.401Z",
-  "date": "2026-06-19",
+  "generated_at": "2026-06-20T06:46:06.091Z",
+  "date": "2026-06-20",
   "mock_mode": true,
   "status": "mock",
   "model": "mock-daily-brief-editorial-zh-hant",
   "request_count": 0,
   "prompt_cluster_count": 10,
   "top_five_cluster_ids": [
-    "news-cluster-003",
-    "news-cluster-006",
-    "news-cluster-044",
-    "news-cluster-027",
-    "news-cluster-014"
+    "news-cluster-004",
+    "news-cluster-011",
+    "news-cluster-007",
+    "news-cluster-008",
+    "news-cluster-054"
   ],
   "updated_fields": [
     "morning_brief_zh_hant",
@@ -23,9 +23,9 @@
     "daily_brief_ai_generated_at"
   ],
   "estimated_usage": {
-    "estimated_input_tokens": 2489,
+    "estimated_input_tokens": 2776,
     "estimated_output_tokens": 360,
-    "estimated_total_tokens": 2849,
+    "estimated_total_tokens": 3136,
     "source": "estimated",
     "credits_consumed": false
   },

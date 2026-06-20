@@ -1,76 +1,76 @@
 {
-  "generated_at": "2026-06-19T16:30:36.056Z",
+  "generated_at": "2026-06-20T06:46:05.612Z",
   "input_file": "data/runtime/news_clusters.json",
-  "input_cluster_count": 92,
-  "output_cluster_count": 92,
+  "input_cluster_count": 96,
+  "output_cluster_count": 96,
   "top_10_clusters": [
     {
-      "cluster_id": "news-cluster-003",
-      "title": "8000万桶原油，准备通过霍尔木兹海峡",
-      "heat_score": 78.85,
+      "cluster_id": "news-cluster-004",
+      "title": "Markets are set for a much more hawkish Warsh Fed than expected",
+      "heat_score": 79.85,
       "heat_level": "high"
     },
     {
-      "cluster_id": "news-cluster-006",
-      "title": "SpaceX stock sinks for a second day as company slips below Amazon in market cap",
-      "heat_score": 68.4,
+      "cluster_id": "news-cluster-011",
+      "title": "Stocks climb on chips, Brent gains on Iran deal doubts",
+      "heat_score": 75.9,
+      "heat_level": "high"
+    },
+    {
+      "cluster_id": "news-cluster-007",
+      "title": "“新美联储通讯社”：1996还是1999？沃什的第一场考验是“如何看AI”",
+      "heat_score": 51.75,
       "heat_level": "medium"
     },
     {
-      "cluster_id": "news-cluster-044",
-      "title": "Markets are set for a much more hawkish Warsh Fed than expected",
-      "heat_score": 67.1,
+      "cluster_id": "news-cluster-008",
+      "title": "学习英伟达“好榜样”，谷歌和博通都开始“有样学样”，开启“AI芯片闭环”",
+      "heat_score": 51.75,
       "heat_level": "medium"
     },
     {
-      "cluster_id": "news-cluster-027",
-      "title": "The film about Sam Altman has been dropped by Amazon MGM",
-      "heat_score": 44.5,
+      "cluster_id": "news-cluster-054",
+      "title": "Dollar hits one-year high on Fed hike bets; Japan warns on yen",
+      "heat_score": 47,
       "heat_level": "low"
     },
     {
-      "cluster_id": "news-cluster-014",
-      "title": "Donald Trump’s Favorite AI Chip Stock in 2026 That Performed Better Than Nvidia (NVDA)",
-      "heat_score": 42.8,
+      "cluster_id": "news-cluster-003",
+      "title": "相比“开源模型”，“前沿模型”溢价类似“奢侈品包包”！德银：这可能导致市场重估AI",
+      "heat_score": 43.75,
       "heat_level": "low"
     },
     {
-      "cluster_id": "news-cluster-052",
-      "title": "美元反弹终结新兴市场货币牛市，年内最热外汇交易急速降温",
-      "heat_score": 41.75,
-      "heat_level": "low"
-    },
-    {
-      "cluster_id": "news-cluster-085",
-      "title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips",
-      "heat_score": 40.8,
-      "heat_level": "low"
-    },
-    {
-      "cluster_id": "news-cluster-078",
-      "title": "OpenAI is bringing on some big guns in the lead-up to its IPO",
-      "heat_score": 40.6,
-      "heat_level": "low"
-    },
-    {
-      "cluster_id": "news-cluster-037",
-      "title": "债市和美联储预期分化了？市场不怕通胀了！",
+      "cluster_id": "news-cluster-002",
+      "title": "AI算力的物理基石：PTFE从“塑料王”到“M10高速互联刚需材料”的范式跃迁",
       "heat_score": 38.75,
       "heat_level": "low"
     },
     {
-      "cluster_id": "news-cluster-042",
-      "title": "任命前SK海力士CEO领导封装业务，英特尔股价大涨10%创新高",
-      "heat_score": 38.55,
+      "cluster_id": "news-cluster-092",
+      "title": "Amazon hopes to challenge Nvidia more directly by selling its AI chips",
+      "heat_score": 37.8,
+      "heat_level": "low"
+    },
+    {
+      "cluster_id": "news-cluster-006",
+      "title": "1192亿美元！本周美股吸引创纪录资金，投资者涌向科技股",
+      "heat_score": 37.35,
+      "heat_level": "low"
+    },
+    {
+      "cluster_id": "news-cluster-005",
+      "title": "鸿海董事长：每1GW Vera Rubin数据中心，资本开支高达470亿美元，每年电力成本13亿美元",
+      "heat_score": 35.75,
       "heat_level": "low"
     }
   ],
   "score_distribution": {
     "very_high": 0,
-    "high": 1,
+    "high": 2,
     "medium": 2,
-    "low": 44,
-    "very_low": 45
+    "low": 23,
+    "very_low": 69
   },
   "warnings": [],
   "config_files_used": [
