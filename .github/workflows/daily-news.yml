@@ -49,6 +49,7 @@ jobs:
       CLOUDFLARE_AI_MODEL: ${{ secrets.CLOUDFLARE_AI_MODEL }}
       CLOUDFLARE_PROJECT_NAME: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
       ENABLE_CLOUDFLARE_DEPLOY: ${{ vars.ENABLE_CLOUDFLARE_DEPLOY || 'false' }}
+      AUTO_CREATE_CLOUDFLARE_PROJECT: ${{ vars.AUTO_CREATE_CLOUDFLARE_PROJECT || 'false' }}
 
     steps:
       - name: Checkout repository
@@ -95,11 +96,16 @@ jobs:
             else
               ai_mode="mock"
             fi
-            deploy="${ENABLE_CLOUDFLARE_DEPLOY}"
+            deploy="false"
           fi
 
           if [ "${ENABLE_CLOUDFLARE_DEPLOY}" != "true" ]; then
             deploy="false"
+            deploy_skip_reason="ENABLE_CLOUDFLARE_DEPLOY is not true"
+          elif [ "${deploy}" != "true" ]; then
+            deploy_skip_reason="workflow input deploy is not true"
+          else
+            deploy_skip_reason=""
           fi
 
           if [ "${ai_mode}" = "real" ]; then
@@ -120,6 +126,7 @@ jobs:
           echo "PIPELINE_AI_FLAG=${pipeline_ai_flag}" >> "$GITHUB_ENV"
           echo "EFFECTIVE_AI_MODE=${ai_mode}" >> "$GITHUB_ENV"
           echo "EFFECTIVE_DEPLOY=${deploy}" >> "$GITHUB_ENV"
+          echo "DEPLOY_SKIP_REASON=${deploy_skip_reason}" >> "$GITHUB_ENV"
 
           echo "run_date=${run_date}" >> "$GITHUB_OUTPUT"
           echo "ai_mode=${ai_mode}" >> "$GITHUB_OUTPUT"
@@ -155,7 +162,7 @@ jobs:
           set -euo pipefail
 
           if [ "${EFFECTIVE_DEPLOY}" != "true" ]; then
-            echo "::warning::Cloudflare deploy skipped because ENABLE_CLOUDFLARE_DEPLOY is not true."
+            echo "::warning::Cloudflare deploy skipped because ${DEPLOY_SKIP_REASON:-deployment was not requested}."
             echo "DEPLOY_READY=false" >> "$GITHUB_ENV"
             exit 0
           fi
@@ -172,8 +179,45 @@ jobs:
             echo "DEPLOY_READY=true" >> "$GITHUB_ENV"
           fi
 
-      - name: Deploy to Cloudflare Pages
+      - name: Diagnose Cloudflare Pages project
         if: ${{ success() && env.EFFECTIVE_DEPLOY == 'true' && env.DEPLOY_READY == 'true' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          echo "Checking Cloudflare Pages project configuration."
+          echo "Configured Pages project: ${CLOUDFLARE_PROJECT_NAME}"
+
+          echo "Accessible Cloudflare Pages projects:"
+          npx wrangler pages project list || echo "::warning::Unable to list Pages projects. Continuing with direct project existence check."
+
+          set +e
+          project_check_output="$(npx wrangler pages deployment list --project-name "${CLOUDFLARE_PROJECT_NAME}" 2>&1)"
+          project_check_status=$?
+          set -e
+
+          if [ "${project_check_status}" -eq 0 ]; then
+            echo "Cloudflare Pages project '${CLOUDFLARE_PROJECT_NAME}' exists and is accessible."
+            echo "CLOUDFLARE_PROJECT_READY=true" >> "$GITHUB_ENV"
+            exit 0
+          fi
+
+          echo "::warning::Cloudflare Pages project '${CLOUDFLARE_PROJECT_NAME}' was not found or is not accessible in the configured account."
+          echo "${project_check_output}" | sed -E 's/[A-Za-z0-9_-]{30,}/[redacted]/g'
+
+          if [ "${AUTO_CREATE_CLOUDFLARE_PROJECT}" = "true" ]; then
+            echo "AUTO_CREATE_CLOUDFLARE_PROJECT=true, attempting to create Pages project '${CLOUDFLARE_PROJECT_NAME}'."
+            npx wrangler pages project create "${CLOUDFLARE_PROJECT_NAME}" --production-branch main
+            echo "Cloudflare Pages project '${CLOUDFLARE_PROJECT_NAME}' was created or is now available."
+            echo "CLOUDFLARE_PROJECT_READY=true" >> "$GITHUB_ENV"
+          else
+            echo "CLOUDFLARE_PROJECT_READY=false" >> "$GITHUB_ENV"
+            echo "::error::Cloudflare Pages project '${CLOUDFLARE_PROJECT_NAME}' does not exist in the configured account, or the token cannot access it. Confirm CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_PROJECT_NAME, or set AUTO_CREATE_CLOUDFLARE_PROJECT=true to create it."
+            exit 1
+          fi
+
+      - name: Deploy to Cloudflare Pages
+        if: ${{ success() && env.EFFECTIVE_DEPLOY == 'true' && env.DEPLOY_READY == 'true' && env.CLOUDFLARE_PROJECT_READY == 'true' }}
         run: npx wrangler pages deploy "$BUILD_OUTPUT_DIR" --project-name "$CLOUDFLARE_PROJECT_NAME" --branch "$GITHUB_REF_NAME"
 
       - name: Upload runtime artifacts
