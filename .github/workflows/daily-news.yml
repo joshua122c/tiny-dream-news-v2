@@ -47,7 +47,7 @@ jobs:
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       CLOUDFLARE_AI_MODEL: ${{ secrets.CLOUDFLARE_AI_MODEL }}
-      CLOUDFLARE_PROJECT_NAME: ${{ secrets.CLOUDFLARE_PROJECT_NAME }}
+      CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME || secrets.CLOUDFLARE_PROJECT_NAME }}
       ENABLE_CLOUDFLARE_DEPLOY: ${{ vars.ENABLE_CLOUDFLARE_DEPLOY || 'false' }}
       AUTO_CREATE_CLOUDFLARE_PROJECT: ${{ vars.AUTO_CREATE_CLOUDFLARE_PROJECT || 'false' }}
 
@@ -173,7 +173,7 @@ jobs:
           [ -n "${CLOUDFLARE_PROJECT_NAME}" ] || missing+=("CLOUDFLARE_PROJECT_NAME")
 
           if [ "${#missing[@]}" -gt 0 ]; then
-            echo "::warning::Cloudflare Pages deployment skipped because required secret(s) are missing: ${missing[*]}"
+            echo "::warning::Cloudflare Pages deployment skipped because required secret(s) or variable(s) are missing: ${missing[*]}"
             echo "DEPLOY_READY=false" >> "$GITHUB_ENV"
           else
             echo "DEPLOY_READY=true" >> "$GITHUB_ENV"
@@ -181,88 +181,7 @@ jobs:
 
       - name: Diagnose Cloudflare Pages project
         if: ${{ success() && env.EFFECTIVE_DEPLOY == 'true' && env.DEPLOY_READY == 'true' }}
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          mask_value() {
-            local value="$1"
-            local length="${#value}"
-            if [ "${length}" -le 10 ]; then
-              echo "[set-but-short]"
-            else
-              echo "${value:0:6}...${value: -4}"
-            fi
-          }
-
-          extract_project_names() {
-            sed -nE 's/^[[:space:]]*Project Name:[[:space:]]*(.+)[[:space:]]*$/\1/p'
-          }
-
-          exact_project_match() {
-            local expected="$1"
-            grep -Fx -- "${expected}" >/dev/null
-          }
-
-          echo "Checking Cloudflare Pages project configuration."
-          echo "Configured Pages project: ${CLOUDFLARE_PROJECT_NAME}"
-          echo "Configured Cloudflare account: $(mask_value "${CLOUDFLARE_ACCOUNT_ID}")"
-
-          echo "Listing accessible Cloudflare Pages projects."
-          set +e
-          project_list_output="$(npx wrangler pages project list 2>&1)"
-          project_list_status=$?
-          set -e
-
-          if [ "${project_list_status}" -ne 0 ]; then
-            echo "CLOUDFLARE_PROJECT_READY=false" >> "$GITHUB_ENV"
-            echo "${project_list_output}" | sed -E 's/[A-Za-z0-9_-]{30,}/[redacted]/g'
-            echo "::error::Unable to list Cloudflare Pages projects. Check whether CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN are valid for the intended Cloudflare account."
-            exit 1
-          fi
-
-          accessible_projects="$(printf '%s\n' "${project_list_output}" | extract_project_names || true)"
-
-          if [ -z "${accessible_projects}" ]; then
-            echo "::warning::No Pages project names could be parsed from Wrangler output."
-          else
-            echo "Accessible Pages project names:"
-            printf '%s\n' "${accessible_projects}" | sed 's/^/- /'
-          fi
-
-          if printf '%s\n' "${accessible_projects}" | exact_project_match "${CLOUDFLARE_PROJECT_NAME}"; then
-            echo "Cloudflare Pages project '${CLOUDFLARE_PROJECT_NAME}' exists and exactly matches an accessible project."
-            echo "CLOUDFLARE_PROJECT_READY=true" >> "$GITHUB_ENV"
-            exit 0
-          fi
-
-          echo "::warning::No exact Cloudflare Pages project match found for '${CLOUDFLARE_PROJECT_NAME}'."
-
-          if [ "${AUTO_CREATE_CLOUDFLARE_PROJECT}" = "true" ]; then
-            echo "AUTO_CREATE_CLOUDFLARE_PROJECT=true, attempting to create Pages project '${CLOUDFLARE_PROJECT_NAME}'."
-            npx wrangler pages project create "${CLOUDFLARE_PROJECT_NAME}" --production-branch main
-            echo "Re-checking accessible Cloudflare Pages projects after create."
-
-            project_list_after_create="$(npx wrangler pages project list 2>&1)"
-            accessible_projects_after_create="$(printf '%s\n' "${project_list_after_create}" | extract_project_names || true)"
-            if [ -n "${accessible_projects_after_create}" ]; then
-              echo "Accessible Pages project names after create:"
-              printf '%s\n' "${accessible_projects_after_create}" | sed 's/^/- /'
-            fi
-
-            if printf '%s\n' "${accessible_projects_after_create}" | exact_project_match "${CLOUDFLARE_PROJECT_NAME}"; then
-              echo "Cloudflare Pages project '${CLOUDFLARE_PROJECT_NAME}' now exists and exactly matches an accessible project."
-              echo "CLOUDFLARE_PROJECT_READY=true" >> "$GITHUB_ENV"
-            else
-              echo "CLOUDFLARE_PROJECT_READY=false" >> "$GITHUB_ENV"
-              echo "::error::Cloudflare Pages project '${CLOUDFLARE_PROJECT_NAME}' was not visible after auto-create. Check CLOUDFLARE_ACCOUNT_ID, CLOUDFLARE_API_TOKEN scope, and CLOUDFLARE_PROJECT_NAME."
-              exit 1
-            fi
-          else
-            echo "CLOUDFLARE_PROJECT_READY=false" >> "$GITHUB_ENV"
-            echo "::error::Cloudflare Pages project '${CLOUDFLARE_PROJECT_NAME}' does not exactly match any accessible Pages project. Accessible projects were: ${accessible_projects//$'\n'/, }. Check CLOUDFLARE_PROJECT_NAME, CLOUDFLARE_ACCOUNT_ID, and CLOUDFLARE_API_TOKEN. Set CLOUDFLARE_PROJECT_NAME to one of the listed project names, fix the account/token, or set AUTO_CREATE_CLOUDFLARE_PROJECT=true to create the configured project."
-            exit 1
-          fi
+        run: node scripts/check-cloudflare-pages-project.mjs
 
       - name: Deploy to Cloudflare Pages
         if: ${{ success() && env.EFFECTIVE_DEPLOY == 'true' && env.DEPLOY_READY == 'true' && env.CLOUDFLARE_PROJECT_READY == 'true' }}
