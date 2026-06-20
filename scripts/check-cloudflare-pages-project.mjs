@@ -2,6 +2,20 @@ import { appendFileSync } from "node:fs";
 
 const CLOUDFLARE_API_BASE = "https://api.cloudflare.com/client/v4";
 
+class CloudflareApiError extends Error {
+  constructor(status, statusText, errors, responseText) {
+    const cloudflareMessages = errors.map((error) => {
+      const code = error.code ? `code ${error.code}: ` : "";
+      return `${code}${error.message}`;
+    });
+    const message = cloudflareMessages.join("; ") || responseText.slice(0, 500) || statusText;
+    super(`Cloudflare API ${status}: ${message}`);
+    this.name = "CloudflareApiError";
+    this.status = status;
+    this.errors = errors;
+  }
+}
+
 function env(name) {
   return process.env[name] ?? "";
 }
@@ -48,30 +62,52 @@ async function cloudflareJson(path, options = {}) {
   }
 
   if (!response.ok || body?.success === false) {
-    const cloudflareErrors = Array.isArray(body?.errors)
-      ? body.errors.map((error) => error.message).filter(Boolean).join("; ")
-      : "";
-    const message = cloudflareErrors || text.slice(0, 500) || response.statusText;
-    throw new Error(`Cloudflare API ${response.status}: ${message}`);
+    const errors = Array.isArray(body?.errors) ? body.errors : [];
+    throw new CloudflareApiError(response.status, response.statusText, errors, text);
   }
 
   return body;
 }
 
+function isPaginationOptionsError(error) {
+  if (!(error instanceof CloudflareApiError) || error.status !== 400) return false;
+  const text = error.errors.map((entry) => `${entry.code ?? ""} ${entry.message ?? ""}`).join(" ");
+  return /page|per_page|list options/i.test(text);
+}
+
+function getTotalPages(body) {
+  const totalPages = Number(body?.result_info?.total_pages ?? 1);
+  return Number.isInteger(totalPages) && totalPages > 1 ? totalPages : 1;
+}
+
 async function listPagesProjects() {
   const accountId = encodeURIComponent(env("CLOUDFLARE_ACCOUNT_ID"));
-  const projects = [];
-  let page = 1;
-  let totalPages = 1;
+  const basePath = `/accounts/${accountId}/pages/projects`;
+  const firstBody = await cloudflareJson(basePath);
+  const firstPageProjects = Array.isArray(firstBody?.result) ? firstBody.result : [];
+  const totalPages = getTotalPages(firstBody);
 
-  do {
-    const body = await cloudflareJson(`/accounts/${accountId}/pages/projects?per_page=100&page=${page}`);
-    projects.push(...(Array.isArray(body?.result) ? body.result : []));
-    totalPages = Number(body?.result_info?.total_pages ?? 1);
-    page += 1;
-  } while (page <= totalPages);
+  if (totalPages <= 1) return firstPageProjects;
 
-  return projects;
+  try {
+    const perPage = 50;
+    const firstPaginatedBody = await cloudflareJson(`${basePath}?page=1&per_page=${perPage}`);
+    const projects = Array.isArray(firstPaginatedBody?.result) ? [...firstPaginatedBody.result] : [];
+    const paginatedTotalPages = getTotalPages(firstPaginatedBody);
+
+    for (let page = 2; page <= paginatedTotalPages; page += 1) {
+      const body = await cloudflareJson(`${basePath}?page=${page}&per_page=${perPage}`);
+      projects.push(...(Array.isArray(body?.result) ? body.result : []));
+    }
+
+    return projects;
+  } catch (error) {
+    if (isPaginationOptionsError(error)) {
+      console.warn("Cloudflare rejected paginated Pages project listing. Falling back to the unpaginated result.");
+      return firstPageProjects;
+    }
+    throw error;
+  }
 }
 
 function printProjectNames(projects, label = "Accessible Pages project names") {
@@ -157,6 +193,14 @@ async function main() {
 
 main().catch((error) => {
   setGithubEnv("CLOUDFLARE_PROJECT_READY", "false");
+  if (error instanceof CloudflareApiError) {
+    console.error(`Cloudflare API HTTP status: ${error.status}`);
+    for (const entry of error.errors) {
+      console.error(`Cloudflare API error: code=${entry.code ?? "[none]"} message=${entry.message ?? "[none]"}`);
+    }
+    console.error(`Configured Cloudflare account: ${maskAccountId(env("CLOUDFLARE_ACCOUNT_ID"))}`);
+    console.error(`Configured Pages project: ${env("CLOUDFLARE_PROJECT_NAME") || "[missing]"}`);
+  }
   console.error(`Cloudflare Pages project diagnostic failed: ${error.message}`);
   process.exitCode = 1;
 });
