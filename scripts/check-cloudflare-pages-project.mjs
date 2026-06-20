@@ -1,4 +1,3 @@
-import { spawnSync } from "node:child_process";
 import { appendFileSync } from "node:fs";
 
 const CLOUDFLARE_API_BASE = "https://api.cloudflare.com/client/v4";
@@ -86,23 +85,27 @@ function printProjectNames(projects, label = "Accessible Pages project names") {
   return names;
 }
 
-function runWranglerProjectCreate(projectName) {
-  const command = process.platform === "win32" ? "npx.cmd" : "npx";
-  const result = spawnSync(command, ["wrangler", "pages", "project", "create", projectName, "--production-branch", "main"], {
-    stdio: "inherit",
-    shell: false,
+async function createPagesProject(projectName) {
+  const accountId = encodeURIComponent(env("CLOUDFLARE_ACCOUNT_ID"));
+  await cloudflareJson(`/accounts/${accountId}/pages/projects`, {
+    method: "POST",
+    body: JSON.stringify({
+      name: projectName,
+      production_branch: "main",
+    }),
   });
-
-  if (result.error) throw result.error;
-  if (result.status !== 0) {
-    throw new Error(`wrangler pages project create failed with exit code ${result.status}`);
-  }
 }
 
 async function assertProjectExists() {
   const projectName = env("CLOUDFLARE_PROJECT_NAME");
   const accountId = env("CLOUDFLARE_ACCOUNT_ID");
   const autoCreate = isTrue(env("AUTO_CREATE_CLOUDFLARE_PROJECT"));
+
+  if (projectName === "tinydream-news") {
+    throw new Error(
+      "Refusing to use Cloudflare Pages project 'tinydream-news'. Set CLOUDFLARE_PROJECT_NAME to the new project name before deployment.",
+    );
+  }
 
   console.log("Checking Cloudflare Pages project via Cloudflare REST API.");
   console.log(`Configured Pages project: ${projectName}`);
@@ -128,8 +131,8 @@ async function assertProjectExists() {
     );
   }
 
-  console.log(`AUTO_CREATE_CLOUDFLARE_PROJECT=true, attempting to create Pages project '${projectName}'.`);
-  runWranglerProjectCreate(projectName);
+  console.log(`AUTO_CREATE_CLOUDFLARE_PROJECT=true, creating Pages project '${projectName}' with production branch 'main'.`);
+  await createPagesProject(projectName);
 
   projects = await listPagesProjects();
   names = printProjectNames(projects, "Accessible Pages project names after create");
