@@ -24,7 +24,10 @@ on:
           - "false"
           - "true"
   schedule:
+    # Primary run: 08:15 Hong Kong time.
     - cron: "15 0 * * *"
+    # Backup run: 08:35 Hong Kong time, in case GitHub drops or delays the primary schedule.
+    - cron: "35 0 * * *"
 
 permissions:
   contents: read
@@ -73,6 +76,7 @@ jobs:
           MANUAL_DEPLOY: ${{ inputs.deploy || 'false' }}
           SCHEDULE_AI_MOCK_MODE: ${{ vars.AI_MOCK_MODE || 'true' }}
           SCHEDULE_DAILY_BRIEF_AI_MOCK_MODE: ${{ vars.DAILY_BRIEF_AI_MOCK_MODE || vars.AI_MOCK_MODE || 'true' }}
+          TRIGGERING_SCHEDULE: ${{ github.event.schedule || '' }}
         run: |
           set -euo pipefail
 
@@ -96,7 +100,7 @@ jobs:
             else
               ai_mode="mock"
             fi
-            deploy="false"
+            deploy="true"
           fi
 
           if [ "${ENABLE_CLOUDFLARE_DEPLOY}" != "true" ]; then
@@ -127,6 +131,13 @@ jobs:
           echo "EFFECTIVE_AI_MODE=${ai_mode}" >> "$GITHUB_ENV"
           echo "EFFECTIVE_DEPLOY=${deploy}" >> "$GITHUB_ENV"
           echo "DEPLOY_SKIP_REASON=${deploy_skip_reason}" >> "$GITHUB_ENV"
+
+          echo "event_name=${GITHUB_EVENT_NAME}"
+          echo "triggering_schedule=${TRIGGERING_SCHEDULE:-none}"
+          echo "run_date=${run_date}"
+          echo "effective_ai_mode=${ai_mode}"
+          echo "effective_deploy=${deploy}"
+          echo "deploy_skip_reason=${deploy_skip_reason:-none}"
 
           echo "run_date=${run_date}" >> "$GITHUB_OUTPUT"
           echo "ai_mode=${ai_mode}" >> "$GITHUB_OUTPUT"
